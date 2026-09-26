@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PCP",
+    "GSG",
+    "PPP"
+  ],
+  "key": {
+    "P": "snc_energies:steel_plate",
+    "G": "snc_energies:steel_gear",
+    "C": "snc_energies:basic_circuit",
+    "S": "snc_energies:seed_press"
+  },
+  "result": {
+    "id": "snc_energies:oil_extractor",
+    "count": 1
+  }
+}

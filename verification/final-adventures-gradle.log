@@ -1,0 +1,949 @@
+
+> Configure project :
+Fabric Loom: 1.17.21
+
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :generateLog4jConfig UP-TO-DATE
+> Task :generateDLIConfig UP-TO-DATE
+> Task :configureLaunch UP-TO-DATE
+> Task :compileFunctionalTestJava UP-TO-DATE
+> Task :processFunctionalTestResources UP-TO-DATE
+> Task :functionalTestClasses UP-TO-DATE
+> Task :functionalTestJar UP-TO-DATE
+
+> Task :runServer
+[08:31:53] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 26.3 with Fabric Loader 0.19.5
+[08:31:53] [main/INFO] (FabricLoader/Mappings) Mappings not present!
+[08:31:53] [main/INFO] (FabricLoader) Loading 46 mods:
+	- fabric-advancement-api-v1 1.0.0+38c7a2d55d
+	- fabric-api 0.161.0+26.3
+	- fabric-api-base 2.0.6+fcdff87f5d
+	- fabric-api-lookup-api-v1 2.0.24+3434d6d95d
+	- fabric-biome-api-v1 20.0.9+74ed1ea55d
+	- fabric-block-api-v1 3.1.0+0ae6f9115d
+	- fabric-block-getter-api-v2 2.0.9+3434d6d95d
+	- fabric-command-api-v2 3.1.2+fcdff87f5d
+	- fabric-content-registries-v0 15.0.4+74ed1ea55d
+	- fabric-convention-tags-v2 4.10.3+6b5b47fd5d
+	- fabric-crash-report-info-v1 1.0.7+fcdff87f5d
+	- fabric-creative-tab-api-v1 5.0.21+fcdff87f5d
+	- fabric-data-attachment-api-v1 2.2.30+3434d6d95d
+	- fabric-data-generation-api-v1 27.2.4+427eab975d
+	- fabric-debug-api-v1 1.0.4+3434d6d95d
+	- fabric-dimensions-v1 5.1.19+47f74c985d
+	- fabric-entity-events-v1 6.0.4+3434d6d95d
+	- fabric-events-interaction-v0 5.3.6+3434d6d95d
+	- fabric-game-rule-api-v1 4.0.10+3434d6d95d
+	- fabric-gametest-api-v1 4.0.32+3434d6d95d
+	- fabric-item-api-v1 14.7.0+cf6bc2db5d
+	- fabric-lifecycle-events-v1 4.1.9+ffef5f675d
+	- fabric-loot-api-v3 4.0.8+4068fd645d
+	- fabric-menu-api-v1 2.0.27+ed66f0a35d
+	- fabric-message-api-v1 7.0.10+3434d6d95d
+	- fabric-networking-api-v1 6.3.8+fcdff87f5d
+	- fabric-object-builder-api-v1 24.1.9+3434d6d95d
+	- fabric-particles-v1 5.0.24+3434d6d95d
+	- fabric-permission-api-v1 1.0.8+fcdff87f5d
+	- fabric-recipe-api-v1 10.0.8+fcdff87f5d
+	- fabric-registry-sync-v0 8.0.1+fcdff87f5d
+	- fabric-rendering-fluids-v1 6.0.6+3434d6d95d
+	- fabric-resource-conditions-api-v1 6.1.5+3434d6d95d
+	- fabric-resource-loader-v0 3.3.26+4fc5413f5d
+	- fabric-resource-loader-v1 3.0.4+fcdff87f5d
+	- fabric-serialization-api-v1 2.0.7+74ed1ea55d
+	- fabric-tag-api-v1 2.1.10+fcdff87f5d
+	- fabric-transfer-api-v1 8.0.25+fcdff87f5d
+	- fabric-transitive-access-wideners-v1 8.1.16+52268a0e5d
+	- fabricloader 0.19.5
+	- intoxicantes 1.2.50
+	- java 25
+	- minecraft 26.3
+	- mixinextras 0.5.5
+	- snc_energies 0.2.0
+	- snc_functional_test 1.0.0
+[08:31:53] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/enzot/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.17.4+mixin.0.8.7/5f66cc9f59b8efaa942155a3d5a30599bf6640dd/sponge-mixin-0.17.4+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
+[08:31:55] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.5).
+[08:31:56] [main/ERROR] (HkeyPerformanceDataUtil) Unable to locate English counter names in registry Perflib 009. Counters may need to be rebuilt: 
+
+com.sun.jna.platform.win32.Win32Exception: The parameter is incorrect.
+	at knot//com.sun.jna.platform.win32.Advapi32Util.registryGetStringArray(Advapi32Util.java:921)
+	at knot//com.sun.jna.platform.win32.Advapi32Util.registryGetStringArray(Advapi32Util.java:898)
+	at knot//oshi.driver.windows.registry.HkeyPerformanceDataUtil.mapCounterIndicesFromRegistry(HkeyPerformanceDataUtil.java:274)
+	at knot//oshi.driver.windows.registry.HkeyPerformanceDataUtil.<clinit>(HkeyPerformanceDataUtil.java:51)
+	at knot//oshi.driver.windows.registry.ProcessPerformanceData.buildProcessMapFromRegistry(ProcessPerformanceData.java:45)
+	at knot//oshi.software.os.windows.WindowsOperatingSystem.queryProcessMapFromRegistry(WindowsOperatingSystem.java:328)
+	at knot//oshi.util.Memoizer$1.get(Memoizer.java:65)
+	at knot//oshi.software.os.windows.WindowsOperatingSystem.processMapToList(WindowsOperatingSystem.java:298)
+	at knot//oshi.software.os.windows.WindowsOperatingSystem.getProcess(WindowsOperatingSystem.java:292)
+	at knot//oshi.software.os.OperatingSystem.getCurrentProcess(OperatingSystem.java:246)
+	at knot//net.minecraft.SystemReport.lambda$putSoftware$0(SystemReport.java:116)
+	at knot//net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
+	at knot//net.minecraft.SystemReport.putSoftware(SystemReport.java:116)
+	at knot//net.minecraft.SystemReport.lambda$new$7(SystemReport.java:68)
+	at knot//net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
+	at knot//net.minecraft.SystemReport.<init>(SystemReport.java:68)
+	at knot//net.minecraft.CrashReport.<init>(CrashReport.java:35)
+	at knot//net.minecraft.CrashReport.preload(CrashReport.java:252)
+	at knot//net.minecraft.server.Main.main(Main.java:104)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:517)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72)
+	at net.fabricmc.loader.impl.launch.knot.KnotServer.main(KnotServer.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+[08:31:56] [main/WARN] (PerfCounterQuery) Unable to locate English counter names in registry Perflib 009. Assuming English counters. Error 0x80070057. See https://support.microsoft.com/en-us/help/300956/how-to-manually-rebuild-performance-counter-library-values
+[08:31:56] [main/WARN] (Minecraft) Failed to get system info for Process Loads
+
+java.lang.NullPointerException: Cannot invoke "oshi.software.os.OSProcess.getUserTime()" because "process" is null
+	at knot//net.minecraft.SystemReport.lambda$putProcessDetails$0(SystemReport.java:190)
+	at knot//net.minecraft.SystemReport.setDetail(SystemReport.java:96)
+	at knot//net.minecraft.SystemReport.putProcessDetails(SystemReport.java:189)
+	at knot//net.minecraft.SystemReport.lambda$putSoftware$0(SystemReport.java:116)
+	at knot//net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
+	at knot//net.minecraft.SystemReport.putSoftware(SystemReport.java:116)
+	at knot//net.minecraft.SystemReport.lambda$new$7(SystemReport.java:68)
+	at knot//net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
+	at knot//net.minecraft.SystemReport.<init>(SystemReport.java:68)
+	at knot//net.minecraft.CrashReport.<init>(CrashReport.java:35)
+	at knot//net.minecraft.CrashReport.preload(CrashReport.java:252)
+	at knot//net.minecraft.server.Main.main(Main.java:104)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:517)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72)
+	at net.fabricmc.loader.impl.launch.knot.KnotServer.main(KnotServer.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+[08:31:56] [main/WARN] (Minecraft) Failed to get system info for Process Virtual Size (MiB)
+
+java.lang.NullPointerException: Cannot invoke "oshi.software.os.OSProcess.getVirtualSize()" because "process" is null
+	at knot//net.minecraft.SystemReport.lambda$putProcessDetails$1(SystemReport.java:202)
+	at knot//net.minecraft.SystemReport.setDetail(SystemReport.java:96)
+	at knot//net.minecraft.SystemReport.putProcessDetails(SystemReport.java:202)
+	at knot//net.minecraft.SystemReport.lambda$putSoftware$0(SystemReport.java:116)
+	at knot//net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
+	at knot//net.minecraft.SystemReport.putSoftware(SystemReport.java:116)
+	at knot//net.minecraft.SystemReport.lambda$new$7(SystemReport.java:68)
+	at knot//net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
+	at knot//net.minecraft.SystemReport.<init>(SystemReport.java:68)
+	at knot//net.minecraft.CrashReport.<init>(CrashReport.java:35)
+	at knot//net.minecraft.CrashReport.preload(CrashReport.java:252)
+	at knot//net.minecraft.server.Main.main(Main.java:104)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:517)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72)
+	at net.fabricmc.loader.impl.launch.knot.KnotServer.main(KnotServer.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+[08:31:56] [main/WARN] (Minecraft) Failed to get system info for Process Resident Size (MiB)
+
+java.lang.NullPointerException: Cannot invoke "oshi.software.os.OSProcess.getResidentSetSize()" because "process" is null
+	at knot//net.minecraft.SystemReport.lambda$putProcessDetails$2(SystemReport.java:203)
+	at knot//net.minecraft.SystemReport.setDetail(SystemReport.java:96)
+	at knot//net.minecraft.SystemReport.putProcessDetails(SystemReport.java:203)
+	at knot//net.minecraft.SystemReport.lambda$putSoftware$0(SystemReport.java:116)
+	at knot//net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
+	at knot//net.minecraft.SystemReport.putSoftware(SystemReport.java:116)
+	at knot//net.minecraft.SystemReport.lambda$new$7(SystemReport.java:68)
+	at knot//net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
+	at knot//net.minecraft.SystemReport.<init>(SystemReport.java:68)
+	at knot//net.minecraft.CrashReport.<init>(CrashReport.java:35)
+	at knot//net.minecraft.CrashReport.preload(CrashReport.java:252)
+	at knot//net.minecraft.server.Main.main(Main.java:104)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:517)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72)
+	at net.fabricmc.loader.impl.launch.knot.KnotServer.main(KnotServer.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+[08:32:07] [main/INFO] (SNC Energies) SNC Energies blocks constructed
+[08:32:07] [main/INFO] (SNC Energies) SNC Energies block entities registered
+[08:32:07] [main/INFO] (SNC Energies) SNC Energies items registered
+[08:32:07] [main/INFO] (SNC Energies) SNC Energies menus registered
+[08:32:07] [main/INFO] (SNC Energies) SNC Energies recipes ready
+[08:32:07] [main/INFO] (SNC Energies) SNC Adventures 1.2.50 detected; optional biomass integration enabled
+[08:32:07] [main/INFO] (SNC Energies) SNC Energies initialized: the grid is live!
+[08:32:08] [main/INFO] (intoxicantes) [Intoxicantes] Plantacoes, bebidas, NPCs e substancias ficticias registradas. Lembre: e so jogo!
+[08:32:08] [main/INFO] (Minecraft) Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[08:32:12] [Worker-Main-5/INFO] (Minecraft) Loaded 1877 advancements
+[08:32:13] [main/INFO] (BiomeModificationImpl) Applied 132 biome modifications to 56 of 67 new biomes in 14.25 ms
+[08:32:13] [Server thread/INFO] (intoxicantes) [Market] Posicao do Mercado carregada: 73, 50, -9
+[08:32:13] [Server thread/INFO] (intoxicantes) [Intoxicantes] Sistema de dinheiro R$ e Mercado Esquinao inicializados.
+[08:32:13] [Server thread/INFO] (Minecraft) Starting minecraft server version 26.3
+[08:32:13] [Server thread/INFO] (Minecraft) Loading properties
+[08:32:13] [Server thread/INFO] (Minecraft) Default game type: SURVIVAL
+[08:32:13] [Server thread/INFO] (Minecraft) Generating keypair
+[08:32:13] [Server thread/INFO] (Minecraft) Starting Minecraft server on 127.0.0.1:25577
+[08:32:13] [Server thread/WARN] (Minecraft) **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[08:32:13] [Server thread/WARN] (Minecraft) The server will make no attempt to authenticate usernames. Beware.
+[08:32:13] [Server thread/WARN] (Minecraft) While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[08:32:13] [Server thread/WARN] (Minecraft) To change this, set "online-mode" to "true" in the server.properties file.
+[08:32:13] [Server thread/INFO] (Minecraft) Preparing level "machine-test"
+[08:32:14] [Server thread/INFO] (Minecraft) Loading 25 persistent chunks...
+[08:32:14] [Server thread/INFO] (Minecraft) Preparing spawn area: 28%
+[08:32:14] [Server thread/INFO] (Minecraft) Preparing spawn area: 28%
+[08:32:15] [Server thread/INFO] (Minecraft) Time elapsed: 937 ms
+[08:32:15] [Server thread/INFO] (Minecraft) Done (1.523s)! For help, type "help"
+[08:32:15] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[machine-test]'/minecraft:overworld
+[08:32:15] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[machine-test]'/minecraft:the_nether
+[08:32:15] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[machine-test]'/minecraft:the_end
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: companion biomass registry matches the selected test profile
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: empty biomass cannot produce energy
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: Adventures bagasse resolves through the optional biomass tag
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: stove menu accepts Adventures bagasse
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: one bagasse produces exactly 8000 energy and consumes exactly one item
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: biomass inventory and energy survive save/load
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: transfer conserves a one-unit source with a 160-unit budget
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: generator exposes its menu
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: furnace exposes its menu
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: crusher exposes its menu
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: menu retains synchronized energy and burn values
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: wood stove exposes its own fuel menu
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: wood stove accepts logs, planks and sticks
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: wood stove rejects non-wood and nonflammable fuel
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: obstruction blocks placement without replacing terrain: north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: clear footprint accepted: north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller north / 1
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller north / 2
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller north / 3
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller north / 4
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller north / 5
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller north / 6
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller north / 7
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structure cannot be separated by pistons: north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell north / 0
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell north / 1
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell north / 2
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell north / 3
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell north / 4
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell north / 5
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell north / 6
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell north / 7
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking structure drops exactly one stove: north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: obstruction blocks placement without replacing terrain: south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: clear footprint accepted: south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller south / 1
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller south / 2
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller south / 3
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller south / 4
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller south / 5
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller south / 6
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller south / 7
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structure cannot be separated by pistons: south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell south / 0
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell south / 1
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell south / 2
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell south / 3
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell south / 4
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell south / 5
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell south / 6
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell south / 7
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking structure drops exactly one stove: south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: obstruction blocks placement without replacing terrain: east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: clear footprint accepted: east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller east / 1
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller east / 2
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller east / 3
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller east / 4
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller east / 5
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller east / 6
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller east / 7
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structure cannot be separated by pistons: east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell east / 0
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell east / 1
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell east / 2
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell east / 3
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell east / 4
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell east / 5
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell east / 6
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell east / 7
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking structure drops exactly one stove: east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: obstruction blocks placement without replacing terrain: west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: clear footprint accepted: west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller west / 1
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller west / 2
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller west / 3
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller west / 4
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller west / 5
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller west / 6
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller west / 7
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structure cannot be separated by pistons: west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell west / 0
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell west / 1
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell west / 2
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell west / 3
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell west / 4
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell west / 5
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell west / 6
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell west / 7
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking structure drops exactly one stove: west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: legacy compact stove keeps its original footprint
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop refuses obstructed footprint: north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: north/0
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: north/1
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: north/2
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: north/3
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop drops exactly one machine; delta=1
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop returns stored items exactly once
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop refuses obstructed footprint: east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: east/0
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: east/1
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: east/2
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: east/3
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop drops exactly one machine; delta=1
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop returns stored items exactly once
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop refuses obstructed footprint: south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: south/0
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: south/1
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: south/2
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: south/3
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop drops exactly one machine; delta=1
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop returns stored items exactly once
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop refuses obstructed footprint: west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: west/0
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: west/1
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: west/2
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: west/3
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop drops exactly one machine; delta=1
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop returns stored items exactly once
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop refuses obstructed footprint: north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: north/0
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: north/1
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: north/2
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: north/3
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop drops exactly one machine; delta=1
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop returns stored items exactly once
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop refuses obstructed footprint: east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: east/0
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: east/1
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: east/2
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: east/3
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop drops exactly one machine; delta=1
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop returns stored items exactly once
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop refuses obstructed footprint: south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: south/0
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: south/1
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: south/2
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: south/3
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop drops exactly one machine; delta=1
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop returns stored items exactly once
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop refuses obstructed footprint: west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: west/0
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: west/1
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: west/2
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: west/3
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop drops exactly one machine; delta=1
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop returns stored items exactly once
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: manual workshop waits for work
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: crank is server-authoritative and limited to one charge per tick
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: full residue slot blocks all input and work consumption
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop persists partial processing, work and input
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: milling conserves exact ingredient, product, residue and work quantities
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop sided access protects input and output slots
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: invalid workshop button is rejected
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: removed workshop cannot be cranked through a stale menu
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: press produces oil and meal atomically without free containers
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: four rice husks produce one briquette without a phantom residue
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: regional fuels expose documented burn values
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: changing recipe cannot reuse progress from a different ingredient
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: output stack components are preserved rather than overwritten
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: young crop returns seed without harvest exploit
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: mature crop yields documented seeds and produce
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: young crop returns seed without harvest exploit
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: mature crop yields documented seeds and produce
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: young crop returns seed without harvest exploit
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: mature crop yields documented seeds and produce
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: optional mate milling preserves the batch without phantom residue
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: mate infusion returns its bowl after consumption
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: BOILER / north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: BOILER / north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: BOILER / north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: BOILER / east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: BOILER / east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: BOILER / east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: BOILER / south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: BOILER / south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: BOILER / south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: BOILER / west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: BOILER / west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: BOILER / west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: SAWMILL / north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: SAWMILL / north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: SAWMILL / north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: SAWMILL / east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: SAWMILL / east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: SAWMILL / east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: SAWMILL / south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: SAWMILL / south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: SAWMILL / south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: SAWMILL / west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: SAWMILL / west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: SAWMILL / west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: FOUNDRY / north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: FOUNDRY / north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: FOUNDRY / north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: FOUNDRY / east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: FOUNDRY / east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: FOUNDRY / east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: FOUNDRY / south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: FOUNDRY / south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: FOUNDRY / south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: FOUNDRY / west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: FOUNDRY / west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: FOUNDRY / west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: TURBINE / north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: TURBINE / north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: TURBINE / north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: TURBINE / east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: TURBINE / east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: TURBINE / east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: TURBINE / south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: TURBINE / south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: TURBINE / south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: TURBINE / west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: TURBINE / west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: TURBINE / west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: LAMINATOR / north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: LAMINATOR / north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: LAMINATOR / north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: LAMINATOR / east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: LAMINATOR / east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: LAMINATOR / east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: LAMINATOR / south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: LAMINATOR / south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: LAMINATOR / south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: LAMINATOR / west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: LAMINATOR / west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: LAMINATOR / west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: DRYER / north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: DRYER / north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: DRYER / north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: DRYER / east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: DRYER / east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: DRYER / east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: DRYER / south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: DRYER / south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: DRYER / south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: DRYER / west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: DRYER / west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: DRYER / west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: EXTRACTOR / north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: EXTRACTOR / north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: EXTRACTOR / north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: EXTRACTOR / east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: EXTRACTOR / east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: EXTRACTOR / east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: EXTRACTOR / south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: EXTRACTOR / south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: EXTRACTOR / south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: EXTRACTOR / west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: EXTRACTOR / west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: EXTRACTOR / west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: REFINERY / north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: REFINERY / north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: REFINERY / north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: REFINERY / east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: REFINERY / east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: REFINERY / east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: REFINERY / south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: REFINERY / south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: REFINERY / south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: REFINERY / west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: REFINERY / west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: REFINERY / west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: SYNTHESIZER / north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: SYNTHESIZER / north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: SYNTHESIZER / north
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: SYNTHESIZER / east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: SYNTHESIZER / east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: SYNTHESIZER / east
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: SYNTHESIZER / south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: SYNTHESIZER / south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: SYNTHESIZER / south
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: SYNTHESIZER / west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: SYNTHESIZER / west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: SYNTHESIZER / west
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: dry boiler consumes neither fuel nor water
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: boiler conserves two water buckets, fuel and 16000 mB steam
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: full boiler pauses fuel consumption safely
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: boiler fluids and bucket inventory survive persistence
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: steam network conserves a bounded transfer across two ducts
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: steam ducts have no electric cable entities or per-pipe ticks
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: steam insertion rejects overflow and negative amounts
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: full consumer cannot delete or duplicate source steam
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: turbine converts 8000 mB into exactly 8000 E and cannot accept back-fed power
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: wood_0
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: wood_0
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: wood_0
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: wood_0
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: wood_1
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: wood_1
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: wood_1
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: wood_1
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: wood_2
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: wood_2
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: wood_2
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: wood_2
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: wood_3
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: wood_3
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: wood_3
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: wood_3
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: wood_4
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: wood_4
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: wood_4
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: wood_4
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: wood_5
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: wood_5
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: wood_5
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: wood_5
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: wood_6
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: wood_6
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: wood_6
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: wood_6
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: wood_7
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: wood_7
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: wood_7
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: wood_7
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: steel_minecraft:coal
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: steel_minecraft:coal
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: steel_minecraft:coal
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: steel_minecraft:coal
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: steel_minecraft:charcoal
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: steel_minecraft:charcoal
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: steel_minecraft:charcoal
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: steel_minecraft:charcoal
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: steel_plate
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: steel_plate
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: steel_plate
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: steel_plate
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: copper_wire
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: copper_wire
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: copper_wire
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: copper_wire
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: rice_batch
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: rice_batch
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: rice_batch
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: rice_batch
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: mate_batch
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: mate_batch
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: mate_batch
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: mate_batch
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: insulation
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: insulation
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: insulation
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: insulation
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: oil_batch
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: oil_batch
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: oil_batch
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: oil_batch
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: refined_voltaite
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: refined_voltaite
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: refined_voltaite
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: refined_voltaite
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: mineral_matrix
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: mineral_matrix
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: mineral_matrix
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: mineral_matrix
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: synthesis_minecraft:raw_iron
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: synthesis_minecraft:raw_iron
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: synthesis_minecraft:raw_iron
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: synthesis_minecraft:raw_iron
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: synthesis_minecraft:raw_copper
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: synthesis_minecraft:raw_copper
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: synthesis_minecraft:raw_copper
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: synthesis_minecraft:raw_copper
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: synthesis_minecraft:raw_gold
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: synthesis_minecraft:raw_gold
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: synthesis_minecraft:raw_gold
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: synthesis_minecraft:raw_gold
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: synthesis_snc_energies:raw_tin
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: synthesis_snc_energies:raw_tin
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: synthesis_snc_energies:raw_tin
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: synthesis_snc_energies:raw_tin
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: synthesis_snc_energies:raw_voltaite
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: synthesis_snc_energies:raw_voltaite
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: synthesis_snc_energies:raw_voltaite
+[08:32:17] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: synthesis_snc_energies:raw_voltaite
+[08:32:32] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: large stove supplies energy through a cable on its far structural cell
+[08:32:32] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: large chimney shares the controller lit state
+[08:32:32] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: wood stove powers an electric furnace from one log
+[08:32:32] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: wood stove consumes logs and retains remaining burn
+[08:32:32] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: generator and multi-cable network smelt iron using native ticks
+[08:32:32] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: crusher produces two Voltaite dust
+[08:32:32] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: one coal starts a persistent burn
+[08:32:32] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: surplus power charges battery
+[08:32:32] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: incompatible output prevents consumption or item conversion
+[08:32:32] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: generator energy and burn survive serialization
+[08:32:32] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: furnace inventory and energy survive serialization
+[08:32:42] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: battery powers furnace without generator and dust smelts to ingot
+[08:32:42] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: no global machine tick registrations remain
+[08:32:42] [Server thread/INFO] (SNC Energies) FUNCTIONAL TESTS PASSED
+[08:32:42] [Server thread/INFO] (Minecraft) Stopping server
+[08:32:42] [Server thread/INFO] (Minecraft) Saving players
+[08:32:42] [Server thread/INFO] (Minecraft) Saving worlds
+[08:32:42] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[machine-test]'/minecraft:overworld
+[08:32:42] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[machine-test]'/minecraft:the_nether
+[08:32:42] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[machine-test]'/minecraft:the_end
+
+> Task :compileClientJava UP-TO-DATE
+> Task :processClientResources NO-SOURCE
+> Task :clientClasses UP-TO-DATE
+> Task :compileGametestJava
+> Task :downloadAssets UP-TO-DATE
+> Task :configureClientLaunch UP-TO-DATE
+> Task :deleteGameTestRunDir UP-TO-DATE
+> Task :processGametestResources
+> Task :gametestClasses
+
+> Task :runClientGameTest
+[08:32:45] [main/WARN] (FabricLoader/Knot) Class path entries reference missing files: C:\Users\enzot\curseforge\minecraft\Instances\Mods SNC\snc_energies\build\resources\client - the game may not load properly!
+[08:32:45] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 26.3 with Fabric Loader 0.19.5
+[08:32:45] [main/INFO] (FabricLoader/Mappings) Mappings not present!
+[08:32:45] [main/INFO] (FabricLoader) Loading 54 mods:
+	- fabric-advancement-api-v1 1.0.0+38c7a2d55d
+	- fabric-api 0.161.0+26.3
+	- fabric-api-base 2.0.6+fcdff87f5d
+	- fabric-api-lookup-api-v1 2.0.24+3434d6d95d
+	- fabric-biome-api-v1 20.0.9+74ed1ea55d
+	- fabric-block-api-v1 3.1.0+0ae6f9115d
+	- fabric-block-getter-api-v2 2.0.9+3434d6d95d
+	- fabric-client-gametest-api-v1 6.0.7+4be74c3f5d
+	- fabric-command-api-v2 3.1.2+fcdff87f5d
+	- fabric-content-registries-v0 15.0.4+74ed1ea55d
+	- fabric-convention-tags-v2 4.10.3+6b5b47fd5d
+	- fabric-crash-report-info-v1 1.0.7+fcdff87f5d
+	- fabric-creative-tab-api-v1 5.0.21+fcdff87f5d
+	- fabric-data-attachment-api-v1 2.2.30+3434d6d95d
+	- fabric-data-generation-api-v1 27.2.4+427eab975d
+	- fabric-debug-api-v1 1.0.4+3434d6d95d
+	- fabric-dimensions-v1 5.1.19+47f74c985d
+	- fabric-entity-events-v1 6.0.4+3434d6d95d
+	- fabric-events-interaction-v0 5.3.6+3434d6d95d
+	- fabric-game-rule-api-v1 4.0.10+3434d6d95d
+	- fabric-gametest-api-v1 4.0.32+3434d6d95d
+	- fabric-item-api-v1 14.7.0+cf6bc2db5d
+	- fabric-key-mapping-api-v1 2.0.8+3434d6d95d
+	- fabric-lifecycle-events-v1 4.1.9+ffef5f675d
+	- fabric-loot-api-v3 4.0.8+4068fd645d
+	- fabric-menu-api-v1 2.0.27+ed66f0a35d
+	- fabric-message-api-v1 7.0.10+3434d6d95d
+	- fabric-model-loading-api-v1 8.0.35+fcdff87f5d
+	- fabric-networking-api-v1 6.3.8+fcdff87f5d
+	- fabric-object-builder-api-v1 24.1.9+3434d6d95d
+	- fabric-particles-v1 5.0.24+3434d6d95d
+	- fabric-permission-api-v1 1.0.8+fcdff87f5d
+	- fabric-recipe-api-v1 10.0.8+fcdff87f5d
+	- fabric-registry-sync-v0 8.0.1+fcdff87f5d
+	- fabric-renderer-api-v1 17.0.15+79385d0b5d
+	- fabric-renderer-indigo 9.1.23+b9d63e335d
+	- fabric-rendering-fluids-v1 6.0.6+3434d6d95d
+	- fabric-rendering-v1 27.0.14+901a437c5d
+	- fabric-resource-conditions-api-v1 6.1.5+3434d6d95d
+	- fabric-resource-loader-v0 3.3.26+4fc5413f5d
+	- fabric-resource-loader-v1 3.0.4+fcdff87f5d
+	- fabric-screen-api-v1 5.2.4+48607d035d
+	- fabric-serialization-api-v1 2.0.7+74ed1ea55d
+	- fabric-sound-api-v1 2.0.7+3434d6d95d
+	- fabric-tag-api-v1 2.1.10+fcdff87f5d
+	- fabric-transfer-api-v1 8.0.25+fcdff87f5d
+	- fabric-transitive-access-wideners-v1 8.1.16+52268a0e5d
+	- fabricloader 0.19.5
+	- intoxicantes 1.2.50
+	- java 25
+	- minecraft 26.3
+	- mixinextras 0.5.5
+	- snc-client-tests 1.0.0
+	- snc_energies 0.2.0
+[08:32:46] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/enzot/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.17.4+mixin.0.8.7/5f66cc9f59b8efaa942155a3d5a30599bf6640dd/sponge-mixin-0.17.4+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
+[08:32:49] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.5).
+[08:32:51] [Datafixer Bootstrap #0/INFO] (Minecraft) 307 Datafixer optimizations took 670 milliseconds
+[08:32:52] [main/ERROR] (HkeyPerformanceDataUtil) Unable to locate English counter names in registry Perflib 009. Counters may need to be rebuilt: 
+
+com.sun.jna.platform.win32.Win32Exception: The parameter is incorrect.
+	at knot//com.sun.jna.platform.win32.Advapi32Util.registryGetStringArray(Advapi32Util.java:921)
+	at knot//com.sun.jna.platform.win32.Advapi32Util.registryGetStringArray(Advapi32Util.java:898)
+	at knot//oshi.driver.windows.registry.HkeyPerformanceDataUtil.mapCounterIndicesFromRegistry(HkeyPerformanceDataUtil.java:274)
+	at knot//oshi.driver.windows.registry.HkeyPerformanceDataUtil.<clinit>(HkeyPerformanceDataUtil.java:51)
+	at knot//oshi.driver.windows.registry.ProcessPerformanceData.buildProcessMapFromRegistry(ProcessPerformanceData.java:45)
+	at knot//oshi.software.os.windows.WindowsOperatingSystem.queryProcessMapFromRegistry(WindowsOperatingSystem.java:328)
+	at knot//oshi.util.Memoizer$1.get(Memoizer.java:65)
+	at knot//oshi.software.os.windows.WindowsOperatingSystem.processMapToList(WindowsOperatingSystem.java:298)
+	at knot//oshi.software.os.windows.WindowsOperatingSystem.getProcess(WindowsOperatingSystem.java:292)
+	at knot//oshi.software.os.OperatingSystem.getCurrentProcess(OperatingSystem.java:246)
+	at knot//net.minecraft.SystemReport.lambda$putSoftware$0(SystemReport.java:116)
+	at knot//net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
+	at knot//net.minecraft.SystemReport.putSoftware(SystemReport.java:116)
+	at knot//net.minecraft.SystemReport.lambda$new$7(SystemReport.java:68)
+	at knot//net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
+	at knot//net.minecraft.SystemReport.<init>(SystemReport.java:68)
+	at knot//net.minecraft.CrashReport.<init>(CrashReport.java:35)
+	at knot//net.minecraft.CrashReport.preload(CrashReport.java:252)
+	at knot//net.minecraft.client.main.Main.main(Main.java:172)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:517)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+[08:32:52] [main/WARN] (PerfCounterQuery) Unable to locate English counter names in registry Perflib 009. Assuming English counters. Error 0x80070057. See https://support.microsoft.com/en-us/help/300956/how-to-manually-rebuild-performance-counter-library-values
+[08:32:52] [main/WARN] (Minecraft) Failed to get system info for Process Loads
+
+java.lang.NullPointerException: Cannot invoke "oshi.software.os.OSProcess.getUserTime()" because "process" is null
+	at knot//net.minecraft.SystemReport.lambda$putProcessDetails$0(SystemReport.java:190)
+	at knot//net.minecraft.SystemReport.setDetail(SystemReport.java:96)
+	at knot//net.minecraft.SystemReport.putProcessDetails(SystemReport.java:189)
+	at knot//net.minecraft.SystemReport.lambda$putSoftware$0(SystemReport.java:116)
+	at knot//net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
+	at knot//net.minecraft.SystemReport.putSoftware(SystemReport.java:116)
+	at knot//net.minecraft.SystemReport.lambda$new$7(SystemReport.java:68)
+	at knot//net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
+	at knot//net.minecraft.SystemReport.<init>(SystemReport.java:68)
+	at knot//net.minecraft.CrashReport.<init>(CrashReport.java:35)
+	at knot//net.minecraft.CrashReport.preload(CrashReport.java:252)
+	at knot//net.minecraft.client.main.Main.main(Main.java:172)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:517)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+[08:32:52] [main/WARN] (Minecraft) Failed to get system info for Process Virtual Size (MiB)
+
+java.lang.NullPointerException: Cannot invoke "oshi.software.os.OSProcess.getVirtualSize()" because "process" is null
+	at knot//net.minecraft.SystemReport.lambda$putProcessDetails$1(SystemReport.java:202)
+	at knot//net.minecraft.SystemReport.setDetail(SystemReport.java:96)
+	at knot//net.minecraft.SystemReport.putProcessDetails(SystemReport.java:202)
+	at knot//net.minecraft.SystemReport.lambda$putSoftware$0(SystemReport.java:116)
+	at knot//net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
+	at knot//net.minecraft.SystemReport.putSoftware(SystemReport.java:116)
+	at knot//net.minecraft.SystemReport.lambda$new$7(SystemReport.java:68)
+	at knot//net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
+	at knot//net.minecraft.SystemReport.<init>(SystemReport.java:68)
+	at knot//net.minecraft.CrashReport.<init>(CrashReport.java:35)
+	at knot//net.minecraft.CrashReport.preload(CrashReport.java:252)
+	at knot//net.minecraft.client.main.Main.main(Main.java:172)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:517)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+[08:32:52] [main/WARN] (Minecraft) Failed to get system info for Process Resident Size (MiB)
+
+java.lang.NullPointerException: Cannot invoke "oshi.software.os.OSProcess.getResidentSetSize()" because "process" is null
+	at knot//net.minecraft.SystemReport.lambda$putProcessDetails$2(SystemReport.java:203)
+	at knot//net.minecraft.SystemReport.setDetail(SystemReport.java:96)
+	at knot//net.minecraft.SystemReport.putProcessDetails(SystemReport.java:203)
+	at knot//net.minecraft.SystemReport.lambda$putSoftware$0(SystemReport.java:116)
+	at knot//net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
+	at knot//net.minecraft.SystemReport.putSoftware(SystemReport.java:116)
+	at knot//net.minecraft.SystemReport.lambda$new$7(SystemReport.java:68)
+	at knot//net.minecraft.SystemReport.ignoreErrors(SystemReport.java:121)
+	at knot//net.minecraft.SystemReport.<init>(SystemReport.java:68)
+	at knot//net.minecraft.CrashReport.<init>(CrashReport.java:35)
+	at knot//net.minecraft.CrashReport.preload(CrashReport.java:252)
+	at knot//net.minecraft.client.main.Main.main(Main.java:172)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:517)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+[08:33:02] [Render thread/INFO] (Minecraft) Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[08:33:02] [Render thread/INFO] (Minecraft) Setting user: Player0
+[08:33:03] [Render thread/INFO] (intoxicantes) [Intoxicantes] Plantacoes, bebidas, NPCs e substancias ficticias registradas. Lembre: e so jogo!
+[08:33:04] [Render thread/INFO] (SNC Energies) SNC Energies blocks constructed
+[08:33:04] [Render thread/INFO] (SNC Energies) SNC Energies block entities registered
+[08:33:04] [Render thread/INFO] (SNC Energies) SNC Energies items registered
+[08:33:04] [Render thread/INFO] (SNC Energies) SNC Energies menus registered
+[08:33:04] [Render thread/INFO] (SNC Energies) SNC Energies recipes ready
+[08:33:04] [Render thread/INFO] (SNC Energies) SNC Adventures 1.2.50 detected; optional biomass integration enabled
+[08:33:04] [Render thread/INFO] (SNC Energies) SNC Energies initialized: the grid is live!
+[08:33:04] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[08:33:05] [Render thread/INFO] (SNC Energies) SNC Energies client ready
+[08:33:06] [Render thread/ERROR] (Minecraft) Illegal option value 0 for Anisotropic Filtering
+[08:33:06] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.4.3-snapshot
+[08:33:06] [Render thread/INFO] (Minecraft) SDL [SYSTEM]: App name: Minecraft
+[08:33:06] [Render thread/INFO] (Minecraft) SDL [SYSTEM]: App version: 26.3
+[08:33:06] [Render thread/INFO] (Minecraft) SDL [SYSTEM]: App ID: com.mojang.minecraft
+[08:33:06] [Render thread/INFO] (Minecraft) SDL [SYSTEM]: SDL revision: SDL-3.4.14-62f10da
+[08:33:07] [Render thread/INFO] (Minecraft) Using graphics backend OpenGL, using drivers: 3.3.0 Core Profile Context 25.10.30.250902
+[08:33:07] [Render thread/INFO] (Minecraft) Using graphics device: AMD Radeon(TM) Graphics (ATI Technologies Inc.)
+[08:33:07] [Render thread/INFO] (Minecraft) Using graphics device extensions: GL_ARB_multi_draw_indirect, GL_ARB_buffer_storage, GL_ARB_shader_draw_parameters, GL_ARB_base_instance, GL_KHR_debug, GL_ARB_draw_indirect, GL_ARB_clip_control, GL_ARB_vertex_attrib_binding, GL_ARB_direct_state_access, GL_EXT_texture_filter_anisotropic
+[08:33:07] [Render thread/INFO] (Minecraft) Created window using SDL video driver: windows
+[08:33:08] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, vanilla, fabric-advancement-api-v1, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-getter-api-v2, fabric-client-gametest-api-v1, fabric-command-api-v2, fabric-content-registries-v0, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-creative-tab-api-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-debug-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-key-mapping-api-v1, fabric-lifecycle-events-v1, fabric-loot-api-v3, fabric-menu-api-v1, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-permission-api-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-rendering-fluids-v1, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-resource-loader-v1, fabric-screen-api-v1, fabric-serialization-api-v1, fabric-sound-api-v1, fabric-tag-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, intoxicantes, snc_energies
+[08:33:09] [Download-2/INFO] (Minecraft) Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: FabricMC
+[08:33:09] [Worker-Main-6/INFO] (Minecraft) Found unifont_all_no_pua-17.0.01.hex, loading
+[08:33:09] [Worker-Main-1/INFO] (Minecraft) Found unifont_pua-17.0.01.hex, loading
+[08:33:09] [Worker-Main-5/INFO] (Minecraft) Found unifont_jp_patch-17.0.01.hex, loading
+[08:33:13] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on Speakers (Realtek(R) Audio)
+[08:33:13] [Render thread/INFO] (Minecraft) Sound engine started
+[08:33:13] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[08:33:14] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/celestials.png-atlas
+[08:33:14] [Render thread/INFO] (Minecraft) Created: 128x128x0 minecraft:textures/atlas/decorated_pot.png-atlas
+[08:33:14] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[08:33:14] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
+[08:33:14] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
+[08:33:14] [Render thread/INFO] (Minecraft) Created: 4096x2048x4 minecraft:textures/atlas/blocks.png-atlas
+[08:33:14] [Render thread/INFO] (Minecraft) Created: 2048x2048x0 minecraft:textures/atlas/items.png-atlas
+[08:33:14] [Render thread/INFO] (Minecraft) Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
+[08:33:14] [Render thread/INFO] (Minecraft) Created: 128x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[08:33:14] [Render thread/INFO] (Minecraft) Created: 512x512x0 minecraft:textures/atlas/chest.png-atlas
+[08:33:14] [Render thread/INFO] (Minecraft) Created: 512x512x0 minecraft:textures/atlas/shulker_boxes.png-atlas
+[08:33:15] [Download-2/INFO] (Minecraft) Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: FabricMC
+[08:33:22] [Worker-Main-7/INFO] (Minecraft) Loaded 1877 advancements
+[08:33:22] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.GenericMessageScreen@f7381d9
+[08:33:22] [Render thread/INFO] (BiomeModificationImpl) Applied 22 biome modifications to 16 of 67 new biomes in 23.04 ms
+[08:33:22] [Server thread/INFO] (intoxicantes) [Intoxicantes] Sistema de dinheiro R$ e Mercado Esquinao inicializados.
+[08:33:22] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 26.3
+[08:33:22] [Server thread/INFO] (Minecraft) Generating keypair
+[08:33:24] [Server thread/INFO] (Minecraft) Selecting global world spawn...
+[08:33:24] [Server thread/INFO] (Minecraft) Loading 0 persistent chunks...
+[08:33:24] [Server thread/INFO] (Minecraft) Preparing spawn area: 16%
+[08:33:24] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[08:33:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[08:33:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[08:33:25] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:25] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:25] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:25] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:25] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:25] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:25] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:26] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:26] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:26] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:26] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:26] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:26] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:26] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:26] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:26] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:26] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:26] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:26] [Server thread/INFO] (Minecraft) Loading 48 chunks for player spawn...
+[08:33:26] [Server thread/INFO] (Minecraft) Preparing spawn area: 16%
+[08:33:26] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:26] [Server thread/INFO] (Minecraft) Preparing spawn area: 16%
+[08:33:26] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:26] [Server thread/INFO] (Minecraft) Preparing spawn area: 16%
+[08:33:26] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:26] [Server thread/INFO] (Minecraft) Preparing spawn area: 16%
+[08:33:26] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:26] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:26] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:26] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:26] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:26] [Server thread/INFO] (Minecraft) Preparing spawn area: 30%
+[08:33:27] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:27] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:27] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:27] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:27] [Server thread/INFO] (Minecraft) Time elapsed: 2725 ms
+[08:33:27] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:27] [Server thread/INFO] (Minecraft) Player0[local:E:3360d608] logged in with entity id 1 at (0.5, -60.0, 0.5)
+[08:33:27] [Server thread/INFO] (Minecraft) System chat: Player0 joined the game
+[08:33:28] [Server thread/INFO] (Minecraft) Changing view distance to 5, from 10
+[08:33:28] [Server thread/INFO] (Minecraft) Changing simulation distance to 12, from 0
+[08:33:28] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:28] [Render thread/INFO] (Minecraft) [System] [CHAT] §eThe SNC Adventures Guide dropped in your backpack. Right-click to open.
+[08:33:28] [Render thread/INFO] (Minecraft) Loaded 12 advancements
+[08:33:28] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:28] [Render thread/WARN] (Minecraft) Requested post effect does not exist: minecraft:end_of_frame
+[08:33:28] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 2 reached during a single frame. New capacity will be 4.
+[08:33:28] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:28] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 4 reached during a single frame. New capacity will be 8.
+[08:33:28] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:28] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
+[08:33:28] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:28] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:28] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:29] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:29] [Render thread/INFO] (Minecraft) Resizing Chunk Sections Command Buffer, capacity limit of 2 reached during a single frame. New capacity will be 8.
+[08:33:29] [Render thread/INFO] (Minecraft) Resizing Chunk Sections Instanced, capacity limit of 2 reached during a single frame. New capacity will be 8.
+[08:33:29] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:29] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:29] [Render thread/INFO] (Minecraft) Resizing Chunk Sections Command Buffer, capacity limit of 8 reached during a single frame. New capacity will be 16.
+[08:33:29] [Render thread/INFO] (Minecraft) Resizing Chunk Sections Instanced, capacity limit of 8 reached during a single frame. New capacity will be 16.
+[08:33:29] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:29] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:29] [Render thread/INFO] (Minecraft) Resizing Chunk Sections Command Buffer, capacity limit of 16 reached during a single frame. New capacity will be 32.
+[08:33:29] [Render thread/INFO] (Minecraft) Resizing Chunk Sections Instanced, capacity limit of 16 reached during a single frame. New capacity will be 32.
+[08:33:29] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:29] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:29] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:29] [Render thread/INFO] (Minecraft) Resizing Chunk Sections Command Buffer, capacity limit of 32 reached during a single frame. New capacity will be 64.
+[08:33:29] [Render thread/INFO] (Minecraft) Resizing Chunk Sections Instanced, capacity limit of 32 reached during a single frame. New capacity will be 64.
+[08:33:29] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:29] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:29] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@4c7f7cbc
+[08:33:29] [Render thread/INFO] (fabric-client-gametest-api-v1) World loading finished: ClientLevel screen: null
+[08:33:29] [Server thread/WARN] (Minecraft) Can't keep up! Is the server overloaded? Running 2025ms or 40 ticks behind
+[08:33:30] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 16 reached during a single frame. New capacity will be 32.
+[08:33:36] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[08:33:36] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[08:33:36] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[08:33:36] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[08:33:36] [Test thread/INFO] (SNC Energies) CLIENT FLOW PASSED: multiblock interaction, crank packet, server output, boiler screen and guide
+[08:33:36] [Server thread/INFO] (Minecraft) Player0 lost connection: Disconnected
+[08:33:36] [Server thread/INFO] (Minecraft) System chat: Player0 left the game
+[08:33:36] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[08:33:36] [Server thread/INFO] (Minecraft) Stopping server
+[08:33:36] [Server thread/INFO] (Minecraft) Saving players
+[08:33:36] [Server thread/INFO] (Minecraft) Saving worlds
+[08:33:36] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[08:33:37] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[08:33:37] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[08:33:37] [Render thread/INFO] (Minecraft) Stopping!
+
+BUILD SUCCESSFUL in 1m 48s
+14 actionable tasks: 4 executed, 10 up-to-date

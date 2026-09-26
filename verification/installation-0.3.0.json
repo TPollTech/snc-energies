@@ -1,0 +1,8 @@
+{
+  "version": "0.3.0",
+  "installed": "2026-09-25T22:40:00-03:00",
+  "jar": "Instances/SNC energies/mods/snc-energies.jar",
+  "sha256": "125443759DF4F526C363CA1248091DEB3F5111D38C8727AA76F21C8DB3C5C05F",
+  "backup": "Instances/SNC energies/snc-backups/20260925-223539-before-0.3.0/snc-energies-0.2.1.jar",
+  "note": "v0.3.0 automation milestone: item ducts, machine suction, redstone gate. Functional suites passed standalone and with Adventures 1.2.57; hashes verified identical."
+}

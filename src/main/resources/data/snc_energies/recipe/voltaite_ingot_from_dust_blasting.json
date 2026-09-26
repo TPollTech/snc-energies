@@ -1,0 +1,11 @@
+{
+	"type": "minecraft:blasting",
+	"category": "misc",
+	"ingredient": "snc_energies:voltaite_dust",
+	"result": {
+		"id": "snc_energies:voltaite_ingot"
+	},
+	"experience": 0.7,
+	"cookingtime": 100
+}
+

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PAP",
+    "VRV",
+    "PAP"
+  ],
+  "key": {
+    "P": "snc_energies:insulated_plate",
+    "A": "snc_energies:advanced_circuit",
+    "V": "snc_energies:refined_voltaite",
+    "R": "minecraft:diamond"
+  },
+  "result": {
+    "id": "snc_energies:mineral_synthesizer",
+    "count": 1
+  }
+}

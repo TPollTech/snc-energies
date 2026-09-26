@@ -1,0 +1,25 @@
+package com.snc.energies.block;
+
+import com.snc.energies.blockentity.ItemPipeBlockEntity;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityTicker;
+import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.state.BlockState;
+
+/** A thin item duct: one buffered item per cell, routing decided by each cell's tick. */
+public final class ItemPipeBlock extends CableBlock {
+    public ItemPipeBlock(Properties properties) { super(properties); }
+    @Override protected boolean connects(BlockState state) {
+        if (state.getBlock() instanceof IndustrialBlock machine) return true;
+        if (state.getBlock() instanceof MachineBlock) return true;
+        return state.getBlock() instanceof ItemPipeBlock || state.getBlock() instanceof EnergyCubeBlock;
+    }
+    @Override public BlockEntity newBlockEntity(BlockPos pos,BlockState state){return new ItemPipeBlockEntity(pos,state);}
+    @Override public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level,BlockState state,BlockEntityType<T> type){
+        return level.isClientSide()?null:(world,pos,blockState,entity)->{
+            if(entity instanceof ItemPipeBlockEntity duct)duct.serverTick();
+        };
+    }
+}

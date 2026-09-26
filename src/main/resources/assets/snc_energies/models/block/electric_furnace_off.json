@@ -1,0 +1,12 @@
+{
+	"parent": "block/cube",
+	"textures": {
+		"up": "snc_energies:block/machine_top",
+		"down": "snc_energies:block/machine_bottom",
+		"north": "snc_energies:block/electric_furnace_front_off",
+		"south": "snc_energies:block/electric_furnace_side",
+		"east": "snc_energies:block/electric_furnace_side",
+		"west": "snc_energies:block/electric_furnace_side",
+		"particle": "snc_energies:block/machine_side"
+	}
+}

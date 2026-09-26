@@ -1,0 +1,12 @@
+{
+	"parent": "block/cube",
+	"textures": {
+		"up": "snc_energies:block/crusher_top",
+		"down": "snc_energies:block/machine_bottom",
+		"north": "snc_energies:block/crusher_front_on",
+		"south": "snc_energies:block/crusher_side",
+		"east": "snc_energies:block/crusher_side",
+		"west": "snc_energies:block/crusher_side",
+		"particle": "snc_energies:block/crusher_side"
+	}
+}

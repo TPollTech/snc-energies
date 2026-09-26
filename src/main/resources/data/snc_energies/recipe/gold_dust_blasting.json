@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "ingredient": "snc_energies:gold_dust",
+  "result": {
+    "id": "minecraft:gold_ingot"
+  },
+  "experience": 0.7,
+  "cookingtime": 100
+}

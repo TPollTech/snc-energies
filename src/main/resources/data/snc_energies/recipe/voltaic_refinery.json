@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PCP",
+    "PGP",
+    "PCP"
+  ],
+  "key": {
+    "P": "snc_energies:insulated_plate",
+    "C": "snc_energies:basic_circuit",
+    "G": "snc_energies:steel_gear"
+  },
+  "result": {
+    "id": "snc_energies:voltaic_refinery",
+    "count": 1
+  }
+}

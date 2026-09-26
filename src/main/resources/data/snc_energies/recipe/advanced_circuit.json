@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "VSV",
+    "WCW",
+    "VSV"
+  ],
+  "key": {
+    "V": "snc_energies:refined_voltaite",
+    "S": "snc_energies:steel_plate",
+    "W": "snc_energies:copper_wire",
+    "C": "snc_energies:basic_circuit"
+  },
+  "result": {
+    "id": "snc_energies:advanced_circuit",
+    "count": 1
+  }
+}

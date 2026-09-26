@@ -1,0 +1,140 @@
+{
+  "elements": [
+    {
+      "from": [
+        4.399999999999999,
+        0.0,
+        4.399999999999999
+      ],
+      "to": [
+        11.600000000000001,
+        10.879999999999995,
+        11.600000000000001
+      ],
+      "faces": {
+        "east": {
+          "texture": "#iron",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            7.351351351351349
+          ]
+        },
+        "up": {
+          "texture": "#iron",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#iron",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            7.351351351351349
+          ]
+        },
+        "north": {
+          "texture": "#iron",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            7.351351351351349
+          ]
+        },
+        "west": {
+          "texture": "#iron",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            7.351351351351349
+          ]
+        }
+      }
+    },
+    {
+      "from": [
+        3.200000000000003,
+        10.879999999999995,
+        3.1999999999999993
+      ],
+      "to": [
+        12.799999999999997,
+        16.0,
+        12.799999999999997
+      ],
+      "faces": {
+        "east": {
+          "texture": "#iron",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#iron",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#iron",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#iron",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#iron",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "north": {
+          "texture": "#iron",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        }
+      }
+    }
+  ],
+  "textures": {
+    "oven": "snc_energies:block/wood_stove_oven",
+    "particle": "snc_energies:block/wood_stove_brick",
+    "door": "snc_energies:block/wood_stove_door_off",
+    "cooktop": "snc_energies:block/wood_stove_cooktop",
+    "iron": "snc_energies:block/wood_stove_iron",
+    "brick": "snc_energies:block/wood_stove_brick",
+    "wood": "snc_energies:block/wood_stove_wood"
+  }
+}

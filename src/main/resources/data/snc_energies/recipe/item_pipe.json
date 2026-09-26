@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PP",
+    "BB"
+  ],
+  "key": {
+    "P": "minecraft:iron_ingot",
+    "B": "snc_energies:bronze_ingot"
+  },
+  "result": {
+    "id": "snc_energies:item_pipe",
+    "count": 8
+  }
+}

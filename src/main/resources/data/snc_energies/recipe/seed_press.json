@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PIP",
+    "PIP",
+    "SCS"
+  ],
+  "key": {
+    "P": "#minecraft:planks",
+    "I": "minecraft:iron_ingot",
+    "S": "minecraft:stone",
+    "C": "minecraft:copper_ingot"
+  },
+  "result": {
+    "id": "snc_energies:seed_press",
+    "count": 1
+  }
+}

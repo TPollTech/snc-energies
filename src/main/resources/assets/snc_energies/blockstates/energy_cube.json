@@ -1,0 +1,5 @@
+{
+	"variants": {
+		"": { "model": "snc_energies:block/energy_cube" }
+	}
+}

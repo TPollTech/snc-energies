@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "snc_energies:rice_crop",
+    "snc_energies:soy_crop",
+    "snc_energies:mate_crop"
+  ]
+}

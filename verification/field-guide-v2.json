@@ -1,0 +1,17 @@
+{
+  "change": "FieldGuideScreen v2: readability fix + live search",
+  "date": "2026-09-25",
+  "readability": {
+    "diagnosis": "parchment and text were drawn in extractRenderState BEFORE super.extractRenderState(), so the base screen layer could darken everything; ink was near-black 0xff31281f",
+    "fix": "background/parchment moved to extractBackground() (pattern used by SncMachineScreen/IdentityMachineScreen); warm inks: body #4d3a26, heading #7a3a20, muted #8a6a48, error #a04430 on parchment #f0e3c4"
+  },
+  "search": {
+    "widget": "EditBox (vanilla style, keyboard-safe) bound to left+10,18 with lang keys gui.snc_energies.search*",
+    "matching": "accent-insensitive (NFD strip), lowercase, whitespace tokenized, ALL tokens must hit the page index (title + body + recipes + craft + special + industry_base)",
+    "navigation": "< > cycle only matched pages; page auto-jumps to first match; hint line shows 'Página %s de %s' or no-results message"
+  },
+  "lang": "4 new keys added via generate_colonial.py TEXT (source of truth), regenerated into pt_br.json and en_us.json",
+  "compile": "gradlew compileJava compileClientJava clean (exit 0), deprecation notes only",
+  "preview": "previews/caderno-v2.html — interactive search simulation ('ferro' -> 2 pages, gibberish -> no-results state) + before/after contrast pair + all 17 pages",
+  "buildStatus": "Shipped in milestone 0.4.0 (installation-0.4.0.json) - owner approved the playable milestone"
+}

@@ -1,0 +1,489 @@
+{
+  "status": "passed_with_warnings",
+  "scope": "JSON, Blockbench and GLB modelling exports; no gameplay validation",
+  "checks": [
+    {
+      "name": "glb_container_and_binary_accessors",
+      "byte_length": 267764,
+      "buffer_views": 28,
+      "accessors": 14
+    },
+    {
+      "name": "blockbench_hierarchy_pivots_material_assignments",
+      "cubes": 856,
+      "groups": 81,
+      "unique_uuids": 937
+    },
+    {
+      "name": "textures_embedded_identically",
+      "textures": 14,
+      "size": "128x128"
+    },
+    {
+      "name": "glb_mesh_winding_normals_uv_indices",
+      "meshes": 14
+    },
+    {
+      "name": "world_geometry_and_rig_match_json_bbmodel_glb",
+      "cube_corners": 6848,
+      "maximum_delta_model_pixels": 7.105427357601002e-15
+    },
+    {
+      "name": "glb_wheel_animation",
+      "channels": 9,
+      "targets": [
+        "rear_left_wheel",
+        "front_left_wheel",
+        "rear_right_wheel",
+        "front_right_wheel",
+        "row_1_press_wheel",
+        "row_2_press_wheel",
+        "row_3_press_wheel",
+        "planter_left_wheel",
+        "planter_right_wheel"
+      ]
+    },
+    {
+      "name": "articulated_geometry_clearance",
+      "scenarios": 11,
+      "pairs": 226288,
+      "scenarios_with_intersections": 8
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    {
+      "type": "articulated_geometry_intersections",
+      "scenarios": [
+        "front_steering_0_degrees",
+        "front_steering_14_degrees",
+        "front_steering_28_degrees",
+        "front_steering_-28_degrees",
+        "hood_open_0_degrees",
+        "hood_open_15_degrees",
+        "hood_open_30_degrees",
+        "hood_open_55_degrees"
+      ],
+      "note": "Geometric intersections need visual review; attached or enclosed mechanical parts may intentionally overlap."
+    }
+  ],
+  "articulation_clearance": [
+    {
+      "scenario": "front_steering_0_degrees",
+      "tested_pairs": 688,
+      "collisions": [
+        {
+          "moving": "front_left_wheel_chevron_11_1",
+          "fixed": "bumper",
+          "penetration_model_pixels": 0.7294
+        },
+        {
+          "moving": "front_right_wheel_chevron_11_-1",
+          "fixed": "bumper",
+          "penetration_model_pixels": 0.7294
+        }
+      ]
+    },
+    {
+      "scenario": "front_steering_14_degrees",
+      "tested_pairs": 688,
+      "collisions": [
+        {
+          "moving": "front_right_wheel_chevron_11_-1",
+          "fixed": "bumper",
+          "penetration_model_pixels": 0.3479
+        },
+        {
+          "moving": "front_right_wheel_chevron_11_1",
+          "fixed": "bumper",
+          "penetration_model_pixels": 0.3207
+        }
+      ]
+    },
+    {
+      "scenario": "front_steering_28_degrees",
+      "tested_pairs": 688,
+      "collisions": [
+        {
+          "moving": "front_left_wheel_tire_05",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 0.3
+        },
+        {
+          "moving": "front_left_wheel_tire_06",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 0.787
+        },
+        {
+          "moving": "front_left_wheel_tire_07",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 0.4774
+        },
+        {
+          "moving": "front_left_wheel_sidewall_1_04",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 0.4125
+        },
+        {
+          "moving": "front_left_wheel_sidewall_1_05",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 0.5266
+        },
+        {
+          "moving": "front_left_wheel_sidewall_1_06",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 0.0833
+        },
+        {
+          "moving": "front_left_wheel_chevron_2_1",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 0.5696
+        },
+        {
+          "moving": "front_left_wheel_chevron_3_1",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 1.4629
+        },
+        {
+          "moving": "front_right_wheel_tire_05",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 0.3
+        },
+        {
+          "moving": "front_right_wheel_tire_06",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 0.787
+        },
+        {
+          "moving": "front_right_wheel_tire_07",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 0.4774
+        },
+        {
+          "moving": "front_right_wheel_sidewall_-1_04",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 0.4125
+        },
+        {
+          "moving": "front_right_wheel_sidewall_-1_05",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 0.5266
+        },
+        {
+          "moving": "front_right_wheel_sidewall_-1_06",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 0.0833
+        },
+        {
+          "moving": "front_right_wheel_chevron_11_-1",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 1.0066
+        },
+        {
+          "moving": "front_right_wheel_chevron_11_1",
+          "fixed": "bumper",
+          "penetration_model_pixels": 0.6699
+        },
+        {
+          "moving": "front_right_wheel_chevron_12_-1",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 0.7591
+        }
+      ]
+    },
+    {
+      "scenario": "front_steering_-28_degrees",
+      "tested_pairs": 688,
+      "collisions": [
+        {
+          "moving": "front_left_wheel_tire_05",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 0.3
+        },
+        {
+          "moving": "front_left_wheel_tire_06",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 0.787
+        },
+        {
+          "moving": "front_left_wheel_tire_07",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 0.4774
+        },
+        {
+          "moving": "front_left_wheel_sidewall_1_04",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 0.4125
+        },
+        {
+          "moving": "front_left_wheel_sidewall_1_05",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 0.5266
+        },
+        {
+          "moving": "front_left_wheel_sidewall_1_06",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 0.0833
+        },
+        {
+          "moving": "front_left_wheel_chevron_11_-1",
+          "fixed": "bumper",
+          "penetration_model_pixels": 0.6699
+        },
+        {
+          "moving": "front_left_wheel_chevron_11_1",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 1.0066
+        },
+        {
+          "moving": "front_left_wheel_chevron_12_1",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 0.7591
+        },
+        {
+          "moving": "front_right_wheel_tire_05",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 0.3
+        },
+        {
+          "moving": "front_right_wheel_tire_06",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 0.787
+        },
+        {
+          "moving": "front_right_wheel_tire_07",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 0.4774
+        },
+        {
+          "moving": "front_right_wheel_sidewall_-1_04",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 0.4125
+        },
+        {
+          "moving": "front_right_wheel_sidewall_-1_05",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 0.5266
+        },
+        {
+          "moving": "front_right_wheel_sidewall_-1_06",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 0.0833
+        },
+        {
+          "moving": "front_right_wheel_chevron_2_-1",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 0.5696
+        },
+        {
+          "moving": "front_right_wheel_chevron_3_-1",
+          "fixed": "main_chassis",
+          "penetration_model_pixels": 1.4629
+        }
+      ]
+    },
+    {
+      "scenario": "hood_open_0_degrees",
+      "tested_pairs": 552,
+      "collisions": [
+        {
+          "moving": "hood_top",
+          "fixed": "air_filter",
+          "penetration_model_pixels": 0.35
+        },
+        {
+          "moving": "hood_side_-1",
+          "fixed": "exhaust_elbow",
+          "penetration_model_pixels": 2.341
+        },
+        {
+          "moving": "hood_side_-1",
+          "fixed": "exhaust_muffler",
+          "penetration_model_pixels": 0.125
+        },
+        {
+          "moving": "hood_stripe_-1",
+          "fixed": "exhaust_elbow",
+          "penetration_model_pixels": 0.4754
+        },
+        {
+          "moving": "side_brand_-1",
+          "fixed": "exhaust_elbow",
+          "penetration_model_pixels": 0.5503
+        },
+        {
+          "moving": "side_brand_-1",
+          "fixed": "exhaust_muffler",
+          "penetration_model_pixels": 0.39
+        },
+        {
+          "moving": "hood_side_1",
+          "fixed": "air_filter",
+          "penetration_model_pixels": 0.475
+        }
+      ]
+    },
+    {
+      "scenario": "hood_open_15_degrees",
+      "tested_pairs": 552,
+      "collisions": [
+        {
+          "moving": "hood_top",
+          "fixed": "air_filter",
+          "penetration_model_pixels": 0.35
+        },
+        {
+          "moving": "hood_side_-1",
+          "fixed": "exhaust_elbow",
+          "penetration_model_pixels": 2.341
+        },
+        {
+          "moving": "hood_side_-1",
+          "fixed": "exhaust_muffler",
+          "penetration_model_pixels": 0.125
+        },
+        {
+          "moving": "hood_stripe_-1",
+          "fixed": "exhaust_elbow",
+          "penetration_model_pixels": 1.2061
+        },
+        {
+          "moving": "side_brand_-1",
+          "fixed": "exhaust_muffler",
+          "penetration_model_pixels": 0.39
+        },
+        {
+          "moving": "hood_side_1",
+          "fixed": "air_filter",
+          "penetration_model_pixels": 0.475
+        }
+      ]
+    },
+    {
+      "scenario": "hood_open_30_degrees",
+      "tested_pairs": 552,
+      "collisions": [
+        {
+          "moving": "hood_top",
+          "fixed": "air_filter",
+          "penetration_model_pixels": 0.35
+        },
+        {
+          "moving": "hood_top",
+          "fixed": "air_filter_cap",
+          "penetration_model_pixels": 0.0341
+        },
+        {
+          "moving": "hood_top",
+          "fixed": "dashboard_housing",
+          "penetration_model_pixels": 0.0496
+        },
+        {
+          "moving": "hood_side_-1",
+          "fixed": "exhaust_elbow",
+          "penetration_model_pixels": 2.341
+        },
+        {
+          "moving": "hood_side_-1",
+          "fixed": "exhaust_muffler",
+          "penetration_model_pixels": 0.125
+        },
+        {
+          "moving": "hood_stripe_-1",
+          "fixed": "exhaust_elbow",
+          "penetration_model_pixels": 0.1969
+        },
+        {
+          "moving": "hood_stripe_-1",
+          "fixed": "exhaust_muffler",
+          "penetration_model_pixels": 0.28
+        },
+        {
+          "moving": "side_brand_-1",
+          "fixed": "exhaust_muffler",
+          "penetration_model_pixels": 0.39
+        },
+        {
+          "moving": "hood_side_1",
+          "fixed": "air_filter",
+          "penetration_model_pixels": 0.475
+        }
+      ]
+    },
+    {
+      "scenario": "hood_open_55_degrees",
+      "tested_pairs": 552,
+      "collisions": [
+        {
+          "moving": "hood_top",
+          "fixed": "air_filter",
+          "penetration_model_pixels": 0.35
+        },
+        {
+          "moving": "hood_top",
+          "fixed": "air_filter_cap",
+          "penetration_model_pixels": 0.75
+        },
+        {
+          "moving": "hood_top",
+          "fixed": "dashboard_housing",
+          "penetration_model_pixels": 0.3963
+        },
+        {
+          "moving": "hood_side_-1",
+          "fixed": "exhaust_elbow",
+          "penetration_model_pixels": 1.1384
+        },
+        {
+          "moving": "hood_side_-1",
+          "fixed": "exhaust_muffler",
+          "penetration_model_pixels": 0.125
+        },
+        {
+          "moving": "hood_stripe_-1",
+          "fixed": "exhaust_muffler",
+          "penetration_model_pixels": 0.28
+        },
+        {
+          "moving": "side_brand_-1",
+          "fixed": "exhaust_muffler",
+          "penetration_model_pixels": 0.39
+        },
+        {
+          "moving": "hood_side_1",
+          "fixed": "air_filter",
+          "penetration_model_pixels": 0.475
+        }
+      ]
+    },
+    {
+      "scenario": "planter_lift_0_degrees",
+      "tested_pairs": 73776,
+      "collisions": []
+    },
+    {
+      "scenario": "planter_lift_12_degrees",
+      "tested_pairs": 73776,
+      "collisions": []
+    },
+    {
+      "scenario": "planter_lift_23_degrees",
+      "tested_pairs": 73776,
+      "collisions": []
+    }
+  ],
+  "files": {
+    "tractor-model.json": {
+      "bytes": 403946,
+      "sha256": "eb106e79a8737a19fa9c9b540c1178f419cd570ad80218f48cfbf1ea17fe985a"
+    },
+    "snc-75-trator.bbmodel": {
+      "bytes": 1521381,
+      "sha256": "974c1c35ee028b78198195a5344aaddd3806b927e7601ae29c07278e69da8127"
+    },
+    "snc-75-trator.glb": {
+      "bytes": 267764,
+      "sha256": "eca6a11017be6501a76d0a7618cbe1a82f93fd25792938f4bf316e9b70511132"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BBB",
+    "BFB",
+    "CCC"
+  ],
+  "key": {
+    "B": "snc_energies:bronze_ingot",
+    "F": "minecraft:furnace",
+    "C": "minecraft:bricks"
+  },
+  "result": {
+    "id": "snc_energies:biomass_boiler",
+    "count": 1
+  }
+}

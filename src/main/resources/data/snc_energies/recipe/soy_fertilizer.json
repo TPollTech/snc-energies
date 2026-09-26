@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "snc_energies:soy_meal",
+    "snc_energies:soy_meal",
+    "snc_energies:soy_meal"
+  ],
+  "result": {
+    "id": "minecraft:bone_meal",
+    "count": 1
+  }
+}

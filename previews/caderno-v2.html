@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>SNC · Caderno da Oficina — contraste + busca + índice</title>
+<style>
+  :root { --ink-body:#4d3a26; --ink-heading:#7a3a20; --ink-muted:#8a6a48; --parchment:#f0e3c4; --leather:#a45130; --error:#a04430; }
+  body { margin:0; background:#141d18; color:#e8e4da; font:15px/1.55 'Segoe UI',system-ui,sans-serif; }
+  main { max-width:1240px; margin:0 auto; padding:30px; }
+  h1 { font-size:30px; color:#40dcff; margin:0 0 4px; }
+  h2 { color:#ffca5c; margin:36px 0 12px; border-bottom:1px solid #33363f; padding-bottom:4px; }
+  .note { color:#b6bca3; max-width:860px; }
+  .mc { width:426px; height:240px; background:#15201b; position:relative; overflow:hidden;
+        border:1px solid #3a4438; border-radius:6px; flex:none; }
+  .mc.demo { width:600px; height:310px; }
+  .demo .parchment { left:142px; right:12px; }
+  .demo .searchbox { left:152px; right:22px; }
+  .demo .hint { left:156px; }
+  .demo .content { left:156px; right:24px; }
+  .sidebar { position:absolute; left:6px; top:12px; bottom:32px; width:124px; background:var(--parchment);
+        overflow:hidden; cursor:pointer; user-select:none; }
+  .sidebar::before { content:''; position:absolute; left:0; top:0; bottom:0; width:5px; background:var(--leather); }
+  .sidebar h3 { margin:0; padding:3px 0 2px 11px; font-size:10px; font-weight:600; color:var(--ink-muted); letter-spacing:.5px; }
+  .entries { position:absolute; left:11px; right:6px; top:18px; bottom:2px; overflow:hidden; }
+  .entry { font-size:10.5px; line-height:15px; color:var(--leather); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .entry.current { color:#d8e6d0; text-shadow:0 0 3px rgba(60,30,10,.9); position:relative; }
+  .entry.current::after { content:''; position:absolute; left:-4px; right:0; bottom:1px; height:1px; background:rgba(216,230,208,.55); }
+  .entry.dim { opacity:.38; }
+  .label { font-size:12px; color:#a0a4ac; margin:6px 0 0 2px; font-family:Consolas,monospace; }
+  .parchment { position:absolute; left:29px; top:12px; right:29px; bottom:32px; background:var(--parchment); }
+  .parchment::before { content:''; position:absolute; left:0; top:0; bottom:0; width:5px; background:var(--leather); }
+  .parchment::after { content:''; position:absolute; left:0; right:0; bottom:0; height:2px; background:#d9c39a; }
+  .searchbox { position:absolute; left:39px; right:39px; top:18px; height:16px; background:#d9c8a2;
+        border:1px solid #8a6a48; color:var(--ink-body); font:12px 'Segoe UI'; padding:1px 5px; outline:none; }
+  .hint { position:absolute; left:44px; top:23px; font-size:11px; color:var(--ink-muted); pointer-events:none; }
+  .content { position:absolute; left:44px; right:40px; top:44px; bottom:8px; overflow:auto; scrollbar-width:thin; }
+  .heading { color:var(--ink-heading); font-weight:600; font-size:12.5px; margin:2px 0 6px; }
+  .body-text { color:var(--ink-body); font-size:12px; }
+  .muted { color:var(--ink-muted); font-size:11px; margin:2px 0 6px; }
+  .err { color:var(--error); font-size:11px; margin:2px 0 6px; }
+  .mc.old .parchment { background:#3a352c; }
+  .mc.old .heading { color:#241812; }
+  .mc.old .body-text { color:#17110a; }
+  .mc.old .content { top:20px; }
+  .btnrow { position:absolute; bottom:5px; left:0; right:0; text-align:center; font-size:11px; color:#cfd8cc; }
+  .btnrow span { background:#4a5548; border:1px solid #6a755f; border-radius:3px; padding:2px 10px; margin:0 4px; }
+  .pair { display:flex; gap:26px; flex-wrap:wrap; }
+  code { color:#dfbc77; background:#242820; padding:1px 5px; border-radius:3px; font-size:13px; }
+  .pagegrid { display:flex; flex-wrap:wrap; gap:22px; }
+  .pagegrid .mc { transform-origin:top left; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Caderno da Oficina SNC — v3</h1>
+  <p class="note">Correção de contraste + busca ao digitar + índice lateral clicável. A simulação usa as cores exatas do código
+     (<code>INK_BODY #4d3a26</code>, <code>INK_HEADING #7a3a20</code>, pergaminho <code>#f0e3c4</code>)
+     e os textos reais do lang pt_br, com a mesma regra de busca implementada na tela Java
+     (minúsculas, sem acento, todas as palavras). No jogo, o índice fica à esquerda do pergaminho
+     e o livro encolhe para abrir espaço; aqui a caixa é maior para caber tudo.</p>
+
+  <h2>Busca + índice lateral — filtra ao digitar, clique pula para a página</h2>
+  <div class="mc demo" id="demo">
+    <div class="parchment"></div>
+    <div class="sidebar" id="sidebar"><h3>Índice</h3><div class="entries" id="entries"></div></div>
+    <input id="box" class="searchbox" autocomplete="off" spellcheck="false">
+    <div class="hint" id="hint">Digite para buscar páginas…</div>
+    <div class="content" id="content"></div>
+    <div class="btnrow"><span>&lt;</span><span>↑</span><span>Concluído</span><span>↓</span><span>&gt;</span></div>
+  </div>
+  <p class="label">simulação interativa — clique no índice para pular, digite “ferro”, “mate”, “vapor”, “funis”, “minerio”…</p>
+
+  <h2>Antes × depois do contraste</h2>
+  <div class="pair">
+    <div>
+      <div class="mc old">
+        <div class="parchment"></div>
+        <div class="content">
+          <div class="heading">01 / A oficina colonial</div>
+          <div class="body-text">Cinco tiers: Colonial → Vapor → Eletromecânico → Agroindustrial → Voltaico. Comece com lavouras, moinho e prensa; minere estanho para fazer bronze. A fundição a vapor produz aço, o laminador produz chapas e fios, o secador produz chapas isoladas e a refinaria prepara a Voltaite. Máquinas antigas preservam seus dados; novas receitas seguem os tiers.</div>
+        </div>
+        <div class="btnrow"><span>&lt;</span><span>↑</span><span>Concluído</span><span>↓</span><span>&gt;</span></div>
+      </div>
+      <p class="label">ANTES — tinta quase preta sobre pergaminho apagado pelo fundo</p>
+    </div>
+    <div>
+      <div class="mc">
+        <div class="parchment"></div>
+        <div class="content" style="top:20px">
+          <div class="heading">01 / A oficina colonial</div>
+          <div class="body-text">Cinco tiers: Colonial → Vapor → Eletromecânico → Agroindustrial → Voltaico. Comece com lavouras, moinho e prensa; minere estanho para fazer bronze. A fundição a vapor produz aço, o laminador produz chapas e fios, o secador produz chapas isoladas e a refinaria prepara a Voltaite. Máquinas antigas preservam seus dados; novas receitas seguem os tiers.</div>
+        </div>
+        <div class="btnrow"><span>&lt;</span><span>↑</span><span>Concluído</span><span>↓</span><span>&gt;</span></div>
+      </div>
+      <p class="label">AGORA — tinta quente sobre pergaminho claro, fundo atrás do texto</p>
+    </div>
+  </div>
+
+  <h2>Todas as páginas (contraste página a página)</h2>
+  <p class="note">Mesmos textos do lang. A busca cobre título + corpo + receitas de cada página.</p>
+  <div class="pagegrid" id="pagegrid"></div>
+</main>
+<script>
+const PAGES = [
+  { t: "01 / A oficina colonial", b: "Cinco tiers: Colonial → Vapor → Eletromecânico → Agroindustrial → Voltaico. Comece com lavouras, moinho e prensa; minere estanho para fazer bronze. A fundição a vapor produz aço, o laminador produz chapas e fios, o secador produz chapas isoladas e a refinaria prepara a Voltaite. As próximas páginas detalham a operação. Máquinas antigas preservam seus dados; novas receitas seguem os tiers." },
+  { t: "02 / Sementes e montagem", b: "Semente de arroz: semente de trigo + trigo. Semente de soja: semente de trigo + semente de beterraba. Plante em terra arada, com água próxima e luz. Farinha de osso acelera o crescimento. Plantas maduras rendem 2 produtos e 2 sementes. Reserve espaço de 2×1 no chão e 2 blocos de altura para moinho/prensa; a estrutura cresce à sua direita ao olhar para a frente dela. Quebrar qualquer parte desmonta tudo e devolve o inventário." },
+  { t: "03 / Moinho — receitas", b: "Entrada à esquerda; produto e resíduo à direita. Gire a manivela para acumular trabalho (até 4 cargas). Nenhum trabalho é gasto se faltar ingrediente ou houver saída bloqueada. Três farinhas ou três arrozes beneficiados fazem um pão na bancada." },
+  { t: "04 / Prensa — receitas", b: "A prensa não substitui a prensa de uvas do Adventures. Processa soja e compacta cascas. Três farelos fazem uma farinha de osso. Óleo é uma porção de ingrediente, sem garrafa retornável. Mantenha as duas saídas livres." },
+  { t: "05 / Resíduos e energia", b: "No fogão: uma casca de arroz gera 8.000 E; uma porção de óleo gera 32.000 E; um briquete gera 40.000 E. Compactar quatro cascas melhora o rendimento. O fogão conserva seu combustível enquanto cheio. Sua estrutura ocupa 3×2 no chão, com chaminé até 3 blocos de altura." },
+  { t: "06 / SNC Adventures", b: "Com Adventures instalado, o bagaço de cana da moenda também alimenta o fogão: 8.000 E por unidade. Bebidas, dinheiro, receitas e lâmpadas UV mantêm suas regras originais. Motorização das máquinas Adventures, tubos e UV elétrico ainda não foram implementados. Nenhum dos mods depende do outro para iniciar." },
+  { t: "07 / Operação e transporte", b: "Funis inserem ingredientes por cima ou pelos lados do controlador (base esquerda, olhando a frente); por baixo retiram produto e resíduo. As outras partes abrem o mesmo menu, mas não possuem inventários separados. A manivela é manual neste tier. Progresso e trabalho são salvos; a máquina para em chunks descarregados. O caderno é feito com livro + semente de trigo." },
+  { t: "08 / Erva-mate opcional", b: "Semente de erva-mate: semente de trigo + muda de carvalho. Cultive em terra arada; colha as folhas maduras. Seque as folhas na fornalha ou no secador industrial e moa no moinho. Na bancada: erva-mate moída + tigela + balde de água produzem uma infusão. O balde retorna na fabricação e a tigela retorna ao beber. Este ramo não bloqueia a progressão industrial." },
+  { t: "Caldeira de Biomassa", b: "3 × Barra de Bronze + Fornalha + 3 × Tijolos → 2×2×3. Insira itens nos slots marcados Combustível e Água. O recipiente vazio sai no slot Balde. Cada balde fornece 1.000 mB de água; a caldeira consome 10 mB/t para produzir 80 mB/t de vapor. Tubos de vapor têm rede separada dos cabos de energia. Estanho surge em chunks novos entre Y -16 e 80." },
+  { t: "Turbina a Vapor", b: "Recebe 80 mB/t de vapor e gera 80 E/t. Use a saída de energia no controlador para conectar cabos. Reservas internas param a produção quando cheias; redstone ainda não configura portas neste marco." },
+  { t: "Serraria a Vapor", b: "Barra de Ferro + Barra de Bronze + Moinho Colonial + Tábuas → 3×2×2. Controlador: base esquerda da frente. Funis inserem por cima/lados e extraem por baixo do controlador. Cada painel identifica seus slots de insumo, reagente, produto e resíduo." },
+  { t: "Fundição a Vapor", b: "Barra de Bronze + Barra de Ferro + Fornalha + Tijolos → 2×2×2. Produz aço a partir de barras de ferro. Controlador: base esquerda da frente; funis inserem por cima/lados e extraem por baixo." },
+  { t: "Laminador", b: "Barra de Aço + Barra de Bronze + Redstone → 2×1×2. Produz chapas de aço, fios de cobre e chapas isoladas. Controlador na base esquerda; produto e resíduo à direita. A receita para se faltar recurso ou houver saída cheia." },
+  { t: "Secador Industrial", b: "Chapa de Aço + Engrenagem de Aço + Circuito Eletromecânico + Fornalha → 3×3×4. Seca ervas e folhas; produz chapas isoladas. Controlador: base esquerda da frente." },
+  { t: "Extratora de Óleo", b: "Chapa de Aço + Engrenagem de Aço + Circuito Eletromecânico + Prensa Colonial → 3×2×2. Extrai óleo de sementes; o farelo volta como resíduo útil." },
+  { t: "Refinaria Voltaica", b: "Chapa Isolada + Circuito Eletromecânico + Engrenagem de Aço → 3×3×3. A matriz é produzida com pedra e óleo na refinaria. Prepara a Voltaite refinada para os circuitos voltaicos." },
+  { t: "Sintetizador Mineral", b: "Chapa Isolada + Circuito Voltaico + Voltaite Refinada + Diamante → 3×3×3. A amostra no segundo slot não é consumida. Cada lote gasta 1 matriz e 160.000 E para gerar 2 minérios brutos. Não gera carvão ou combustível, evitando um ciclo gratuito de energia." },
+];
+const norm = s => s.normalize('NFD').replace(/\p{Mn}/gu, '').toLowerCase();
+let page = 0, query = '';
+const box = document.getElementById('box'), hint = document.getElementById('hint'), content = document.getElementById('content');
+const entries = document.getElementById('entries');
+const shortTitle = t => t.replace(/^\d\d \/\s*/, '');
+function renderIndex(ms) {
+  entries.innerHTML = PAGES.map((p, i) =>
+    '<div class="entry' + (i === page ? ' current' : !ms.includes(i) ? ' dim' : '') + '" data-i="' + i + '">' + shortTitle(p.t) + '</div>'
+  ).join('');
+  entries.style.transform = 'translateY(' + (-indexScroll) + 'px)';
+}
+let indexScroll = 0;
+document.getElementById('sidebar').addEventListener('click', e => {
+  const t = e.target.closest('.entry'); if (!t) return;
+  if (!matches().includes(+t.dataset.i) && query) { query = ''; box.value = ''; }
+  page = +t.dataset.i; scroll = 0; indexScroll = 0; render();
+});
+document.getElementById('sidebar').addEventListener('wheel', e => {
+  e.preventDefault(); indexScroll = Math.max(0, indexScroll + (e.deltaY > 0 ? 15 : -15)); render();
+}, { passive: false });
+function matches() {
+  const toks = norm(query).trim().split(/\s+/).filter(Boolean);
+  if (!toks.length) return PAGES.map((_, i) => i);
+  return PAGES.map((p, i) => [i, norm(p.t + ' ' + p.b)])
+    .filter(([, idx]) => toks.every(t => idx.includes(t))).map(([i]) => i);
+}
+function render() {
+  const ms = matches();
+  if (!query.trim()) { hint.textContent = 'Digite para buscar páginas…'; hint.className = 'hint'; }
+  else if (!ms.length) { hint.textContent = 'Nada encontrado. Tente outra palavra.'; hint.className = 'err'; }
+  else { hint.textContent = 'Página ' + (ms.indexOf(page) < 0 ? 1 : ms.indexOf(page) + 1) + ' de ' + ms.length; hint.className = 'muted'; }
+  if (!ms.length) { content.innerHTML = ''; renderIndex(ms); return; }
+  if (!ms.includes(page)) page = ms[0];
+  const p = PAGES[page];
+  content.innerHTML = '<div class="heading">' + p.t + '</div><div class="body-text">' + p.b + '</div>';
+  renderIndex(ms);
+}
+box.addEventListener('input', () => { query = box.value; render(); });
+render();
+
+const grid = document.getElementById('pagegrid');
+for (const p of PAGES) {
+  const cell = document.createElement('div');
+  cell.innerHTML = '<div class="mc"><div class="parchment"></div><div class="content" style="top:16px">' +
+    '<div class="heading">' + p.t + '</div><div class="body-text">' + p.b + '</div></div></div>' +
+    '<p class="label">' + p.t + '</p>';
+  grid.appendChild(cell);
+}
+</script>
+</body>
+</html>

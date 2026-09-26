@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "snc_energies:grain_mill",
+          "condition": {
+            "type": "minecraft:survives_explosion"
+          }
+        }
+      ],
+      "condition": {
+        "type": "minecraft:match_block",
+        "blocks": "snc_energies:grain_mill",
+        "state": {
+          "part": "0"
+        }
+      }
+    }
+  ]
+}

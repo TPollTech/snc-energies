@@ -1,0 +1,13 @@
+# Gradle / build outputs (the jar ships as a GitHub release asset, never committed)
+build/
+.gradle/
+
+# Local run directories (test worlds, logs, init scripts)
+run/
+
+# Python virtual environment for texture generation
+.venv-textures/
+__pycache__/
+
+# Scratch areas (verification keeps curated logs, hashes and screenshots only)
+verification/jarx/

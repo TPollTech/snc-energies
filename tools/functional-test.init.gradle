@@ -1,0 +1,42 @@
+allprojects {
+    afterEvaluate {
+        sourceSets {
+            functionalTest {
+                compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
+                runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath
+            }
+        }
+        def testJar = tasks.register('functionalTestJar', Jar) {
+            from sourceSets.functionalTest.output
+            archiveFileName = 'snc-functional-test.jar'
+            destinationDirectory = layout.buildDirectory.dir('functionalTest')
+        }
+        // Explicit opt-in: absent means the standalone compatibility test.
+        def companion = providers.gradleProperty('adventuresJar').orNull
+        if (companion != null) {
+            def companionFile = file(companion)
+            if (!companionFile.isFile()) throw new GradleException('Missing SNC Adventures JAR: ' + companionFile)
+            dependencies { runtimeOnly files(companionFile) }
+        }
+        // Separate worlds: removing Adventures from a world must not contaminate the standalone test.
+        def runDirectory = file(companion == null ? 'run/functional-standalone' : 'run/functional-adventures')
+        loom.runs.server.runDir = runDirectory.path
+        tasks.named('runServer') {
+            dependsOn testJar
+            doFirst {
+                runDirectory.mkdirs()
+                ['server.properties', 'eula.txt'].each { name ->
+                    def target = new File(runDirectory, name)
+                    if (!target.exists()) target.bytes = file('run/functional-test/' + name).bytes
+                }
+            }
+            jvmArgs '-Dfabric.addMods=' + layout.buildDirectory.file('functionalTest/snc-functional-test.jar').get().asFile.absolutePath
+            doLast {
+                def log = new File(runDirectory, 'logs/latest.log').text
+                if (log.contains('FUNCTIONAL TESTS FAILED') || !log.contains('FUNCTIONAL TESTS PASSED')) {
+                    throw new GradleException('Functional server did not pass; inspect ' + new File(runDirectory, 'logs/latest.log'))
+                }
+            }
+        }
+    }
+}

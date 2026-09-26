@@ -1,0 +1,6 @@
+{
+	"parent": "block/cube_all",
+	"textures": {
+		"all": "snc_energies:block/energy_cube"
+	}
+}

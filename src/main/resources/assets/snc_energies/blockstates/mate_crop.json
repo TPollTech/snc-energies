@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "snc_energies:block/mate_stage0"
+    },
+    "age=1": {
+      "model": "snc_energies:block/mate_stage1"
+    },
+    "age=2": {
+      "model": "snc_energies:block/mate_stage2"
+    },
+    "age=3": {
+      "model": "snc_energies:block/mate_stage3"
+    },
+    "age=4": {
+      "model": "snc_energies:block/mate_stage4"
+    },
+    "age=5": {
+      "model": "snc_energies:block/mate_stage5"
+    },
+    "age=6": {
+      "model": "snc_energies:block/mate_stage6"
+    },
+    "age=7": {
+      "model": "snc_energies:block/mate_stage7"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "snc_energies:ground_mate",
+    "minecraft:bowl",
+    "minecraft:water_bucket"
+  ],
+  "result": {
+    "id": "snc_energies:mate_infusion",
+    "count": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "change": "FieldGuideScreen v3: clickable sidebar index synced with the search",
+  "date": "2026-09-26",
+  "index": {
+    "render": "left column on its own parchment strip (x 6..left-12, y 38..height-32); 'gui.snc_energies.index' header; one line per page (row 11px), labels truncated with Font.plainSubstrByWidth",
+    "labels": "numbered guide titles drop the 'NN /' prefix, industrial pages use the block name",
+    "highlight": "current page drawn in light green #d8e6d0 over a leather underline; matching entries #a45130; non-matching entries dimmed to 0x60a45130 while a query filters",
+    "click": "left click in the column jumps to that page (goToPage: page+scroll+indexScroll reset, BOOK_PAGE_TURN sound); clicking an entry outside the active filter clears the search first, so the page never fights the filter",
+    "wheel": "mouseScrolled: wheel over the sidebar scrolls the index, over the book scrolls the page text; no vanilla fade-overlap handling needed (Screen.mouseScrolled is override-only in 26.3)",
+    "sync": "index and search share rebuildMatches(): typing re-filters the index live, < > cycle matched pages only, auto-jump resets the index, empty results leave the list with all entries dimmed"
+  },
+  "layout": "book narrowed (left = max(indexWidth+26, center-140), indexWidth = min(90, center-130)); full-width search strip kept; indexWidth >= 24 clamps on tiny GUIs",
+  "api": "26.3 Screen.mouseClicked(MouseButtonEvent, boolean) / mouseScrolled(double,double,double,double) verified via javap on the loom minecraft-merged.jar; MouseButtonEvent.x()/y()/button()",
+  "lang": "1 new key gui.snc_energies.index (pt_br 'Índice' / en_us 'Index') added through generate_colonial.py TEXT and regenerated into both lang files",
+  "compile": "gradlew compileJava compileClientJava clean (exit 0)",
+  "preview": "previews/caderno-v2.html updated (v3): interactive sidebar in the demo card tested in-browser — click 'Caldeira de Biomassa' jumps, filter 'mate' dims 16/17 entries, clicking dimmed 'Laminador' clears the query and jumps",
+  "buildStatus": "Built as part of approved milestone 0.4.0 (see installation-0.4.0.json) - owner approved the playable milestone",
+}

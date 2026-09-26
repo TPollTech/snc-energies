@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " P ",
+    "PBP",
+    " P "
+  ],
+  "key": {
+    "P": "snc_energies:steel_plate",
+    "B": "snc_energies:bronze_ingot"
+  },
+  "result": {
+    "id": "snc_energies:steel_gear",
+    "count": 1
+  }
+}

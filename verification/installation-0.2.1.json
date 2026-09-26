@@ -1,0 +1,8 @@
+{
+  "version": "0.2.1",
+  "installed": "2026-09-25T20:50:49-03:00",
+  "jar": "Instances/SNC energies/mods/snc-energies.jar",
+  "sha256": "275F4FAF9571B3459A8C6B7306EAF4C8A8401A1C0B1CE55D04F99545C9D1BC1C",
+  "backup": "Instances/SNC energies/snc-backups/20260925-205049-before-0.2.1/snc-energies-0.2.0.jar",
+  "note": "Built jar from snc_energies/build/libs (17:01) installed with backup of the 0.2.0 jar; hashes verified identical."
+}

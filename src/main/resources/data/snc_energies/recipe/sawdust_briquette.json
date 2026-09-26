@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "snc_energies:sawdust",
+    "snc_energies:sawdust",
+    "snc_energies:sawdust",
+    "snc_energies:sawdust"
+  ],
+  "result": {
+    "id": "snc_energies:biomass_briquette",
+    "count": 1
+  }
+}

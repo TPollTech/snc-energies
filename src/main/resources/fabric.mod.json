@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "snc_energies",
+	"version": "${version}",
+	"name": "SNC Energies",
+	"description": "Industrial technology: coal generators, electric machines, energy cables and the Voltaite ore chain. A mini-Mekanism for Fabric.",
+	"authors": [
+		"SNC"
+	],
+	"contact": {},
+	"license": "MIT",
+	"icon": "assets/snc_energies/icon_128.png",
+	"environment": "*",
+	"accessWidener": "snc_energies.classtweaker",
+	"entrypoints": {
+		"main": [
+			"com.snc.energies.SncEnergies"
+		],
+		"client": [
+			"com.snc.energies.client.SncEnergiesClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

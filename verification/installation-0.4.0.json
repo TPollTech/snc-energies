@@ -1,0 +1,12 @@
+{
+  "version": "0.4.0",
+  "installed": "2026-09-26T01:00:00-03:00",
+  "jar": "Instances/SNC energies/mods/snc-energies.jar",
+  "sha256": "B58B4B3D14CAFFCD94750168F205B606708A338BB65573DD446770BC14031501",
+  "backup": "Instances/SNC energies/snc-backups/20260926-0059-before-0.4.0/snc-energies-0.3.0.jar",
+  "backupSha256": "125443759DF4F526C363CA1248091DEB3F5111D38C8727AA76F21C8DB3C5C05F",
+  "contents": "v0.3.0 automation + textures v2 (engine-generated) + field guide v2/v3 (readability fix, live search, clickable sidebar index)",
+  "verification": "mods jar == build/libs jar (sha256 identical); fabric.mod.json version 0.4.0; lang pt_br contains gui.snc_energies.index; FieldGuideScreen.class present; 101 textures in jar; texture spot-check colonial_iron.png identical in build jar, installed jar and repo (b8053c5e...)",
+  "buildLog": "snc_energies/verification/0.4.0-build.log (BUILD SUCCESSFUL, exit 0)",
+  "note": "Milestone approved by owner; previous 0.3.0 jar backed up and its hash matches installation-0.3.0.json."
+}

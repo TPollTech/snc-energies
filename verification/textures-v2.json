@@ -1,0 +1,12 @@
+{
+  "change": "Full texture regeneration (v2 look) via tools/generate_textures.py (Pillow+numpy engine textures_engine.py)",
+  "date": "2026-09-25",
+  "coverage": "99 textures (block/item/gui) + icon_128.png, same filenames and palette as v1",
+  "technique": "seamless value-noise fbm, anisotropic brushed metal, bevel lighting, rivets, contact vignette, emissive glows; deterministic LCG seeds",
+  "determinism": "two consecutive runs produced byte-identical SHA-256 for all 100 PNGs",
+  "qa": "99/99 pass contrast/flatness/brightness checks (min std>=6, no degenerate brightness)",
+  "pipeline": "tools/generate_textures.ps1 now orchestrates: generate_textures.py (all textures) -> generate_wood_stove.ps1 (stove models) -> generate_large_wood_stove.ps1 (pwsh7 only) -> generate_colonial.ps1 -> generate_industry.ps1",
+  "legacy": "old System.Drawing scripts archived in tools/legacy/, v1 PNGs in tools/backup-textures-v1/",
+  "comparison": "previews/texturas-v2.html (before/after gallery)",
+  "buildStatus": "NOT yet built into the jar - awaiting owner approval of the preview per AGENTS.md rule 2 (installed 0.2.1 jar still carries v1 textures)"
+}

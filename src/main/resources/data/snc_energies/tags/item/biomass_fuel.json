@@ -1,0 +1,6 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "intoxicantes:bagaco_de_cana", "required": false }
+  ]
+}

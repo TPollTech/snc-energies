@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "GFG",
+    "PPP"
+  ],
+  "key": {
+    "P": "snc_energies:steel_plate",
+    "G": "snc_energies:steel_gear",
+    "F": "minecraft:iron_pickaxe"
+  },
+  "result": {
+    "id": "snc_energies:crusher",
+    "count": 1
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "WRW",
+    "PSP",
+    "WRW"
+  ],
+  "key": {
+    "W": "snc_energies:copper_wire",
+    "R": "minecraft:redstone",
+    "P": "snc_energies:steel_plate",
+    "S": "minecraft:quartz"
+  },
+  "result": {
+    "id": "snc_energies:basic_circuit",
+    "count": 1
+  }
+}

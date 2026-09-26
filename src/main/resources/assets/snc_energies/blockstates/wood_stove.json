@@ -1,0 +1,68 @@
+{
+  "variants": {
+    "facing=east,lit=false,assembled=true": {
+      "model": "snc_energies:block/wood_stove_large_0_off",
+      "y": 90
+    },
+    "facing=west,lit=true,assembled=false": {
+      "model": "snc_energies:block/wood_stove_on",
+      "y": 270
+    },
+    "facing=north,lit=false,assembled=true": {
+      "model": "snc_energies:block/wood_stove_large_0_off",
+      "y": 0
+    },
+    "facing=west,lit=false,assembled=false": {
+      "model": "snc_energies:block/wood_stove_off",
+      "y": 270
+    },
+    "facing=south,lit=false,assembled=true": {
+      "model": "snc_energies:block/wood_stove_large_0_off",
+      "y": 180
+    },
+    "facing=west,lit=true,assembled=true": {
+      "model": "snc_energies:block/wood_stove_large_0_on",
+      "y": 270
+    },
+    "facing=south,lit=false,assembled=false": {
+      "model": "snc_energies:block/wood_stove_off",
+      "y": 180
+    },
+    "facing=east,lit=true,assembled=true": {
+      "model": "snc_energies:block/wood_stove_large_0_on",
+      "y": 90
+    },
+    "facing=south,lit=true,assembled=true": {
+      "model": "snc_energies:block/wood_stove_large_0_on",
+      "y": 180
+    },
+    "facing=north,lit=true,assembled=false": {
+      "model": "snc_energies:block/wood_stove_on",
+      "y": 0
+    },
+    "facing=south,lit=true,assembled=false": {
+      "model": "snc_energies:block/wood_stove_on",
+      "y": 180
+    },
+    "facing=north,lit=true,assembled=true": {
+      "model": "snc_energies:block/wood_stove_large_0_on",
+      "y": 0
+    },
+    "facing=north,lit=false,assembled=false": {
+      "model": "snc_energies:block/wood_stove_off",
+      "y": 0
+    },
+    "facing=east,lit=true,assembled=false": {
+      "model": "snc_energies:block/wood_stove_on",
+      "y": 90
+    },
+    "facing=west,lit=false,assembled=true": {
+      "model": "snc_energies:block/wood_stove_large_0_off",
+      "y": 270
+    },
+    "facing=east,lit=false,assembled=false": {
+      "model": "snc_energies:block/wood_stove_off",
+      "y": 90
+    }
+  }
+}

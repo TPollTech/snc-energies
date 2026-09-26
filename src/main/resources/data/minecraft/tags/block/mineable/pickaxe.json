@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "snc_energies:coal_generator",
+    "snc_energies:electric_furnace",
+    "snc_energies:crusher",
+    "snc_energies:energy_cube",
+    "snc_energies:energy_cable",
+    "snc_energies:voltaite_ore",
+    "snc_energies:deepslate_voltaite_ore",
+    "snc_energies:wood_stove",
+    "snc_energies:wood_stove_part",
+    "snc_energies:grain_mill",
+    "snc_energies:seed_press",
+    "snc_energies:biomass_boiler",
+    "snc_energies:steam_sawmill",
+    "snc_energies:steam_foundry",
+    "snc_energies:steam_turbine",
+    "snc_energies:laminator",
+    "snc_energies:grain_dryer",
+    "snc_energies:oil_extractor",
+    "snc_energies:voltaic_refinery",
+    "snc_energies:mineral_synthesizer",
+    "snc_energies:steam_pipe",
+    "snc_energies:tin_ore",
+    "snc_energies:deepslate_tin_ore",
+    "snc_energies:item_pipe"
+  ]
+}

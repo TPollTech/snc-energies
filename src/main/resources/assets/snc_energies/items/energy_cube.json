@@ -1,0 +1,6 @@
+{
+  "model": {
+    "model": "snc_energies:item/energy_cube",
+    "type": "minecraft:model"
+  }
+}

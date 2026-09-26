@@ -1,0 +1,13 @@
+{
+  "energiesSha256": "7E5A6E8C95BE359D596357F90B6D1ABCB0DEF482E33047E1F2687FBD5E1C5D02",
+  "version": "0.2.0",
+  "adventuresSha256": "8E16DA056831AE80D6BB3F03D60D7EE2D3D5E1933BFB6472A2DA696BCB3DF953",
+  "installed": "2026-09-25T16:29:36.3557764-03:00",
+  "adventuresVersion": "1.2.57",
+  "backup": "C:\\Users\\enzot\\curseforge\\minecraft\\Instances\\SNC energies\\snc-backups\\20260925-162936-before-0.2.0",
+  "companionNote": "Existing installed 1.2.57 preserved; added 1.2.50 relocated to backup to avoid duplicate mod ID.",
+  "serverChecksStandalone": 450,
+  "serverChecksAdventures1250": 454,
+  "serverChecksAdventures1257": 454,
+  "clientFlowAdventures1257": "PASSED"
+}

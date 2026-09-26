@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "GCG",
+    "PFP"
+  ],
+  "key": {
+    "P": "snc_energies:steel_plate",
+    "G": "snc_energies:steel_gear",
+    "C": "snc_energies:basic_circuit",
+    "F": "minecraft:furnace"
+  },
+  "result": {
+    "id": "snc_energies:grain_dryer",
+    "count": 1
+  }
+}

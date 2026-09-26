@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "snc_energies:grain_mill",
+    "snc_energies:seed_press"
+  ]
+}

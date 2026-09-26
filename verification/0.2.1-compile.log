@@ -1,0 +1,19 @@
+
+> Configure project :
+Fabric Loom: 1.17.21
+
+> Task :compileJava
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :processResources
+> Task :classes
+> Task :compileClientJava
+> Task :processClientResources NO-SOURCE
+> Task :clientClasses
+> Task :compileGametestJava
+
+[Incubating] Problems report is available at: file:///C:/Users/enzot/curseforge/minecraft/Instances/Mods%20SNC/snc_energies/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 1m 27s
+4 actionable tasks: 4 executed

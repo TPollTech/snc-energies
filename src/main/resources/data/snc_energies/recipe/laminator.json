@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SSS",
+    "BRB",
+    "SSS"
+  ],
+  "key": {
+    "S": "snc_energies:steel_ingot",
+    "B": "snc_energies:bronze_ingot",
+    "R": "minecraft:redstone"
+  },
+  "result": {
+    "id": "snc_energies:laminator",
+    "count": 1
+  }
+}

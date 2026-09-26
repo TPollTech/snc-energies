@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SRS",
+    "RFR",
+    "SRS"
+  ],
+  "key": {
+    "S": "snc_energies:steel_ingot",
+    "R": "minecraft:redstone",
+    "F": "minecraft:furnace"
+  },
+  "result": {
+    "id": "snc_energies:coal_generator",
+    "count": 1
+  }
+}

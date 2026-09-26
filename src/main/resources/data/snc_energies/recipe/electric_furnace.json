@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "WFW",
+    "PPP"
+  ],
+  "key": {
+    "P": "snc_energies:steel_plate",
+    "W": "snc_energies:copper_wire",
+    "F": "minecraft:furnace"
+  },
+  "result": {
+    "id": "snc_energies:electric_furnace",
+    "count": 1
+  }
+}

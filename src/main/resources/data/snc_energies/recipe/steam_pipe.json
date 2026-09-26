@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BBB"
+  ],
+  "key": {
+    "B": "snc_energies:bronze_ingot"
+  },
+  "result": {
+    "id": "snc_energies:steam_pipe",
+    "count": 6
+  }
+}

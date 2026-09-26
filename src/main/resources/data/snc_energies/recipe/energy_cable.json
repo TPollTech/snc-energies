@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"pattern": [
+		"CCC"
+	],
+	"key": {
+		"C": "minecraft:copper_ingot"
+	},
+	"result": {
+		"id": "snc_energies:energy_cable",
+		"count": 8
+	}
+}

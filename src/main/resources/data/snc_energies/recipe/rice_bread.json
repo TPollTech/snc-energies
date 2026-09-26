@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "snc_energies:rice",
+    "snc_energies:rice",
+    "snc_energies:rice"
+  ],
+  "result": {
+    "id": "minecraft:bread",
+    "count": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SBS",
+    "BIB",
+    "SBS"
+  ],
+  "key": {
+    "S": "snc_energies:steel_ingot",
+    "B": "snc_energies:bronze_ingot",
+    "I": "minecraft:iron_block"
+  },
+  "result": {
+    "id": "snc_energies:steam_turbine",
+    "count": 1
+  }
+}

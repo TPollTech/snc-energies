@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "all": "snc_energies:block/deepslate_voltaite_ore"
+  },
+  "parent": "minecraft:block/cube_all"
+}

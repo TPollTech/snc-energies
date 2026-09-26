@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "snc_energies:block/tin_ore"
+    }
+  }
+}

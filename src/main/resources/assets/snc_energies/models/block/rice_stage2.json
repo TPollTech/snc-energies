@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "snc_energies:block/rice_stage2"
+  }
+}

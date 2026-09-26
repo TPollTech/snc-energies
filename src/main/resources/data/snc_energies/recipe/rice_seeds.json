@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:wheat_seeds",
+    "minecraft:wheat"
+  ],
+  "result": {
+    "id": "snc_energies:rice_seeds",
+    "count": 1
+  }
+}
