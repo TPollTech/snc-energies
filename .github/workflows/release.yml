@@ -1,0 +1,70 @@
+name: Release
+
+# Milestone rule (AGENTS.md golden rule 8): every v* tag builds the jar and
+# attaches it to a GitHub release with checksums. The jar ships as a release
+# asset only - it is never committed to the repository.
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Java 25
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25'
+
+      - name: Build
+        run: ./gradlew build --console=plain --no-daemon
+
+      - name: Verify jar matches the tag
+        run: |
+          test -f build/libs/snc-energies.jar || { echo "::error::build/libs/snc-energies.jar not found"; exit 1; }
+          if [[ "$GITHUB_REF" == refs/tags/* ]]; then
+            tag="${GITHUB_REF_NAME#v}"
+            jar_version="$(unzip -p build/libs/snc-energies.jar fabric.mod.json | grep -oP '"version":\s*"\K[^"]+')"
+            if [ "$tag" != "$jar_version" ]; then
+              echo "::error::tag v$tag does not match jar version $jar_version"
+              exit 1
+            fi
+            echo "Jar $jar_version matches tag $GITHUB_REF_NAME"
+          fi
+
+      - name: Checksums
+        run: |
+          sha256sum build/libs/snc-energies.jar > SHA256SUMS.txt
+          cat SHA256SUMS.txt
+
+      - name: Extract release notes
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          notes="verification/release-${GITHUB_REF_NAME#v}.md"
+          if [ ! -f "$notes" ]; then
+            mkdir -p /tmp/notes
+            printf 'SNC Energies %s\n\nSee the changelog in AGENTS.md.\n' "$GITHUB_REF_NAME" > /tmp/notes/body.md
+            notes=/tmp/notes/body.md
+          fi
+          echo "body_path=$notes" >> "$GITHUB_ENV"
+
+      - name: Publish release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: SNC Energies ${{ github.ref_name }}
+          body_path: ${{ env.body_path }}
+          draft: false
+          prerelease: ${{ contains(github.ref_name, '-') }}
+          files: |
+            build/libs/snc-energies.jar
+            SHA256SUMS.txt
