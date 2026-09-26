@@ -11,3 +11,4 @@ __pycache__/
 
 # Scratch areas (verification keeps curated logs, hashes and screenshots only)
 verification/jarx/
+verification/gh-login.log
