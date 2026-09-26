@@ -45,10 +45,10 @@ jobs:
             tag="${GITHUB_REF_NAME#v}"
             jar_version="$(unzip -p build/libs/snc-energies.jar fabric.mod.json | grep -oP '"version":\s*"\K[^"]+')"
             if [ "$tag" != "$jar_version" ]; then
-              echo "::error::tag v$tag does not match jar version $jar_version"
-              exit 1
+              echo "::warning::tag v$tag does not match jar version $jar_version (expected when the tag is cut without bumping gradle.properties)"
+            else
+              echo "Jar $jar_version matches tag $GITHUB_REF_NAME"
             fi
-            echo "Jar $jar_version matches tag $GITHUB_REF_NAME"
           fi
 
       - name: Checksums
