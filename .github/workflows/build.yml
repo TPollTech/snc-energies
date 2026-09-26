@@ -1,0 +1,119 @@
+name: Build
+
+# Keeps main green and PRs honest: builds on every push to main and on every
+# pull request, uploads the jar as an artifact, and (without any third-party
+# app) posts a comment on the PR / a tracking issue when the build breaks.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Java 25
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25'
+
+      # Same key as release.yml: tag builds reuse the Minecraft/Loom caches
+      # warmed here on main and PR builds.
+      - name: Cache Gradle and Loom
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: gradle-${{ runner.os }}-${{ hashFiles('**/*.gradle*', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties') }}
+          restore-keys: gradle-${{ runner.os }}-
+
+      - name: Build
+        run: |
+          set -o pipefail
+          ./gradlew build --console=plain --no-daemon 2>&1 | tee build.log
+
+      - name: Upload jar and build log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: snc-energies-${{ github.sha }}
+          path: |
+            build/libs/snc-energies.jar
+            build.log
+          retention-days: 14
+          if-no-files-found: ignore
+
+      # ---- Failure reporting (no third-party apps, GITHUB_TOKEN only) ----
+
+      - name: Comment on the PR when the build breaks
+        if: failure() && github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          marker="## ❌ Build quebrado"
+          comment_id=""
+          for id in $(gh api "repos/${{ github.repository }}/issues/${{ github.event.number }}/comments" --jq '.[] | select(.user.login == "github-actions[bot]") | select(.body | startswith("## ❌ Build quebrado")) | .id'); do
+            comment_id="$id"
+          done
+          {
+            echo "$marker"
+            echo ""
+            echo "Commit \`${GITHUB_SHA::7}\` — [log completo](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})."
+            echo '```'
+            tail -n 40 build.log
+            echo '```'
+          } > /tmp/comment.md
+          if [ -n "$comment_id" ]; then
+            gh api -X PATCH "repos/${{ github.repository }}/issues/comments/$comment_id" -F body=@/tmp/comment.md > /dev/null
+          else
+            gh api -X POST "repos/${{ github.repository }}/issues/${{ github.event.number }}/comments" -F body=@/tmp/comment.md > /dev/null
+          fi
+
+      - name: Clean up the failure comment when the PR goes green
+        if: success() && github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for id in $(gh api "repos/${{ github.repository }}/issues/${{ github.event.number }}/comments" --jq '.[] | select(.user.login == "github-actions[bot]") | select(.body | startswith("## ❌ Build quebrado")) | .id'); do
+            gh api -X DELETE "repos/${{ github.repository }}/issues/comments/$id"
+          done
+
+      - name: Open or update a tracking issue when main is broken
+        if: failure() && github.event_name == 'push'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="🚨 Build quebrado na main"
+          body="Commit \`${GITHUB_SHA::7}\` quebrou o build — [log completo](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})."
+          issue=$(gh api "repos/${{ github.repository }}/issues?state=open&per_page=100" --jq ".[] | select(.pull_request == null and .title == \"$title\") | .number" | head -n1)
+          if [ -n "$issue" ]; then
+            gh api -X PATCH "repos/${{ github.repository }}/issues/$issue" -f title="$title" -f body="$body" > /dev/null
+          else
+            gh api -X POST "repos/${{ github.repository }}/issues" -f title="$title" -f body="$body" > /dev/null
+          fi
+
+      - name: Close the tracking issue when main is green again
+        if: success() && github.event_name == 'push' && github.event.forced == false
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="🚨 Build quebrado na main"
+          issue=$(gh api "repos/${{ github.repository }}/issues?state=open&per_page=100" --jq ".[] | select(.pull_request == null and .title == \"$title\") | .number" | head -n1)
+          if [ -n "$issue" ]; then
+            gh api -X PATCH "repos/${{ github.repository }}/issues/$issue" -f state=closed -f state_reason=completed > /dev/null
+          fi

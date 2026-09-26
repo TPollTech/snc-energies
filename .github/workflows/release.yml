@@ -24,6 +24,17 @@ jobs:
           distribution: temurin
           java-version: '25'
 
+      # Shared with build.yml: Loom keeps its remapped Minecraft jars inside
+      # the Gradle caches, so a warm cache skips the whole remap on tag builds.
+      - name: Cache Gradle and Loom
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: gradle-${{ runner.os }}-${{ hashFiles('**/*.gradle*', 'gradle.properties', 'gradle/wrapper/gradle-wrapper.properties') }}
+          restore-keys: gradle-${{ runner.os }}-
+
       - name: Build
         run: ./gradlew build --console=plain --no-daemon
 
