@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/air",
+  "textures": {
+    "particle": "snc_energies:block/industry_steel"
+  }
+}

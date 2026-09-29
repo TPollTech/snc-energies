@@ -26,6 +26,18 @@ public class SncEnergiesClient implements ClientModInitializer {
         MenuScreens.register(SncMenus.WOOD_STOVE, com.snc.energies.client.screen.WoodStoveScreen::new);
 		MenuScreens.register(SncMenus.ELECTRIC_FURNACE, ElectricFurnaceScreen::new);
 		MenuScreens.register(SncMenus.CRUSHER, CrusherScreen::new);
+        MenuScreens.register(SncMenus.ITEM_PIPE_FILTER, com.snc.energies.client.screen.ItemPipeFilterScreen::new);
+        MenuScreens.register(SncMenus.TRACTOR, com.snc.energies.client.screen.TractorScreen::new);
+        MenuScreens.register(SncMenus.PLANTER, com.snc.energies.client.screen.PlanterScreen::new);
+        MenuScreens.register(SncMenus.GRAIN_CART, com.snc.energies.client.screen.GrainCartScreen::new);
+        MenuScreens.register(SncMenus.MERCADAO, com.snc.energies.client.screen.MercadaoScreen::new);
+        com.snc.energies.client.mercajeiro.MercajeiroRenderer.bootstrap();
+        net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry.register(
+            com.snc.energies.registry.SncEntities.MERCAJEIRO, com.snc.energies.client.mercajeiro.MercajeiroRenderer::new);
+        net.fabricmc.fabric.api.client.rendering.v1.BlockEntityRendererRegistry.register(
+            com.snc.energies.registry.SncBlockEntities.MERCADAO_SHELF, com.snc.energies.client.mercajeiro.MercadaoShelfRenderer::new);
+        MenuScreens.register(SncMenus.HARVESTER, com.snc.energies.client.screen.HarvesterScreen::new);
+        com.snc.energies.client.vehicle.TractorClient.bootstrap();
 		SncEnergies.LOGGER.info("SNC Energies client ready");
 	}
 }

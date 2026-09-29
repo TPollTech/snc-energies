@@ -1,0 +1,14 @@
+{
+  "version": "0.6.1",
+  "installed": "2026-09-28T00:33:00-03:00",
+  "jar": "Instances/SNC energies/mods/snc-energies.jar",
+  "sha256": "91EA4ED75ECF89FA93F5F05BA42F2F00785EF905035B0499F6CFAA15ED9EFF34",
+  "backup": "Instances/SNC energies/snc-backups/20260928-003259-before-0.6.1/snc-energies.jar (conteúdo anterior, SHA-256 A29AF205C27A684888D94E22AAF74BA1DD54B0FEF7C8CB848B97CF0896C4392B)",
+  "note": "v0.6.1 refinamento de veículos e Mercadão: articulações completas da colheitadeira no jogo (rodas, reel, rotor, ventoinhas, picador, plataforma +26°, tubo -38°), slot de óleo dedicado nos painéis do trator/colheitadeira (fora dos tanques), motor em marcha lente sem piloto, Carreta Graneleira SNC 90-C acoplável com transferência conservativa, infusão de erva-mate redesenhada com silhueta sólida, ovo do Mercador com silhueta vanilla renomeado, Mercadão sem mutação na render thread e Mercador encontrando a prateleira em qualquer facing, tela da plantadeira registrada (evitava congelar o cliente) e preview 3D completo do mercado (dev + offline).",
+  "functionalSuite": {
+    "standalone": "559 verificações, FUNCTIONAL TESTS PASSED (verification/0.6.1-standalone.log)",
+    "adventures": "570 verificações com Adventures 1.2.50, FUNCTIONAL TESTS PASSED (verification/0.6.1-adventures-1.2.50.log)",
+    "newCoverage": "19 verificações da Carreta Graneleira (painel, engate/desengate por painel e entidade, solda no reboque, conservação exata na descarga, carga preservada, remoção devolve carga); teste do trator atualizado para a semântica soldada (origem do plantio = engata após o passo de direção)",
+    "jarUnchanged": "fontes de src/main e src/client não mudaram após a instalação; testes funcionais ficam fora do JAR de distribuição"
+  }
+}

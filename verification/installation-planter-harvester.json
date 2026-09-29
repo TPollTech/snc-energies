@@ -1,0 +1,12 @@
+{
+  "version": "0.5.0+planter-harvester (não numerada; marco de validação)",
+  "installed": "2026-09-27T19:23:00-03:00",
+  "jar": "Instances/SNC energies/mods/snc-energies.jar",
+  "sha256": "2C898EEDE07956BF4F8CEAA5BAF86D8BE3FB300BAFE6798B3F708B20374CAA0D",
+  "previous_sha256": "F267C9FB8A5EC9FC1961F168F06885EEF836E2B7C996DEA1A094897880A72C4F (0.5.0+tractor-planting, instalado às 17:55 de 26/09)",
+  "backup": "Instances/Mods SNC/snc-backups/20260927-192237-before-planter-harvester/snc-energies-installed.jar",
+  "backup_sha256": "F267C9FB8A5EC9FC1961F168F06885EEF836E2B7C996DEA1A094897880A72C4F",
+  "backup_note": "Ritual correto desta vez: o jar instalado foi copiado ANTES da substituição (backup byte-idêntico ao manifesto anterior, conferido por SHA-256). Corrigida a falha registrada no marco anterior.",
+  "suite": "Suíte completa standalone (./gradlew.bat --init-script tools/functional-test.init.gradle build runServer): BUILD SUCCESSFUL, 540 FUNCTIONAL PASS, FUNCTIONAL TESTS PASSED. Log em verification/tractor-harvester-standalone.log.",
+  "note": "Marco plantadeira destacável + colheitadeira: SNC 75-P vira implemento engatado (entidade própria com tanques, hitch no pivô [0,12,27], engate/desengate/levantar pelo painel do trator, plantio usa tanques do implemento); colheitadeira SNC 90 integrada (colhe 3 linhas varrendo 1-3 blocos à frente, só maduras, óleo vegetal 1/80 ticks, produto no baú próprio 3x9, recusa tanque cheio sem destruir, motor morre seco). Testes: TractorFunctionalTest seção 7 (engate, gasto do tanque do implemento, coluna ocupada, solda no hitch, mirror working/lift, detach preserva sementes, menu próprio) e HarvesterFunctionalTest novo. Correções de robustez da suíte: purga de entidades-fantasma entre execuções (o mundo persiste), driveTick honra o gate do motor/óleo, asserção de drops trocada pela drenagem exata do tanque (ItemEntity só fica consultável na tick seguinte — a suíte roda dentro de END_SERVER_TICK)."
+}

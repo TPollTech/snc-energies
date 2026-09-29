@@ -58,9 +58,16 @@ public final class SncBlocks {
 	public static final Block ENERGY_CABLE = register("energy_cable", CableBlock::new, Block.Properties.ofFullCopy(Blocks.GLASS)
 			.mapColor(MapColor.METAL)
 			.strength(0.4f, 0.4f)
-			.noOcclusion());
-	public static final Block VOLTAITE_ORE = register("voltaite_ore", Block::new, Block.Properties.ofFullCopy(Blocks.IRON_ORE));
-	public static final Block DEEPSLATE_VOLTAITE_ORE = register("deepslate_voltaite_ore", Block::new, Block.Properties.ofFullCopy(Blocks.DEEPSLATE_IRON_ORE));
+			.noOcclusion());    public static final Block VOLTAITE_ORE = register("voltaite_ore", Block::new, Block.Properties.ofFullCopy(Blocks.IRON_ORE));
+    public static final Block DEEPSLATE_VOLTAITE_ORE = register("deepslate_voltaite_ore", Block::new, Block.Properties.ofFullCopy(Blocks.DEEPSLATE_IRON_ORE));
+    public static final Block MERCADAO_SHELF = register("mercadao_shelf", com.snc.energies.block.MercadaoShelfBlock::new,
+        Block.Properties.ofFullCopy(Blocks.BARREL).strength(2.5f, 4.0f).noOcclusion());
+    /** Structure-only anchor; no item, no drop, not in the creative tab. */
+    public static final Block MERCADAO_ANCHOR = register("mercadao_anchor", com.snc.energies.block.MercadaoAnchorBlock::new,
+        Block.Properties.of().strength(-1.0f, 3600000.0f).noLootTable().noOcclusion());
+    /** Structure-only painted Mercadão sign; no item, no drop, not in the creative tab. */
+    public static final Block MERCADAO_SIGN = register("mercadao_sign", com.snc.energies.block.MercadaoSignBlock::new,
+        Block.Properties.ofFullCopy(Blocks.SPRUCE_PLANKS).strength(1.5f, 4.0f).noLootTable().noOcclusion());
 
 	private static Block register(String name, Function<Block.Properties, Block> factory, Block.Properties properties) {
 		ResourceKey<Block> key = ResourceKey.create(Registries.BLOCK, SncEnergies.id(name));

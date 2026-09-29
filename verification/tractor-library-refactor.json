@@ -1,0 +1,76 @@
+{
+  "scope": "vehicle_library.py refactor proof: SNC 75 assets regenerated through tools/vehicle_library.py + tools/vehicle_texture_kit.py, checked against the pre-refactor baseline via sha256sum -c (passed 17/17)",
+  "date": "2026-09-26",
+  "files": {
+    "tractor-model.json": {
+      "sha256": "eb106e79a8737a19fa9c9b540c1178f419cd570ad80218f48cfbf1ea17fe985a",
+      "identical_to_baseline": true
+    },
+    "snc-75-trator.bbmodel": {
+      "sha256": "974c1c35ee028b78198195a5344aaddd3806b927e7601ae29c07278e69da8127",
+      "identical_to_baseline": true
+    },
+    "snc-75-trator.glb": {
+      "sha256": "eca6a11017be6501a76d0a7618cbe1a82f93fd25792938f4bf316e9b70511132",
+      "identical_to_baseline": true
+    },
+    "textures/amber.png": {
+      "sha256": "35d1e30256b8c9a806217ea666ecce16c10887edbeb5f10ceefb9df0094c2e46",
+      "identical_to_baseline": true
+    },
+    "textures/decal_snc.png": {
+      "sha256": "048e051096f5793f2cdfd18c75e435e8980879f1106172b40d1899c9a4fe88aa",
+      "identical_to_baseline": true
+    },
+    "textures/enamel_dark.png": {
+      "sha256": "273f68df784d9f5f28d86702f2570e3119ad0cadd29df70971e5745206a6cae4",
+      "identical_to_baseline": true
+    },
+    "textures/enamel_orange.png": {
+      "sha256": "c7172d9d0161ffdb161778750f147cef9d10510daf9fc1d42b1e65f510440943",
+      "identical_to_baseline": true
+    },
+    "textures/gauge.png": {
+      "sha256": "b7366ca9dcff23a0032df2aebed3ff5f7e03fe2b3897db93f069f935985fdead",
+      "identical_to_baseline": true
+    },
+    "textures/grille.png": {
+      "sha256": "11156f8563b26637981d2af9b0c59e36c4670590a14755b2d33615c109dab6b3",
+      "identical_to_baseline": true
+    },
+    "textures/headlight.png": {
+      "sha256": "2dbe73ebda88bd82520e91abffa45ed91ad5b90bc617c927e062e5fa5f426c6f",
+      "identical_to_baseline": true
+    },
+    "textures/rim.png": {
+      "sha256": "1999fd6ce070201334cdda20804b577a4c9b73d16cf6af71563c2c2ec514ae79",
+      "identical_to_baseline": true
+    },
+    "textures/rubber.png": {
+      "sha256": "664171c0f5fd81dfc747e6e0f92416aef1006e0a21836948f8f9584965ae5760",
+      "identical_to_baseline": true
+    },
+    "textures/seat.png": {
+      "sha256": "8cbdcf282c557ceac1d3c8c0e4e6835116720ae0be125393a9367d57e22b62e6",
+      "identical_to_baseline": true
+    },
+    "textures/seed_tank.png": {
+      "sha256": "8e3a4efd021ff891974e491015af9917ec7a57a841add032a856b06d0bc34571",
+      "identical_to_baseline": true
+    },
+    "textures/steel.png": {
+      "sha256": "886ced732475bf5dacdc6dbf37eefe26a7a1e66b6c7490404f942ffacca1a894",
+      "identical_to_baseline": true
+    },
+    "textures/taillight.png": {
+      "sha256": "6272fc855e07c450a61e68a06ca8656bc87c89f62c09de912412a9ad54bac55f",
+      "identical_to_baseline": true
+    },
+    "textures/tread.png": {
+      "sha256": "af5dcfc0f47e784693e9c37c69d0e20b37be2de0bd878b7d14f434313c68204a",
+      "identical_to_baseline": true
+    }
+  },
+  "result": "17/17 files byte-identical after the refactor onto the shared vehicle libraries",
+  "verify_tractor_status": "passed_with_warnings (same pre-existing clearance notes as before the refactor)"
+}

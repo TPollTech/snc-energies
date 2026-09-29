@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "scope": "JSON, Blockbench and GLB modelling exports; no gameplay validation",
+  "checks": [
+    {
+      "name": "blockbench_hierarchy_pivots_material_assignments",
+      "cubes": 371,
+      "groups": 7,
+      "unique_uuids": 378
+    },
+    {
+      "name": "textures_embedded_identically",
+      "textures": 15,
+      "size": "128x128"
+    },
+    {
+      "name": "glb_mesh_winding_normals_uv_indices",
+      "meshes": 15
+    },
+    {
+      "name": "world_geometry_and_rig_match_json_glb",
+      "cube_corners": 2968,
+      "maximum_delta_model_pixels": 7.105427357601002e-15
+    },
+    {
+      "name": "glb_wheel_and_mechanism_animation",
+      "channels": 6,
+      "targets": [
+        "planter_left_wheel",
+        "planter_right_wheel",
+        "pto_shaft",
+        "row_1_press_wheel",
+        "row_2_press_wheel",
+        "row_3_press_wheel"
+      ]
+    },
+    {
+      "name": "articulated_geometry_clearance",
+      "scenarios": 3,
+      "pairs": 0,
+      "scenarios_with_intersections": 0
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "articulation_clearance": [
+    {
+      "scenario": "planter_lift_0_degrees",
+      "tested_pairs": 0,
+      "collisions": []
+    },
+    {
+      "scenario": "planter_lift_12_degrees",
+      "tested_pairs": 0,
+      "collisions": []
+    },
+    {
+      "scenario": "planter_lift_23_degrees",
+      "tested_pairs": 0,
+      "collisions": []
+    }
+  ],
+  "files": {
+    "planter-model.json": {
+      "bytes": 169346,
+      "sha256": "3977042d16d8609c4f01306df041fa5bb8df969bc6df9362f2b45d996120cf6d"
+    },
+    "snc-75-p-plantadeira.bbmodel": {
+      "bytes": 725795,
+      "sha256": "07c9f4eb6276490faa1b5d13505abe2fe5c5eb81de688f1c0821f16f3636278b"
+    },
+    "snc-75-p-plantadeira.glb": {
+      "bytes": 172784,
+      "sha256": "99eca5416251c984bd4d7ef99c599c2a91114eb57c12c79c745acb22db4df110"
+    }
+  }
+}

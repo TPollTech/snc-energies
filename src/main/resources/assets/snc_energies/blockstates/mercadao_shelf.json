@@ -1,0 +1,68 @@
+{
+ "variants": {
+  "shelf=bebidas,facing=north": {
+   "model": "snc_energies:block/mercadao_shelf_bebidas",
+   "y": 0
+  },
+  "shelf=bebidas,facing=south": {
+   "model": "snc_energies:block/mercadao_shelf_bebidas",
+   "y": 180
+  },
+  "shelf=bebidas,facing=west": {
+   "model": "snc_energies:block/mercadao_shelf_bebidas",
+   "y": 270
+  },
+  "shelf=bebidas,facing=east": {
+   "model": "snc_energies:block/mercadao_shelf_bebidas",
+   "y": 90
+  },
+  "shelf=sementes,facing=north": {
+   "model": "snc_energies:block/mercadao_shelf_sementes",
+   "y": 0
+  },
+  "shelf=sementes,facing=south": {
+   "model": "snc_energies:block/mercadao_shelf_sementes",
+   "y": 180
+  },
+  "shelf=sementes,facing=west": {
+   "model": "snc_energies:block/mercadao_shelf_sementes",
+   "y": 270
+  },
+  "shelf=sementes,facing=east": {
+   "model": "snc_energies:block/mercadao_shelf_sementes",
+   "y": 90
+  },
+  "shelf=frios,facing=north": {
+   "model": "snc_energies:block/mercadao_shelf_frios",
+   "y": 0
+  },
+  "shelf=frios,facing=south": {
+   "model": "snc_energies:block/mercadao_shelf_frios",
+   "y": 180
+  },
+  "shelf=frios,facing=west": {
+   "model": "snc_energies:block/mercadao_shelf_frios",
+   "y": 270
+  },
+  "shelf=frios,facing=east": {
+   "model": "snc_energies:block/mercadao_shelf_frios",
+   "y": 90
+  },
+  "shelf=balcao_forte,facing=north": {
+   "model": "snc_energies:block/mercadao_shelf_balcao_forte",
+   "y": 0
+  },
+  "shelf=balcao_forte,facing=south": {
+   "model": "snc_energies:block/mercadao_shelf_balcao_forte",
+   "y": 180
+  },
+  "shelf=balcao_forte,facing=west": {
+   "model": "snc_energies:block/mercadao_shelf_balcao_forte",
+   "y": 270
+  },
+  "shelf=balcao_forte,facing=east": {
+   "model": "snc_energies:block/mercadao_shelf_balcao_forte",
+   "y": 90
+  }
+ }
+}

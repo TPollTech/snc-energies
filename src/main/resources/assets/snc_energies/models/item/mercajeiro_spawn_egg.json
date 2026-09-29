@@ -1,0 +1,6 @@
+{
+ "parent": "minecraft:item/template_spawn_egg",
+ "textures": {
+  "layer0": "snc_energies:item/mercajeiro_spawn_egg"
+ }
+}

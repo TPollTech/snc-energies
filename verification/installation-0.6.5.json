@@ -1,0 +1,13 @@
+{
+  "version": "0.6.5",
+  "installed": "2026-09-28T17:57:00-03:00",
+  "jar": "Instances/SNC energies/mods/snc-energies.jar",
+  "sha256": "8B3F88494150DC2D85E48A8778FE9425E0098260F88085FECBA8037B3EE232EC",
+  "previous_sha256": "B94D3939B98C9CDD9F75EB95FB11F2AD5130C83723F279D10FE549BE24965C69 (0.6.4, instalada às 17:40 de 28/09)",
+  "backup": "Instances/SNC energies/snc-backups/20260928-175700-before-0.6.5/snc-energies-installed.jar",
+  "backup_sha256": "B94D3939B98C9CDD9F75EB95FB11F2AD5130C83723F279D10FE549BE24965C69",
+  "functionalSuite": {
+    "standalone": "559 verificações, FUNCTIONAL TESTS PASSED (verification/0.6.5-standalone.log), incluindo os probes WORLDGEN structure/structure_set/template_pool = true e o /locate end-to-end: 'The nearest snc_energies:mercadao is at [-240, ~, 464] (508 blocks away)' com vila vanilla como controle"
+  },
+  "note": "v0.6.5 — CORREÇÃO CRÍTICA de worldgen (bug reportado pelo dono: /locate nunca encontrava o Mercadão): os JSONs data-driven (worldgen/structure/mercadao.json, worldgen/structure_set/mercadao.json, worldgen/template_pool/mercadao/start.json) estavam sem o prefixo worldgen/ no datapack desde a 0.6.0 e os registries os ignoravam silenciosamente — a estrutura nunca foi registrada nem gerada em mundo algum. Caminhos corrigidos contra o layout vanilla da 26.3 (NBT permanece em structure/), lixo antigo removido, probes de registro e /locate com controle vanilla viraram parte permanente da suíte. Frequência (spacing 24) e 18 biomas da 0.6.4 preservados."
+}

@@ -36,6 +36,8 @@ public final class ItemTransit {
     /** Move the duct's buffered item onward: adjacent windows first, then a bounded walk. */
     public static boolean moveFrom(Level level, BlockPos ductPos, ItemPipeBlockEntity duct) {
         ItemStack buffer = duct.getItem(0);
+        // Filter applies at entry only: an already-buffered item always keeps moving,
+        // so changing the whitelist can never strand an item inside the duct.
         if (buffer.isEmpty()) return false;
         List<Window> windows = windowsAround(level, ductPos);
         if (windows.isEmpty()) windows = networkWindows(level, ductPos);

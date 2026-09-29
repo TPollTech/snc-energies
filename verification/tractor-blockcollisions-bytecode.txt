@@ -1,0 +1,306 @@
+Compiled from "BlockCollisions.java"
+public class net.minecraft.world.level.BlockCollisions<T> extends com.google.common.collect.AbstractIterator<T> {
+  private final net.minecraft.world.phys.AABB box;
+
+  private final net.minecraft.world.phys.shapes.CollisionContext context;
+
+  private final net.minecraft.core.Cursor3D cursor;
+
+  private final net.minecraft.core.BlockPos$MutableBlockPos pos;
+
+  private final net.minecraft.world.phys.shapes.VoxelShape entityShape;
+
+  private final net.minecraft.world.level.CollisionGetter collisionGetter;
+
+  private final boolean onlySuffocatingBlocks;
+
+  private net.minecraft.world.level.BlockGetter cachedBlockGetter;
+
+  private long cachedBlockGetterPos;
+
+  private final java.util.function.BiFunction<net.minecraft.core.BlockPos$MutableBlockPos, net.minecraft.world.phys.shapes.VoxelShape, T> resultProvider;
+
+  public net.minecraft.world.level.BlockCollisions(net.minecraft.world.level.CollisionGetter, net.minecraft.world.entity.Entity, net.minecraft.world.phys.AABB, boolean, java.util.function.BiFunction<net.minecraft.core.BlockPos$MutableBlockPos, net.minecraft.world.phys.shapes.VoxelShape, T>);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: aload_2
+         3: ifnonnull     12
+         6: invokestatic  #1                  // InterfaceMethod net/minecraft/world/phys/shapes/CollisionContext.empty:()Lnet/minecraft/world/phys/shapes/CollisionContext;
+         9: goto          16
+        12: aload_2
+        13: invokestatic  #7                  // InterfaceMethod net/minecraft/world/phys/shapes/CollisionContext.of:(Lnet/minecraft/world/entity/Entity;)Lnet/minecraft/world/phys/shapes/CollisionContext;
+        16: aload_3
+        17: iload         4
+        19: aload         5
+        21: invokespecial #11                 // Method "<init>":(Lnet/minecraft/world/level/CollisionGetter;Lnet/minecraft/world/phys/shapes/CollisionContext;Lnet/minecraft/world/phys/AABB;ZLjava/util/function/BiFunction;)V
+        24: return
+
+  public net.minecraft.world.level.BlockCollisions(net.minecraft.world.level.CollisionGetter, net.minecraft.world.phys.shapes.CollisionContext, net.minecraft.world.phys.AABB, boolean, java.util.function.BiFunction<net.minecraft.core.BlockPos$MutableBlockPos, net.minecraft.world.phys.shapes.VoxelShape, T>);
+    Code:
+         0: aload_0
+         1: invokespecial #17                 // Method com/google/common/collect/AbstractIterator."<init>":()V
+         4: aload_0
+         5: aload_2
+         6: putfield      #22                 // Field context:Lnet/minecraft/world/phys/shapes/CollisionContext;
+         9: aload_0
+        10: new           #26                 // class net/minecraft/core/BlockPos$MutableBlockPos
+        13: dup
+        14: invokespecial #28                 // Method net/minecraft/core/BlockPos$MutableBlockPos."<init>":()V
+        17: putfield      #29                 // Field pos:Lnet/minecraft/core/BlockPos$MutableBlockPos;
+        20: aload_0
+        21: aload_3
+        22: invokestatic  #33                 // Method net/minecraft/world/phys/shapes/Shapes.create:(Lnet/minecraft/world/phys/AABB;)Lnet/minecraft/world/phys/shapes/VoxelShape;
+        25: putfield      #39                 // Field entityShape:Lnet/minecraft/world/phys/shapes/VoxelShape;
+        28: aload_0
+        29: aload_1
+        30: putfield      #43                 // Field collisionGetter:Lnet/minecraft/world/level/CollisionGetter;
+        33: aload_0
+        34: aload_3
+        35: putfield      #47                 // Field box:Lnet/minecraft/world/phys/AABB;
+        38: aload_0
+        39: iload         4
+        41: putfield      #51                 // Field onlySuffocatingBlocks:Z
+        44: aload_0
+        45: aload         5
+        47: putfield      #55                 // Field resultProvider:Ljava/util/function/BiFunction;
+        50: aload_3
+        51: getfield      #59                 // Field net/minecraft/world/phys/AABB.minX:D
+        54: ldc2_w        #65                 // double 1.0E-7d
+        57: dsub
+        58: invokestatic  #67                 // Method net/minecraft/util/Mth.floor:(D)I
+        61: iconst_1
+        62: isub
+        63: istore        6
+        65: aload_3
+        66: getfield      #73                 // Field net/minecraft/world/phys/AABB.maxX:D
+        69: ldc2_w        #65                 // double 1.0E-7d
+        72: dadd
+        73: invokestatic  #67                 // Method net/minecraft/util/Mth.floor:(D)I
+        76: iconst_1
+        77: iadd
+        78: istore        7
+        80: aload_3
+        81: getfield      #76                 // Field net/minecraft/world/phys/AABB.minY:D
+        84: ldc2_w        #65                 // double 1.0E-7d
+        87: dsub
+        88: invokestatic  #67                 // Method net/minecraft/util/Mth.floor:(D)I
+        91: iconst_1
+        92: isub
+        93: istore        8
+        95: aload_3
+        96: getfield      #79                 // Field net/minecraft/world/phys/AABB.maxY:D
+        99: ldc2_w        #65                 // double 1.0E-7d
+       102: dadd
+       103: invokestatic  #67                 // Method net/minecraft/util/Mth.floor:(D)I
+       106: iconst_1
+       107: iadd
+       108: istore        9
+       110: aload_3
+       111: getfield      #82                 // Field net/minecraft/world/phys/AABB.minZ:D
+       114: ldc2_w        #65                 // double 1.0E-7d
+       117: dsub
+       118: invokestatic  #67                 // Method net/minecraft/util/Mth.floor:(D)I
+       121: iconst_1
+       122: isub
+       123: istore        10
+       125: aload_3
+       126: getfield      #85                 // Field net/minecraft/world/phys/AABB.maxZ:D
+       129: ldc2_w        #65                 // double 1.0E-7d
+       132: dadd
+       133: invokestatic  #67                 // Method net/minecraft/util/Mth.floor:(D)I
+       136: iconst_1
+       137: iadd
+       138: istore        11
+       140: aload_0
+       141: new           #88                 // class net/minecraft/core/Cursor3D
+       144: dup
+       145: iload         6
+       147: iload         8
+       149: iload         10
+       151: iload         7
+       153: iload         9
+       155: iload         11
+       157: invokespecial #90                 // Method net/minecraft/core/Cursor3D."<init>":(IIIIII)V
+       160: putfield      #93                 // Field cursor:Lnet/minecraft/core/Cursor3D;
+       163: return
+
+  private net.minecraft.world.level.BlockGetter getChunk(int, int);
+    Code:
+         0: iload_1
+         1: invokestatic  #97                 // Method net/minecraft/core/SectionPos.blockToSectionCoord:(I)I
+         4: istore_3
+         5: iload_2
+         6: invokestatic  #97                 // Method net/minecraft/core/SectionPos.blockToSectionCoord:(I)I
+         9: istore        4
+        11: iload_3
+        12: iload         4
+        14: invokestatic  #103                // Method net/minecraft/world/level/ChunkPos.pack:(II)J
+        17: lstore        5
+        19: aload_0
+        20: getfield      #109                // Field cachedBlockGetter:Lnet/minecraft/world/level/BlockGetter;
+        23: ifnull        41
+        26: aload_0
+        27: getfield      #113                // Field cachedBlockGetterPos:J
+        30: lload         5
+        32: lcmp
+        33: ifne          41
+        36: aload_0
+        37: getfield      #109                // Field cachedBlockGetter:Lnet/minecraft/world/level/BlockGetter;
+        40: areturn
+        41: aload_0
+        42: getfield      #43                 // Field collisionGetter:Lnet/minecraft/world/level/CollisionGetter;
+        45: iload_3
+        46: iload         4
+        48: invokeinterface #117,  3          // InterfaceMethod net/minecraft/world/level/CollisionGetter.getChunkForCollisions:(II)Lnet/minecraft/world/level/BlockGetter;
+        53: astore        7
+        55: aload_0
+        56: aload         7
+        58: putfield      #109                // Field cachedBlockGetter:Lnet/minecraft/world/level/BlockGetter;
+        61: aload_0
+        62: lload         5
+        64: putfield      #113                // Field cachedBlockGetterPos:J
+        67: aload         7
+        69: areturn
+
+  protected T computeNext();
+    Code:
+         0: aload_0
+         1: getfield      #93                 // Field cursor:Lnet/minecraft/core/Cursor3D;
+         4: invokevirtual #123                // Method net/minecraft/core/Cursor3D.advance:()Z
+         7: ifeq          286
+        10: aload_0
+        11: getfield      #93                 // Field cursor:Lnet/minecraft/core/Cursor3D;
+        14: invokevirtual #127                // Method net/minecraft/core/Cursor3D.nextX:()I
+        17: istore_1
+        18: aload_0
+        19: getfield      #93                 // Field cursor:Lnet/minecraft/core/Cursor3D;
+        22: invokevirtual #131                // Method net/minecraft/core/Cursor3D.nextY:()I
+        25: istore_2
+        26: aload_0
+        27: getfield      #93                 // Field cursor:Lnet/minecraft/core/Cursor3D;
+        30: invokevirtual #134                // Method net/minecraft/core/Cursor3D.nextZ:()I
+        33: istore_3
+        34: aload_0
+        35: getfield      #93                 // Field cursor:Lnet/minecraft/core/Cursor3D;
+        38: invokevirtual #137                // Method net/minecraft/core/Cursor3D.getNextType:()I
+        41: istore        4
+        43: iload         4
+        45: iconst_3
+        46: if_icmpne     52
+        49: goto          0
+        52: aload_0
+        53: iload_1
+        54: iload_3
+        55: invokevirtual #140                // Method getChunk:(II)Lnet/minecraft/world/level/BlockGetter;
+        58: astore        5
+        60: aload         5
+        62: ifnonnull     68
+        65: goto          0
+        68: aload_0
+        69: getfield      #29                 // Field pos:Lnet/minecraft/core/BlockPos$MutableBlockPos;
+        72: iload_1
+        73: iload_2
+        74: iload_3
+        75: invokevirtual #143                // Method net/minecraft/core/BlockPos$MutableBlockPos.set:(III)Lnet/minecraft/core/BlockPos$MutableBlockPos;
+        78: pop
+        79: aload         5
+        81: aload_0
+        82: getfield      #29                 // Field pos:Lnet/minecraft/core/BlockPos$MutableBlockPos;
+        85: invokeinterface #147,  2          // InterfaceMethod net/minecraft/world/level/BlockGetter.getBlockState:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+        90: astore        6
+        92: aload_0
+        93: getfield      #51                 // Field onlySuffocatingBlocks:Z
+        96: ifeq          116
+        99: aload         6
+       101: aload         5
+       103: aload_0
+       104: getfield      #29                 // Field pos:Lnet/minecraft/core/BlockPos$MutableBlockPos;
+       107: invokevirtual #153                // Method net/minecraft/world/level/block/state/BlockState.isSuffocating:(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)Z
+       110: ifne          116
+       113: goto          0
+       116: iload         4
+       118: iconst_1
+       119: if_icmpne     133
+       122: aload         6
+       124: invokevirtual #159                // Method net/minecraft/world/level/block/state/BlockState.hasLargeCollisionShape:()Z
+       127: ifne          133
+       130: goto          0
+       133: iload         4
+       135: iconst_2
+       136: if_icmpne     153
+       139: aload         6
+       141: getstatic     #162                // Field net/minecraft/world/level/block/Blocks.MOVING_PISTON:Lnet/minecraft/world/level/block/Block;
+       144: invokevirtual #168                // Method net/minecraft/world/level/block/state/BlockState.is:(Ljava/lang/Object;)Z
+       147: ifne          153
+       150: goto          0
+       153: aload_0
+       154: getfield      #22                 // Field context:Lnet/minecraft/world/phys/shapes/CollisionContext;
+       157: aload         6
+       159: aload_0
+       160: getfield      #43                 // Field collisionGetter:Lnet/minecraft/world/level/CollisionGetter;
+       163: aload_0
+       164: getfield      #29                 // Field pos:Lnet/minecraft/core/BlockPos$MutableBlockPos;
+       167: invokeinterface #172,  4          // InterfaceMethod net/minecraft/world/phys/shapes/CollisionContext.getCollisionShape:(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/CollisionGetter;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/phys/shapes/VoxelShape;
+       172: astore        7
+       174: aload         7
+       176: invokestatic  #176                // Method net/minecraft/world/phys/shapes/Shapes.block:()Lnet/minecraft/world/phys/shapes/VoxelShape;
+       179: if_acmpne     233
+       182: aload_0
+       183: getfield      #47                 // Field box:Lnet/minecraft/world/phys/AABB;
+       186: iload_1
+       187: i2d
+       188: iload_2
+       189: i2d
+       190: iload_3
+       191: i2d
+       192: iload_1
+       193: i2d
+       194: dconst_1
+       195: dadd
+       196: iload_2
+       197: i2d
+       198: dconst_1
+       199: dadd
+       200: iload_3
+       201: i2d
+       202: dconst_1
+       203: dadd
+       204: invokevirtual #180                // Method net/minecraft/world/phys/AABB.intersects:(DDDDDD)Z
+       207: ifeq          283
+       210: aload_0
+       211: getfield      #55                 // Field resultProvider:Ljava/util/function/BiFunction;
+       214: aload_0
+       215: getfield      #29                 // Field pos:Lnet/minecraft/core/BlockPos$MutableBlockPos;
+       218: aload         7
+       220: aload_0
+       221: getfield      #29                 // Field pos:Lnet/minecraft/core/BlockPos$MutableBlockPos;
+       224: invokevirtual #184                // Method net/minecraft/world/phys/shapes/VoxelShape.move:(Lnet/minecraft/core/Vec3i;)Lnet/minecraft/world/phys/shapes/VoxelShape;
+       227: invokeinterface #190,  3          // InterfaceMethod java/util/function/BiFunction.apply:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+       232: areturn
+       233: aload         7
+       235: aload_0
+       236: getfield      #29                 // Field pos:Lnet/minecraft/core/BlockPos$MutableBlockPos;
+       239: invokevirtual #184                // Method net/minecraft/world/phys/shapes/VoxelShape.move:(Lnet/minecraft/core/Vec3i;)Lnet/minecraft/world/phys/shapes/VoxelShape;
+       242: astore        8
+       244: aload         8
+       246: invokevirtual #196                // Method net/minecraft/world/phys/shapes/VoxelShape.isEmpty:()Z
+       249: ifne          283
+       252: aload         8
+       254: aload_0
+       255: getfield      #39                 // Field entityShape:Lnet/minecraft/world/phys/shapes/VoxelShape;
+       258: getstatic     #199                // Field net/minecraft/world/phys/shapes/BooleanOp.AND:Lnet/minecraft/world/phys/shapes/BooleanOp;
+       261: invokestatic  #205                // Method net/minecraft/world/phys/shapes/Shapes.joinIsNotEmpty:(Lnet/minecraft/world/phys/shapes/VoxelShape;Lnet/minecraft/world/phys/shapes/VoxelShape;Lnet/minecraft/world/phys/shapes/BooleanOp;)Z
+       264: ifeq          283
+       267: aload_0
+       268: getfield      #55                 // Field resultProvider:Ljava/util/function/BiFunction;
+       271: aload_0
+       272: getfield      #29                 // Field pos:Lnet/minecraft/core/BlockPos$MutableBlockPos;
+       275: aload         8
+       277: invokeinterface #190,  3          // InterfaceMethod java/util/function/BiFunction.apply:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+       282: areturn
+       283: goto          0
+       286: aload_0
+       287: invokevirtual #209                // Method endOfData:()Ljava/lang/Object;
+       290: areturn
+}

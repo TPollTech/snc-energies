@@ -42,6 +42,24 @@ public final class SncMenus {
 	public static final MenuType<CrusherMenu> CRUSHER = Registry.register(
 			BuiltInRegistries.MENU, SncEnergies.id("crusher"),
 			new MenuType<>(CrusherMenu::new, FeatureFlags.VANILLA_SET));
+	public static final MenuType<com.snc.energies.menu.ItemPipeFilterMenu> ITEM_PIPE_FILTER = Registry.register(
+			BuiltInRegistries.MENU, SncEnergies.id("item_pipe_filter"),
+			new MenuType<>(com.snc.energies.menu.ItemPipeFilterMenu::new, FeatureFlags.VANILLA_SET));
+	public static final MenuType<com.snc.energies.menu.TractorMenu> TRACTOR = Registry.register(
+			BuiltInRegistries.MENU, SncEnergies.id("tractor"),
+			new MenuType<>(com.snc.energies.menu.TractorMenu::new, FeatureFlags.VANILLA_SET));
+	public static final MenuType<com.snc.energies.menu.MercadaoMenu> MERCADAO = Registry.register(
+			BuiltInRegistries.MENU, SncEnergies.id("mercadao"),
+			new MenuType<>(com.snc.energies.menu.MercadaoMenu::new, FeatureFlags.VANILLA_SET));
+	public static final MenuType<com.snc.energies.menu.PlanterMenu> PLANTER = Registry.register(
+			BuiltInRegistries.MENU, SncEnergies.id("planter"),
+			new MenuType<>(com.snc.energies.menu.PlanterMenu::new, FeatureFlags.VANILLA_SET));
+	public static final MenuType<com.snc.energies.menu.HarvesterMenu> HARVESTER = Registry.register(
+			BuiltInRegistries.MENU, SncEnergies.id("harvester"),
+			new MenuType<>(com.snc.energies.menu.HarvesterMenu::new, FeatureFlags.VANILLA_SET));
+	public static final MenuType<com.snc.energies.menu.GrainCartMenu> GRAIN_CART = Registry.register(
+			BuiltInRegistries.MENU, SncEnergies.id("grain_cart"),
+			new MenuType<>(com.snc.energies.menu.GrainCartMenu::new, FeatureFlags.VANILLA_SET));
 
 	private SncMenus() {
 	}

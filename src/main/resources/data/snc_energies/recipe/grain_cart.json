@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "III",
+    "IBI",
+    "WDW"
+  ],
+  "key": {
+    "I": "snc_energies:steel_ingot",
+    "B": "minecraft:barrel",
+    "W": "minecraft:iron_ingot",
+    "D": "minecraft:minecart"
+  },
+  "result": {
+    "id": "snc_energies:grain_cart",
+    "count": 1
+  }
+}

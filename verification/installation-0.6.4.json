@@ -1,0 +1,14 @@
+{
+  "version": "0.6.4",
+  "installed": "2026-09-28T17:40:00-03:00",
+  "jar": "Instances/SNC energies/mods/snc-energies.jar",
+  "sha256": "B94D3939B98C9CDD9F75EB95FB11F2AD5130C83723F279D10FE549BE24965C69",
+  "previous_sha256": "1FF487577A6CDDB3C4B46D46CB64B1EAABED0A67A8622FB32404B2417A0A17DB (0.6.3, instalada às 16:46 de 28/09)",
+  "backup": "Instances/SNC energies/snc-backups/20260928-174000-before-0.6.4/snc-energies-installed.jar",
+  "backup_sha256": "1FF487577A6CDDB3C4B46D46CB64B1EAABED0A67A8622FB32404B2417A0A17DB",
+  "functionalSuite": {
+    "standalone": "559 verificações, FUNCTIONAL TESTS PASSED (verification/0.6.4-standalone.log) — o boot do servidor valida o parse do datapack de worldgen regenerado",
+    "adventures": "não reexecutado nesta passada: mudança exclusiva de dados de worldgen (structure_set/tag de biomas), nenhum código Java alterado desde a 0.6.3 (570 verificações em verification/0.6.3-adventures-1.2.50.log)"
+  },
+  "note": "v0.6.4 — Mercadão mais frequente e em mais biomas (pedido do dono após /locate sem resultado): espaçamento 44→24 e separação 24→12 (mercados ~3x mais próximos), e tag de biomas de 11 para 18 entradas (taiga, snowy_taiga, old_growth_pine_taiga, old_growth_spruce_taiga, dark_forest, swamp, mangrove_swamp). Estrutura NBT intacta; mundos já explorados continuam sem retrogen — procurar chunks novos."
+}

@@ -1,0 +1,14 @@
+{
+  "version": "0.6.2",
+  "installed": "2026-09-28T15:31:00-03:00",
+  "jar": "Instances/SNC energies/mods/snc-energies.jar",
+  "sha256": "DA9928A739AD5AE577D5DFBB76824DCB34B61197D9D0ADF387060511CE76025D",
+  "previous_sha256": "91EA4ED75ECF89FA93F5F05BA42F2F00785EF905035B0499F6CFAA15ED9EFF34 (0.6.1, instalada às 00:33 de 28/09)",
+  "backup": "Instances/SNC energies/snc-backups/20260928-153100-before-0.6.2/snc-energies-installed.jar",
+  "backup_sha256": "91EA4ED75ECF89FA93F5F05BA42F2F00785EF905035B0499F6CFAA15ED9EFF34",
+  "functionalSuite": {
+    "standalone": "559 verificações, FUNCTIONAL TESTS PASSED (verification/0.6.2-standalone.log)",
+    "adventures": "570 verificações com Adventures 1.2.50, FUNCTIONAL TESTS PASSED (verification/0.6.2-adventures-1.2.50.log)"
+  },
+  "note": "v0.6.2 revisão visual do Mercadão: prédio fechado com fachada de vidro e porta central (mercadao.nbt regenerado, com janelas laterais e lanternas internas), balcões-modelo de vitrine (base, tampo, postes, fundo, prateleira interna e vidro cutout — 3 texturas novas por variante), produtos exibidos como mini-modelos na prateleira interna pelo renderer, colisão assimétrica orientada ao facing e RenderShape.MODEL (antes o bloco nem renderizava o modelo estático: INVISIBLE). Preview 3D regenerado (393 cubos) e offline repacoteado. Suíte funcional e lang sem mudanças de contrato."
+}

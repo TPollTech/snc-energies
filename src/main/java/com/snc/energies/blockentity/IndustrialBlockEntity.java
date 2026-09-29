@@ -25,18 +25,38 @@ public final class IndustrialBlockEntity extends MachineBlockEntity implements W
     private int water,steam,burn,progress,status,runMode=RUN_ALWAYS;
     private boolean redstoneActive=true;
     private String activeRecipe="";
-    public static final int RUN_ALWAYS=0,RUN_WITH_REDSTONE=1;
+    /** Per-face I/O modes, packed two bits per Direction ordinal. */
+    private int faceModes=packedDefault();
+    public static final int RUN_ALWAYS=0,RUN_WITH_REDSTONE=1,RUN_NOT_REDSTONE=2;
+    public static final int FACE_BOTH=0,FACE_INPUT=1,FACE_OUTPUT=2;
+    private static int packedDefault(){int packed=0;for(Direction side:Direction.values())packed|=faceBits(side,side==Direction.DOWN?FACE_OUTPUT:FACE_INPUT);return packed;}
+    private static int faceBits(Direction side,int mode){return mode<<(side.ordinal()*2);}
     /** Server-authoritative mode switch; mirrors the workshop crank contract. */
     public boolean toggleRunMode(){
-        runMode=runMode==RUN_ALWAYS?RUN_WITH_REDSTONE:RUN_ALWAYS;
+        runMode=(runMode+1)%3;
         setChanged();
         return true;
     }
+    /** Screwdriver cycle: always-on → redstone → inverted redstone → always-on. */
+    public int cycleRunMode(){
+        runMode=(runMode+1)%3;
+        setChanged();
+        return runMode;
+    }
     public int runMode(){return runMode;}
+    /** Cycles one side between both, input and output; server authoritative. */
+    public int cycleFaceMode(Direction side){
+        int mode=(faceMode(side)+1)%3;
+        faceModes=(faceModes&~(3<<(side.ordinal()*2)))|faceBits(side,mode);
+        setChanged();
+        return mode;
+    }
+    public int faceMode(Direction side){return (faceModes>>>(side.ordinal()*2))&3;}
     private boolean redstoneGate(){
         if(runMode==RUN_ALWAYS)return true;
         if(level==null)return false;
         boolean powered=level.hasNeighborSignal(worldPosition);
+        if(runMode==RUN_NOT_REDSTONE)return !powered;
         if(powered)redstoneActive=true;else if(redstoneActive&&!powered&&progress==0)redstoneActive=false;
         return redstoneActive;
     }
@@ -73,7 +93,7 @@ public final class IndustrialBlockEntity extends MachineBlockEntity implements W
     }
     @Override public void serverTick(){
         if(!canTick())return;
-        if(!redstoneGate()){status=7;return;}
+        if(!redstoneGate()){status=runMode==RUN_NOT_REDSTONE?8:7;return;}
         if(kind()==IndustryKind.BOILER){boiler();return;}
         if(kind()==IndustryKind.TURBINE){
             status=steam<80?5:energy.getCapacity()-energy.getEnergy()<80?3:2;
@@ -107,9 +127,20 @@ public final class IndustrialBlockEntity extends MachineBlockEntity implements W
         if(kind()==IndustryKind.BOILER)return slot==2?fuelTicks(stack)>0:slot==3&&stack.is(Items.WATER_BUCKET);
         return slot<2&&IndustryRecipes.accepts(kind(),slot,stack);
     }
-    @Override public int[] getSlotsForFace(Direction side){return side==Direction.DOWN?new int[]{4,5,6}:new int[]{0,1,2,3};}
-    @Override public boolean canPlaceItemThroughFace(int slot,ItemStack stack,Direction side){return side!=Direction.DOWN&&canPlaceItem(slot,stack);}
-    @Override public boolean canTakeItemThroughFace(int slot,ItemStack stack,Direction side){return side==Direction.DOWN&&slot>=4;}
+    @Override public int[] getSlotsForFace(Direction side){
+        int mode=faceMode(side);
+        if(mode==FACE_OUTPUT)return new int[]{4,5,6};
+        if(mode==FACE_INPUT)return new int[]{0,1,2,3};
+        return new int[]{0,1,2,3,4,5,6};
+    }
+    @Override public boolean canPlaceItemThroughFace(int slot,ItemStack stack,Direction side){
+        int mode=faceMode(side);
+        return mode!=FACE_OUTPUT&&canPlaceItem(slot,stack);
+    }
+    @Override public boolean canTakeItemThroughFace(int slot,ItemStack stack,Direction side){
+        int mode=faceMode(side);
+        return slot>=4&&slot<=6&&mode!=FACE_INPUT;
+    }
     @Override protected String defaultLangKey(){return "block.snc_energies."+kind().id;}
     @Override public AbstractContainerMenu createMenu(int id,Inventory inventory,Player player){return new IndustrialMenu(id,inventory,this);}
     @Override public void preRemoveSideEffects(BlockPos pos,BlockState state){
@@ -120,12 +151,14 @@ public final class IndustrialBlockEntity extends MachineBlockEntity implements W
         super.saveAdditional(output);energy.save(output);output.putInt("Water",water);output.putInt("Steam",steam);
         output.putInt("Burn",burn);output.putInt("Progress",progress);output.putString("ActiveRecipe",activeRecipe);
         output.putInt("RunMode",runMode);output.putBoolean("RedstoneActive",redstoneActive);
+        output.putInt("FaceModes",faceModes);
     }
     @Override protected void loadAdditional(ValueInput input){
         super.loadAdditional(input);energy.load(input);water=Math.clamp(input.getIntOr("Water",0),0,WATER_CAPACITY);
         steam=Math.clamp(input.getIntOr("Steam",0),0,STEAM_CAPACITY);burn=Math.clamp(input.getIntOr("Burn",0),0,16000);
         activeRecipe=input.getStringOr("ActiveRecipe","");progress=Math.clamp(input.getIntOr("Progress",0),0,getMaxProgress()-1);
-        runMode=Math.clamp(input.getIntOr("RunMode",RUN_ALWAYS),RUN_ALWAYS,RUN_WITH_REDSTONE);
+        runMode=Math.clamp(input.getIntOr("RunMode",RUN_ALWAYS),RUN_ALWAYS,RUN_NOT_REDSTONE);
         redstoneActive=input.getBooleanOr("RedstoneActive",true);
+        faceModes=input.getIntOr("FaceModes",packedDefault());
     }
 }

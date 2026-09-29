@@ -1,0 +1,10314 @@
+{
+  "name": "Mercadão do SNC",
+  "units_per_block": 16,
+  "status": "modelling_preview",
+  "forward_axis": "-Z",
+  "groups": [
+    {
+      "name": "mercadao",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "parent": null,
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "cubes": [
+    {
+      "name": "floor_0_0_0",
+      "group": "mercadao",
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "material": "floor_stone",
+      "origin": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_0_0_1",
+      "group": "mercadao",
+      "from": [
+        0,
+        0,
+        16
+      ],
+      "to": [
+        16,
+        16,
+        32
+      ],
+      "material": "floor_accent",
+      "origin": [
+        8.0,
+        8.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_0_0_2",
+      "group": "mercadao",
+      "from": [
+        0,
+        0,
+        32
+      ],
+      "to": [
+        16,
+        16,
+        48
+      ],
+      "material": "floor_stone",
+      "origin": [
+        8.0,
+        8.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_0_0_3",
+      "group": "mercadao",
+      "from": [
+        0,
+        0,
+        48
+      ],
+      "to": [
+        16,
+        16,
+        64
+      ],
+      "material": "floor_accent",
+      "origin": [
+        8.0,
+        8.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_0_0_4",
+      "group": "mercadao",
+      "from": [
+        0,
+        0,
+        64
+      ],
+      "to": [
+        16,
+        16,
+        80
+      ],
+      "material": "floor_stone",
+      "origin": [
+        8.0,
+        8.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_0_0_5",
+      "group": "mercadao",
+      "from": [
+        0,
+        0,
+        80
+      ],
+      "to": [
+        16,
+        16,
+        96
+      ],
+      "material": "floor_accent",
+      "origin": [
+        8.0,
+        8.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_0_0_6",
+      "group": "mercadao",
+      "from": [
+        0,
+        0,
+        96
+      ],
+      "to": [
+        16,
+        16,
+        112
+      ],
+      "material": "floor_stone",
+      "origin": [
+        8.0,
+        8.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_0_0_7",
+      "group": "mercadao",
+      "from": [
+        0,
+        0,
+        112
+      ],
+      "to": [
+        16,
+        16,
+        128
+      ],
+      "material": "floor_accent",
+      "origin": [
+        8.0,
+        8.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_0_0_8",
+      "group": "mercadao",
+      "from": [
+        0,
+        0,
+        128
+      ],
+      "to": [
+        16,
+        16,
+        144
+      ],
+      "material": "floor_stone",
+      "origin": [
+        8.0,
+        8.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_0_1_0",
+      "group": "mercadao",
+      "from": [
+        0,
+        16,
+        0
+      ],
+      "to": [
+        16,
+        32,
+        16
+      ],
+      "material": "spruce_log",
+      "origin": [
+        8.0,
+        24.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_0_1_1",
+      "group": "mercadao",
+      "from": [
+        0,
+        16,
+        16
+      ],
+      "to": [
+        16,
+        32,
+        32
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        8.0,
+        24.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_0_1_2",
+      "group": "mercadao",
+      "from": [
+        0,
+        16,
+        32
+      ],
+      "to": [
+        16,
+        32,
+        48
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        8.0,
+        24.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_0_1_3",
+      "group": "mercadao",
+      "from": [
+        0,
+        16,
+        48
+      ],
+      "to": [
+        16,
+        32,
+        64
+      ],
+      "material": "spruce_log",
+      "origin": [
+        8.0,
+        24.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_0_1_4",
+      "group": "mercadao",
+      "from": [
+        0,
+        16,
+        64
+      ],
+      "to": [
+        16,
+        32,
+        80
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        8.0,
+        24.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_0_1_5",
+      "group": "mercadao",
+      "from": [
+        0,
+        16,
+        80
+      ],
+      "to": [
+        16,
+        32,
+        96
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        8.0,
+        24.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_0_1_6",
+      "group": "mercadao",
+      "from": [
+        0,
+        16,
+        96
+      ],
+      "to": [
+        16,
+        32,
+        112
+      ],
+      "material": "spruce_log",
+      "origin": [
+        8.0,
+        24.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_0_1_7",
+      "group": "mercadao",
+      "from": [
+        0,
+        16,
+        112
+      ],
+      "to": [
+        16,
+        32,
+        128
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        8.0,
+        24.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_0_1_8",
+      "group": "mercadao",
+      "from": [
+        0,
+        16,
+        128
+      ],
+      "to": [
+        16,
+        32,
+        144
+      ],
+      "material": "spruce_log",
+      "origin": [
+        8.0,
+        24.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_0_2_0",
+      "group": "mercadao",
+      "from": [
+        0,
+        32,
+        0
+      ],
+      "to": [
+        16,
+        48,
+        16
+      ],
+      "material": "spruce_log",
+      "origin": [
+        8.0,
+        40.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_0_2_1",
+      "group": "mercadao",
+      "from": [
+        0,
+        32,
+        16
+      ],
+      "to": [
+        16,
+        48,
+        32
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        8.0,
+        40.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_0_2_2",
+      "group": "mercadao",
+      "from": [
+        0,
+        32,
+        32
+      ],
+      "to": [
+        16,
+        48,
+        48
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        8.0,
+        40.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_0_2_3",
+      "group": "mercadao",
+      "from": [
+        0,
+        32,
+        48
+      ],
+      "to": [
+        16,
+        48,
+        64
+      ],
+      "material": "spruce_log",
+      "origin": [
+        8.0,
+        40.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pane_0_2_4",
+      "group": "mercadao",
+      "from": [
+        7,
+        32,
+        64
+      ],
+      "to": [
+        9,
+        48,
+        80
+      ],
+      "material": "glass_pane",
+      "origin": [
+        8.0,
+        40.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pane_0_2_5",
+      "group": "mercadao",
+      "from": [
+        7,
+        32,
+        80
+      ],
+      "to": [
+        9,
+        48,
+        96
+      ],
+      "material": "glass_pane",
+      "origin": [
+        8.0,
+        40.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_0_2_6",
+      "group": "mercadao",
+      "from": [
+        0,
+        32,
+        96
+      ],
+      "to": [
+        16,
+        48,
+        112
+      ],
+      "material": "spruce_log",
+      "origin": [
+        8.0,
+        40.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_0_2_7",
+      "group": "mercadao",
+      "from": [
+        0,
+        32,
+        112
+      ],
+      "to": [
+        16,
+        48,
+        128
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        8.0,
+        40.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_0_2_8",
+      "group": "mercadao",
+      "from": [
+        0,
+        32,
+        128
+      ],
+      "to": [
+        16,
+        48,
+        144
+      ],
+      "material": "spruce_log",
+      "origin": [
+        8.0,
+        40.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_0_3_0",
+      "group": "mercadao",
+      "from": [
+        0,
+        48,
+        0
+      ],
+      "to": [
+        16,
+        64,
+        16
+      ],
+      "material": "spruce_log",
+      "origin": [
+        8.0,
+        56.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_0_3_1",
+      "group": "mercadao",
+      "from": [
+        0,
+        48,
+        16
+      ],
+      "to": [
+        16,
+        64,
+        32
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        8.0,
+        56.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_0_3_2",
+      "group": "mercadao",
+      "from": [
+        0,
+        48,
+        32
+      ],
+      "to": [
+        16,
+        64,
+        48
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        8.0,
+        56.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_0_3_3",
+      "group": "mercadao",
+      "from": [
+        0,
+        48,
+        48
+      ],
+      "to": [
+        16,
+        64,
+        64
+      ],
+      "material": "spruce_log",
+      "origin": [
+        8.0,
+        56.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pane_0_3_4",
+      "group": "mercadao",
+      "from": [
+        7,
+        48,
+        64
+      ],
+      "to": [
+        9,
+        64,
+        80
+      ],
+      "material": "glass_pane",
+      "origin": [
+        8.0,
+        56.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pane_0_3_5",
+      "group": "mercadao",
+      "from": [
+        7,
+        48,
+        80
+      ],
+      "to": [
+        9,
+        64,
+        96
+      ],
+      "material": "glass_pane",
+      "origin": [
+        8.0,
+        56.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_0_3_6",
+      "group": "mercadao",
+      "from": [
+        0,
+        48,
+        96
+      ],
+      "to": [
+        16,
+        64,
+        112
+      ],
+      "material": "spruce_log",
+      "origin": [
+        8.0,
+        56.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_0_3_7",
+      "group": "mercadao",
+      "from": [
+        0,
+        48,
+        112
+      ],
+      "to": [
+        16,
+        64,
+        128
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        8.0,
+        56.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_0_3_8",
+      "group": "mercadao",
+      "from": [
+        0,
+        48,
+        128
+      ],
+      "to": [
+        16,
+        64,
+        144
+      ],
+      "material": "spruce_log",
+      "origin": [
+        8.0,
+        56.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_0_4_0",
+      "group": "mercadao",
+      "from": [
+        0,
+        64,
+        0
+      ],
+      "to": [
+        16,
+        80,
+        16
+      ],
+      "material": "spruce_log",
+      "origin": [
+        8.0,
+        72.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_0_4_1",
+      "group": "mercadao",
+      "from": [
+        0,
+        64,
+        16
+      ],
+      "to": [
+        16,
+        80,
+        32
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        8.0,
+        72.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_0_4_2",
+      "group": "mercadao",
+      "from": [
+        0,
+        64,
+        32
+      ],
+      "to": [
+        16,
+        80,
+        48
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        8.0,
+        72.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_0_4_3",
+      "group": "mercadao",
+      "from": [
+        0,
+        64,
+        48
+      ],
+      "to": [
+        16,
+        80,
+        64
+      ],
+      "material": "spruce_log",
+      "origin": [
+        8.0,
+        72.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_0_4_4",
+      "group": "mercadao",
+      "from": [
+        0,
+        64,
+        64
+      ],
+      "to": [
+        16,
+        80,
+        80
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        8.0,
+        72.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_0_4_5",
+      "group": "mercadao",
+      "from": [
+        0,
+        64,
+        80
+      ],
+      "to": [
+        16,
+        80,
+        96
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        8.0,
+        72.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_0_4_6",
+      "group": "mercadao",
+      "from": [
+        0,
+        64,
+        96
+      ],
+      "to": [
+        16,
+        80,
+        112
+      ],
+      "material": "spruce_log",
+      "origin": [
+        8.0,
+        72.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_0_4_7",
+      "group": "mercadao",
+      "from": [
+        0,
+        64,
+        112
+      ],
+      "to": [
+        16,
+        80,
+        128
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        8.0,
+        72.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_0_4_8",
+      "group": "mercadao",
+      "from": [
+        0,
+        64,
+        128
+      ],
+      "to": [
+        16,
+        80,
+        144
+      ],
+      "material": "spruce_log",
+      "origin": [
+        8.0,
+        72.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_0_5_0",
+      "group": "mercadao",
+      "from": [
+        0,
+        80,
+        0
+      ],
+      "to": [
+        16,
+        96,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        8.0,
+        88.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_0_5_1",
+      "group": "mercadao",
+      "from": [
+        0,
+        80,
+        16
+      ],
+      "to": [
+        16,
+        96,
+        32
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        8.0,
+        88.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_0_5_2",
+      "group": "mercadao",
+      "from": [
+        0,
+        80,
+        32
+      ],
+      "to": [
+        16,
+        96,
+        48
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        8.0,
+        88.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_0_5_3",
+      "group": "mercadao",
+      "from": [
+        0,
+        80,
+        48
+      ],
+      "to": [
+        16,
+        96,
+        64
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        8.0,
+        88.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_0_5_4",
+      "group": "mercadao",
+      "from": [
+        0,
+        80,
+        64
+      ],
+      "to": [
+        16,
+        96,
+        80
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        8.0,
+        88.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_0_5_5",
+      "group": "mercadao",
+      "from": [
+        0,
+        80,
+        80
+      ],
+      "to": [
+        16,
+        96,
+        96
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        8.0,
+        88.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_0_5_6",
+      "group": "mercadao",
+      "from": [
+        0,
+        80,
+        96
+      ],
+      "to": [
+        16,
+        96,
+        112
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        8.0,
+        88.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_0_5_7",
+      "group": "mercadao",
+      "from": [
+        0,
+        80,
+        112
+      ],
+      "to": [
+        16,
+        96,
+        128
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        8.0,
+        88.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_0_5_8",
+      "group": "mercadao",
+      "from": [
+        0,
+        80,
+        128
+      ],
+      "to": [
+        16,
+        96,
+        144
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        8.0,
+        88.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_1_0_0",
+      "group": "mercadao",
+      "from": [
+        16,
+        0,
+        0
+      ],
+      "to": [
+        32,
+        16,
+        16
+      ],
+      "material": "floor_accent",
+      "origin": [
+        24.0,
+        8.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_1_0_1",
+      "group": "mercadao",
+      "from": [
+        16,
+        0,
+        16
+      ],
+      "to": [
+        32,
+        16,
+        32
+      ],
+      "material": "floor_stone",
+      "origin": [
+        24.0,
+        8.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_1_0_2",
+      "group": "mercadao",
+      "from": [
+        16,
+        0,
+        32
+      ],
+      "to": [
+        32,
+        16,
+        48
+      ],
+      "material": "floor_accent",
+      "origin": [
+        24.0,
+        8.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_1_0_3",
+      "group": "mercadao",
+      "from": [
+        16,
+        0,
+        48
+      ],
+      "to": [
+        32,
+        16,
+        64
+      ],
+      "material": "floor_stone",
+      "origin": [
+        24.0,
+        8.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_1_0_4",
+      "group": "mercadao",
+      "from": [
+        16,
+        0,
+        64
+      ],
+      "to": [
+        32,
+        16,
+        80
+      ],
+      "material": "floor_accent",
+      "origin": [
+        24.0,
+        8.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_1_0_5",
+      "group": "mercadao",
+      "from": [
+        16,
+        0,
+        80
+      ],
+      "to": [
+        32,
+        16,
+        96
+      ],
+      "material": "floor_stone",
+      "origin": [
+        24.0,
+        8.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_1_0_6",
+      "group": "mercadao",
+      "from": [
+        16,
+        0,
+        96
+      ],
+      "to": [
+        32,
+        16,
+        112
+      ],
+      "material": "floor_accent",
+      "origin": [
+        24.0,
+        8.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_1_0_7",
+      "group": "mercadao",
+      "from": [
+        16,
+        0,
+        112
+      ],
+      "to": [
+        32,
+        16,
+        128
+      ],
+      "material": "floor_stone",
+      "origin": [
+        24.0,
+        8.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_1_0_8",
+      "group": "mercadao",
+      "from": [
+        16,
+        0,
+        128
+      ],
+      "to": [
+        32,
+        16,
+        144
+      ],
+      "material": "floor_accent",
+      "origin": [
+        24.0,
+        8.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_1_1_0",
+      "group": "mercadao",
+      "from": [
+        16,
+        16,
+        0
+      ],
+      "to": [
+        32,
+        32,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        24.0,
+        24.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "barrel_1_1_1",
+      "group": "mercadao",
+      "from": [
+        17,
+        16,
+        17
+      ],
+      "to": [
+        31,
+        30,
+        31
+      ],
+      "material": "barrel",
+      "origin": [
+        24.0,
+        23.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "barrel_1_1_2",
+      "group": "mercadao",
+      "from": [
+        17,
+        16,
+        33
+      ],
+      "to": [
+        31,
+        30,
+        47
+      ],
+      "material": "barrel",
+      "origin": [
+        24.0,
+        23.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "barrel_1_1_7",
+      "group": "mercadao",
+      "from": [
+        17,
+        16,
+        113
+      ],
+      "to": [
+        31,
+        30,
+        127
+      ],
+      "material": "barrel",
+      "origin": [
+        24.0,
+        23.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_1_1_8",
+      "group": "mercadao",
+      "from": [
+        16,
+        16,
+        128
+      ],
+      "to": [
+        32,
+        32,
+        144
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        24.0,
+        24.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_1_2_0",
+      "group": "mercadao",
+      "from": [
+        16,
+        32,
+        0
+      ],
+      "to": [
+        32,
+        48,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        24.0,
+        40.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "lantern_1_2_1",
+      "group": "mercadao",
+      "from": [
+        16,
+        32,
+        16
+      ],
+      "to": [
+        32,
+        48,
+        32
+      ],
+      "material": "lantern",
+      "origin": [
+        24.0,
+        40.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pane_1_2_8",
+      "group": "mercadao",
+      "from": [
+        23,
+        32,
+        128
+      ],
+      "to": [
+        25,
+        48,
+        144
+      ],
+      "material": "glass_pane",
+      "origin": [
+        24.0,
+        40.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_1_3_0",
+      "group": "mercadao",
+      "from": [
+        16,
+        48,
+        0
+      ],
+      "to": [
+        32,
+        64,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        24.0,
+        56.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pane_1_3_8",
+      "group": "mercadao",
+      "from": [
+        23,
+        48,
+        128
+      ],
+      "to": [
+        25,
+        64,
+        144
+      ],
+      "material": "glass_pane",
+      "origin": [
+        24.0,
+        56.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_1_4_0",
+      "group": "mercadao",
+      "from": [
+        16,
+        64,
+        0
+      ],
+      "to": [
+        32,
+        80,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        24.0,
+        72.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_1_4_8",
+      "group": "mercadao",
+      "from": [
+        16,
+        64,
+        128
+      ],
+      "to": [
+        32,
+        80,
+        144
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        24.0,
+        72.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_1_5_0",
+      "group": "mercadao",
+      "from": [
+        16,
+        80,
+        0
+      ],
+      "to": [
+        32,
+        96,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        24.0,
+        88.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_1_5_1",
+      "group": "mercadao",
+      "from": [
+        16,
+        80,
+        16
+      ],
+      "to": [
+        32,
+        96,
+        32
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        24.0,
+        88.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_1_5_2",
+      "group": "mercadao",
+      "from": [
+        16,
+        80,
+        32
+      ],
+      "to": [
+        32,
+        96,
+        48
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        24.0,
+        88.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_1_5_3",
+      "group": "mercadao",
+      "from": [
+        16,
+        80,
+        48
+      ],
+      "to": [
+        32,
+        96,
+        64
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        24.0,
+        88.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_1_5_4",
+      "group": "mercadao",
+      "from": [
+        16,
+        80,
+        64
+      ],
+      "to": [
+        32,
+        96,
+        80
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        24.0,
+        88.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_1_5_5",
+      "group": "mercadao",
+      "from": [
+        16,
+        80,
+        80
+      ],
+      "to": [
+        32,
+        96,
+        96
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        24.0,
+        88.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_1_5_6",
+      "group": "mercadao",
+      "from": [
+        16,
+        80,
+        96
+      ],
+      "to": [
+        32,
+        96,
+        112
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        24.0,
+        88.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_1_5_7",
+      "group": "mercadao",
+      "from": [
+        16,
+        80,
+        112
+      ],
+      "to": [
+        32,
+        96,
+        128
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        24.0,
+        88.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_1_5_8",
+      "group": "mercadao",
+      "from": [
+        16,
+        80,
+        128
+      ],
+      "to": [
+        32,
+        96,
+        144
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        24.0,
+        88.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_2_0_0",
+      "group": "mercadao",
+      "from": [
+        32,
+        0,
+        0
+      ],
+      "to": [
+        48,
+        16,
+        16
+      ],
+      "material": "floor_stone",
+      "origin": [
+        40.0,
+        8.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_2_0_1",
+      "group": "mercadao",
+      "from": [
+        32,
+        0,
+        16
+      ],
+      "to": [
+        48,
+        16,
+        32
+      ],
+      "material": "floor_accent",
+      "origin": [
+        40.0,
+        8.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_2_0_2",
+      "group": "mercadao",
+      "from": [
+        32,
+        0,
+        32
+      ],
+      "to": [
+        48,
+        16,
+        48
+      ],
+      "material": "floor_stone",
+      "origin": [
+        40.0,
+        8.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_2_0_3",
+      "group": "mercadao",
+      "from": [
+        32,
+        0,
+        48
+      ],
+      "to": [
+        48,
+        16,
+        64
+      ],
+      "material": "floor_accent",
+      "origin": [
+        40.0,
+        8.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_2_0_4",
+      "group": "mercadao",
+      "from": [
+        32,
+        0,
+        64
+      ],
+      "to": [
+        48,
+        16,
+        80
+      ],
+      "material": "floor_stone",
+      "origin": [
+        40.0,
+        8.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_2_0_5",
+      "group": "mercadao",
+      "from": [
+        32,
+        0,
+        80
+      ],
+      "to": [
+        48,
+        16,
+        96
+      ],
+      "material": "floor_accent",
+      "origin": [
+        40.0,
+        8.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_2_0_6",
+      "group": "mercadao",
+      "from": [
+        32,
+        0,
+        96
+      ],
+      "to": [
+        48,
+        16,
+        112
+      ],
+      "material": "floor_stone",
+      "origin": [
+        40.0,
+        8.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_2_0_7",
+      "group": "mercadao",
+      "from": [
+        32,
+        0,
+        112
+      ],
+      "to": [
+        48,
+        16,
+        128
+      ],
+      "material": "floor_accent",
+      "origin": [
+        40.0,
+        8.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_2_0_8",
+      "group": "mercadao",
+      "from": [
+        32,
+        0,
+        128
+      ],
+      "to": [
+        48,
+        16,
+        144
+      ],
+      "material": "floor_stone",
+      "origin": [
+        40.0,
+        8.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_2_1_0",
+      "group": "mercadao",
+      "from": [
+        32,
+        16,
+        0
+      ],
+      "to": [
+        48,
+        32,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        40.0,
+        24.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "sack_2_1_1",
+      "group": "mercadao",
+      "from": [
+        34,
+        16,
+        18
+      ],
+      "to": [
+        46,
+        27,
+        30
+      ],
+      "material": "sack",
+      "origin": [
+        40.0,
+        21.5,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_base_2",
+      "group": "mercadao",
+      "from": [
+        32,
+        16,
+        48
+      ],
+      "to": [
+        48,
+        23,
+        51
+      ],
+      "material": "counter_wood",
+      "origin": [
+        40.0,
+        19.5,
+        49.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_back_2",
+      "group": "mercadao",
+      "from": [
+        32,
+        16,
+        61
+      ],
+      "to": [
+        48,
+        31,
+        64
+      ],
+      "material": "counter_wood",
+      "origin": [
+        40.0,
+        23.5,
+        62.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_cheek_l_2",
+      "group": "mercadao",
+      "from": [
+        32,
+        16,
+        51
+      ],
+      "to": [
+        35,
+        23,
+        61
+      ],
+      "material": "counter_wood",
+      "origin": [
+        33.5,
+        19.5,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_cheek_r_2",
+      "group": "mercadao",
+      "from": [
+        45,
+        16,
+        51
+      ],
+      "to": [
+        48,
+        23,
+        61
+      ],
+      "material": "counter_wood",
+      "origin": [
+        46.5,
+        19.5,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_top_2",
+      "group": "mercadao",
+      "from": [
+        32,
+        31,
+        48
+      ],
+      "to": [
+        48,
+        32,
+        64
+      ],
+      "material": "counter_top",
+      "origin": [
+        40.0,
+        31.5,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_glass_2",
+      "group": "mercadao",
+      "from": [
+        32,
+        23,
+        48.5
+      ],
+      "to": [
+        48,
+        31,
+        49.5
+      ],
+      "material": "counter_glass",
+      "origin": [
+        40.0,
+        27.0,
+        49.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_post_l_2",
+      "group": "mercadao",
+      "from": [
+        32,
+        23,
+        50
+      ],
+      "to": [
+        34,
+        31,
+        52
+      ],
+      "material": "counter_frame",
+      "origin": [
+        33.0,
+        27.0,
+        51.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_post_r_2",
+      "group": "mercadao",
+      "from": [
+        46,
+        23,
+        50
+      ],
+      "to": [
+        48,
+        31,
+        52
+      ],
+      "material": "counter_frame",
+      "origin": [
+        47.0,
+        27.0,
+        51.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_shelf_2",
+      "group": "mercadao",
+      "from": [
+        32,
+        25.5,
+        51
+      ],
+      "to": [
+        48,
+        26.5,
+        60
+      ],
+      "material": "counter_frame",
+      "origin": [
+        40.0,
+        26.0,
+        55.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_shelf_2_good0",
+      "group": "mercadao",
+      "from": [
+        33.5,
+        26.5,
+        51.5
+      ],
+      "to": [
+        36.5,
+        30,
+        59.5
+      ],
+      "material": "goods_bebidas",
+      "origin": [
+        35.0,
+        28.25,
+        55.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_shelf_2_good1",
+      "group": "mercadao",
+      "from": [
+        38.0,
+        26.5,
+        51.5
+      ],
+      "to": [
+        41.0,
+        30,
+        59.5
+      ],
+      "material": "goods_bebidas",
+      "origin": [
+        39.5,
+        28.25,
+        55.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_shelf_2_good2",
+      "group": "mercadao",
+      "from": [
+        42.5,
+        26.5,
+        51.5
+      ],
+      "to": [
+        45.5,
+        30,
+        59.5
+      ],
+      "material": "goods_bebidas",
+      "origin": [
+        44.0,
+        28.25,
+        55.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "sack_2_1_6",
+      "group": "mercadao",
+      "from": [
+        34,
+        16,
+        98
+      ],
+      "to": [
+        46,
+        27,
+        110
+      ],
+      "material": "sack",
+      "origin": [
+        40.0,
+        21.5,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_2_1_8",
+      "group": "mercadao",
+      "from": [
+        32,
+        16,
+        128
+      ],
+      "to": [
+        48,
+        32,
+        144
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        40.0,
+        24.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_2_2_0",
+      "group": "mercadao",
+      "from": [
+        32,
+        32,
+        0
+      ],
+      "to": [
+        48,
+        48,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        40.0,
+        40.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "lantern_2_2_3",
+      "group": "mercadao",
+      "from": [
+        32,
+        32,
+        48
+      ],
+      "to": [
+        48,
+        48,
+        64
+      ],
+      "material": "lantern",
+      "origin": [
+        40.0,
+        40.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pane_2_2_8",
+      "group": "mercadao",
+      "from": [
+        39,
+        32,
+        128
+      ],
+      "to": [
+        41,
+        48,
+        144
+      ],
+      "material": "glass_pane",
+      "origin": [
+        40.0,
+        40.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_2_3_0",
+      "group": "mercadao",
+      "from": [
+        32,
+        48,
+        0
+      ],
+      "to": [
+        48,
+        64,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        40.0,
+        56.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pane_2_3_8",
+      "group": "mercadao",
+      "from": [
+        39,
+        48,
+        128
+      ],
+      "to": [
+        41,
+        64,
+        144
+      ],
+      "material": "glass_pane",
+      "origin": [
+        40.0,
+        56.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_2_4_0",
+      "group": "mercadao",
+      "from": [
+        32,
+        64,
+        0
+      ],
+      "to": [
+        48,
+        80,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        40.0,
+        72.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_2_4_8",
+      "group": "mercadao",
+      "from": [
+        32,
+        64,
+        128
+      ],
+      "to": [
+        48,
+        80,
+        144
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        40.0,
+        72.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_2_5_0",
+      "group": "mercadao",
+      "from": [
+        32,
+        80,
+        0
+      ],
+      "to": [
+        48,
+        96,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        40.0,
+        88.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_2_5_1",
+      "group": "mercadao",
+      "from": [
+        32,
+        80,
+        16
+      ],
+      "to": [
+        48,
+        96,
+        32
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        40.0,
+        88.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_2_5_2",
+      "group": "mercadao",
+      "from": [
+        32,
+        80,
+        32
+      ],
+      "to": [
+        48,
+        96,
+        48
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        40.0,
+        88.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_2_5_3",
+      "group": "mercadao",
+      "from": [
+        32,
+        80,
+        48
+      ],
+      "to": [
+        48,
+        96,
+        64
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        40.0,
+        88.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_2_5_4",
+      "group": "mercadao",
+      "from": [
+        32,
+        80,
+        64
+      ],
+      "to": [
+        48,
+        96,
+        80
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        40.0,
+        88.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_2_5_5",
+      "group": "mercadao",
+      "from": [
+        32,
+        80,
+        80
+      ],
+      "to": [
+        48,
+        96,
+        96
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        40.0,
+        88.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_2_5_6",
+      "group": "mercadao",
+      "from": [
+        32,
+        80,
+        96
+      ],
+      "to": [
+        48,
+        96,
+        112
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        40.0,
+        88.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_2_5_7",
+      "group": "mercadao",
+      "from": [
+        32,
+        80,
+        112
+      ],
+      "to": [
+        48,
+        96,
+        128
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        40.0,
+        88.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_2_5_8",
+      "group": "mercadao",
+      "from": [
+        32,
+        80,
+        128
+      ],
+      "to": [
+        48,
+        96,
+        144
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        40.0,
+        88.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_3_0_0",
+      "group": "mercadao",
+      "from": [
+        48,
+        0,
+        0
+      ],
+      "to": [
+        64,
+        16,
+        16
+      ],
+      "material": "floor_accent",
+      "origin": [
+        56.0,
+        8.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_3_0_1",
+      "group": "mercadao",
+      "from": [
+        48,
+        0,
+        16
+      ],
+      "to": [
+        64,
+        16,
+        32
+      ],
+      "material": "floor_stone",
+      "origin": [
+        56.0,
+        8.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_3_0_2",
+      "group": "mercadao",
+      "from": [
+        48,
+        0,
+        32
+      ],
+      "to": [
+        64,
+        16,
+        48
+      ],
+      "material": "floor_accent",
+      "origin": [
+        56.0,
+        8.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_3_0_3",
+      "group": "mercadao",
+      "from": [
+        48,
+        0,
+        48
+      ],
+      "to": [
+        64,
+        16,
+        64
+      ],
+      "material": "floor_stone",
+      "origin": [
+        56.0,
+        8.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_3_0_4",
+      "group": "mercadao",
+      "from": [
+        48,
+        0,
+        64
+      ],
+      "to": [
+        64,
+        16,
+        80
+      ],
+      "material": "floor_accent",
+      "origin": [
+        56.0,
+        8.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_3_0_5",
+      "group": "mercadao",
+      "from": [
+        48,
+        0,
+        80
+      ],
+      "to": [
+        64,
+        16,
+        96
+      ],
+      "material": "floor_stone",
+      "origin": [
+        56.0,
+        8.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_3_0_6",
+      "group": "mercadao",
+      "from": [
+        48,
+        0,
+        96
+      ],
+      "to": [
+        64,
+        16,
+        112
+      ],
+      "material": "floor_accent",
+      "origin": [
+        56.0,
+        8.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_3_0_7",
+      "group": "mercadao",
+      "from": [
+        48,
+        0,
+        112
+      ],
+      "to": [
+        64,
+        16,
+        128
+      ],
+      "material": "floor_stone",
+      "origin": [
+        56.0,
+        8.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_3_0_8",
+      "group": "mercadao",
+      "from": [
+        48,
+        0,
+        128
+      ],
+      "to": [
+        64,
+        16,
+        144
+      ],
+      "material": "floor_accent",
+      "origin": [
+        56.0,
+        8.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_3_1_0",
+      "group": "mercadao",
+      "from": [
+        48,
+        16,
+        0
+      ],
+      "to": [
+        64,
+        32,
+        16
+      ],
+      "material": "spruce_log",
+      "origin": [
+        56.0,
+        24.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "sack_3_1_1",
+      "group": "mercadao",
+      "from": [
+        50,
+        16,
+        18
+      ],
+      "to": [
+        62,
+        27,
+        30
+      ],
+      "material": "sack",
+      "origin": [
+        56.0,
+        21.5,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_3_1_8",
+      "group": "mercadao",
+      "from": [
+        48,
+        16,
+        128
+      ],
+      "to": [
+        64,
+        32,
+        144
+      ],
+      "material": "spruce_log",
+      "origin": [
+        56.0,
+        24.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_3_2_0",
+      "group": "mercadao",
+      "from": [
+        48,
+        32,
+        0
+      ],
+      "to": [
+        64,
+        48,
+        16
+      ],
+      "material": "spruce_log",
+      "origin": [
+        56.0,
+        40.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_3_2_8",
+      "group": "mercadao",
+      "from": [
+        48,
+        32,
+        128
+      ],
+      "to": [
+        64,
+        48,
+        144
+      ],
+      "material": "spruce_log",
+      "origin": [
+        56.0,
+        40.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_3_3_0",
+      "group": "mercadao",
+      "from": [
+        48,
+        48,
+        0
+      ],
+      "to": [
+        64,
+        64,
+        16
+      ],
+      "material": "spruce_log",
+      "origin": [
+        56.0,
+        56.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_3_3_8",
+      "group": "mercadao",
+      "from": [
+        48,
+        48,
+        128
+      ],
+      "to": [
+        64,
+        64,
+        144
+      ],
+      "material": "spruce_log",
+      "origin": [
+        56.0,
+        56.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_3_4_0",
+      "group": "mercadao",
+      "from": [
+        48,
+        64,
+        0
+      ],
+      "to": [
+        64,
+        80,
+        16
+      ],
+      "material": "spruce_log",
+      "origin": [
+        56.0,
+        72.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_3_4_8",
+      "group": "mercadao",
+      "from": [
+        48,
+        64,
+        128
+      ],
+      "to": [
+        64,
+        80,
+        144
+      ],
+      "material": "spruce_log",
+      "origin": [
+        56.0,
+        72.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_3_5_0",
+      "group": "mercadao",
+      "from": [
+        48,
+        80,
+        0
+      ],
+      "to": [
+        64,
+        96,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        56.0,
+        88.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_3_5_1",
+      "group": "mercadao",
+      "from": [
+        48,
+        80,
+        16
+      ],
+      "to": [
+        64,
+        96,
+        32
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        56.0,
+        88.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_3_5_2",
+      "group": "mercadao",
+      "from": [
+        48,
+        80,
+        32
+      ],
+      "to": [
+        64,
+        96,
+        48
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        56.0,
+        88.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_3_5_3",
+      "group": "mercadao",
+      "from": [
+        48,
+        80,
+        48
+      ],
+      "to": [
+        64,
+        96,
+        64
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        56.0,
+        88.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_3_5_4",
+      "group": "mercadao",
+      "from": [
+        48,
+        80,
+        64
+      ],
+      "to": [
+        64,
+        96,
+        80
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        56.0,
+        88.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_3_5_5",
+      "group": "mercadao",
+      "from": [
+        48,
+        80,
+        80
+      ],
+      "to": [
+        64,
+        96,
+        96
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        56.0,
+        88.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_3_5_6",
+      "group": "mercadao",
+      "from": [
+        48,
+        80,
+        96
+      ],
+      "to": [
+        64,
+        96,
+        112
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        56.0,
+        88.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_3_5_7",
+      "group": "mercadao",
+      "from": [
+        48,
+        80,
+        112
+      ],
+      "to": [
+        64,
+        96,
+        128
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        56.0,
+        88.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_3_5_8",
+      "group": "mercadao",
+      "from": [
+        48,
+        80,
+        128
+      ],
+      "to": [
+        64,
+        96,
+        144
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        56.0,
+        88.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_4_0_0",
+      "group": "mercadao",
+      "from": [
+        64,
+        0,
+        0
+      ],
+      "to": [
+        80,
+        16,
+        16
+      ],
+      "material": "floor_stone",
+      "origin": [
+        72.0,
+        8.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_4_0_1",
+      "group": "mercadao",
+      "from": [
+        64,
+        0,
+        16
+      ],
+      "to": [
+        80,
+        16,
+        32
+      ],
+      "material": "floor_accent",
+      "origin": [
+        72.0,
+        8.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_4_0_2",
+      "group": "mercadao",
+      "from": [
+        64,
+        0,
+        32
+      ],
+      "to": [
+        80,
+        16,
+        48
+      ],
+      "material": "floor_stone",
+      "origin": [
+        72.0,
+        8.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_4_0_3",
+      "group": "mercadao",
+      "from": [
+        64,
+        0,
+        48
+      ],
+      "to": [
+        80,
+        16,
+        64
+      ],
+      "material": "floor_accent",
+      "origin": [
+        72.0,
+        8.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_4_0_4",
+      "group": "mercadao",
+      "from": [
+        64,
+        0,
+        64
+      ],
+      "to": [
+        80,
+        16,
+        80
+      ],
+      "material": "floor_stone",
+      "origin": [
+        72.0,
+        8.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_4_0_5",
+      "group": "mercadao",
+      "from": [
+        64,
+        0,
+        80
+      ],
+      "to": [
+        80,
+        16,
+        96
+      ],
+      "material": "floor_accent",
+      "origin": [
+        72.0,
+        8.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_4_0_6",
+      "group": "mercadao",
+      "from": [
+        64,
+        0,
+        96
+      ],
+      "to": [
+        80,
+        16,
+        112
+      ],
+      "material": "floor_stone",
+      "origin": [
+        72.0,
+        8.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_4_0_7",
+      "group": "mercadao",
+      "from": [
+        64,
+        0,
+        112
+      ],
+      "to": [
+        80,
+        16,
+        128
+      ],
+      "material": "floor_accent",
+      "origin": [
+        72.0,
+        8.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_4_0_8",
+      "group": "mercadao",
+      "from": [
+        64,
+        0,
+        128
+      ],
+      "to": [
+        80,
+        16,
+        144
+      ],
+      "material": "floor_stone",
+      "origin": [
+        72.0,
+        8.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_4_1_0",
+      "group": "mercadao",
+      "from": [
+        64,
+        16,
+        0
+      ],
+      "to": [
+        80,
+        32,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        72.0,
+        24.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "sack_4_1_1",
+      "group": "mercadao",
+      "from": [
+        66,
+        16,
+        18
+      ],
+      "to": [
+        78,
+        27,
+        30
+      ],
+      "material": "sack",
+      "origin": [
+        72.0,
+        21.5,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_base_4",
+      "group": "mercadao",
+      "from": [
+        64,
+        16,
+        48
+      ],
+      "to": [
+        80,
+        23,
+        51
+      ],
+      "material": "counter_wood",
+      "origin": [
+        72.0,
+        19.5,
+        49.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_back_4",
+      "group": "mercadao",
+      "from": [
+        64,
+        16,
+        61
+      ],
+      "to": [
+        80,
+        31,
+        64
+      ],
+      "material": "counter_wood",
+      "origin": [
+        72.0,
+        23.5,
+        62.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_cheek_l_4",
+      "group": "mercadao",
+      "from": [
+        64,
+        16,
+        51
+      ],
+      "to": [
+        67,
+        23,
+        61
+      ],
+      "material": "counter_wood",
+      "origin": [
+        65.5,
+        19.5,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_cheek_r_4",
+      "group": "mercadao",
+      "from": [
+        77,
+        16,
+        51
+      ],
+      "to": [
+        80,
+        23,
+        61
+      ],
+      "material": "counter_wood",
+      "origin": [
+        78.5,
+        19.5,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_top_4",
+      "group": "mercadao",
+      "from": [
+        64,
+        31,
+        48
+      ],
+      "to": [
+        80,
+        32,
+        64
+      ],
+      "material": "counter_top",
+      "origin": [
+        72.0,
+        31.5,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_glass_4",
+      "group": "mercadao",
+      "from": [
+        64,
+        23,
+        48.5
+      ],
+      "to": [
+        80,
+        31,
+        49.5
+      ],
+      "material": "counter_glass",
+      "origin": [
+        72.0,
+        27.0,
+        49.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_post_l_4",
+      "group": "mercadao",
+      "from": [
+        64,
+        23,
+        50
+      ],
+      "to": [
+        66,
+        31,
+        52
+      ],
+      "material": "counter_frame",
+      "origin": [
+        65.0,
+        27.0,
+        51.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_post_r_4",
+      "group": "mercadao",
+      "from": [
+        78,
+        23,
+        50
+      ],
+      "to": [
+        80,
+        31,
+        52
+      ],
+      "material": "counter_frame",
+      "origin": [
+        79.0,
+        27.0,
+        51.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_shelf_4",
+      "group": "mercadao",
+      "from": [
+        64,
+        25.5,
+        51
+      ],
+      "to": [
+        80,
+        26.5,
+        60
+      ],
+      "material": "counter_frame",
+      "origin": [
+        72.0,
+        26.0,
+        55.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_shelf_4_good0",
+      "group": "mercadao",
+      "from": [
+        65.5,
+        26.5,
+        51.5
+      ],
+      "to": [
+        68.5,
+        30,
+        59.5
+      ],
+      "material": "goods_sementes",
+      "origin": [
+        67.0,
+        28.25,
+        55.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_shelf_4_good1",
+      "group": "mercadao",
+      "from": [
+        70.0,
+        26.5,
+        51.5
+      ],
+      "to": [
+        73.0,
+        30,
+        59.5
+      ],
+      "material": "goods_sementes",
+      "origin": [
+        71.5,
+        28.25,
+        55.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_shelf_4_good2",
+      "group": "mercadao",
+      "from": [
+        74.5,
+        26.5,
+        51.5
+      ],
+      "to": [
+        77.5,
+        30,
+        59.5
+      ],
+      "material": "goods_sementes",
+      "origin": [
+        76.0,
+        28.25,
+        55.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_4_1_8",
+      "group": "mercadao",
+      "from": [
+        64,
+        16,
+        128
+      ],
+      "to": [
+        80,
+        32,
+        144
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        72.0,
+        24.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_4_2_0",
+      "group": "mercadao",
+      "from": [
+        64,
+        32,
+        0
+      ],
+      "to": [
+        80,
+        48,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        72.0,
+        40.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_4_2_8",
+      "group": "mercadao",
+      "from": [
+        64,
+        32,
+        128
+      ],
+      "to": [
+        80,
+        48,
+        144
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        72.0,
+        40.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_4_3_0",
+      "group": "mercadao",
+      "from": [
+        64,
+        48,
+        0
+      ],
+      "to": [
+        80,
+        64,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        72.0,
+        56.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "sign_left_4",
+      "group": "mercadao",
+      "from": [
+        64,
+        58,
+        128
+      ],
+      "to": [
+        80,
+        64,
+        130
+      ],
+      "material": "sign_board",
+      "origin": [
+        72.0,
+        61.0,
+        129.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_4_4_0",
+      "group": "mercadao",
+      "from": [
+        64,
+        64,
+        0
+      ],
+      "to": [
+        80,
+        80,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        72.0,
+        72.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_4_4_8",
+      "group": "mercadao",
+      "from": [
+        64,
+        64,
+        128
+      ],
+      "to": [
+        80,
+        80,
+        144
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        72.0,
+        72.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_4_5_0",
+      "group": "mercadao",
+      "from": [
+        64,
+        80,
+        0
+      ],
+      "to": [
+        80,
+        96,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        72.0,
+        88.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_4_5_1",
+      "group": "mercadao",
+      "from": [
+        64,
+        80,
+        16
+      ],
+      "to": [
+        80,
+        96,
+        32
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        72.0,
+        88.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_4_5_2",
+      "group": "mercadao",
+      "from": [
+        64,
+        80,
+        32
+      ],
+      "to": [
+        80,
+        96,
+        48
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        72.0,
+        88.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_4_5_3",
+      "group": "mercadao",
+      "from": [
+        64,
+        80,
+        48
+      ],
+      "to": [
+        80,
+        96,
+        64
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        72.0,
+        88.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_4_5_4",
+      "group": "mercadao",
+      "from": [
+        64,
+        80,
+        64
+      ],
+      "to": [
+        80,
+        96,
+        80
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        72.0,
+        88.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_4_5_5",
+      "group": "mercadao",
+      "from": [
+        64,
+        80,
+        80
+      ],
+      "to": [
+        80,
+        96,
+        96
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        72.0,
+        88.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_4_5_6",
+      "group": "mercadao",
+      "from": [
+        64,
+        80,
+        96
+      ],
+      "to": [
+        80,
+        96,
+        112
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        72.0,
+        88.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_4_5_7",
+      "group": "mercadao",
+      "from": [
+        64,
+        80,
+        112
+      ],
+      "to": [
+        80,
+        96,
+        128
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        72.0,
+        88.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_4_5_8",
+      "group": "mercadao",
+      "from": [
+        64,
+        80,
+        128
+      ],
+      "to": [
+        80,
+        96,
+        144
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        72.0,
+        88.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_5_0_0",
+      "group": "mercadao",
+      "from": [
+        80,
+        0,
+        0
+      ],
+      "to": [
+        96,
+        16,
+        16
+      ],
+      "material": "floor_accent",
+      "origin": [
+        88.0,
+        8.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_5_0_1",
+      "group": "mercadao",
+      "from": [
+        80,
+        0,
+        16
+      ],
+      "to": [
+        96,
+        16,
+        32
+      ],
+      "material": "floor_stone",
+      "origin": [
+        88.0,
+        8.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_5_0_2",
+      "group": "mercadao",
+      "from": [
+        80,
+        0,
+        32
+      ],
+      "to": [
+        96,
+        16,
+        48
+      ],
+      "material": "floor_accent",
+      "origin": [
+        88.0,
+        8.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_5_0_3",
+      "group": "mercadao",
+      "from": [
+        80,
+        0,
+        48
+      ],
+      "to": [
+        96,
+        16,
+        64
+      ],
+      "material": "floor_stone",
+      "origin": [
+        88.0,
+        8.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_5_0_4",
+      "group": "mercadao",
+      "from": [
+        80,
+        0,
+        64
+      ],
+      "to": [
+        96,
+        16,
+        80
+      ],
+      "material": "floor_accent",
+      "origin": [
+        88.0,
+        8.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_5_0_5",
+      "group": "mercadao",
+      "from": [
+        80,
+        0,
+        80
+      ],
+      "to": [
+        96,
+        16,
+        96
+      ],
+      "material": "floor_stone",
+      "origin": [
+        88.0,
+        8.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_5_0_6",
+      "group": "mercadao",
+      "from": [
+        80,
+        0,
+        96
+      ],
+      "to": [
+        96,
+        16,
+        112
+      ],
+      "material": "floor_accent",
+      "origin": [
+        88.0,
+        8.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_5_0_7",
+      "group": "mercadao",
+      "from": [
+        80,
+        0,
+        112
+      ],
+      "to": [
+        96,
+        16,
+        128
+      ],
+      "material": "floor_stone",
+      "origin": [
+        88.0,
+        8.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_5_0_8",
+      "group": "mercadao",
+      "from": [
+        80,
+        0,
+        128
+      ],
+      "to": [
+        96,
+        16,
+        144
+      ],
+      "material": "floor_accent",
+      "origin": [
+        88.0,
+        8.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_5_1_0",
+      "group": "mercadao",
+      "from": [
+        80,
+        16,
+        0
+      ],
+      "to": [
+        96,
+        32,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        88.0,
+        24.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "npc_legs",
+      "group": "mercadao",
+      "from": [
+        85,
+        16,
+        36
+      ],
+      "to": [
+        91,
+        26,
+        44
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        88.0,
+        21.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "npc_body",
+      "group": "mercadao",
+      "from": [
+        84,
+        26,
+        36
+      ],
+      "to": [
+        92,
+        38,
+        44
+      ],
+      "material": "counter_top",
+      "origin": [
+        88.0,
+        32.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "npc_apron",
+      "group": "mercadao",
+      "from": [
+        85,
+        28,
+        35
+      ],
+      "to": [
+        91,
+        36,
+        37
+      ],
+      "material": "counter_wood",
+      "origin": [
+        88.0,
+        32.0,
+        36.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "npc_head",
+      "group": "mercadao",
+      "from": [
+        84,
+        38,
+        36
+      ],
+      "to": [
+        92,
+        46,
+        44
+      ],
+      "material": "floor_accent",
+      "origin": [
+        88.0,
+        42.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "npc_hat",
+      "group": "mercadao",
+      "from": [
+        83,
+        46,
+        35
+      ],
+      "to": [
+        93,
+        48,
+        45
+      ],
+      "material": "counter_wood",
+      "origin": [
+        88.0,
+        47.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "npc_hat_top",
+      "group": "mercadao",
+      "from": [
+        85,
+        48,
+        37
+      ],
+      "to": [
+        91,
+        50,
+        43
+      ],
+      "material": "counter_wood",
+      "origin": [
+        88.0,
+        49.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_5_2_0",
+      "group": "mercadao",
+      "from": [
+        80,
+        32,
+        0
+      ],
+      "to": [
+        96,
+        48,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        88.0,
+        40.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "anchor_5_2_2",
+      "group": "mercadao",
+      "from": [
+        86,
+        38,
+        38
+      ],
+      "to": [
+        90,
+        42,
+        42
+      ],
+      "material": "anchor_ghost",
+      "origin": [
+        88.0,
+        40.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_5_3_0",
+      "group": "mercadao",
+      "from": [
+        80,
+        48,
+        0
+      ],
+      "to": [
+        96,
+        64,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        88.0,
+        56.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "sign_center_5",
+      "group": "mercadao",
+      "from": [
+        80,
+        58,
+        128
+      ],
+      "to": [
+        96,
+        64,
+        130
+      ],
+      "material": "sign_board",
+      "origin": [
+        88.0,
+        61.0,
+        129.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_5_4_0",
+      "group": "mercadao",
+      "from": [
+        80,
+        64,
+        0
+      ],
+      "to": [
+        96,
+        80,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        88.0,
+        72.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_5_4_8",
+      "group": "mercadao",
+      "from": [
+        80,
+        64,
+        128
+      ],
+      "to": [
+        96,
+        80,
+        144
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        88.0,
+        72.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_5_5_0",
+      "group": "mercadao",
+      "from": [
+        80,
+        80,
+        0
+      ],
+      "to": [
+        96,
+        96,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        88.0,
+        88.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_5_5_1",
+      "group": "mercadao",
+      "from": [
+        80,
+        80,
+        16
+      ],
+      "to": [
+        96,
+        96,
+        32
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        88.0,
+        88.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_5_5_2",
+      "group": "mercadao",
+      "from": [
+        80,
+        80,
+        32
+      ],
+      "to": [
+        96,
+        96,
+        48
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        88.0,
+        88.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_5_5_3",
+      "group": "mercadao",
+      "from": [
+        80,
+        80,
+        48
+      ],
+      "to": [
+        96,
+        96,
+        64
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        88.0,
+        88.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_5_5_4",
+      "group": "mercadao",
+      "from": [
+        80,
+        80,
+        64
+      ],
+      "to": [
+        96,
+        96,
+        80
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        88.0,
+        88.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_5_5_5",
+      "group": "mercadao",
+      "from": [
+        80,
+        80,
+        80
+      ],
+      "to": [
+        96,
+        96,
+        96
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        88.0,
+        88.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_5_5_6",
+      "group": "mercadao",
+      "from": [
+        80,
+        80,
+        96
+      ],
+      "to": [
+        96,
+        96,
+        112
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        88.0,
+        88.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_5_5_7",
+      "group": "mercadao",
+      "from": [
+        80,
+        80,
+        112
+      ],
+      "to": [
+        96,
+        96,
+        128
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        88.0,
+        88.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_5_5_8",
+      "group": "mercadao",
+      "from": [
+        80,
+        80,
+        128
+      ],
+      "to": [
+        96,
+        96,
+        144
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        88.0,
+        88.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_6_0_0",
+      "group": "mercadao",
+      "from": [
+        96,
+        0,
+        0
+      ],
+      "to": [
+        112,
+        16,
+        16
+      ],
+      "material": "floor_stone",
+      "origin": [
+        104.0,
+        8.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_6_0_1",
+      "group": "mercadao",
+      "from": [
+        96,
+        0,
+        16
+      ],
+      "to": [
+        112,
+        16,
+        32
+      ],
+      "material": "floor_accent",
+      "origin": [
+        104.0,
+        8.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_6_0_2",
+      "group": "mercadao",
+      "from": [
+        96,
+        0,
+        32
+      ],
+      "to": [
+        112,
+        16,
+        48
+      ],
+      "material": "floor_stone",
+      "origin": [
+        104.0,
+        8.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_6_0_3",
+      "group": "mercadao",
+      "from": [
+        96,
+        0,
+        48
+      ],
+      "to": [
+        112,
+        16,
+        64
+      ],
+      "material": "floor_accent",
+      "origin": [
+        104.0,
+        8.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_6_0_4",
+      "group": "mercadao",
+      "from": [
+        96,
+        0,
+        64
+      ],
+      "to": [
+        112,
+        16,
+        80
+      ],
+      "material": "floor_stone",
+      "origin": [
+        104.0,
+        8.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_6_0_5",
+      "group": "mercadao",
+      "from": [
+        96,
+        0,
+        80
+      ],
+      "to": [
+        112,
+        16,
+        96
+      ],
+      "material": "floor_accent",
+      "origin": [
+        104.0,
+        8.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_6_0_6",
+      "group": "mercadao",
+      "from": [
+        96,
+        0,
+        96
+      ],
+      "to": [
+        112,
+        16,
+        112
+      ],
+      "material": "floor_stone",
+      "origin": [
+        104.0,
+        8.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_6_0_7",
+      "group": "mercadao",
+      "from": [
+        96,
+        0,
+        112
+      ],
+      "to": [
+        112,
+        16,
+        128
+      ],
+      "material": "floor_accent",
+      "origin": [
+        104.0,
+        8.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_6_0_8",
+      "group": "mercadao",
+      "from": [
+        96,
+        0,
+        128
+      ],
+      "to": [
+        112,
+        16,
+        144
+      ],
+      "material": "floor_stone",
+      "origin": [
+        104.0,
+        8.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_6_1_0",
+      "group": "mercadao",
+      "from": [
+        96,
+        16,
+        0
+      ],
+      "to": [
+        112,
+        32,
+        16
+      ],
+      "material": "spruce_log",
+      "origin": [
+        104.0,
+        24.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "sack_6_1_1",
+      "group": "mercadao",
+      "from": [
+        98,
+        16,
+        18
+      ],
+      "to": [
+        110,
+        27,
+        30
+      ],
+      "material": "sack",
+      "origin": [
+        104.0,
+        21.5,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_base_6",
+      "group": "mercadao",
+      "from": [
+        96,
+        16,
+        48
+      ],
+      "to": [
+        112,
+        23,
+        51
+      ],
+      "material": "counter_wood",
+      "origin": [
+        104.0,
+        19.5,
+        49.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_back_6",
+      "group": "mercadao",
+      "from": [
+        96,
+        16,
+        61
+      ],
+      "to": [
+        112,
+        31,
+        64
+      ],
+      "material": "counter_wood",
+      "origin": [
+        104.0,
+        23.5,
+        62.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_cheek_l_6",
+      "group": "mercadao",
+      "from": [
+        96,
+        16,
+        51
+      ],
+      "to": [
+        99,
+        23,
+        61
+      ],
+      "material": "counter_wood",
+      "origin": [
+        97.5,
+        19.5,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_cheek_r_6",
+      "group": "mercadao",
+      "from": [
+        109,
+        16,
+        51
+      ],
+      "to": [
+        112,
+        23,
+        61
+      ],
+      "material": "counter_wood",
+      "origin": [
+        110.5,
+        19.5,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_top_6",
+      "group": "mercadao",
+      "from": [
+        96,
+        31,
+        48
+      ],
+      "to": [
+        112,
+        32,
+        64
+      ],
+      "material": "counter_top",
+      "origin": [
+        104.0,
+        31.5,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_glass_6",
+      "group": "mercadao",
+      "from": [
+        96,
+        23,
+        48.5
+      ],
+      "to": [
+        112,
+        31,
+        49.5
+      ],
+      "material": "counter_glass",
+      "origin": [
+        104.0,
+        27.0,
+        49.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_post_l_6",
+      "group": "mercadao",
+      "from": [
+        96,
+        23,
+        50
+      ],
+      "to": [
+        98,
+        31,
+        52
+      ],
+      "material": "counter_frame",
+      "origin": [
+        97.0,
+        27.0,
+        51.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_post_r_6",
+      "group": "mercadao",
+      "from": [
+        110,
+        23,
+        50
+      ],
+      "to": [
+        112,
+        31,
+        52
+      ],
+      "material": "counter_frame",
+      "origin": [
+        111.0,
+        27.0,
+        51.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_shelf_6",
+      "group": "mercadao",
+      "from": [
+        96,
+        25.5,
+        51
+      ],
+      "to": [
+        112,
+        26.5,
+        60
+      ],
+      "material": "counter_frame",
+      "origin": [
+        104.0,
+        26.0,
+        55.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_shelf_6_good0",
+      "group": "mercadao",
+      "from": [
+        97.5,
+        26.5,
+        51.5
+      ],
+      "to": [
+        100.5,
+        30,
+        59.5
+      ],
+      "material": "goods_frios",
+      "origin": [
+        99.0,
+        28.25,
+        55.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_shelf_6_good1",
+      "group": "mercadao",
+      "from": [
+        102.0,
+        26.5,
+        51.5
+      ],
+      "to": [
+        105.0,
+        30,
+        59.5
+      ],
+      "material": "goods_frios",
+      "origin": [
+        103.5,
+        28.25,
+        55.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_shelf_6_good2",
+      "group": "mercadao",
+      "from": [
+        106.5,
+        26.5,
+        51.5
+      ],
+      "to": [
+        109.5,
+        30,
+        59.5
+      ],
+      "material": "goods_frios",
+      "origin": [
+        108.0,
+        28.25,
+        55.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_6_2_0",
+      "group": "mercadao",
+      "from": [
+        96,
+        32,
+        0
+      ],
+      "to": [
+        112,
+        48,
+        16
+      ],
+      "material": "spruce_log",
+      "origin": [
+        104.0,
+        40.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_6_3_0",
+      "group": "mercadao",
+      "from": [
+        96,
+        48,
+        0
+      ],
+      "to": [
+        112,
+        64,
+        16
+      ],
+      "material": "spruce_log",
+      "origin": [
+        104.0,
+        56.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "sign_right_6",
+      "group": "mercadao",
+      "from": [
+        96,
+        58,
+        128
+      ],
+      "to": [
+        112,
+        64,
+        130
+      ],
+      "material": "sign_board",
+      "origin": [
+        104.0,
+        61.0,
+        129.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_6_4_0",
+      "group": "mercadao",
+      "from": [
+        96,
+        64,
+        0
+      ],
+      "to": [
+        112,
+        80,
+        16
+      ],
+      "material": "spruce_log",
+      "origin": [
+        104.0,
+        72.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_6_4_8",
+      "group": "mercadao",
+      "from": [
+        96,
+        64,
+        128
+      ],
+      "to": [
+        112,
+        80,
+        144
+      ],
+      "material": "spruce_log",
+      "origin": [
+        104.0,
+        72.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_6_5_0",
+      "group": "mercadao",
+      "from": [
+        96,
+        80,
+        0
+      ],
+      "to": [
+        112,
+        96,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        104.0,
+        88.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_6_5_1",
+      "group": "mercadao",
+      "from": [
+        96,
+        80,
+        16
+      ],
+      "to": [
+        112,
+        96,
+        32
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        104.0,
+        88.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_6_5_2",
+      "group": "mercadao",
+      "from": [
+        96,
+        80,
+        32
+      ],
+      "to": [
+        112,
+        96,
+        48
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        104.0,
+        88.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_6_5_3",
+      "group": "mercadao",
+      "from": [
+        96,
+        80,
+        48
+      ],
+      "to": [
+        112,
+        96,
+        64
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        104.0,
+        88.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_6_5_4",
+      "group": "mercadao",
+      "from": [
+        96,
+        80,
+        64
+      ],
+      "to": [
+        112,
+        96,
+        80
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        104.0,
+        88.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_6_5_5",
+      "group": "mercadao",
+      "from": [
+        96,
+        80,
+        80
+      ],
+      "to": [
+        112,
+        96,
+        96
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        104.0,
+        88.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_6_5_6",
+      "group": "mercadao",
+      "from": [
+        96,
+        80,
+        96
+      ],
+      "to": [
+        112,
+        96,
+        112
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        104.0,
+        88.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_6_5_7",
+      "group": "mercadao",
+      "from": [
+        96,
+        80,
+        112
+      ],
+      "to": [
+        112,
+        96,
+        128
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        104.0,
+        88.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_6_5_8",
+      "group": "mercadao",
+      "from": [
+        96,
+        80,
+        128
+      ],
+      "to": [
+        112,
+        96,
+        144
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        104.0,
+        88.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_7_0_0",
+      "group": "mercadao",
+      "from": [
+        112,
+        0,
+        0
+      ],
+      "to": [
+        128,
+        16,
+        16
+      ],
+      "material": "floor_accent",
+      "origin": [
+        120.0,
+        8.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_7_0_1",
+      "group": "mercadao",
+      "from": [
+        112,
+        0,
+        16
+      ],
+      "to": [
+        128,
+        16,
+        32
+      ],
+      "material": "floor_stone",
+      "origin": [
+        120.0,
+        8.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_7_0_2",
+      "group": "mercadao",
+      "from": [
+        112,
+        0,
+        32
+      ],
+      "to": [
+        128,
+        16,
+        48
+      ],
+      "material": "floor_accent",
+      "origin": [
+        120.0,
+        8.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_7_0_3",
+      "group": "mercadao",
+      "from": [
+        112,
+        0,
+        48
+      ],
+      "to": [
+        128,
+        16,
+        64
+      ],
+      "material": "floor_stone",
+      "origin": [
+        120.0,
+        8.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_7_0_4",
+      "group": "mercadao",
+      "from": [
+        112,
+        0,
+        64
+      ],
+      "to": [
+        128,
+        16,
+        80
+      ],
+      "material": "floor_accent",
+      "origin": [
+        120.0,
+        8.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_7_0_5",
+      "group": "mercadao",
+      "from": [
+        112,
+        0,
+        80
+      ],
+      "to": [
+        128,
+        16,
+        96
+      ],
+      "material": "floor_stone",
+      "origin": [
+        120.0,
+        8.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_7_0_6",
+      "group": "mercadao",
+      "from": [
+        112,
+        0,
+        96
+      ],
+      "to": [
+        128,
+        16,
+        112
+      ],
+      "material": "floor_accent",
+      "origin": [
+        120.0,
+        8.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_7_0_7",
+      "group": "mercadao",
+      "from": [
+        112,
+        0,
+        112
+      ],
+      "to": [
+        128,
+        16,
+        128
+      ],
+      "material": "floor_stone",
+      "origin": [
+        120.0,
+        8.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_7_0_8",
+      "group": "mercadao",
+      "from": [
+        112,
+        0,
+        128
+      ],
+      "to": [
+        128,
+        16,
+        144
+      ],
+      "material": "floor_accent",
+      "origin": [
+        120.0,
+        8.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_7_1_0",
+      "group": "mercadao",
+      "from": [
+        112,
+        16,
+        0
+      ],
+      "to": [
+        128,
+        32,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        120.0,
+        24.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "sack_7_1_1",
+      "group": "mercadao",
+      "from": [
+        114,
+        16,
+        18
+      ],
+      "to": [
+        126,
+        27,
+        30
+      ],
+      "material": "sack",
+      "origin": [
+        120.0,
+        21.5,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_7_1_8",
+      "group": "mercadao",
+      "from": [
+        112,
+        16,
+        128
+      ],
+      "to": [
+        128,
+        32,
+        144
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        120.0,
+        24.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_7_2_0",
+      "group": "mercadao",
+      "from": [
+        112,
+        32,
+        0
+      ],
+      "to": [
+        128,
+        48,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        120.0,
+        40.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pane_7_2_8",
+      "group": "mercadao",
+      "from": [
+        119,
+        32,
+        128
+      ],
+      "to": [
+        121,
+        48,
+        144
+      ],
+      "material": "glass_pane",
+      "origin": [
+        120.0,
+        40.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_7_3_0",
+      "group": "mercadao",
+      "from": [
+        112,
+        48,
+        0
+      ],
+      "to": [
+        128,
+        64,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        120.0,
+        56.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pane_7_3_8",
+      "group": "mercadao",
+      "from": [
+        119,
+        48,
+        128
+      ],
+      "to": [
+        121,
+        64,
+        144
+      ],
+      "material": "glass_pane",
+      "origin": [
+        120.0,
+        56.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_7_4_0",
+      "group": "mercadao",
+      "from": [
+        112,
+        64,
+        0
+      ],
+      "to": [
+        128,
+        80,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        120.0,
+        72.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_7_4_8",
+      "group": "mercadao",
+      "from": [
+        112,
+        64,
+        128
+      ],
+      "to": [
+        128,
+        80,
+        144
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        120.0,
+        72.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_7_5_0",
+      "group": "mercadao",
+      "from": [
+        112,
+        80,
+        0
+      ],
+      "to": [
+        128,
+        96,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        120.0,
+        88.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_7_5_1",
+      "group": "mercadao",
+      "from": [
+        112,
+        80,
+        16
+      ],
+      "to": [
+        128,
+        96,
+        32
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        120.0,
+        88.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_7_5_2",
+      "group": "mercadao",
+      "from": [
+        112,
+        80,
+        32
+      ],
+      "to": [
+        128,
+        96,
+        48
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        120.0,
+        88.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_7_5_3",
+      "group": "mercadao",
+      "from": [
+        112,
+        80,
+        48
+      ],
+      "to": [
+        128,
+        96,
+        64
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        120.0,
+        88.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_7_5_4",
+      "group": "mercadao",
+      "from": [
+        112,
+        80,
+        64
+      ],
+      "to": [
+        128,
+        96,
+        80
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        120.0,
+        88.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_7_5_5",
+      "group": "mercadao",
+      "from": [
+        112,
+        80,
+        80
+      ],
+      "to": [
+        128,
+        96,
+        96
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        120.0,
+        88.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_7_5_6",
+      "group": "mercadao",
+      "from": [
+        112,
+        80,
+        96
+      ],
+      "to": [
+        128,
+        96,
+        112
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        120.0,
+        88.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_7_5_7",
+      "group": "mercadao",
+      "from": [
+        112,
+        80,
+        112
+      ],
+      "to": [
+        128,
+        96,
+        128
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        120.0,
+        88.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_7_5_8",
+      "group": "mercadao",
+      "from": [
+        112,
+        80,
+        128
+      ],
+      "to": [
+        128,
+        96,
+        144
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        120.0,
+        88.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_8_0_0",
+      "group": "mercadao",
+      "from": [
+        128,
+        0,
+        0
+      ],
+      "to": [
+        144,
+        16,
+        16
+      ],
+      "material": "floor_stone",
+      "origin": [
+        136.0,
+        8.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_8_0_1",
+      "group": "mercadao",
+      "from": [
+        128,
+        0,
+        16
+      ],
+      "to": [
+        144,
+        16,
+        32
+      ],
+      "material": "floor_accent",
+      "origin": [
+        136.0,
+        8.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_8_0_2",
+      "group": "mercadao",
+      "from": [
+        128,
+        0,
+        32
+      ],
+      "to": [
+        144,
+        16,
+        48
+      ],
+      "material": "floor_stone",
+      "origin": [
+        136.0,
+        8.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_8_0_3",
+      "group": "mercadao",
+      "from": [
+        128,
+        0,
+        48
+      ],
+      "to": [
+        144,
+        16,
+        64
+      ],
+      "material": "floor_accent",
+      "origin": [
+        136.0,
+        8.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_8_0_4",
+      "group": "mercadao",
+      "from": [
+        128,
+        0,
+        64
+      ],
+      "to": [
+        144,
+        16,
+        80
+      ],
+      "material": "floor_stone",
+      "origin": [
+        136.0,
+        8.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_8_0_5",
+      "group": "mercadao",
+      "from": [
+        128,
+        0,
+        80
+      ],
+      "to": [
+        144,
+        16,
+        96
+      ],
+      "material": "floor_accent",
+      "origin": [
+        136.0,
+        8.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_8_0_6",
+      "group": "mercadao",
+      "from": [
+        128,
+        0,
+        96
+      ],
+      "to": [
+        144,
+        16,
+        112
+      ],
+      "material": "floor_stone",
+      "origin": [
+        136.0,
+        8.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_8_0_7",
+      "group": "mercadao",
+      "from": [
+        128,
+        0,
+        112
+      ],
+      "to": [
+        144,
+        16,
+        128
+      ],
+      "material": "floor_accent",
+      "origin": [
+        136.0,
+        8.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_8_0_8",
+      "group": "mercadao",
+      "from": [
+        128,
+        0,
+        128
+      ],
+      "to": [
+        144,
+        16,
+        144
+      ],
+      "material": "floor_stone",
+      "origin": [
+        136.0,
+        8.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_8_1_0",
+      "group": "mercadao",
+      "from": [
+        128,
+        16,
+        0
+      ],
+      "to": [
+        144,
+        32,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        136.0,
+        24.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "sack_8_1_1",
+      "group": "mercadao",
+      "from": [
+        130,
+        16,
+        18
+      ],
+      "to": [
+        142,
+        27,
+        30
+      ],
+      "material": "sack",
+      "origin": [
+        136.0,
+        21.5,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_base_8",
+      "group": "mercadao",
+      "from": [
+        128,
+        16,
+        48
+      ],
+      "to": [
+        144,
+        23,
+        51
+      ],
+      "material": "counter_wood",
+      "origin": [
+        136.0,
+        19.5,
+        49.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_back_8",
+      "group": "mercadao",
+      "from": [
+        128,
+        16,
+        61
+      ],
+      "to": [
+        144,
+        31,
+        64
+      ],
+      "material": "counter_wood",
+      "origin": [
+        136.0,
+        23.5,
+        62.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_cheek_l_8",
+      "group": "mercadao",
+      "from": [
+        128,
+        16,
+        51
+      ],
+      "to": [
+        131,
+        23,
+        61
+      ],
+      "material": "counter_wood",
+      "origin": [
+        129.5,
+        19.5,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_cheek_r_8",
+      "group": "mercadao",
+      "from": [
+        141,
+        16,
+        51
+      ],
+      "to": [
+        144,
+        23,
+        61
+      ],
+      "material": "counter_wood",
+      "origin": [
+        142.5,
+        19.5,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_top_8",
+      "group": "mercadao",
+      "from": [
+        128,
+        31,
+        48
+      ],
+      "to": [
+        144,
+        32,
+        64
+      ],
+      "material": "counter_top",
+      "origin": [
+        136.0,
+        31.5,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_glass_8",
+      "group": "mercadao",
+      "from": [
+        128,
+        23,
+        48.5
+      ],
+      "to": [
+        144,
+        31,
+        49.5
+      ],
+      "material": "counter_glass",
+      "origin": [
+        136.0,
+        27.0,
+        49.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_post_l_8",
+      "group": "mercadao",
+      "from": [
+        128,
+        23,
+        50
+      ],
+      "to": [
+        130,
+        31,
+        52
+      ],
+      "material": "counter_frame",
+      "origin": [
+        129.0,
+        27.0,
+        51.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_post_r_8",
+      "group": "mercadao",
+      "from": [
+        142,
+        23,
+        50
+      ],
+      "to": [
+        144,
+        31,
+        52
+      ],
+      "material": "counter_frame",
+      "origin": [
+        143.0,
+        27.0,
+        51.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_shelf_8",
+      "group": "mercadao",
+      "from": [
+        128,
+        25.5,
+        51
+      ],
+      "to": [
+        144,
+        26.5,
+        60
+      ],
+      "material": "counter_frame",
+      "origin": [
+        136.0,
+        26.0,
+        55.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_shelf_8_good0",
+      "group": "mercadao",
+      "from": [
+        129.5,
+        26.5,
+        51.5
+      ],
+      "to": [
+        132.5,
+        30,
+        59.5
+      ],
+      "material": "goods_balcao_forte",
+      "origin": [
+        131.0,
+        28.25,
+        55.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_shelf_8_good1",
+      "group": "mercadao",
+      "from": [
+        134.0,
+        26.5,
+        51.5
+      ],
+      "to": [
+        137.0,
+        30,
+        59.5
+      ],
+      "material": "goods_balcao_forte",
+      "origin": [
+        135.5,
+        28.25,
+        55.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "counter_shelf_8_good2",
+      "group": "mercadao",
+      "from": [
+        138.5,
+        26.5,
+        51.5
+      ],
+      "to": [
+        141.5,
+        30,
+        59.5
+      ],
+      "material": "goods_balcao_forte",
+      "origin": [
+        140.0,
+        28.25,
+        55.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "sack_8_1_6",
+      "group": "mercadao",
+      "from": [
+        130,
+        16,
+        98
+      ],
+      "to": [
+        142,
+        27,
+        110
+      ],
+      "material": "sack",
+      "origin": [
+        136.0,
+        21.5,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_8_1_8",
+      "group": "mercadao",
+      "from": [
+        128,
+        16,
+        128
+      ],
+      "to": [
+        144,
+        32,
+        144
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        136.0,
+        24.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_8_2_0",
+      "group": "mercadao",
+      "from": [
+        128,
+        32,
+        0
+      ],
+      "to": [
+        144,
+        48,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        136.0,
+        40.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "lantern_8_2_3",
+      "group": "mercadao",
+      "from": [
+        128,
+        32,
+        48
+      ],
+      "to": [
+        144,
+        48,
+        64
+      ],
+      "material": "lantern",
+      "origin": [
+        136.0,
+        40.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pane_8_2_8",
+      "group": "mercadao",
+      "from": [
+        135,
+        32,
+        128
+      ],
+      "to": [
+        137,
+        48,
+        144
+      ],
+      "material": "glass_pane",
+      "origin": [
+        136.0,
+        40.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_8_3_0",
+      "group": "mercadao",
+      "from": [
+        128,
+        48,
+        0
+      ],
+      "to": [
+        144,
+        64,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        136.0,
+        56.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pane_8_3_8",
+      "group": "mercadao",
+      "from": [
+        135,
+        48,
+        128
+      ],
+      "to": [
+        137,
+        64,
+        144
+      ],
+      "material": "glass_pane",
+      "origin": [
+        136.0,
+        56.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_8_4_0",
+      "group": "mercadao",
+      "from": [
+        128,
+        64,
+        0
+      ],
+      "to": [
+        144,
+        80,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        136.0,
+        72.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_8_4_8",
+      "group": "mercadao",
+      "from": [
+        128,
+        64,
+        128
+      ],
+      "to": [
+        144,
+        80,
+        144
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        136.0,
+        72.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_8_5_0",
+      "group": "mercadao",
+      "from": [
+        128,
+        80,
+        0
+      ],
+      "to": [
+        144,
+        96,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        136.0,
+        88.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_8_5_1",
+      "group": "mercadao",
+      "from": [
+        128,
+        80,
+        16
+      ],
+      "to": [
+        144,
+        96,
+        32
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        136.0,
+        88.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_8_5_2",
+      "group": "mercadao",
+      "from": [
+        128,
+        80,
+        32
+      ],
+      "to": [
+        144,
+        96,
+        48
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        136.0,
+        88.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_8_5_3",
+      "group": "mercadao",
+      "from": [
+        128,
+        80,
+        48
+      ],
+      "to": [
+        144,
+        96,
+        64
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        136.0,
+        88.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_8_5_4",
+      "group": "mercadao",
+      "from": [
+        128,
+        80,
+        64
+      ],
+      "to": [
+        144,
+        96,
+        80
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        136.0,
+        88.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_8_5_5",
+      "group": "mercadao",
+      "from": [
+        128,
+        80,
+        80
+      ],
+      "to": [
+        144,
+        96,
+        96
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        136.0,
+        88.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_8_5_6",
+      "group": "mercadao",
+      "from": [
+        128,
+        80,
+        96
+      ],
+      "to": [
+        144,
+        96,
+        112
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        136.0,
+        88.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_8_5_7",
+      "group": "mercadao",
+      "from": [
+        128,
+        80,
+        112
+      ],
+      "to": [
+        144,
+        96,
+        128
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        136.0,
+        88.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_8_5_8",
+      "group": "mercadao",
+      "from": [
+        128,
+        80,
+        128
+      ],
+      "to": [
+        144,
+        96,
+        144
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        136.0,
+        88.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_9_0_0",
+      "group": "mercadao",
+      "from": [
+        144,
+        0,
+        0
+      ],
+      "to": [
+        160,
+        16,
+        16
+      ],
+      "material": "floor_accent",
+      "origin": [
+        152.0,
+        8.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_9_0_1",
+      "group": "mercadao",
+      "from": [
+        144,
+        0,
+        16
+      ],
+      "to": [
+        160,
+        16,
+        32
+      ],
+      "material": "floor_stone",
+      "origin": [
+        152.0,
+        8.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_9_0_2",
+      "group": "mercadao",
+      "from": [
+        144,
+        0,
+        32
+      ],
+      "to": [
+        160,
+        16,
+        48
+      ],
+      "material": "floor_accent",
+      "origin": [
+        152.0,
+        8.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_9_0_3",
+      "group": "mercadao",
+      "from": [
+        144,
+        0,
+        48
+      ],
+      "to": [
+        160,
+        16,
+        64
+      ],
+      "material": "floor_stone",
+      "origin": [
+        152.0,
+        8.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_9_0_4",
+      "group": "mercadao",
+      "from": [
+        144,
+        0,
+        64
+      ],
+      "to": [
+        160,
+        16,
+        80
+      ],
+      "material": "floor_accent",
+      "origin": [
+        152.0,
+        8.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_9_0_5",
+      "group": "mercadao",
+      "from": [
+        144,
+        0,
+        80
+      ],
+      "to": [
+        160,
+        16,
+        96
+      ],
+      "material": "floor_stone",
+      "origin": [
+        152.0,
+        8.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_9_0_6",
+      "group": "mercadao",
+      "from": [
+        144,
+        0,
+        96
+      ],
+      "to": [
+        160,
+        16,
+        112
+      ],
+      "material": "floor_accent",
+      "origin": [
+        152.0,
+        8.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_9_0_7",
+      "group": "mercadao",
+      "from": [
+        144,
+        0,
+        112
+      ],
+      "to": [
+        160,
+        16,
+        128
+      ],
+      "material": "floor_stone",
+      "origin": [
+        152.0,
+        8.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_9_0_8",
+      "group": "mercadao",
+      "from": [
+        144,
+        0,
+        128
+      ],
+      "to": [
+        160,
+        16,
+        144
+      ],
+      "material": "floor_accent",
+      "origin": [
+        152.0,
+        8.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_9_1_0",
+      "group": "mercadao",
+      "from": [
+        144,
+        16,
+        0
+      ],
+      "to": [
+        160,
+        32,
+        16
+      ],
+      "material": "spruce_log",
+      "origin": [
+        152.0,
+        24.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "barrel_9_1_1",
+      "group": "mercadao",
+      "from": [
+        145,
+        16,
+        17
+      ],
+      "to": [
+        159,
+        30,
+        31
+      ],
+      "material": "barrel",
+      "origin": [
+        152.0,
+        23.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "barrel_9_1_2",
+      "group": "mercadao",
+      "from": [
+        145,
+        16,
+        33
+      ],
+      "to": [
+        159,
+        30,
+        47
+      ],
+      "material": "barrel",
+      "origin": [
+        152.0,
+        23.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "barrel_9_1_7",
+      "group": "mercadao",
+      "from": [
+        145,
+        16,
+        113
+      ],
+      "to": [
+        159,
+        30,
+        127
+      ],
+      "material": "barrel",
+      "origin": [
+        152.0,
+        23.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_9_1_8",
+      "group": "mercadao",
+      "from": [
+        144,
+        16,
+        128
+      ],
+      "to": [
+        160,
+        32,
+        144
+      ],
+      "material": "spruce_log",
+      "origin": [
+        152.0,
+        24.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_9_2_0",
+      "group": "mercadao",
+      "from": [
+        144,
+        32,
+        0
+      ],
+      "to": [
+        160,
+        48,
+        16
+      ],
+      "material": "spruce_log",
+      "origin": [
+        152.0,
+        40.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "lantern_9_2_1",
+      "group": "mercadao",
+      "from": [
+        144,
+        32,
+        16
+      ],
+      "to": [
+        160,
+        48,
+        32
+      ],
+      "material": "lantern",
+      "origin": [
+        152.0,
+        40.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_9_2_8",
+      "group": "mercadao",
+      "from": [
+        144,
+        32,
+        128
+      ],
+      "to": [
+        160,
+        48,
+        144
+      ],
+      "material": "spruce_log",
+      "origin": [
+        152.0,
+        40.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_9_3_0",
+      "group": "mercadao",
+      "from": [
+        144,
+        48,
+        0
+      ],
+      "to": [
+        160,
+        64,
+        16
+      ],
+      "material": "spruce_log",
+      "origin": [
+        152.0,
+        56.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_9_3_8",
+      "group": "mercadao",
+      "from": [
+        144,
+        48,
+        128
+      ],
+      "to": [
+        160,
+        64,
+        144
+      ],
+      "material": "spruce_log",
+      "origin": [
+        152.0,
+        56.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_9_4_0",
+      "group": "mercadao",
+      "from": [
+        144,
+        64,
+        0
+      ],
+      "to": [
+        160,
+        80,
+        16
+      ],
+      "material": "spruce_log",
+      "origin": [
+        152.0,
+        72.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_9_4_8",
+      "group": "mercadao",
+      "from": [
+        144,
+        64,
+        128
+      ],
+      "to": [
+        160,
+        80,
+        144
+      ],
+      "material": "spruce_log",
+      "origin": [
+        152.0,
+        72.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_9_5_0",
+      "group": "mercadao",
+      "from": [
+        144,
+        80,
+        0
+      ],
+      "to": [
+        160,
+        96,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        152.0,
+        88.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_9_5_1",
+      "group": "mercadao",
+      "from": [
+        144,
+        80,
+        16
+      ],
+      "to": [
+        160,
+        96,
+        32
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        152.0,
+        88.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_9_5_2",
+      "group": "mercadao",
+      "from": [
+        144,
+        80,
+        32
+      ],
+      "to": [
+        160,
+        96,
+        48
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        152.0,
+        88.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_9_5_3",
+      "group": "mercadao",
+      "from": [
+        144,
+        80,
+        48
+      ],
+      "to": [
+        160,
+        96,
+        64
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        152.0,
+        88.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_9_5_4",
+      "group": "mercadao",
+      "from": [
+        144,
+        80,
+        64
+      ],
+      "to": [
+        160,
+        96,
+        80
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        152.0,
+        88.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_9_5_5",
+      "group": "mercadao",
+      "from": [
+        144,
+        80,
+        80
+      ],
+      "to": [
+        160,
+        96,
+        96
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        152.0,
+        88.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_9_5_6",
+      "group": "mercadao",
+      "from": [
+        144,
+        80,
+        96
+      ],
+      "to": [
+        160,
+        96,
+        112
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        152.0,
+        88.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_9_5_7",
+      "group": "mercadao",
+      "from": [
+        144,
+        80,
+        112
+      ],
+      "to": [
+        160,
+        96,
+        128
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        152.0,
+        88.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_9_5_8",
+      "group": "mercadao",
+      "from": [
+        144,
+        80,
+        128
+      ],
+      "to": [
+        160,
+        96,
+        144
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        152.0,
+        88.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_10_0_0",
+      "group": "mercadao",
+      "from": [
+        160,
+        0,
+        0
+      ],
+      "to": [
+        176,
+        16,
+        16
+      ],
+      "material": "floor_stone",
+      "origin": [
+        168.0,
+        8.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_10_0_1",
+      "group": "mercadao",
+      "from": [
+        160,
+        0,
+        16
+      ],
+      "to": [
+        176,
+        16,
+        32
+      ],
+      "material": "floor_accent",
+      "origin": [
+        168.0,
+        8.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_10_0_2",
+      "group": "mercadao",
+      "from": [
+        160,
+        0,
+        32
+      ],
+      "to": [
+        176,
+        16,
+        48
+      ],
+      "material": "floor_stone",
+      "origin": [
+        168.0,
+        8.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_10_0_3",
+      "group": "mercadao",
+      "from": [
+        160,
+        0,
+        48
+      ],
+      "to": [
+        176,
+        16,
+        64
+      ],
+      "material": "floor_accent",
+      "origin": [
+        168.0,
+        8.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_10_0_4",
+      "group": "mercadao",
+      "from": [
+        160,
+        0,
+        64
+      ],
+      "to": [
+        176,
+        16,
+        80
+      ],
+      "material": "floor_stone",
+      "origin": [
+        168.0,
+        8.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_10_0_5",
+      "group": "mercadao",
+      "from": [
+        160,
+        0,
+        80
+      ],
+      "to": [
+        176,
+        16,
+        96
+      ],
+      "material": "floor_accent",
+      "origin": [
+        168.0,
+        8.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_10_0_6",
+      "group": "mercadao",
+      "from": [
+        160,
+        0,
+        96
+      ],
+      "to": [
+        176,
+        16,
+        112
+      ],
+      "material": "floor_stone",
+      "origin": [
+        168.0,
+        8.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_accent_10_0_7",
+      "group": "mercadao",
+      "from": [
+        160,
+        0,
+        112
+      ],
+      "to": [
+        176,
+        16,
+        128
+      ],
+      "material": "floor_accent",
+      "origin": [
+        168.0,
+        8.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "floor_10_0_8",
+      "group": "mercadao",
+      "from": [
+        160,
+        0,
+        128
+      ],
+      "to": [
+        176,
+        16,
+        144
+      ],
+      "material": "floor_stone",
+      "origin": [
+        168.0,
+        8.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_1_0",
+      "group": "mercadao",
+      "from": [
+        160,
+        16,
+        0
+      ],
+      "to": [
+        176,
+        32,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        24.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_1_1",
+      "group": "mercadao",
+      "from": [
+        160,
+        16,
+        16
+      ],
+      "to": [
+        176,
+        32,
+        32
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        24.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_1_2",
+      "group": "mercadao",
+      "from": [
+        160,
+        16,
+        32
+      ],
+      "to": [
+        176,
+        32,
+        48
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        24.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_10_1_3",
+      "group": "mercadao",
+      "from": [
+        160,
+        16,
+        48
+      ],
+      "to": [
+        176,
+        32,
+        64
+      ],
+      "material": "spruce_log",
+      "origin": [
+        168.0,
+        24.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_1_4",
+      "group": "mercadao",
+      "from": [
+        160,
+        16,
+        64
+      ],
+      "to": [
+        176,
+        32,
+        80
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        24.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_1_5",
+      "group": "mercadao",
+      "from": [
+        160,
+        16,
+        80
+      ],
+      "to": [
+        176,
+        32,
+        96
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        24.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_10_1_6",
+      "group": "mercadao",
+      "from": [
+        160,
+        16,
+        96
+      ],
+      "to": [
+        176,
+        32,
+        112
+      ],
+      "material": "spruce_log",
+      "origin": [
+        168.0,
+        24.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_1_7",
+      "group": "mercadao",
+      "from": [
+        160,
+        16,
+        112
+      ],
+      "to": [
+        176,
+        32,
+        128
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        24.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_1_8",
+      "group": "mercadao",
+      "from": [
+        160,
+        16,
+        128
+      ],
+      "to": [
+        176,
+        32,
+        144
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        24.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_2_0",
+      "group": "mercadao",
+      "from": [
+        160,
+        32,
+        0
+      ],
+      "to": [
+        176,
+        48,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        40.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_2_1",
+      "group": "mercadao",
+      "from": [
+        160,
+        32,
+        16
+      ],
+      "to": [
+        176,
+        48,
+        32
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        40.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_2_2",
+      "group": "mercadao",
+      "from": [
+        160,
+        32,
+        32
+      ],
+      "to": [
+        176,
+        48,
+        48
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        40.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_10_2_3",
+      "group": "mercadao",
+      "from": [
+        160,
+        32,
+        48
+      ],
+      "to": [
+        176,
+        48,
+        64
+      ],
+      "material": "spruce_log",
+      "origin": [
+        168.0,
+        40.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pane_10_2_4",
+      "group": "mercadao",
+      "from": [
+        167,
+        32,
+        64
+      ],
+      "to": [
+        169,
+        48,
+        80
+      ],
+      "material": "glass_pane",
+      "origin": [
+        168.0,
+        40.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pane_10_2_5",
+      "group": "mercadao",
+      "from": [
+        167,
+        32,
+        80
+      ],
+      "to": [
+        169,
+        48,
+        96
+      ],
+      "material": "glass_pane",
+      "origin": [
+        168.0,
+        40.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_10_2_6",
+      "group": "mercadao",
+      "from": [
+        160,
+        32,
+        96
+      ],
+      "to": [
+        176,
+        48,
+        112
+      ],
+      "material": "spruce_log",
+      "origin": [
+        168.0,
+        40.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_2_7",
+      "group": "mercadao",
+      "from": [
+        160,
+        32,
+        112
+      ],
+      "to": [
+        176,
+        48,
+        128
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        40.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_2_8",
+      "group": "mercadao",
+      "from": [
+        160,
+        32,
+        128
+      ],
+      "to": [
+        176,
+        48,
+        144
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        40.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_3_0",
+      "group": "mercadao",
+      "from": [
+        160,
+        48,
+        0
+      ],
+      "to": [
+        176,
+        64,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        56.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_3_1",
+      "group": "mercadao",
+      "from": [
+        160,
+        48,
+        16
+      ],
+      "to": [
+        176,
+        64,
+        32
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        56.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_3_2",
+      "group": "mercadao",
+      "from": [
+        160,
+        48,
+        32
+      ],
+      "to": [
+        176,
+        64,
+        48
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        56.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_10_3_3",
+      "group": "mercadao",
+      "from": [
+        160,
+        48,
+        48
+      ],
+      "to": [
+        176,
+        64,
+        64
+      ],
+      "material": "spruce_log",
+      "origin": [
+        168.0,
+        56.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pane_10_3_4",
+      "group": "mercadao",
+      "from": [
+        167,
+        48,
+        64
+      ],
+      "to": [
+        169,
+        64,
+        80
+      ],
+      "material": "glass_pane",
+      "origin": [
+        168.0,
+        56.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pane_10_3_5",
+      "group": "mercadao",
+      "from": [
+        167,
+        48,
+        80
+      ],
+      "to": [
+        169,
+        64,
+        96
+      ],
+      "material": "glass_pane",
+      "origin": [
+        168.0,
+        56.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_10_3_6",
+      "group": "mercadao",
+      "from": [
+        160,
+        48,
+        96
+      ],
+      "to": [
+        176,
+        64,
+        112
+      ],
+      "material": "spruce_log",
+      "origin": [
+        168.0,
+        56.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_3_7",
+      "group": "mercadao",
+      "from": [
+        160,
+        48,
+        112
+      ],
+      "to": [
+        176,
+        64,
+        128
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        56.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_3_8",
+      "group": "mercadao",
+      "from": [
+        160,
+        48,
+        128
+      ],
+      "to": [
+        176,
+        64,
+        144
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        56.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_4_0",
+      "group": "mercadao",
+      "from": [
+        160,
+        64,
+        0
+      ],
+      "to": [
+        176,
+        80,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        72.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_4_1",
+      "group": "mercadao",
+      "from": [
+        160,
+        64,
+        16
+      ],
+      "to": [
+        176,
+        80,
+        32
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        72.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_4_2",
+      "group": "mercadao",
+      "from": [
+        160,
+        64,
+        32
+      ],
+      "to": [
+        176,
+        80,
+        48
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        72.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_10_4_3",
+      "group": "mercadao",
+      "from": [
+        160,
+        64,
+        48
+      ],
+      "to": [
+        176,
+        80,
+        64
+      ],
+      "material": "spruce_log",
+      "origin": [
+        168.0,
+        72.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_4_4",
+      "group": "mercadao",
+      "from": [
+        160,
+        64,
+        64
+      ],
+      "to": [
+        176,
+        80,
+        80
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        72.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_4_5",
+      "group": "mercadao",
+      "from": [
+        160,
+        64,
+        80
+      ],
+      "to": [
+        176,
+        80,
+        96
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        72.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "log_10_4_6",
+      "group": "mercadao",
+      "from": [
+        160,
+        64,
+        96
+      ],
+      "to": [
+        176,
+        80,
+        112
+      ],
+      "material": "spruce_log",
+      "origin": [
+        168.0,
+        72.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_4_7",
+      "group": "mercadao",
+      "from": [
+        160,
+        64,
+        112
+      ],
+      "to": [
+        176,
+        80,
+        128
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        72.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_4_8",
+      "group": "mercadao",
+      "from": [
+        160,
+        64,
+        128
+      ],
+      "to": [
+        176,
+        80,
+        144
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        72.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_5_0",
+      "group": "mercadao",
+      "from": [
+        160,
+        80,
+        0
+      ],
+      "to": [
+        176,
+        96,
+        16
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        88.0,
+        8.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_5_1",
+      "group": "mercadao",
+      "from": [
+        160,
+        80,
+        16
+      ],
+      "to": [
+        176,
+        96,
+        32
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        88.0,
+        24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_5_2",
+      "group": "mercadao",
+      "from": [
+        160,
+        80,
+        32
+      ],
+      "to": [
+        176,
+        96,
+        48
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        88.0,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_5_3",
+      "group": "mercadao",
+      "from": [
+        160,
+        80,
+        48
+      ],
+      "to": [
+        176,
+        96,
+        64
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        88.0,
+        56.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_5_4",
+      "group": "mercadao",
+      "from": [
+        160,
+        80,
+        64
+      ],
+      "to": [
+        176,
+        96,
+        80
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        88.0,
+        72.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_5_5",
+      "group": "mercadao",
+      "from": [
+        160,
+        80,
+        80
+      ],
+      "to": [
+        176,
+        96,
+        96
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        88.0,
+        88.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_5_6",
+      "group": "mercadao",
+      "from": [
+        160,
+        80,
+        96
+      ],
+      "to": [
+        176,
+        96,
+        112
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        88.0,
+        104.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_5_7",
+      "group": "mercadao",
+      "from": [
+        160,
+        80,
+        112
+      ],
+      "to": [
+        176,
+        96,
+        128
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        88.0,
+        120.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "planks_10_5_8",
+      "group": "mercadao",
+      "from": [
+        160,
+        80,
+        128
+      ],
+      "to": [
+        176,
+        96,
+        144
+      ],
+      "material": "spruce_planks",
+      "origin": [
+        168.0,
+        88.0,
+        136.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "locators": {
+    "counter_row": [
+      5,
+      16,
+      48
+    ],
+    "npc_post": [
+      80,
+      16,
+      32
+    ]
+  },
+  "animation_axes": {},
+  "cube_count": 411,
+  "group_count": 1
+}

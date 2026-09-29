@@ -1,0 +1,13 @@
+{
+  "version": "0.6.6",
+  "installed": "2026-09-29T11:16:34-03:00",
+  "jar": "Instances/SNC energies/mods/snc-energies.jar",
+  "sha256": "8F813C9E8987FD96387B5AC6D932F1F1C5DC480F6B7B419B79C3454FF8E648D9",
+  "previous_sha256": "8B3F88494150DC2D85E48A8778FE9425E0098260F88085FECBA8037B3EE232EC (0.6.5, instalada às 17:57 de 28/09)",
+  "backup": "Instances/SNC energies/snc-backups/20260929-111634-before-0.6.6/snc-energies-installed.jar",
+  "backup_sha256": "8B3F88494150DC2D85E48A8778FE9425E0098260F88085FECBA8037B3EE232EC",
+  "functionalSuite": {
+    "standalone": "561 verificações, FUNCTIONAL TESTS PASSED (verification/0.6.6-standalone.log), incluindo as probes WORLDGEN structure/structure_set/template_pool = true, o /locate do mercadao com vila vanilla como controle e as probes novas da 0.6.6: WORLDGEN placed_feature tin_ore/voltaite_ore/ore_coal_upper = true + 'ore configured and placed features registered in worldgen' + 'tractor recipe loaded by RecipeManager'"
+  },
+  "note": "v0.6.6 — sweep defensivo dos datapacks após o bug do Mercadão (v0.6.5): todos os JSONs de data/snc_energies conferidos contra o layout real do jar 26.3. Resultado: NENHUMA pasta errada — receitas (recipe/, formato result.id), loot (loot_table/blocks/, 28 blocos), tags (tags/item, tags/block, tags/worldgen/biome) e worldgen dos minérios estavam corretos. A hipótese 'worldgen/feature/ deveria ser configured_feature/' estava INVERTIDA: na 26.3 a pasta correta É worldgen/feature/ (242 features vanilla lá, zero configured_feature/) — e o diagnóstico verification/missing-mod-chunks-20260926.json prova que estanho/voltaite já geravam no mundo do usuário. Provas adicionadas permanentemente à suíte: probe de PLACED_FEATURE (tin/voltaite vs ore_coal_upper vanilla) e probe de RecipeManager.byKey(tractor). Nenhuma mudança de comportamento no jogo nesta versão; nenhum arquivo de dados precisou ser movido."
+}

@@ -1,0 +1,30 @@
+{
+  "source": "approved SNC 75-P planter assets",
+  "cubes": 371,
+  "groups": 7,
+  "materials": 15,
+  "texture_dimensions": [
+    128,
+    128
+  ],
+  "source_bytes_preserved": true,
+  "files": {
+    "src/main/resources/assets/snc_energies/vehicle/planter-model.json": "3977042d16d8609c4f01306df041fa5bb8df969bc6df9362f2b45d996120cf6d",
+    "src/main/resources/assets/snc_energies/vehicle/planter-materials.json": "9f597d203c9d3f53fd56cbb3560f39e02341e0dbe01537ba7d6898aef36f9b92",
+    "src/main/resources/assets/snc_energies/textures/entity/planter/enamel_orange.png": "c7172d9d0161ffdb161778750f147cef9d10510daf9fc1d42b1e65f510440943",
+    "src/main/resources/assets/snc_energies/textures/entity/planter/enamel_dark.png": "273f68df784d9f5f28d86702f2570e3119ad0cadd29df70971e5745206a6cae4",
+    "src/main/resources/assets/snc_energies/textures/entity/planter/rubber.png": "664171c0f5fd81dfc747e6e0f92416aef1006e0a21836948f8f9584965ae5760",
+    "src/main/resources/assets/snc_energies/textures/entity/planter/tread.png": "af5dcfc0f47e784693e9c37c69d0e20b37be2de0bd878b7d14f434313c68204a",
+    "src/main/resources/assets/snc_energies/textures/entity/planter/steel.png": "886ced732475bf5dacdc6dbf37eefe26a7a1e66b6c7490404f942ffacca1a894",
+    "src/main/resources/assets/snc_energies/textures/entity/planter/rim.png": "1999fd6ce070201334cdda20804b577a4c9b73d16cf6af71563c2c2ec514ae79",
+    "src/main/resources/assets/snc_energies/textures/entity/planter/seat.png": "8cbdcf282c557ceac1d3c8c0e4e6835116720ae0be125393a9367d57e22b62e6",
+    "src/main/resources/assets/snc_energies/textures/entity/planter/grille.png": "11156f8563b26637981d2af9b0c59e36c4670590a14755b2d33615c109dab6b3",
+    "src/main/resources/assets/snc_energies/textures/entity/planter/headlight.png": "2dbe73ebda88bd82520e91abffa45ed91ad5b90bc617c927e062e5fa5f426c6f",
+    "src/main/resources/assets/snc_energies/textures/entity/planter/taillight.png": "6272fc855e07c450a61e68a06ca8656bc87c89f62c09de912412a9ad54bac55f",
+    "src/main/resources/assets/snc_energies/textures/entity/planter/amber.png": "35d1e30256b8c9a806217ea666ecce16c10887edbeb5f10ceefb9df0094c2e46",
+    "src/main/resources/assets/snc_energies/textures/entity/planter/seed_tank.png": "9b67fcd2381b37316d525ecee7f8c86364c8767c7a69e1ad6abb4fc04a3994de",
+    "src/main/resources/assets/snc_energies/textures/entity/planter/decal_snc.png": "048e051096f5793f2cdfd18c75e435e8980879f1106172b40d1899c9a4fe88aa",
+    "src/main/resources/assets/snc_energies/textures/entity/planter/gauge.png": "b7366ca9dcff23a0032df2aebed3ff5f7e03fe2b3897db93f069f935985fdead",
+    "src/main/resources/assets/snc_energies/textures/entity/planter/id_plate.png": "bbd5e34ca89fab806aac254534b6292c2d2e82007c9854a1c022d7d9d7074137"
+  }
+}

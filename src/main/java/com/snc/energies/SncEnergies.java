@@ -2,6 +2,7 @@ package com.snc.energies;
 
 import com.snc.energies.registry.SncBlockEntities;
 import com.snc.energies.registry.SncBlocks;
+import com.snc.energies.registry.SncEntities;
 import com.snc.energies.registry.SncItems;
 import com.snc.energies.registry.SncMenus;
 import com.snc.energies.registry.SncRecipes;
@@ -31,7 +32,10 @@ public class SncEnergies implements ModInitializer {
 
 		SncBlocks.bootstrap();
 		SncBlockEntities.bootstrap();
+		SncEntities.bootstrap();
+		SncEntities.registerAttributes();
 		SncItems.bootstrap();
+		com.snc.energies.economy.MercadaoCatalog.bootstrap();
 		SncMenus.bootstrap();
 		SncRecipes.bootstrap();
 		SncBiomeModifications.bootstrap();

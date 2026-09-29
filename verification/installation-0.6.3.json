@@ -1,0 +1,14 @@
+{
+  "version": "0.6.3",
+  "installed": "2026-09-28T16:46:00-03:00",
+  "jar": "Instances/SNC energies/mods/snc-energies.jar",
+  "sha256": "1FF487577A6CDDB3C4B46D46CB64B1EAABED0A67A8622FB32404B2417A0A17DB",
+  "previous_sha256": "DA9928A739AD5AE577D5DFBB76824DCB34B61197D9D0ADF387060511CE76025D (0.6.2, instalada às 15:31 de 28/09)",
+  "backup": "Instances/SNC energies/snc-backups/20260928-164600-before-0.6.3/snc-energies-installed.jar",
+  "backup_sha256": "DA9928A739AD5AE577D5DFBB76824DCB34B61197D9D0ADF387060511CE76025D",
+  "functionalSuite": {
+    "standalone": "559 verificações, FUNCTIONAL TESTS PASSED (verification/0.6.3-standalone.log)",
+    "adventures": "570 verificações com Adventures 1.2.50, FUNCTIONAL TESTS PASSED (verification/0.6.3-adventures-1.2.50.log)"
+  },
+  "note": "v0.6.3 refinamento do Mercadão: letreiro 'MERCADÃO' pintado em três blocos sobre a porta (bloco novo mercadao_sign, estrutura-only, fonte de pixel própria renderizada em ASCII para conferência), vitrine esvaziando proporcionalmente ao estoque diário (cada oferta encolhe conforme vende e some ao zerar), interior cenográfico (piso xadrez pedra/andesito, 6 barris e 8 sacarias, lanternas sobre os barris), vidros revisados (todos os 16 panes com conectividade explícita norte/sul/leste/oeste gravada no NBT — nunca mais dependem de update de vizinho) e porta corrigida para 2×2. Preview 3D regenerado (411 cubos) e offline repacoteado."
+}

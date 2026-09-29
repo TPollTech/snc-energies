@@ -1,0 +1,36 @@
+{
+  "source": "approved SNC 90 harvester assets",
+  "cubes": 747,
+  "groups": 83,
+  "materials": 21,
+  "texture_dimensions": [
+    128,
+    128
+  ],
+  "source_bytes_preserved": true,
+  "files": {
+    "src/main/resources/assets/snc_energies/vehicle/harvester-model.json": "95affd199121cec33a3a1c71cbe82adddf2e8a4d1aa37213489eda22ea9a1388",
+    "src/main/resources/assets/snc_energies/vehicle/harvester-materials.json": "0883a728f0ce02c1cdbcbb9d09567cf27e76e41bba8a2211e818828dfe46bded",
+    "src/main/resources/assets/snc_energies/textures/entity/harvester/enamel_orange.png": "413adfdafc8ac074ab371adaf115c8cdad2c2581a2aa4d8c30b862c99f6d6111",
+    "src/main/resources/assets/snc_energies/textures/entity/harvester/enamel_dark.png": "ccd868bb62bce7af5be866f8e4175cddc62e88032012b3377c81b6277c2ace80",
+    "src/main/resources/assets/snc_energies/textures/entity/harvester/rubber.png": "b22ad95403b3d79bd3de6e1d00700eacf1b278d0d30798254282104e55b13f4e",
+    "src/main/resources/assets/snc_energies/textures/entity/harvester/tread.png": "a38959adb5b390aabe1c6c4e519a3bce642fc182cacc53c4ed522463c3516d1a",
+    "src/main/resources/assets/snc_energies/textures/entity/harvester/steel.png": "0a34282f5bff6672cb1ad6290edf54affaf5f7d1224d71273c450511f3cbcb2c",
+    "src/main/resources/assets/snc_energies/textures/entity/harvester/rim.png": "feef724e4f32c5434bd04833d6c6a58057a1d0799c1fd78e6b78be9328983543",
+    "src/main/resources/assets/snc_energies/textures/entity/harvester/grain_tank.png": "3be11364dc100ad32006ad5a596e30c2e16cb99ca26aad9859da7a6de58d9052",
+    "src/main/resources/assets/snc_energies/textures/entity/harvester/grille.png": "9e7360fef80bc115d5ceac0301d5b5682ef4a480ec371eba85a6a03107643117",
+    "src/main/resources/assets/snc_energies/textures/entity/harvester/thresher.png": "6a1afa98e05881899ac161310432c1913fc0a3bd64a5c72306a9393bc6aaf077",
+    "src/main/resources/assets/snc_energies/textures/entity/harvester/cutter_bar.png": "0c7a5d84e31aad888d8f829b88b9d9c6dbbe6b5c9fe452d593dd77b60ebf4d82",
+    "src/main/resources/assets/snc_energies/textures/entity/harvester/auger.png": "b47b254ff85d0fe23028c136183b110636f62eabba0e0ee334fb94106915bcb4",
+    "src/main/resources/assets/snc_energies/textures/entity/harvester/chopper.png": "690b659517a5864f97f8e3ba13b96aa2957a69672f64e4930e4a491112d4baa7",
+    "src/main/resources/assets/snc_energies/textures/entity/harvester/belt.png": "e9dee41dc5d6d4afe0896fe78ed2dfc025c8e5875682aba45e5a96fcc8c3ba04",
+    "src/main/resources/assets/snc_energies/textures/entity/harvester/glass.png": "661241381873689aeb37f2383d21535f6d6727f93e693d125061dbe53eac0a45",
+    "src/main/resources/assets/snc_energies/textures/entity/harvester/headlight.png": "225306c1a61370203f645fd7079cb858b4289937ab9ba4710858f2cf2b58d3f7",
+    "src/main/resources/assets/snc_energies/textures/entity/harvester/taillight.png": "d9fc1bb664fc679167d7d1dad1329f62f7b482662f7f1d833fb16ab72d33f033",
+    "src/main/resources/assets/snc_energies/textures/entity/harvester/amber.png": "1ba62c11447cf6170ff8a05e374f78d173d6716d98fc7f1ac88d8205b16c2b72",
+    "src/main/resources/assets/snc_energies/textures/entity/harvester/decal_snc.png": "431919240638f1cc727cbf8dc49beaab81dfb11e3ece971f9d56648bdfe57357",
+    "src/main/resources/assets/snc_energies/textures/entity/harvester/decal_crop.png": "4ab1bd63716cfb0c8ede894a001cb5fb013f662ac0fa0ad4870debccbf6aa83b",
+    "src/main/resources/assets/snc_energies/textures/entity/harvester/gauge.png": "33681e883cd304923a7478c76c2ebe2647b83ad46632e17a083deb6ac8e2821b",
+    "src/main/resources/assets/snc_energies/textures/entity/harvester/seat.png": "c6cb75b1a7ab7474dc43a374782f4cde82c9619d8b730d2c75c0330b527bb4db"
+  }
+}

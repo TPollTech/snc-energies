@@ -164,6 +164,85 @@ final class AutomationFunctionalTest {
         check(IndustrialBlock.controller(level, gateAnchor, dryer.getBlockState()) == dryer,
             "gate test machine remains the single controller");
         level.destroyBlock(gateAnchor, true);
+
+        // 7. Side configuration: per-face modes keep the 0.2.0 default and the
+        // screwdriver cycle reconfigures faces and inverts the redstone gate.
+        BlockPos sideAnchor = new BlockPos(3, 121, 6);
+        IndustrialBlockEntity sided = industry(sideAnchor, IndustryKind.DRYER, Direction.NORTH);
+        check(sided.faceMode(Direction.DOWN) == IndustrialBlockEntity.FACE_OUTPUT
+            && sided.faceMode(Direction.UP) == IndustrialBlockEntity.FACE_INPUT,
+            "default face modes keep the 0.2.0 contract: outputs below, inputs elsewhere");
+        check(sided.canTakeItemThroughFace(4, new ItemStack(SncItems.RICE), Direction.DOWN)
+            && !sided.canPlaceItemThroughFace(0, new ItemStack(SncItems.RICE_PADDY), Direction.DOWN)
+            && sided.canPlaceItemThroughFace(0, new ItemStack(SncItems.RICE_PADDY), Direction.UP),
+            "default windows: extraction only below, insertion above and beside");
+        sided.cycleFaceMode(Direction.NORTH); // front: input -> output
+        check(sided.faceMode(Direction.NORTH) == IndustrialBlockEntity.FACE_OUTPUT
+            && sided.canTakeItemThroughFace(4, new ItemStack(SncItems.RICE), Direction.NORTH)
+            && !sided.canPlaceItemThroughFace(0, new ItemStack(SncItems.RICE_PADDY), Direction.NORTH),
+            "screwdriver reconfigures the front face to output only");
+        sided.cycleFaceMode(Direction.NORTH); // output -> both
+        check(sided.faceMode(Direction.NORTH) == IndustrialBlockEntity.FACE_BOTH
+            && sided.canPlaceItemThroughFace(0, new ItemStack(SncItems.RICE_PADDY), Direction.NORTH)
+            && sided.canTakeItemThroughFace(4, new ItemStack(SncItems.RICE), Direction.NORTH),
+            "second cycle turns the front face into a both-ways window");
+        sided.cycleRunMode();
+        sided.cycleRunMode();
+        check(sided.runMode() == IndustrialBlockEntity.RUN_NOT_REDSTONE,
+            "screwdriver cycles through to the inverted redstone mode");
+        sided.getEnergyStorage(Direction.UP).insert(500000, false);
+        sided.setItem(0, new ItemStack(SncItems.RICE_PADDY, 8));
+        sided.serverTick();
+        check(sided.status() == 2, "inverted mode runs while unpowered");
+        int progressBefore = sided.getProgress();
+        level.setBlock(new BlockPos(2, 121, 6), Blocks.REDSTONE_BLOCK.defaultBlockState(), 3);
+        sided.serverTick();
+        check(sided.status() == 8 && sided.getProgress() == progressBefore,
+            "power halts an inverted machine with the new gate status without losing progress");
+        level.removeBlock(new BlockPos(2, 121, 6), false);
+        sided.serverTick();
+        check(sided.status() == 2, "inverted machine resumes once the signal drops");
+        var sideSaved = sided.saveWithFullMetadata(level.registryAccess());
+        var sideRestored = (IndustrialBlockEntity)BlockEntity.loadStatic(
+            sideAnchor, sided.getBlockState(), sideSaved, level.registryAccess());
+        check(sideRestored != null && sideRestored.runMode() == IndustrialBlockEntity.RUN_NOT_REDSTONE
+            && sideRestored.faceMode(Direction.NORTH) == IndustrialBlockEntity.FACE_BOTH
+            && sideRestored.faceMode(Direction.DOWN) == IndustrialBlockEntity.FACE_OUTPUT,
+            "face modes and the inverted mode persist across save and load");
+        level.destroyBlock(sideAnchor, true);
+
+        // 8. Duct whitelist: gates hopper insertion and machine suction, persists, clears.
+        BlockPos filterPos = new BlockPos(6, 120, 6);
+        ItemPipeBlockEntity duct = pipe(filterPos);
+        ElectricFurnaceBlockEntity donor = furnace(filterPos.east(), Direction.WEST);
+        check(duct.accepts(new ItemStack(Items.RAW_IRON)) && duct.accepts(new ItemStack(Items.IRON_INGOT)),
+            "empty whitelist lets every item into the duct");
+        duct.setFilterItem(0, new ItemStack(Items.RAW_IRON));
+        check(duct.accepts(new ItemStack(Items.RAW_IRON)) && !duct.accepts(new ItemStack(Items.IRON_INGOT))
+            && !duct.canPlaceItemThroughFace(0, new ItemStack(Items.IRON_INGOT), Direction.UP)
+            && duct.canPlaceItemThroughFace(0, new ItemStack(Items.RAW_IRON), Direction.UP),
+            "whitelist admits only listed items through the insertion windows");
+        donor.setItem(1, new ItemStack(Items.IRON_INGOT));
+        for (int i = 0; i < 40 && duct.getItem(0).isEmpty(); i++) duct.serverTick();
+        check(duct.getItem(0).isEmpty() && donor.getItem(1).is(Items.IRON_INGOT),
+            "whitelist blocks suction of an unlisted machine output");
+        donor.setItem(1, new ItemStack(Items.RAW_IRON));
+        for (int i = 0; i < 60 && duct.getItem(0).isEmpty() && donor.getItem(1).getCount() == 1; i++) duct.serverTick();
+        int rawIronTotal = count(Items.RAW_IRON, duct.getItem(0)) + count(Items.RAW_IRON, donor.getItem(0))
+            + count(Items.RAW_IRON, donor.getItem(1));
+        check(donor.getItem(1).isEmpty() && rawIronTotal == 1,
+            "whitelisted output leaves the machine window without loss");
+        duct.setItem(0, ItemStack.EMPTY); // free the cell so the persistence check tests the filter, not occupancy
+        var ductSaved = duct.saveWithFullMetadata(level.registryAccess());
+        var ductRestored = (ItemPipeBlockEntity)BlockEntity.loadStatic(
+            filterPos, duct.getBlockState(), ductSaved, level.registryAccess());
+        check(ductRestored != null && ductRestored.filterItem(0).is(Items.RAW_IRON)
+            && ductRestored.accepts(new ItemStack(Items.RAW_IRON)) && !ductRestored.accepts(new ItemStack(Items.IRON_INGOT)),
+            "filter persists across save and load");
+        ductRestored.clearFilter();
+        check(ductRestored.filterItem(0).isEmpty() && ductRestored.accepts(new ItemStack(Items.IRON_INGOT)),
+            "clearing the whitelist restores universal acceptance");
+        level.destroyBlock(donor.getBlockPos(), true);
     }
 
     private static int count(net.minecraft.world.item.Item item, ItemStack stack) {

@@ -13,8 +13,8 @@
 2. Obrigatório: `fabric-api-0.161.0+26.3.jar` na mesma pasta.
 
 ## Integridade
-- SHA-256: `B58B4B3D14CAFFCD94750168F205B606708A338BB65573DD446770BC14031501`
-- Este jar é o mesmo instalado em `Instances/SNC energies/mods/` (manifesto `verification/installation-0.4.0.json`).
+- SHA-256 do `snc-energies.jar` anexado (build do CI): `B96B1D9BD88584CF16230C9E28861359788D00A12748203C20298A90A74A14F8`
+- O jar instalado em `Instances/SNC energies/mods/` (SHA-256 `B58B4B3D…1501`) foi buildado localmente das mesmas fontes da tag `v0.4.0` — manifesto em `verification/installation-0.4.0.json`.
 
 ## Também neste marco
 - v0.3.0 (automação): tubos de itens com conservação exata, sucção nas saídas das máquinas, válvula de redstone nas 11 industriais.

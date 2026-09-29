@@ -1,6 +1,6 @@
-# SNC Energies 0.2.0 — teste no jogo
+# SNC Energies 0.6.6 — teste no jogo
 
-Instalado em `C:/Users/enzot/curseforge/minecraft/Instances/SNC energies/mods/snc-energies.jar`, junto do SNC Adventures 1.2.57. Reinicie o Minecraft para carregar os JARs novos.
+Instalado em `C:/Users/enzot/curseforge/minecraft/Instances/SNC energies/mods/snc-energies.jar`, junto do SNC Adventures. Reinicie o Minecraft para carregar os JARs novos.
 
 ## Começo
 
@@ -18,8 +18,17 @@ O controlador fica na base esquerda ao olhar a frente. Energia elétrica e funis
 
 Caldeira/fundição/turbina ocupam base 2×2; serraria/extratora, 3×2; laminador, 2×1; secador/refinaria/sintetizador, 3×3. Caldeira tem altura 3, secador 4, refinaria/sintetizador 3 e demais 2. A colocação exige espaço livre para o volume inteiro.
 
+## Veículos (desde a 0.6.1)
+
+Todos usam óleo vegetal como combustível: insira no slot dedicado do painel (ou clique com o balde/óleo na máquina). O painel exige estar perto da máquina; os botões são autoritativos no servidor.
+
+1. Trator SNC 75 + Plantadeira SNC 75-P: use o item num bloco livre para posicionar; o item usado sobre a máquina já posicionada abre o painel (óleo + tanques de sementes por fileira). Clique com a mão vazia para montar e dirija com W/A/S/D; avançar em solo arado semeia três fileiras, cada uma consumindo do próprio tanque. Elevação da plantadeira no painel para transportar sem semear. Engate: pare com a plantadeira atrás do trator e use o botão de engate — ela passa a semear dos próprios tanques e acompanha soldada; desengatar preserva as sementes.
+2. Colheitadeira SNC 90: painel com óleo e tanque de grãos de 27 slots. Avançando com a plataforma abaixada, corta só lavouras maduras nas três fileiras e guarda no tanque; tanque cheio pausa sem destruir nada. Sem óleo o motor morre em silêncio; sem motorista ela desacelera em marcha lente.
+3. Carreta Graneleira SNC 90-C: posicione atrás da colheitadeira e engate pelo painel dela (o painel mostra o estado do engate). O botão de descarga transfere o grão com conservação exata — carreta cheia, o restante fica no tanque. Desengatada, a carreta fica no mundo com a carga; clique nela para abrir os 15 slots e descarregar à mão. Receita: 6 aço + barril + 2 ferro + carrinho de mina.
+4. Mercadão: estrutura gerada no mundo — ~3× frequente e em 18 biomas (taigas, floresta escura e pântanos incluídos). **Requer 0.6.5+**: versões anteriores tinham um bug que impedia o registro da estrutura (nunca nascia). Localize em chunks nunca explorados com `/locate structure snc_energies:mercadao` (sem raio: esta versão do comando não aceita). Salão fechado com porta 2×2, letreiro pintado e vitrines de vidro; produtos expostos minguam com o estoque do dia (reposição às 07h). Compre pelo balcão — o servidor debita a carteira do Adventures e entrega o item. O balcão também é craftável (tábuas de pinheiro + esmeralda + barril). Prévia 3D em `previews/mercadao.html` (ou `mercadao-offline.html`).
+
 ## Adventures e limites desta versão
 
-Bagaço de cana alimenta o fogão e a caldeira. Bebidas, comércio e UV preservam as regras do Adventures. Motores, UV elétrico, comércio integrado, filtros, tubos de itens e configuração de lados ainda não existem. O ramo de erva-mate é opcional e está explicado no caderno.
+Bagaço de cana alimenta o fogão e a caldeira. Bebidas, comércio e UV preservam as regras do Adventures; as compras do Mercadão debitam a carteira do Adventures, sem segunda carteira. Motores para o Adventures e UV elétrico ainda não existem. O ramo de erva-mate é opcional e está explicado no caderno.
 
 Os testes automatizados usam mundos próprios. As evidências ficam em `verification/`; não substituem avaliação de balanceamento no survival.

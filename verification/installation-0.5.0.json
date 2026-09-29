@@ -1,0 +1,9 @@
+{
+  "version": "0.5.0",
+  "installed": "2026-09-26T05:10:00-03:00",
+  "jar": "Instances/SNC energies/mods/snc-energies.jar",
+  "sha256": "1316214F1038031C7C788CD8812AB529EE100122C46F242FF4A1C893EC48DC3A",
+  "backup": "Instances/SNC energies/snc-backups/20260926-050125-before-0.4.0/snc-energies.jar (conteúdo 0.4.0, caderno da oficina)",
+  "backup_note": "O diretório de backup herdou o sufixo '-before-0.4.0' porque a sessão ainda acreditava estar entregando 0.4.0; o jar nele é exatamente o 0.4.0 que estava instalado (SHA-256 B58B4B3D14CAFFCD94750168F205B606708A338BB65573DD446770BC14031501).",
+  "note": "v0.5.0 configuração de lados e filtragem: modos de face por lado nas industriais (chave de fenda cicla ambos/entrada/saída; agachar inverte o modo de redstone, status 8) e whitelist por célula do tubo de itens (UI de 9 slots, filtro aplicado na entrada, persistente). Suítes funcionais passaram standalone e com Adventures 1.2.57."
+}

@@ -1,0 +1,12 @@
+{
+  "version": "0.5.0+planter-harvester-assets (não numerada; hotfix de assets)",
+  "installed": "2026-09-27T19:47:00-03:00",
+  "jar": "Instances/SNC energies/mods/snc-energies.jar",
+  "sha256": "A29AF205C27A684888D94E22AAF74BA1DD54B0FEF7C8CB848B97CF0896C4392B",
+  "previous_sha256": "2C898EEDE07956BF4F8CEAA5BAF86D8BE3FB300BAFE6798B3F708B20374CAA0D (0.5.0+planter-harvester, instalado às 19:23 de 27/09)",
+  "backup": "Instances/Mods SNC/snc-backups/20260927-194518-before-harvester-assets/snc-energies-installed.jar",
+  "backup_sha256": "2C898EEDE07956BF4F8CEAA5BAF86D8BE3FB300BAFE6798B3F708B20374CAA0D",
+  "backup_note": "Backup PRÉVIO à substituição, byte-idêntico ao manifesto installation-planter-harvester.json (conferido por SHA-256). Jogo fechado durante todo o ritual; único java.exe ativo era o daemon do Gradle (confirmado pela linha de comando).",
+  "suite": "Build limpo (./gradlew build -x test): BUILD SUCCESSFUL. Assets verificados dentro do jar: vehicle/harvester-model.json + vehicle/harvester-materials.json + 21 texturas 128x128 em textures/entity/harvester/ + blockstate/model do mercadao_anchor; zip íntegro (CRC OK).",
+  "note": "Hotfix do travamento em 'Preparando a criacao do mundo': o jar anterior tinha o HarvesterRenderer (entity snc_energies:harvester) mas NAO tinha os assets empacotados — resources.openAsReader(snc_energies:vehicle/harvester-model.json) lancava FileNotFoundException, EntityRenderers falhava a criacao do renderer, o reload de recursos abortava ('Caught error loading resourcepacks, removing all selected resourcepacks') e a criacao de mundo ficava presa. Correcao: tools/export_harvester_game_assets.py (novo, seguindo export_planter_game_assets.py) empacota o modelo aprovado 747 cubos/83 grupos + 21 texturas 128x128 + materials.json; verificacao preventiva replica as checagens do VehicleRig.load (pais, grupos de cubos, cobertura de materiais, 1 raiz). Bonus: blockstate+model do mercadao_anchor (bloco invisivel do Mercadao) eliminam o aviso 'Missing model for variant' — sem mudanca visual, bloco ja era INVISIBLE. Nenhum registro de bloco/item/entidade mudou; mundos e saves preservados."
+}

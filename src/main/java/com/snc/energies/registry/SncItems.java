@@ -64,6 +64,29 @@ public final class SncItems {
     public static final Item BIOMASS_BRIQUETTE = registerMaterial("biomass_briquette");
     public static final Item FIELD_GUIDE = register("field_guide", new com.snc.energies.item.FieldGuideItem(
         new Item.Properties().stacksTo(1).setId(ResourceKey.create(Registries.ITEM, SncEnergies.id("field_guide")))));
+    /** Configures industrial side modes and inverted redstone; cycles on use. */
+    public static final Item SCREWDRIVER = register("screwdriver", new com.snc.energies.item.ScrewdriverItem(
+        new Item.Properties().stacksTo(1).setId(ResourceKey.create(Registries.ITEM, SncEnergies.id("screwdriver")))));
+    /** Places the approved SNC 75 tractor; use on a tractor opens its supply panel. */
+    public static final Item TRACTOR = register("tractor", new com.snc.energies.item.TractorItem(
+        new Item.Properties().stacksTo(1).setId(ResourceKey.create(Registries.ITEM, SncEnergies.id("tractor")))));
+    /** The Mercadão counter shelf: four shelf variants in one block. */
+    public static final Item MERCADAO_SHELF = register("mercadao_shelf", SncBlocks.itemOf(SncBlocks.MERCADAO_SHELF));
+    /** Spawns the Mercadão attendant (26.3 eggs carry TypedEntityData<EntityType>). */
+    public static final Item MERCAJEIRO_EGG = register("mercajeiro_spawn_egg", new net.minecraft.world.item.SpawnEggItem(
+        new Item.Properties().stacksTo(64)
+            .setId(ResourceKey.create(Registries.ITEM, SncEnergies.id("mercajeiro_spawn_egg")))
+            .component(net.minecraft.core.component.DataComponents.ENTITY_DATA,
+                net.minecraft.world.item.component.TypedEntityData.of(SncEntities.MERCAJEIRO, new net.minecraft.nbt.CompoundTag()))));
+    /** Places the SNC 75-P detachable planter implement. */
+    public static final Item PLANTER = register("planter", new com.snc.energies.item.PlanterItem(
+        new Item.Properties().stacksTo(1).setId(ResourceKey.create(Registries.ITEM, SncEnergies.id("planter")))));
+    /** Places the approved SNC 90 harvester; use on a harvester opens its supply panel. */
+    public static final Item HARVESTER = register("harvester", new com.snc.energies.item.HarvesterItem(
+        new Item.Properties().stacksTo(1).setId(ResourceKey.create(Registries.ITEM, SncEnergies.id("harvester")))));
+    /** Places the SNC 90-C grain cart; use on a cart opens its tank panel. */
+    public static final Item GRAIN_CART = register("grain_cart", new com.snc.energies.item.GrainCartItem(
+        new Item.Properties().stacksTo(1).setId(ResourceKey.create(Registries.ITEM, SncEnergies.id("grain_cart")))));
 
     private static Item registerSeed(String name, net.minecraft.world.level.block.Block crop) {
         return register(name, new net.minecraft.world.item.BlockItem(crop,
@@ -98,7 +121,9 @@ public final class SncItems {
 				.title(Component.translatable("itemGroup.snc_energies.main"))
 				.icon(() -> new ItemStack(COAL_GENERATOR))
 				.displayItems((params, output) -> {
-                    output.accept(FIELD_GUIDE);
+                    output.accept(FIELD_GUIDE); output.accept(SCREWDRIVER); output.accept(TRACTOR);
+                    output.accept(MERCADAO_SHELF); output.accept(MERCAJEIRO_EGG);
+                    output.accept(PLANTER); output.accept(HARVESTER); output.accept(GRAIN_CART);
                     INDUSTRY.values().forEach(output::accept); output.accept(STEAM_PIPE); output.accept(ITEM_PIPE);
                     for(Item material : new Item[]{TIN_ORE,DEEPSLATE_TIN_ORE,RAW_TIN,TIN_INGOT,BRONZE_INGOT,STEEL_INGOT,
                         STEEL_PLATE,COPPER_WIRE,STEEL_GEAR,BASIC_CIRCUIT,INSULATED_PLATE,REFINED_VOLTAITE,ADVANCED_CIRCUIT,MINERAL_MATRIX,

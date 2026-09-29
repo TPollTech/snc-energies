@@ -37,13 +37,13 @@ def author():
     box("engine_sump",[-5,7.8,-25,5,12,-9],"enamel_dark")
     box("transmission",[-5,10,0,5,18,20],"steel")
     centered("rear_axle",(0,13,13.5),(31,3.8,4),"steel")
-    centered("front_axle",(0,9,-23),(26,2.5,2.5),"steel")
+    centered("front_axle",(0,9,-23),(30,2.5,2.5),"steel")
     centered("rear_differential",(0,12.6,13.5),(8,7,8),"enamel_dark")
     for side,label in [(-1,"left"),(1,"right")]:
         wheel(f"rear_{label}_wheel",(side*15,13,13.5),11.5,8,tread_count=18)
-        group(f"front_{label}_steering",(side*12,8.8,-23))
-        wheel(f"front_{label}_wheel",(side*12,8.8,-23),7.5,5.5,f"front_{label}_steering",14)
-        beam(f"steering_rod_{label}",(side*6,9.8,-21),(side*11,9.8,-21),.65)
+        group(f"front_{label}_steering",(side*14.3,8.8,-23))
+        wheel(f"front_{label}_wheel",(side*14.3,8.8,-23),7.5,5.5,f"front_{label}_steering",14)
+        beam(f"steering_rod_{label}",(side*6,9.8,-21),(side*13.3,9.8,-21),.65)
     # Separate engine geometry stays visible beneath an opening hood.
     box("engine_block",[-5.6,14,-25,5.6,22,-9],"steel")
     for i in range(4):
@@ -68,16 +68,18 @@ def author():
     for side in [-1,1]:
         centered(f"headlamp_case_{side}",(side*5.6,25,-29.8),(3.4,2.8,1.6),"enamel_dark","hood")
         centered(f"headlamp_lens_{side}",(side*5.6,25,-30.65),(2.8,2.2,.2),"headlight","hood")
-    centered("bumper",(0,11.7,-32),(20,3.7,3),"enamel_dark")
+    centered("bumper",(0,11.7,-32),(18,3.7,3),"enamel_dark")
     for i in range(5):
         centered(f"front_counterweight_{i}",(-4.2+i*2.1,10,-34),(1.8,5,3),"steel")
     # Exhaust outside the bonnet so the hinge can open without intersecting it.
-    beam("exhaust_elbow",(-6,19,-13),(-9,21,-13),1.5,"steel")
-    centered("exhaust_muffler",(-9,28,-13),(2.4,11,2.4),"enamel_dark")
-    centered("exhaust_stack",(-9,37,-13),(1.3,9,1.3),"steel")
-    centered("exhaust_rain_flap",(-9,41.7,-13),(2,.4,2),"enamel_dark",rotation=(0,0,-12))
-    centered("air_filter",(8.8,26,-7),(2.7,7,2.7),"enamel_dark")
-    centered("air_filter_cap",(8.8,29.7,-7),(3.5,.8,3.5),"steel")
+    beam("exhaust_downpipe",(-6,19,-13),(-6,14.5,-13),1.1,"steel")
+    beam("exhaust_elbow",(-6,14.5,-13),(-10.5,14.5,-13),1.1,"steel")
+    beam("exhaust_riser",(-10.5,14.5,-13),(-10.5,23,-13),1.1,"steel")
+    centered("exhaust_muffler",(-10.5,28,-13),(2.4,11,2.4),"enamel_dark")
+    centered("exhaust_stack",(-10.5,37,-13),(1.3,9,1.3),"steel")
+    centered("exhaust_rain_flap",(-10.5,41.7,-13),(2,.4,2),"enamel_dark",rotation=(0,0,-12))
+    centered("air_filter",(10.2,26,-7),(2.7,7,2.7),"enamel_dark")
+    centered("air_filter_cap",(10.2,29.7,-7),(3.5,.8,3.5),"steel")
     # Driver platform, seat, instruments and controls.
     box("operator_floor",[-10,14,-1.5,10,16,23],"enamel_dark")
     box("floor_tread",[-7.5,16,-.5,7.5,16.25,17.5],"grille")
@@ -93,8 +95,8 @@ def author():
             centered(f"step_{side}_{step}",(side*(12.3+step*1.3),11-step*3.4,4),(5,1.1,6),"steel")
             centered(f"step_tread_{side}_{step}",(side*(12.3+step*1.3),11.58-step*3.4,4),(4.6,.12,5.6),"grille")
         beam(f"step_support_{side}",(side*10,15,6),(side*14,6.7,6),.8)
-    centered("dashboard_housing",(0,24,-2.3),(11,5.8,4.3),"enamel_dark",rotation=(-15,0,0))
-    centered("dashboard_instruments",(0,25.2,.0),(8.7,3.6,.2),"gauge",rotation=(-15,0,0))
+    centered("dashboard_housing",(0,24,-1.5),(11,5.8,4.3),"enamel_dark",rotation=(-15,0,0))
+    centered("dashboard_instruments",(0,25.2,.8),(8.7,3.6,.2),"gauge",rotation=(-15,0,0))
     beam("steering_column",(0,19,1),(0,28,4),1.05,"steel")
     group("steering_wheel",(0,29,4),rotation=(60,0,0))
     for i in range(8):

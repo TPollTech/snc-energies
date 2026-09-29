@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f2ed">
+  <title>SNC 75-P — Estúdio da plantadeira</title>
+  <link rel="stylesheet" href="./vehicle-studio.css">
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js","three-controls":"./vendor/OrbitControls.js"}}</script>
+</head>
+<body>
+  <main class="app">
+    <aside class="sidebar" aria-label="Configuração do modelo">
+      <div class="brand"><div class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></div><div><strong>SNC ENERGIAS</strong><span>OFICINA DE MODELAGEM</span></div></div>
+      <div class="intro"><div class="eyebrow">Linha agrícola · 003</div><h1>SNC 75-P</h1><p>Plantadeira de três linhas destacável.<br>Tanques próprios, abridores de disco e rodado de transporte.</p><span class="edition">Laranja industrial / lonita</span></div>
+
+      <section class="panel" aria-labelledby="mechanics-heading">
+        <div class="section-title"><h2 id="mechanics-heading">Articulação</h2><span>DEMO</span></div>
+        <div class="control-row"><label for="toggle-motion">Girar mecanismos (PTO)</label><input id="toggle-motion" class="switch" type="checkbox" role="switch"></div>
+        <div class="slider-control"><div class="slider-label"><label for="lift">Levantar plantadeira</label><output id="lift-value" for="lift">0%</output></div><input id="lift" type="range" min="0" max="100" value="0" step="1"><div class="range-ends"><span>NO SOLO</span><span>TRANSPORTE</span></div></div>
+        <p class="control-note">Controles demonstrativos da modelagem.<br>Plantio ainda não implementado nesta prévia.</p>
+      </section>
+
+      <section class="panel download-panel" aria-labelledby="asset-heading">
+        <div class="section-title"><h2 id="asset-heading">Arquivos do modelo</h2><span>EDITÁVEIS</span></div>
+        <div class="downloads"><a class="download" href="../assets/planter/snc-75-p-plantadeira.bbmodel" download><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M10 2v10m-4-4 4 4 4-4M3 12v5h14v-5"/></svg>Blockbench</a><a class="download" href="../assets/planter/snc-75-p-plantadeira.glb" download><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M10 2v10m-4-4 4 4 4-4M3 12v5h14v-5"/></svg>Modelo GLB</a></div>
+        <div id="materials" class="materials" aria-label="Materiais da plantadeira"></div>
+      </section>
+      <footer class="sidebar-footer"><span>PROJETO SNC · MINECRAFT</span><span class="version">ASSET / 03</span></footer>
+    </aside>
+
+    <section class="workspace" aria-label="Prévia tridimensional interativa da plantadeira">
+      <div id="stage" class="stage"></div>
+      <div class="workspace-header"><div><div class="eyebrow">Estúdio / Implemento destacável</div><div class="subheading">Prévia de modelagem · ainda não integrado ao jogo</div></div><div id="render-status" class="status">Carregando modelo</div></div>
+      <nav class="views" aria-label="Vistas do modelo"><button type="button" data-view="perspective" aria-pressed="true">Perspectiva</button><button type="button" data-view="front" aria-pressed="false">Frente</button><button type="button" data-view="side" aria-pressed="false">Lateral</button><button type="button" data-view="rear" aria-pressed="false">Traseira</button></nav>
+      <div class="stage-actions"><button id="reset" class="icon-button" type="button" title="Restaurar posição e controles" aria-label="Restaurar posição e controles"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 10a8 8 0 1 1 .6 6M4 4v6h6"/></svg></button><button id="fullscreen" class="icon-button" type="button" title="Tela cheia" aria-label="Alternar tela cheia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"/></svg></button></div>
+      <div class="model-tag">ABAIXADA · EM LINHA · PTO PARADO</div>
+      <div class="orientation" aria-hidden="true"><svg viewBox="0 0 54 54" fill="none"><ellipse cx="27" cy="34" rx="22" ry="12" stroke="#bcc5ae"/><path d="M27 34V8m0 26 18 9m-18-9L8 44" stroke="#8d9d7c"/><path d="m24 12 3-4 3 4" stroke="#8d9d7c"/><circle cx="27" cy="34" r="3" fill="#e87924"/></svg>Y ACIMA</div>
+      <div class="stage-bottom"><div class="asset-metrics"><div><span class="metric-label">Geometria</span><span class="metric-value"><span id="cube-count">—</span> <small>cubos</small></span></div><div><span class="metric-label">Dimensões L × A × C</span><span class="metric-value"><span id="dimensions">—</span> <small>bl.</small></span></div><div><span class="metric-label">Escala</span><span class="metric-value">1:16 <small>px</small></span></div></div><div class="interaction-hint"><strong>Arraste</strong> para orbitar<br><strong>Scroll</strong> para aproximar · <strong>botão direito</strong> para mover</div></div>
+      <div id="loading" class="loading" role="status"><div class="loader" aria-hidden="true"></div><strong id="loading-title">Preparando a oficina</strong><p id="loading-text">Carregando geometria e materiais locais…</p></div><div id="toast" class="toast" role="status"></div>
+    </section>
+  </main>
+  <script type="module" src="./planter-viewer.js"></script>
+</body>
+</html>

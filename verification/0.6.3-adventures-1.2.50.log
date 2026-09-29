@@ -1,0 +1,665 @@
+[16:43:58] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 26.3 with Fabric Loader 0.19.5
+[16:43:58] [main/INFO] (FabricLoader/Mappings) Mappings not present!
+[16:43:58] [main/INFO] (FabricLoader) Loading 46 mods:
+	- fabric-advancement-api-v1 1.0.0+38c7a2d55d
+	- fabric-api 0.161.0+26.3
+	- fabric-api-base 2.0.6+fcdff87f5d
+	- fabric-api-lookup-api-v1 2.0.24+3434d6d95d
+	- fabric-biome-api-v1 20.0.9+74ed1ea55d
+	- fabric-block-api-v1 3.1.0+0ae6f9115d
+	- fabric-block-getter-api-v2 2.0.9+3434d6d95d
+	- fabric-command-api-v2 3.1.2+fcdff87f5d
+	- fabric-content-registries-v0 15.0.4+74ed1ea55d
+	- fabric-convention-tags-v2 4.10.3+6b5b47fd5d
+	- fabric-crash-report-info-v1 1.0.7+fcdff87f5d
+	- fabric-creative-tab-api-v1 5.0.21+fcdff87f5d
+	- fabric-data-attachment-api-v1 2.2.30+3434d6d95d
+	- fabric-data-generation-api-v1 27.2.4+427eab975d
+	- fabric-debug-api-v1 1.0.4+3434d6d95d
+	- fabric-dimensions-v1 5.1.19+47f74c985d
+	- fabric-entity-events-v1 6.0.4+3434d6d95d
+	- fabric-events-interaction-v0 5.3.6+3434d6d95d
+	- fabric-game-rule-api-v1 4.0.10+3434d6d95d
+	- fabric-gametest-api-v1 4.0.32+3434d6d95d
+	- fabric-item-api-v1 14.7.0+cf6bc2db5d
+	- fabric-lifecycle-events-v1 4.1.9+ffef5f675d
+	- fabric-loot-api-v3 4.0.8+4068fd645d
+	- fabric-menu-api-v1 2.0.27+ed66f0a35d
+	- fabric-message-api-v1 7.0.10+3434d6d95d
+	- fabric-networking-api-v1 6.3.8+fcdff87f5d
+	- fabric-object-builder-api-v1 24.1.9+3434d6d95d
+	- fabric-particles-v1 5.0.24+3434d6d95d
+	- fabric-permission-api-v1 1.0.8+fcdff87f5d
+	- fabric-recipe-api-v1 10.0.8+fcdff87f5d
+	- fabric-registry-sync-v0 8.0.1+fcdff87f5d
+	- fabric-rendering-fluids-v1 6.0.6+3434d6d95d
+	- fabric-resource-conditions-api-v1 6.1.5+3434d6d95d
+	- fabric-resource-loader-v0 3.3.26+4fc5413f5d
+	- fabric-resource-loader-v1 3.0.4+fcdff87f5d
+	- fabric-serialization-api-v1 2.0.7+74ed1ea55d
+	- fabric-tag-api-v1 2.1.10+fcdff87f5d
+	- fabric-transfer-api-v1 8.0.25+fcdff87f5d
+	- fabric-transitive-access-wideners-v1 8.1.16+52268a0e5d
+	- fabricloader 0.19.5
+	- intoxicantes 1.2.50
+	- java 25
+	- minecraft 26.3
+	- mixinextras 0.5.5
+	- snc_energies 0.6.3
+	- snc_functional_test 1.0.0
+[16:43:59] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/enzot/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.17.4+mixin.0.8.7/5f66cc9f59b8efaa942155a3d5a30599bf6640dd/sponge-mixin-0.17.4+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
+[16:44:01] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.5).
+[16:44:23] [main/INFO] (SNC Energies) SNC Energies blocks constructed
+[16:44:24] [main/INFO] (SNC Energies) SNC Energies block entities registered
+[16:44:24] [main/INFO] (SNC Energies) SNC Energies entities registered
+[16:44:24] [main/INFO] (SNC Energies) SNC Energies items registered
+[16:44:24] [main/INFO] (SNC Energies) SNC Energies menus registered
+[16:44:24] [main/INFO] (SNC Energies) SNC Energies recipes ready
+[16:44:24] [main/INFO] (SNC Energies) SNC Adventures 1.2.50 detected; optional biomass integration enabled
+[16:44:24] [main/INFO] (SNC Energies) SNC Energies initialized: the grid is live!
+[16:44:24] [main/INFO] (intoxicantes) [Intoxicantes] Plantacoes, bebidas, NPCs e substancias ficticias registradas. Lembre: e so jogo!
+[16:44:24] [main/INFO] (Minecraft) Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[16:44:28] [Worker-Main-4/INFO] (Minecraft) Loaded 1877 advancements
+[16:44:30] [main/INFO] (BiomeModificationImpl) Applied 132 biome modifications to 56 of 67 new biomes in 21.40 ms
+[16:44:30] [Server thread/INFO] (intoxicantes) [Market] Posicao do Mercado carregada: 73, 50, -9
+[16:44:30] [Server thread/INFO] (intoxicantes) [Intoxicantes] Sistema de dinheiro R$ e Mercado Esquinao inicializados.
+[16:44:30] [Server thread/INFO] (Minecraft) Starting minecraft server version 26.3
+[16:44:30] [Server thread/INFO] (Minecraft) Loading properties
+[16:44:30] [Server thread/INFO] (Minecraft) Default game type: SURVIVAL
+[16:44:30] [Server thread/INFO] (Minecraft) Generating keypair
+[16:44:30] [Server thread/INFO] (Minecraft) Starting Minecraft server on 127.0.0.1:25577
+[16:44:32] [Server thread/WARN] (Minecraft) **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[16:44:32] [Server thread/WARN] (Minecraft) The server will make no attempt to authenticate usernames. Beware.
+[16:44:32] [Server thread/WARN] (Minecraft) While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[16:44:32] [Server thread/WARN] (Minecraft) To change this, set "online-mode" to "true" in the server.properties file.
+[16:44:32] [Server thread/INFO] (Minecraft) Preparing level "machine-test"
+[16:44:34] [Server thread/INFO] (Minecraft) Loading 25 persistent chunks...
+[16:44:35] [Server thread/INFO] (Minecraft) Preparing spawn area: 28%
+[16:44:35] [Server thread/INFO] (Minecraft) Preparing spawn area: 28%
+[16:44:35] [Server thread/INFO] (Minecraft) Preparing spawn area: 28%
+[16:44:36] [Server thread/INFO] (Minecraft) Preparing spawn area: 28%
+[16:44:36] [Server thread/INFO] (Minecraft) Time elapsed: 1624 ms
+[16:44:36] [Server thread/INFO] (Minecraft) Done (3.442s)! For help, type "help"
+[16:44:36] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[machine-test]'/minecraft:overworld
+[16:44:36] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[machine-test]'/minecraft:the_end
+[16:44:36] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[machine-test]'/minecraft:the_nether
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: companion biomass registry matches the selected test profile
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: empty biomass cannot produce energy
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: Adventures bagasse resolves through the optional biomass tag
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: stove menu accepts Adventures bagasse
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: one bagasse produces exactly 8000 energy and consumes exactly one item
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: biomass inventory and energy survive save/load
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: transfer conserves a one-unit source with a 160-unit budget
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: generator exposes its menu
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: furnace exposes its menu
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: crusher exposes its menu
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: menu retains synchronized energy and burn values
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: wood stove exposes its own fuel menu
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: wood stove accepts logs, planks and sticks
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: wood stove rejects non-wood and nonflammable fuel
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: obstruction blocks placement without replacing terrain: north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: clear footprint accepted: north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller north / 1
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller north / 2
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller north / 3
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller north / 4
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller north / 5
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller north / 6
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller north / 7
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structure cannot be separated by pistons: north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell north / 0
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell north / 1
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell north / 2
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell north / 3
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell north / 4
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell north / 5
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell north / 6
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell north / 7
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking structure drops exactly one stove: north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: obstruction blocks placement without replacing terrain: south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: clear footprint accepted: south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller south / 1
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller south / 2
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller south / 3
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller south / 4
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller south / 5
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller south / 6
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller south / 7
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structure cannot be separated by pistons: south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell south / 0
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell south / 1
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell south / 2
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell south / 3
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell south / 4
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell south / 5
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell south / 6
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell south / 7
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking structure drops exactly one stove: south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: obstruction blocks placement without replacing terrain: east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: clear footprint accepted: east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller east / 1
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller east / 2
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller east / 3
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller east / 4
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller east / 5
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller east / 6
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller east / 7
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structure cannot be separated by pistons: east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell east / 0
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell east / 1
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell east / 2
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell east / 3
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell east / 4
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell east / 5
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell east / 6
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell east / 7
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking structure drops exactly one stove: east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: obstruction blocks placement without replacing terrain: west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: clear footprint accepted: west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller west / 1
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller west / 2
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller west / 3
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller west / 4
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller west / 5
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller west / 6
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structural cell shares controller west / 7
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: structure cannot be separated by pistons: west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell west / 0
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell west / 1
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell west / 2
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell west / 3
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell west / 4
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell west / 5
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell west / 6
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking chimney removes cell west / 7
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: breaking structure drops exactly one stove: west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: legacy compact stove keeps its original footprint
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop refuses obstructed footprint: north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: north/0
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: north/1
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: north/2
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: north/3
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop drops exactly one machine; delta=1
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop returns stored items exactly once
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop refuses obstructed footprint: east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: east/0
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: east/1
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: east/2
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: east/3
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop drops exactly one machine; delta=1
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop returns stored items exactly once
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop refuses obstructed footprint: south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: south/0
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: south/1
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: south/2
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: south/3
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop drops exactly one machine; delta=1
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop returns stored items exactly once
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop refuses obstructed footprint: west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: west/0
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: west/1
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: west/2
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: west/3
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop drops exactly one machine; delta=1
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop returns stored items exactly once
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop refuses obstructed footprint: north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: north/0
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: north/1
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: north/2
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: north/3
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop drops exactly one machine; delta=1
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop returns stored items exactly once
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop refuses obstructed footprint: east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: east/0
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: east/1
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: east/2
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: east/3
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop drops exactly one machine; delta=1
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop returns stored items exactly once
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop refuses obstructed footprint: south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: south/0
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: south/1
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: south/2
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: south/3
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop drops exactly one machine; delta=1
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop returns stored items exactly once
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop refuses obstructed footprint: west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: west/0
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: west/1
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: west/2
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop part shares controller: west/3
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop structural parts have no duplicate inventory
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop removal cleans every cell
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop drops exactly one machine; delta=1
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop returns stored items exactly once
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: manual workshop waits for work
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: crank is server-authoritative and limited to one charge per tick
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: full residue slot blocks all input and work consumption
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop persists partial processing, work and input
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: milling conserves exact ingredient, product, residue and work quantities
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: workshop sided access protects input and output slots
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: invalid workshop button is rejected
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: removed workshop cannot be cranked through a stale menu
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: press produces oil and meal atomically without free containers
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: four rice husks produce one briquette without a phantom residue
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: regional fuels expose documented burn values
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: changing recipe cannot reuse progress from a different ingredient
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: output stack components are preserved rather than overwritten
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: young crop returns seed without harvest exploit
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: mature crop yields documented seeds and produce
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: young crop returns seed without harvest exploit
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: mature crop yields documented seeds and produce
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: young crop returns seed without harvest exploit
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: mature crop yields documented seeds and produce
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: optional mate milling preserves the batch without phantom residue
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: mate infusion returns its bowl after consumption
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: BOILER / north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: BOILER / north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: BOILER / north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: BOILER / east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: BOILER / east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: BOILER / east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: BOILER / south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: BOILER / south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: BOILER / south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: BOILER / west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: BOILER / west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: BOILER / west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: SAWMILL / north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: SAWMILL / north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: SAWMILL / north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: SAWMILL / east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: SAWMILL / east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: SAWMILL / east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: SAWMILL / south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: SAWMILL / south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: SAWMILL / south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: SAWMILL / west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: SAWMILL / west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: SAWMILL / west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: FOUNDRY / north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: FOUNDRY / north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: FOUNDRY / north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: FOUNDRY / east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: FOUNDRY / east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: FOUNDRY / east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: FOUNDRY / south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: FOUNDRY / south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: FOUNDRY / south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: FOUNDRY / west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: FOUNDRY / west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: FOUNDRY / west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: TURBINE / north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: TURBINE / north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: TURBINE / north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: TURBINE / east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: TURBINE / east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: TURBINE / east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: TURBINE / south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: TURBINE / south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: TURBINE / south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: TURBINE / west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: TURBINE / west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: TURBINE / west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: LAMINATOR / north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: LAMINATOR / north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: LAMINATOR / north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: LAMINATOR / east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: LAMINATOR / east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: LAMINATOR / east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: LAMINATOR / south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: LAMINATOR / south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: LAMINATOR / south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: LAMINATOR / west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: LAMINATOR / west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: LAMINATOR / west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: DRYER / north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: DRYER / north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: DRYER / north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: DRYER / east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: DRYER / east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: DRYER / east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: DRYER / south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: DRYER / south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: DRYER / south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: DRYER / west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: DRYER / west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: DRYER / west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: EXTRACTOR / north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: EXTRACTOR / north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: EXTRACTOR / north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: EXTRACTOR / east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: EXTRACTOR / east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: EXTRACTOR / east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: EXTRACTOR / south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: EXTRACTOR / south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: EXTRACTOR / south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: EXTRACTOR / west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: EXTRACTOR / west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: EXTRACTOR / west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: REFINERY / north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: REFINERY / north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: REFINERY / north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: REFINERY / east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: REFINERY / east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: REFINERY / east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: REFINERY / south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: REFINERY / south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: REFINERY / south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: REFINERY / west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: REFINERY / west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: REFINERY / west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: SYNTHESIZER / north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: SYNTHESIZER / north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: SYNTHESIZER / north
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: SYNTHESIZER / east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: SYNTHESIZER / east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: SYNTHESIZER / east
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: SYNTHESIZER / south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: SYNTHESIZER / south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: SYNTHESIZER / south
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial footprint rejects obstruction: SYNTHESIZER / west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial multiblock has exactly one controller and inventory: SYNTHESIZER / west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial removal returns one machine and exact inventory: SYNTHESIZER / west
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: dry boiler consumes neither fuel nor water
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: boiler conserves two water buckets, fuel and 16000 mB steam
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: full boiler pauses fuel consumption safely
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: boiler fluids and bucket inventory survive persistence
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: steam network conserves a bounded transfer across two ducts
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: steam ducts have no electric cable entities or per-pipe ticks
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: steam insertion rejects overflow and negative amounts
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: full consumer cannot delete or duplicate source steam
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: turbine converts 8000 mB into exactly 8000 E and cannot accept back-fed power
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: wood_0
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: wood_0
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: wood_0
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: wood_0
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: wood_1
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: wood_1
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: wood_1
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: wood_1
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: wood_2
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: wood_2
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: wood_2
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: wood_2
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: wood_3
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: wood_3
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: wood_3
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: wood_3
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: wood_4
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: wood_4
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: wood_4
+[16:44:39] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: wood_4
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: wood_5
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: wood_5
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: wood_5
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: wood_5
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: wood_6
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: wood_6
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: wood_6
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: wood_6
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: wood_7
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: wood_7
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: wood_7
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: wood_7
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: steel_minecraft:coal
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: steel_minecraft:coal
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: steel_minecraft:coal
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: steel_minecraft:coal
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: steel_minecraft:charcoal
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: steel_minecraft:charcoal
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: steel_minecraft:charcoal
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: steel_minecraft:charcoal
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: steel_plate
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: steel_plate
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: steel_plate
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: steel_plate
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: copper_wire
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: copper_wire
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: copper_wire
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: copper_wire
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: rice_batch
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: rice_batch
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: rice_batch
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: rice_batch
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: mate_batch
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: mate_batch
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: mate_batch
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: mate_batch
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: insulation
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: insulation
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: insulation
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: insulation
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: oil_batch
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: oil_batch
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: oil_batch
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: oil_batch
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: refined_voltaite
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: refined_voltaite
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: refined_voltaite
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: refined_voltaite
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: mineral_matrix
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: mineral_matrix
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: mineral_matrix
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: mineral_matrix
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: synthesis_minecraft:raw_iron
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: synthesis_minecraft:raw_iron
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: synthesis_minecraft:raw_iron
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: synthesis_minecraft:raw_iron
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: synthesis_minecraft:raw_copper
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: synthesis_minecraft:raw_copper
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: synthesis_minecraft:raw_copper
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: synthesis_minecraft:raw_copper
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: synthesis_minecraft:raw_gold
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: synthesis_minecraft:raw_gold
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: synthesis_minecraft:raw_gold
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: synthesis_minecraft:raw_gold
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: synthesis_snc_energies:raw_tin
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: synthesis_snc_energies:raw_tin
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: synthesis_snc_energies:raw_tin
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: synthesis_snc_energies:raw_tin
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked output prevents all processing: synthesis_snc_energies:raw_voltaite
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial partial batch survives save/load: synthesis_snc_energies:raw_voltaite
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial recipe conserves inputs, outputs and operating cost: synthesis_snc_energies:raw_voltaite
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: reagent consumption matches recipe contract: synthesis_snc_energies:raw_voltaite
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: duct network delivers one raw iron into a furnace input without loss or duplication
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: duct buffer exposes standard hopper windows on every face
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: duct holding an item rejects further insertion
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: blocked network parks the item in a duct without merging, ejecting or destroying it
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: parked item resumes delivery once the destination accepts again
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: furnace produces before suction check
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: empty duct pulls a finished ingot out of a machine output
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial anchor hosts the controller cell
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: industrial outputs extract only downwards
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: side and top faces offer insertion windows without extraction
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: duct suction removes exactly one plate per step from an industrial output
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: machines default to always-on operation
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: panel toggle switches to redstone mode
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: redstone mode without signal reports the gate status
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: redstone power starts processing
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: in-flight batch completes after the signal drops
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: no new batch starts while unpowered; inputs and gate state are preserved
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: run mode survives persistence
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: gate test machine remains the single controller
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: default face modes keep the 0.2.0 contract: outputs below, inputs elsewhere
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: default windows: extraction only below, insertion above and beside
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: screwdriver reconfigures the front face to output only
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: second cycle turns the front face into a both-ways window
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: screwdriver cycles through to the inverted redstone mode
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: inverted mode runs while unpowered
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: power halts an inverted machine with the new gate status without losing progress
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: inverted machine resumes once the signal drops
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: face modes and the inverted mode persist across save and load
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: empty whitelist lets every item into the duct
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: whitelist admits only listed items through the insertion windows
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: whitelist blocks suction of an unlisted machine output
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: whitelisted output leaves the machine window without loss
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: filter persists across save and load
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: clearing the whitelist restores universal acceptance
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: shelf and anchor block entities load
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: beverage shelf bound to the beverage catalog line
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: anchor spawns the Mercajeiro on the counter post
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: Mercajeiro is bound to the market post
+[16:44:40] [Server thread/INFO] (SNC Energies) Mercadão catalog ready: 25 offers (17 from Adventures)
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: menu exposes ten counter positions
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: beer offered at the same R$ 15 the Gago charges
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: out-of-catalog position is rejected by the server menu
+[16:44:40] [Server thread/INFO] (SNC Energies) SNC Adventures wallet bridged for the Mercadão
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: empty wallet is refused without touching stock
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: refused sale leaves the shelf stock intact
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: purchase accepted with a funded Adventures wallet
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: purchase debits exactly the catalog price from PlayerMoney
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: purchase delivers the real item into the inventory
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: daily stock drains to zero
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: sold-out line refuses further sales
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: next day restocks the shelf to full daily stock
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: Mercajeiro click opens the purchase menu
+[16:44:40] [Server thread/INFO] (SNC Energies) MercadaoFunctionalTest OK
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: tractor exposes its supply panel menu
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: seed slots accept regional and vanilla seeds only
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: engine refuses to start on an empty oil tank
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: engine starts with oil available
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: engine toggles off through the same button
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: one seed spent per planted row position (three rows, one occupied)
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: existing crop is never replaced by the planter
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: centre row plants wheat ahead of the tractor
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: left row plants soybeans from its own tank
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: right row plants wheat from its own tank
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: lift command synchronizes to the renderer state
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: raised planter spends no seeds
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: driving with the engine on burns exactly one oil tick
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: occupied positions across all rows spend no seeds
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: panel ignition button toggles the engine
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: implement starts unattached
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: hitch couples the parked implement
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: second hitch is refused while one implement is coupled
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: engine starts for the hitch pass
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: attached implement spends its own seeds (welded origin, occupied column skipped)
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: left row plants the implement's own wheat seeds
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: right row plants the implement's own soybean seeds
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: occupied centre cell is never replaced by the implement
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: implement rides welded at the tractor's rear hitch
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: implement mirrors working and lift state
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: hitch uncouples the implement
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: detached implement parks its mechanisms
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: detached implement keeps its remaining seeds
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: implement menu contract persists after detach
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: implement exposes its own tank menu
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: harvester exposes its supply panel menu
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: harvester refuses to start on an empty oil tank
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: harvester starts with oil available
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: every mature wheat plant in the sweep lands in the tank
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: mature carrots yield their roots into the tank
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: immature crops are never cut
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: cut crops reset to freshly planted for the next cycle
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: full tank spends nothing: crops stay standing
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: standing crops survive a full-tank pass
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: header lift toggles through the panel command
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: raised header harvests nothing
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: a work portion burns exactly one oil item with the header raised
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: oil exhaustion stops the engine silently
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: engine refuses to restart without oil
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: dead engine stops the oil drain
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: panel ignition button toggles the harvester
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: removal drops the tank contents before the entity is gone
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: grain cart exposes its cargo panel menu
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: panel hitch button couples the parked cart
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: unload button refuses an empty tank without error
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: panel hitch button uncouples through the same toggle
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: hitch couples the parked grain cart
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: second coupling is refused while one cart is attached
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: cart rides welded at the harvester's rear hitch after a drive step
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: towed mirror syncs to the renderer state
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: unload moves grain into the attached cart
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: unload conserves every grain exactly (94 wheat, 40 carrots)
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: second unload runs until no cart slot can take more
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: cart packs its fourteen wheat slots exactly
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: the carrot slot is untouched by the wheat pass
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: a slot below its stack cap keeps the cart from reporting full
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: the packed cart pauses the transfer and keeps the remainder in the tank
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: hitch uncouples the cart and parks it
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: detached cart keeps every grain in its cargo
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: unload refuses without an attached cart
+[16:44:40] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: removal drops every cargo slot before the cart is gone
+[16:44:53] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: large stove supplies energy through a cable on its far structural cell
+[16:44:53] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: large chimney shares the controller lit state
+[16:44:53] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: wood stove powers an electric furnace from one log
+[16:44:53] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: wood stove consumes logs and retains remaining burn
+[16:44:53] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: generator and multi-cable network smelt iron using native ticks
+[16:44:53] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: crusher produces two Voltaite dust
+[16:44:53] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: one coal starts a persistent burn
+[16:44:53] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: surplus power charges battery
+[16:44:53] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: incompatible output prevents consumption or item conversion
+[16:44:53] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: generator energy and burn survive serialization
+[16:44:53] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: furnace inventory and energy survive serialization
+[16:45:03] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: battery powers furnace without generator and dust smelts to ingot
+[16:45:03] [Server thread/INFO] (SNC Energies) FUNCTIONAL PASS: no global machine tick registrations remain
+[16:45:03] [Server thread/INFO] (SNC Energies) FUNCTIONAL TESTS PASSED
+[16:45:03] [Server thread/INFO] (Minecraft) Stopping server
+[16:45:03] [Server thread/INFO] (Minecraft) Saving players
+[16:45:03] [Server thread/INFO] (Minecraft) Saving worlds
+[16:45:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[machine-test]'/minecraft:overworld
+[16:45:04] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[machine-test]'/minecraft:the_end
+[16:45:04] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[machine-test]'/minecraft:the_nether

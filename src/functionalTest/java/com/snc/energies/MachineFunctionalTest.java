@@ -33,6 +33,7 @@ public final class MachineFunctionalTest implements DedicatedServerModInitialize
     private WoodStoveBlockEntity largeStove;
     private ElectricFurnaceBlockEntity largeFurnace;
     private ElectricFurnaceBlockEntity woodFurnace;
+    private ServerPlayer player;
     private BlockPos p(int x) { return new BlockPos(x, 100, 0); }
     private MachineBlockEntity place(int x, Block block) {
         world.setBlock(p(x), block.defaultBlockState(), 3);
@@ -54,6 +55,9 @@ public final class MachineFunctionalTest implements DedicatedServerModInitialize
             if (!ready) return;
             try {
                 ticks++;
+                if (cartSuiteTicks > 0 && --cartSuiteTicks == 0) {
+                    GrainCartFunctionalTest.run(world, player);
+                }
                 if (ticks == 40) setup(server);
                 if (ticks == 340) {
                     check(largeFurnace.getItem(1).is(Items.IRON_INGOT), "large stove supplies energy through a cable on its far structural cell");
@@ -110,7 +114,7 @@ public final class MachineFunctionalTest implements DedicatedServerModInitialize
         single.insert(1,false);
         check(EnergyTransfer.distribute(world,p(0),single,160) == 1 && single.getEnergy() == 0
             && furnace.getEnergy()+crusher.getEnergy()+battery.getEnergy() == 1, "transfer conserves a one-unit source with a 160-unit budget");
-        ServerPlayer player = new ServerPlayer(server,world,new GameProfile(UUID.randomUUID(),"MachineTest"),ClientInformation.createDefault());
+        player = new ServerPlayer(server,world,new GameProfile(UUID.randomUUID(),"MachineTest"),ClientInformation.createDefault());
         check(generator.createMenu(1,player.getInventory(),player) instanceof CoalGeneratorMenu, "generator exposes its menu");
         check(furnace.createMenu(2,player.getInventory(),player) instanceof ElectricFurnaceMenu, "furnace exposes its menu");
         check(crusher.createMenu(3,player.getInventory(),player) instanceof CrusherMenu, "crusher exposes its menu");
@@ -136,7 +140,54 @@ public final class MachineFunctionalTest implements DedicatedServerModInitialize
         ColonialFunctionalTest.run(world, player);
         IndustryFunctionalTest.run(world, player);
         AutomationFunctionalTest.run(world);
+        MercadaoFunctionalTest.run(world, player);
+        TractorFunctionalTest.run(world, player);
+        HarvesterFunctionalTest.run(world, player);
+        // Worldgen probe: the vanilla village is the positive control. If the
+        // Mercadão entries are absent while vanilla's are present, the mod's
+        // worldgen datapack never loaded (wrong folder layout).
+        var structures = server.registryAccess().lookupOrThrow(net.minecraft.core.registries.Registries.STRUCTURE);
+        var structureSets = server.registryAccess().lookupOrThrow(net.minecraft.core.registries.Registries.STRUCTURE_SET);
+        var templatePools = server.registryAccess().lookupOrThrow(net.minecraft.core.registries.Registries.TEMPLATE_POOL);
+        SncEnergies.LOGGER.info("WORLDGEN structure: mercadao={} village_plains={}",
+            structures.get(SncEnergies.id("mercadao")).isPresent(),
+            structures.get(net.minecraft.resources.Identifier.fromNamespaceAndPath("minecraft", "village_plains")).isPresent());
+        SncEnergies.LOGGER.info("WORLDGEN structure_set: mercadao={} villages={}",
+            structureSets.get(SncEnergies.id("mercadao")).isPresent(),
+            structureSets.get(net.minecraft.resources.Identifier.fromNamespaceAndPath("minecraft", "villages")).isPresent());
+        SncEnergies.LOGGER.info("WORLDGEN template_pool: mercadao/start={}",
+            templatePools.get(SncEnergies.id("mercadao/start")).isPresent());
+        // Ore feature probe: 26.3 keeps configured features in worldgen/feature/
+        // (there is no configured_feature/ folder); a regression back to the old
+        // layout would silently drop both ores. Vanilla coal is the control, and
+        // a registered placed feature transitively proves its configured feature.
+        var placedFeatures = server.registryAccess().lookupOrThrow(net.minecraft.core.registries.Registries.PLACED_FEATURE);
+        SncEnergies.LOGGER.info("WORLDGEN placed_feature: tin_ore={} voltaite_ore={} ore_coal_upper={}",
+            placedFeatures.get(SncEnergies.id("tin_ore")).isPresent(),
+            placedFeatures.get(SncEnergies.id("voltaite_ore")).isPresent(),
+            placedFeatures.get(net.minecraft.resources.Identifier.fromNamespaceAndPath("minecraft", "ore_coal_upper")).isPresent());
+        check(placedFeatures.get(SncEnergies.id("tin_ore")).isPresent()
+            && placedFeatures.get(SncEnergies.id("voltaite_ore")).isPresent(),
+            "ore configured and placed features registered in worldgen");
+        check(server.getRecipeManager().byKey(net.minecraft.resources.ResourceKey.create(
+            net.minecraft.core.registries.Registries.RECIPE, SncEnergies.id("tractor"))).isPresent(),
+            "tractor recipe loaded by RecipeManager");
+        // End-to-end placement probe (server console carries the Located/
+        // not-found feedback; the village is the control). No radius argument
+        // in this version: /locate structure <id> only.
+        server.getCommands().performPrefixedCommand(
+            server.createCommandSourceStack(),
+            "locate structure snc_energies:mercadao");
+        server.getCommands().performPrefixedCommand(
+            server.createCommandSourceStack(),
+            "locate structure minecraft:village_plains");
+        // Deferred one tick: the vehicle suites above tear their entities down
+        // inside this same tick; starting the cart suite on the next tick keeps
+        // its entity lookups (hitch search, purge) deterministic in this world.
+        cartSuiteTicks = 2;
     }
+    private int cartSuiteTicks;
+
     private int stoveDrops() {
         return world.getEntitiesOfClass(net.minecraft.world.entity.item.ItemEntity.class,
             new net.minecraft.world.phys.AABB(0,98,3,16,105,16)).stream()

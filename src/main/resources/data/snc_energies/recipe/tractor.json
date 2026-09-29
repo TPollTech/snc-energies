@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PIP",
+    "GEG",
+    "PWP"
+  ],
+  "key": {
+    "P": "snc_energies:steel_plate",
+    "I": "minecraft:iron_block",
+    "G": "snc_energies:steel_gear",
+    "E": "snc_energies:basic_circuit",
+    "W": "snc_energies:copper_wire"
+  },
+  "result": {
+    "id": "snc_energies:tractor",
+    "count": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "version": "0.5.0+tractor-planting (não numerada; marco de validação)",
+  "installed": "2026-09-26T17:55:00-03:00",
+  "jar": "Instances/SNC energies/mods/snc-energies.jar",
+  "sha256": "F267C9FB8A5EC9FC1961F168F06885EEF836E2B7C996DEA1A094897880A72C4F",
+  "previous_sha256": "1316214F1038031C7C788CD8812AB529EE100122C46F242FF4A1C893EC48DC3A (0.5.0, instalado às 05:10)",
+  "backup": null,
+  "backup_note": "FALHA REGISTRADA: a cópia de segurança foi executada DEPOIS da substituição do jar (erro de caminho seguido de sobrescrita), então não existe backup do jar 0.5.0 exato. O 0.5.0 é recuperável: commit/tag v0.5.0 pendentes no repo (o build determinístico a partir dessas fontes reproduz o jar) ou, em último caso, revertendo os commits do marco. Backups anteriores intactos: 0.4.0 em Instances/Mods SNC/snc-backups/20260926-050125-before-0.4.0/ (SHA B58B4B3D...) e 0.3.0 em Instances/SNC energies/snc-backups/20260926-0059-before-0.4.0/.",
+  "note": "Marco plantio mecanizado: alvo de plantio corrigido para a célula acima do solo arado (nada era plantado antes), slot de óleo restrito ao Óleo Vegetal, elevação da plantadeira refletida no rig do cliente (rodas do implemento param e o pivô levanta), testes do trator ampliados (15 asserções: painel, ignição sem óleo, contagem exata por linha com tanques independentes, coluna ocupada em todas as linhas, levantada não gasta, sincronização do hitch). Suíte completa standalone: 499 passes. Log em verification/tractor-planting-standalone.log."
+}

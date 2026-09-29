@@ -923,15 +923,37 @@ def tex_crops():
 
 # ------------------------------------------------------- colonial/other items
 def tex_colonial_items():
-    # mate_infusion: gourd + bombilla
+    # mate_infusion: solid cuia (gourd) with yerba top and metal bombilla.
+    # Silhouette-first: every body pixel carries full alpha so the item reads
+    # in the inventory (the old glow-only art was 95% transparent).
     cv = Canvas(seed=501, transparent=True)
-    cv.glow(64, 78, 34, (56, 44, 29), peak=0.9, falloff=1.4)
-    cv.glow(64, 72, 30, (148, 100, 59), peak=0.95, falloff=1.6)
-    cv.glow(64, 44, 26, (189, 163, 108), peak=0.9, falloff=1.8)
-    cv.glow(64, 42, 20, (100, 125, 56), peak=0.85, falloff=1.8)
-    cv.glow(58, 40, 8, (140, 165, 90), peak=0.7)
-    line(cv, 72, 70, 88, 14, (214, 221, 210), 6)
-    line(cv, 74, 71, 90, 15, (124, 139, 136), 2)
+    GOURD=(148,100,59); GOURD_LO=(110,70,38); GOURD_HI=(189,140,84)
+    LEATHER=(56,44,29); YERBA=(100,125,56); YERBA_HI=(140,165,90)
+    METAL=(214,221,210); METAL_LO=(150,158,156)
+    cv.contact_shadow(6, 0.45)
+    # Body: stacked discs bulging at the belly, narrowing at foot and mouth.
+    rows=[
+        (38,92,40),(34,88,44),(30,84,48),(28,80,50),(26,76,52),(24,70,54),
+        (22,60,56),(22,52,56),(24,46,54),(28,42,50),(34,40,44)]
+    # rows are bottom-up: (y0,y1,halfwidth) with y measured from mouth top.
+    # Draw foot, belly and shoulder as filled ellipses for a round cuia.
+    cv.glow(64,86,30,LEATHER,peak=1.0,falloff=0.45)
+    cv.glow(64,76,34,GOURD_LO,peak=1.0,falloff=0.5)
+    cv.glow(64,66,36,GOURD,peak=1.0,falloff=0.45)
+    cv.glow(64,54,34,GOURD_HI,peak=1.0,falloff=0.6)
+    # Mouth ring + yerba mound poking above the rim.
+    cv.glow(64,40,22,(90,60,34),peak=1.0,falloff=0.5)
+    cv.glow(64,36,16,YERBA,peak=1.0,falloff=0.55)
+    cv.glow(58,33,7,YERBA_HI,peak=1.0,falloff=0.7)
+    # Metal rim band.
+    cv.glow(64,41,24,METAL_LO,peak=0.9,falloff=0.12)
+    # Bombilla: bright metal straw leaning right, dark edge for contrast.
+    line(cv,72,68,90,16,METAL_LO,8)
+    line(cv,72,66,90,14,METAL,6)
+    line(cv,86,22,94,12,METAL,4)
+    # Leather strap around the belly.
+    line(cv,30,78,98,78,LEATHER,6)
+    line(cv,30,74,98,74,GOURD_LO,2)
     save(cv, 'mate_infusion', 'item')
 
     # mate_leaf / dried_mate / ground_mate / mate_seeds: three leaves
@@ -1199,6 +1221,92 @@ def gui_player_inv(cv: Canvas):
         gui_slot(cv, 8 + c * 18, 142)
 
 
+def wheel(cv, cx: int, cy: int, radius: int):
+    """Voxel-free wheel icon: rubber disc, steel hub, tread notches."""
+    import numpy as np
+    yy, xx = np.mgrid[0:cv.h, 0:cv.w].astype(np.float32)
+    d2 = (xx - cx) ** 2 + (yy - cy) ** 2
+    layer = np.zeros((cv.h, cv.w, 4), np.float32)
+    rubber = d2 <= radius * radius
+    inner = d2 <= (radius - 6) ** 2 if radius > 10 else d2 <= (radius - 4) ** 2
+    layer[rubber, :3] = (20, 22, 26)
+    layer[inner, :3] = (34, 37, 43)
+    alpha = np.zeros((cv.h, cv.w), np.float32)
+    alpha[rubber] = 255
+    layer[..., 3] = alpha
+    cv.blit(layer)
+    for i in range(10):
+        import math
+        a = i * math.pi / 5
+        x = cx + math.cos(a) * (radius - 2)
+        y = cy + math.sin(a) * (radius - 2)
+        cv.rect(int(x) - 2, int(y) - 2, int(x) + 2, int(y) + 2, (48, 52, 58))
+    cv.rivet(cx, cy, max(6, radius // 3), seed=cx)
+
+
+def tex_tractor_item():
+    """SNC 75 side-view icon: orange hood, dark chassis, big rear wheel, exhaust."""
+    cv = Canvas(seed=880)
+    cv.brushed(STEEL_LIGHT, seed=881)
+    cv.aniso_roughness(6, seed=882)
+    # Ground shadow.
+    cv.contact_shadow(4, 0.6)
+    # Rear wheel (big, right side of the icon): dark disc + rivet rim + hub.
+    wheel(cv, 88, 86, 30)
+    # Front wheel (small, left).
+    wheel(cv, 30, 98, 16)
+    # Chassis.
+    cv.rect(16, 62, 104, 80, (34, 30, 26))
+    cv.rect(16, 62, 104, 66, (52, 46, 40))
+    # Engine hood (SNC enamel orange).
+    cv.rect(14, 40, 62, 64, ORANGE)
+    cv.rect(14, 40, 62, 45, (255, 176, 74))
+    cv.rect(18, 48, 34, 56, (222, 118, 18))
+    # Grille lines on the hood front.
+    for i in range(3):
+        cv.rect(18 + i * 5, 52, 21 + i * 5, 62, (150, 78, 12))
+    # Exhaust pipe with smoke tip.
+    cv.rect(52, 24, 58, 42, STEEL_DARK)
+    cv.rect(53, 22, 57, 26, (120, 126, 136))
+    # Cab posts and canopy hint.
+    cv.rect(62, 34, 68, 62, STEEL_DARK)
+    cv.rect(92, 34, 98, 62, STEEL_DARK)
+    cv.rect(58, 26, 102, 36, (40, 44, 50))
+    # Seat.
+    cv.rect(72, 46, 88, 60, (60, 44, 34))
+    # Rear fender over wheel.
+    cv.rect(64, 56, 112, 64, ORANGE)
+    save(cv, 'tractor', 'item')
+
+
+def tex_screwdriver():
+    """Side-configuration tool: steel shaft, slotted tip, orange insulated grip."""
+    cv = Canvas(seed=860)
+    cv.brushed(STEEL_LIGHT, seed=861)
+    cv.aniso_roughness(6, seed=862)
+    # Diagonal shaft from the handle (top right) to the slotted tip (bottom left).
+    line(cv, 38, 90, 84, 44, STEEL_DARK, 13)
+    line(cv, 38, 90, 84, 44, STEEL_HI, 8)
+    line(cv, 41, 87, 87, 41, (150, 158, 168), 3)
+    # Slotted flat tip.
+    cv.rect(24, 98, 46, 104, STEEL_DARK)
+    cv.rect(26, 99, 44, 103, (168, 176, 186))
+    cv.rect(30, 100, 40, 102, (14, 16, 19))
+    # Insulated grip with moulded ribs.
+    for i in range(9):
+        t = i / 8
+        x = 76 + int(t * 30)
+        y = 46 - int(t * 30)
+        cv.rect(x - 7, y - 7, x + 9, y + 9, ORANGE if i % 2 == 0 else (208, 112, 20))
+    cv.rect(96, 30, 118, 52, (30, 26, 22))
+    line(cv, 96, 30, 118, 52, ORANGE_HOT, 2)
+    cv.rect(100, 34, 114, 48, (16, 18, 22))
+    for i in range(4):
+        line(cv, 103 + i * 3, 36, 103 + i * 3, 46, (222, 132, 30), 2)
+    cv.contact_shadow(4, 0.5)
+    save(cv, 'screwdriver', 'item')
+
+
 def tex_guis():
     os.makedirs(TX['gui'], exist_ok=True)
     g1 = Canvas(176, 166, seed=810)
@@ -1252,6 +1360,8 @@ def main():
     tex_industry_blocks()
     tex_wood_stove()
     # items
+    tex_screwdriver()
+    tex_tractor_item()
     tex_industry_materials()
     tex_voltaite_items()
     tex_colonial_items()

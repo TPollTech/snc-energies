@@ -1,0 +1,266 @@
+Compiled from "VehicleEntity.java"
+public abstract class net.minecraft.world.entity.vehicle.VehicleEntity extends net.minecraft.world.entity.Entity {
+  protected static final net.minecraft.network.syncher.EntityDataAccessor<java.lang.Integer> DATA_ID_HURT;
+
+  protected static final net.minecraft.network.syncher.EntityDataAccessor<java.lang.Integer> DATA_ID_HURTDIR;
+
+  protected static final net.minecraft.network.syncher.EntityDataAccessor<java.lang.Float> DATA_ID_DAMAGE;
+
+  public net.minecraft.world.entity.vehicle.VehicleEntity(net.minecraft.world.entity.EntityType<?>, net.minecraft.world.level.Level);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: aload_2
+         3: invokespecial #1                  // Method net/minecraft/world/entity/Entity."<init>":(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)V
+         6: return
+
+  public boolean hurtClient(net.minecraft.world.damagesource.DamageSource);
+    Code:
+         0: iconst_1
+         1: ireturn
+
+  public boolean hurtServer(net.minecraft.server.level.ServerLevel, net.minecraft.world.damagesource.DamageSource, float);
+    Code:
+         0: aload_0
+         1: invokevirtual #7                  // Method isRemoved:()Z
+         4: ifeq          9
+         7: iconst_1
+         8: ireturn
+         9: aload_0
+        10: aload_2
+        11: invokevirtual #13                 // Method isInvulnerableToBase:(Lnet/minecraft/world/damagesource/DamageSource;)Z
+        14: ifeq          19
+        17: iconst_0
+        18: ireturn
+        19: aload_0
+        20: aload_0
+        21: invokevirtual #17                 // Method getHurtDir:()I
+        24: ineg
+        25: invokevirtual #21                 // Method setHurtDir:(I)V
+        28: aload_0
+        29: bipush        10
+        31: invokevirtual #25                 // Method setHurtTime:(I)V
+        34: aload_0
+        35: invokevirtual #28                 // Method markHurt:()V
+        38: aload_0
+        39: aload_0
+        40: invokevirtual #32                 // Method getDamage:()F
+        43: fload_3
+        44: ldc           #36                 // float 10.0f
+        46: fmul
+        47: fadd
+        48: invokevirtual #37                 // Method setDamage:(F)V
+        51: aload_0
+        52: getstatic     #41                 // Field net/minecraft/world/level/gameevent/GameEvent.ENTITY_DAMAGE:Lnet/minecraft/core/Holder$Reference;
+        55: aload_2
+        56: invokevirtual #47                 // Method net/minecraft/world/damagesource/DamageSource.getEntity:()Lnet/minecraft/world/entity/Entity;
+        59: invokevirtual #53                 // Method gameEvent:(Lnet/minecraft/core/Holder;Lnet/minecraft/world/entity/Entity;)V
+        62: aload_2
+        63: invokevirtual #47                 // Method net/minecraft/world/damagesource/DamageSource.getEntity:()Lnet/minecraft/world/entity/Entity;
+        66: astore        6
+        68: aload         6
+        70: instanceof    #57                 // class net/minecraft/world/entity/player/Player
+        73: ifeq          98
+        76: aload         6
+        78: checkcast     #57                 // class net/minecraft/world/entity/player/Player
+        81: astore        5
+        83: aload         5
+        85: invokevirtual #59                 // Method net/minecraft/world/entity/player/Player.getAbilities:()Lnet/minecraft/world/entity/player/Abilities;
+        88: getfield      #63                 // Field net/minecraft/world/entity/player/Abilities.instabuild:Z
+        91: ifeq          98
+        94: iconst_1
+        95: goto          99
+        98: iconst_0
+        99: istore        4
+       101: iload         4
+       103: ifne          116
+       106: aload_0
+       107: invokevirtual #32                 // Method getDamage:()F
+       110: ldc           #69                 // float 40.0f
+       112: fcmpl
+       113: ifgt          124
+       116: aload_0
+       117: aload_2
+       118: invokevirtual #70                 // Method shouldSourceDestroy:(Lnet/minecraft/world/damagesource/DamageSource;)Z
+       121: ifeq          133
+       124: aload_0
+       125: aload_1
+       126: aload_2
+       127: invokevirtual #73                 // Method destroy:(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/damagesource/DamageSource;)V
+       130: goto          142
+       133: iload         4
+       135: ifeq          142
+       138: aload_0
+       139: invokevirtual #77                 // Method discard:()V
+       142: iconst_1
+       143: ireturn
+
+  protected boolean shouldSourceDestroy(net.minecraft.world.damagesource.DamageSource);
+    Code:
+         0: iconst_0
+         1: ireturn
+
+  public boolean ignoreExplosion(net.minecraft.world.level.Explosion);
+    Code:
+         0: aload_1
+         1: invokeinterface #80,  1           // InterfaceMethod net/minecraft/world/level/Explosion.getIndirectSourceEntity:()Lnet/minecraft/world/entity/LivingEntity;
+         6: instanceof    #86                 // class net/minecraft/world/entity/Mob
+         9: ifeq          40
+        12: aload_1
+        13: invokeinterface #88,  1           // InterfaceMethod net/minecraft/world/level/Explosion.level:()Lnet/minecraft/server/level/ServerLevel;
+        18: invokevirtual #92                 // Method net/minecraft/server/level/ServerLevel.getGameRules:()Lnet/minecraft/world/level/gamerules/GameRules;
+        21: getstatic     #98                 // Field net/minecraft/world/level/gamerules/GameRules.MOB_GRIEFING:Lnet/minecraft/world/level/gamerules/GameRule;
+        24: invokevirtual #104                // Method net/minecraft/world/level/gamerules/GameRules.get:(Lnet/minecraft/world/level/gamerules/GameRule;)Ljava/lang/Object;
+        27: checkcast     #108                // class java/lang/Boolean
+        30: invokevirtual #110                // Method java/lang/Boolean.booleanValue:()Z
+        33: ifne          40
+        36: iconst_1
+        37: goto          41
+        40: iconst_0
+        41: ireturn
+
+  public void destroy(net.minecraft.server.level.ServerLevel, net.minecraft.world.item.Item);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokevirtual #113                // Method kill:(Lnet/minecraft/server/level/ServerLevel;)V
+         5: aload_1
+         6: invokevirtual #92                 // Method net/minecraft/server/level/ServerLevel.getGameRules:()Lnet/minecraft/world/level/gamerules/GameRules;
+         9: getstatic     #117                // Field net/minecraft/world/level/gamerules/GameRules.ENTITY_DROPS:Lnet/minecraft/world/level/gamerules/GameRule;
+        12: invokevirtual #104                // Method net/minecraft/world/level/gamerules/GameRules.get:(Lnet/minecraft/world/level/gamerules/GameRule;)Ljava/lang/Object;
+        15: checkcast     #108                // class java/lang/Boolean
+        18: invokevirtual #110                // Method java/lang/Boolean.booleanValue:()Z
+        21: ifne          25
+        24: return
+        25: new           #120                // class net/minecraft/world/item/ItemStack
+        28: dup
+        29: aload_2
+        30: invokespecial #122                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+        33: astore_3
+        34: aload_3
+        35: getstatic     #125                // Field net/minecraft/core/component/DataComponents.CUSTOM_NAME:Lnet/minecraft/core/component/DataComponentType;
+        38: aload_0
+        39: invokevirtual #131                // Method getCustomName:()Lnet/minecraft/network/chat/Component;
+        42: invokevirtual #135                // Method net/minecraft/world/item/ItemStack.set:(Lnet/minecraft/core/component/DataComponentType;Ljava/lang/Object;)Ljava/lang/Object;
+        45: pop
+        46: aload_0
+        47: aload_1
+        48: aload_3
+        49: invokevirtual #139                // Method spawnAtLocation:(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/entity/item/ItemEntity;
+        52: pop
+        53: return
+
+  protected void defineSynchedData(net.minecraft.network.syncher.SynchedEntityData$Builder);
+    Code:
+         0: aload_1
+         1: getstatic     #143                // Field DATA_ID_HURT:Lnet/minecraft/network/syncher/EntityDataAccessor;
+         4: iconst_0
+         5: invokestatic  #147                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+         8: invokevirtual #153                // Method net/minecraft/network/syncher/SynchedEntityData$Builder.define:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)Lnet/minecraft/network/syncher/SynchedEntityData$Builder;
+        11: pop
+        12: aload_1
+        13: getstatic     #159                // Field DATA_ID_HURTDIR:Lnet/minecraft/network/syncher/EntityDataAccessor;
+        16: iconst_1
+        17: invokestatic  #147                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        20: invokevirtual #153                // Method net/minecraft/network/syncher/SynchedEntityData$Builder.define:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)Lnet/minecraft/network/syncher/SynchedEntityData$Builder;
+        23: pop
+        24: aload_1
+        25: getstatic     #162                // Field DATA_ID_DAMAGE:Lnet/minecraft/network/syncher/EntityDataAccessor;
+        28: fconst_0
+        29: invokestatic  #165                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+        32: invokevirtual #153                // Method net/minecraft/network/syncher/SynchedEntityData$Builder.define:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)Lnet/minecraft/network/syncher/SynchedEntityData$Builder;
+        35: pop
+        36: return
+
+  public void setHurtTime(int);
+    Code:
+         0: aload_0
+         1: getfield      #170                // Field entityData:Lnet/minecraft/network/syncher/SynchedEntityData;
+         4: getstatic     #143                // Field DATA_ID_HURT:Lnet/minecraft/network/syncher/EntityDataAccessor;
+         7: iload_1
+         8: invokestatic  #147                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        11: invokevirtual #174                // Method net/minecraft/network/syncher/SynchedEntityData.set:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+        14: return
+
+  public void setHurtDir(int);
+    Code:
+         0: aload_0
+         1: getfield      #170                // Field entityData:Lnet/minecraft/network/syncher/SynchedEntityData;
+         4: getstatic     #159                // Field DATA_ID_HURTDIR:Lnet/minecraft/network/syncher/EntityDataAccessor;
+         7: iload_1
+         8: invokestatic  #147                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        11: invokevirtual #174                // Method net/minecraft/network/syncher/SynchedEntityData.set:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+        14: return
+
+  public void setDamage(float);
+    Code:
+         0: aload_0
+         1: getfield      #170                // Field entityData:Lnet/minecraft/network/syncher/SynchedEntityData;
+         4: getstatic     #162                // Field DATA_ID_DAMAGE:Lnet/minecraft/network/syncher/EntityDataAccessor;
+         7: fload_1
+         8: invokestatic  #165                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+        11: invokevirtual #174                // Method net/minecraft/network/syncher/SynchedEntityData.set:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+        14: return
+
+  public float getDamage();
+    Code:
+         0: aload_0
+         1: getfield      #170                // Field entityData:Lnet/minecraft/network/syncher/SynchedEntityData;
+         4: getstatic     #162                // Field DATA_ID_DAMAGE:Lnet/minecraft/network/syncher/EntityDataAccessor;
+         7: invokevirtual #179                // Method net/minecraft/network/syncher/SynchedEntityData.get:(Lnet/minecraft/network/syncher/EntityDataAccessor;)Ljava/lang/Object;
+        10: checkcast     #166                // class java/lang/Float
+        13: invokevirtual #182                // Method java/lang/Float.floatValue:()F
+        16: freturn
+
+  public int getHurtTime();
+    Code:
+         0: aload_0
+         1: getfield      #170                // Field entityData:Lnet/minecraft/network/syncher/SynchedEntityData;
+         4: getstatic     #143                // Field DATA_ID_HURT:Lnet/minecraft/network/syncher/EntityDataAccessor;
+         7: invokevirtual #179                // Method net/minecraft/network/syncher/SynchedEntityData.get:(Lnet/minecraft/network/syncher/EntityDataAccessor;)Ljava/lang/Object;
+        10: checkcast     #148                // class java/lang/Integer
+        13: invokevirtual #185                // Method java/lang/Integer.intValue:()I
+        16: ireturn
+
+  public int getHurtDir();
+    Code:
+         0: aload_0
+         1: getfield      #170                // Field entityData:Lnet/minecraft/network/syncher/SynchedEntityData;
+         4: getstatic     #159                // Field DATA_ID_HURTDIR:Lnet/minecraft/network/syncher/EntityDataAccessor;
+         7: invokevirtual #179                // Method net/minecraft/network/syncher/SynchedEntityData.get:(Lnet/minecraft/network/syncher/EntityDataAccessor;)Ljava/lang/Object;
+        10: checkcast     #148                // class java/lang/Integer
+        13: invokevirtual #185                // Method java/lang/Integer.intValue:()I
+        16: ireturn
+
+  protected void destroy(net.minecraft.server.level.ServerLevel, net.minecraft.world.damagesource.DamageSource);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: aload_0
+         3: invokevirtual #188                // Method getDropItem:()Lnet/minecraft/world/item/Item;
+         6: invokevirtual #192                // Method destroy:(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/item/Item;)V
+         9: return
+
+  public int getDimensionChangingDelay();
+    Code:
+         0: bipush        10
+         2: ireturn
+
+  protected abstract net.minecraft.world.item.Item getDropItem();
+
+  static {};
+    Code:
+         0: ldc           #8                  // class net/minecraft/world/entity/vehicle/VehicleEntity
+         2: getstatic     #197                // Field net/minecraft/network/syncher/EntityDataSerializers.INT:Lnet/minecraft/network/syncher/EntityDataSerializer;
+         5: invokestatic  #203                // Method net/minecraft/network/syncher/SynchedEntityData.defineId:(Ljava/lang/Class;Lnet/minecraft/network/syncher/EntityDataSerializer;)Lnet/minecraft/network/syncher/EntityDataAccessor;
+         8: putstatic     #143                // Field DATA_ID_HURT:Lnet/minecraft/network/syncher/EntityDataAccessor;
+        11: ldc           #8                  // class net/minecraft/world/entity/vehicle/VehicleEntity
+        13: getstatic     #197                // Field net/minecraft/network/syncher/EntityDataSerializers.INT:Lnet/minecraft/network/syncher/EntityDataSerializer;
+        16: invokestatic  #203                // Method net/minecraft/network/syncher/SynchedEntityData.defineId:(Ljava/lang/Class;Lnet/minecraft/network/syncher/EntityDataSerializer;)Lnet/minecraft/network/syncher/EntityDataAccessor;
+        19: putstatic     #159                // Field DATA_ID_HURTDIR:Lnet/minecraft/network/syncher/EntityDataAccessor;
+        22: ldc           #8                  // class net/minecraft/world/entity/vehicle/VehicleEntity
+        24: getstatic     #207                // Field net/minecraft/network/syncher/EntityDataSerializers.FLOAT:Lnet/minecraft/network/syncher/EntityDataSerializer;
+        27: invokestatic  #203                // Method net/minecraft/network/syncher/SynchedEntityData.defineId:(Ljava/lang/Class;Lnet/minecraft/network/syncher/EntityDataSerializer;)Lnet/minecraft/network/syncher/EntityDataAccessor;
+        30: putstatic     #162                // Field DATA_ID_DAMAGE:Lnet/minecraft/network/syncher/EntityDataAccessor;
+        33: return
+}

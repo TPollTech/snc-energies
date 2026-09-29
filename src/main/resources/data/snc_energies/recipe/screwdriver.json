@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "C",
+    "S",
+    "P"
+  ],
+  "key": {
+    "C": "snc_energies:copper_wire",
+    "S": "minecraft:stick",
+    "P": "snc_energies:steel_plate"
+  },
+  "result": {
+    "id": "snc_energies:screwdriver",
+    "count": 1
+  }
+}

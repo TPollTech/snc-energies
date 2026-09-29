@@ -1,0 +1,64 @@
+{
+ "variants": {
+  "part=left,facing=north": {
+   "model": "snc_energies:block/mercadao_sign_left",
+   "y": 0,
+   "uvlock": false
+  },
+  "part=left,facing=south": {
+   "model": "snc_energies:block/mercadao_sign_left",
+   "y": 180,
+   "uvlock": false
+  },
+  "part=left,facing=east": {
+   "model": "snc_energies:block/mercadao_sign_left",
+   "y": 270,
+   "uvlock": false
+  },
+  "part=left,facing=west": {
+   "model": "snc_energies:block/mercadao_sign_left",
+   "y": 90,
+   "uvlock": false
+  },
+  "part=center,facing=north": {
+   "model": "snc_energies:block/mercadao_sign_center",
+   "y": 0,
+   "uvlock": false
+  },
+  "part=center,facing=south": {
+   "model": "snc_energies:block/mercadao_sign_center",
+   "y": 180,
+   "uvlock": false
+  },
+  "part=center,facing=east": {
+   "model": "snc_energies:block/mercadao_sign_center",
+   "y": 270,
+   "uvlock": false
+  },
+  "part=center,facing=west": {
+   "model": "snc_energies:block/mercadao_sign_center",
+   "y": 90,
+   "uvlock": false
+  },
+  "part=right,facing=north": {
+   "model": "snc_energies:block/mercadao_sign_right",
+   "y": 0,
+   "uvlock": false
+  },
+  "part=right,facing=south": {
+   "model": "snc_energies:block/mercadao_sign_right",
+   "y": 180,
+   "uvlock": false
+  },
+  "part=right,facing=east": {
+   "model": "snc_energies:block/mercadao_sign_right",
+   "y": 270,
+   "uvlock": false
+  },
+  "part=right,facing=west": {
+   "model": "snc_energies:block/mercadao_sign_right",
+   "y": 90,
+   "uvlock": false
+  }
+ }
+}

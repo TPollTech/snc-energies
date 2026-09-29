@@ -9,6 +9,7 @@ Modelo original para SNC Energies, criado em 26/09/2026. **Etapa de modelagem:**
 - `tractor-model.json`: geometria canônica usada na prévia e nas exportações.
 - `materials.json` e `textures/`: 14 materiais com imagens de 128×128.
 - `../../previews/trator.html`: estúdio 3D local com controles e downloads.
+- `../../previews/trator-offline.html`: pacote autocontido, com biblioteca, modelos, texturas e downloads embutidos. Abertura direta em navegador externo ainda não verificada nesta máquina.
 
 Cabine aberta com banco e capota, conforme escolha do dono. Inclui chassis, eixos, contrapesos, motor sob capô articulado, pneus com cravos em V, paralamas, faróis, lanternas, giroflex, escapamento, filtro de ar, degraus, pedais, painel, volante, câmbio, comandos hidráulicos, retrovisores e estrutura traseira. A plantadeira destacável tem três reservatórios, dosadores, tubos, discos sulcadores, rodas de apoio e rodas compactadoras.
 
@@ -36,6 +37,7 @@ Na raiz do projeto, PowerShell:
 .venv-textures/Scripts/python.exe tools/generate_tractor_textures.py
 .venv-textures/Scripts/python.exe tools/generate_tractor.py
 .venv-textures/Scripts/python.exe tools/verify_tractor.py
+.venv-textures/Scripts/python.exe tools/package_tractor_preview.py
 .venv-textures/Scripts/python.exe -m http.server 8765 --bind 127.0.0.1
 ```
 
@@ -49,4 +51,4 @@ A futura colheitadeira pode compartilhar escala, materiais, padrão de pivôs e 
 
 ## Verificação
 
-O relatório estrutural fica em `verification/tractor-model-validation.json`; capturas do navegador em `verification/tractor/`. Conferência visual da prévia é distinta de teste no Minecraft. O arquivo Blockbench foi validado estruturalmente, mas a abertura no editor Blockbench ainda precisa de confirmação.
+O relatório estrutural fica em `verification/tractor-model-validation.json`; capturas do navegador em `verification/tractor/`. A versão final passou nas sete verificações: binário GLB, hierarquia, texturas, faces/UV, igualdade da geometria entre formatos, animação e folgas em onze poses selecionadas. Essas verificações não cobrem todas as combinações de movimento e não definem física no jogo. Conferência visual da prévia é distinta de teste no Minecraft. O arquivo Blockbench foi validado estruturalmente, mas a abertura no editor Blockbench ainda precisa de confirmação.

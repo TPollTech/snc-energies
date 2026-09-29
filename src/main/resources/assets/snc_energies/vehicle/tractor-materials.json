@@ -1,0 +1,86 @@
+{
+  "enamel_orange": {
+    "file": "textures/enamel_orange.png",
+    "color": "#e57525",
+    "roughness": 0.4,
+    "metalness": 0.25
+  },
+  "enamel_dark": {
+    "file": "textures/enamel_dark.png",
+    "color": "#303a3e",
+    "roughness": 0.48,
+    "metalness": 0.35
+  },
+  "rubber": {
+    "file": "textures/rubber.png",
+    "color": "#25292a",
+    "roughness": 0.95,
+    "metalness": 0.0
+  },
+  "tread": {
+    "file": "textures/tread.png",
+    "color": "#303435",
+    "roughness": 0.98,
+    "metalness": 0.0
+  },
+  "steel": {
+    "file": "textures/steel.png",
+    "color": "#75848a",
+    "roughness": 0.42,
+    "metalness": 0.82
+  },
+  "rim": {
+    "file": "textures/rim.png",
+    "color": "#c3c5b8",
+    "roughness": 0.4,
+    "metalness": 0.65
+  },
+  "seat": {
+    "file": "textures/seat.png",
+    "color": "#252e30",
+    "roughness": 0.9,
+    "metalness": 0.0
+  },
+  "grille": {
+    "file": "textures/grille.png",
+    "color": "#273338",
+    "roughness": 0.62,
+    "metalness": 0.72
+  },
+  "headlight": {
+    "file": "textures/headlight.png",
+    "color": "#ffe5ad",
+    "roughness": 0.23,
+    "metalness": 0.2
+  },
+  "taillight": {
+    "file": "textures/taillight.png",
+    "color": "#c43725",
+    "roughness": 0.28,
+    "metalness": 0.05
+  },
+  "amber": {
+    "file": "textures/amber.png",
+    "color": "#f6a82d",
+    "roughness": 0.26,
+    "metalness": 0.05
+  },
+  "seed_tank": {
+    "file": "textures/seed_tank.png",
+    "color": "#dedbc2",
+    "roughness": 0.58,
+    "metalness": 0.05
+  },
+  "decal_snc": {
+    "file": "textures/decal_snc.png",
+    "color": "#e57525",
+    "roughness": 0.5,
+    "metalness": 0.12
+  },
+  "gauge": {
+    "file": "textures/gauge.png",
+    "color": "#1d292e",
+    "roughness": 0.3,
+    "metalness": 0.1
+  }
+}

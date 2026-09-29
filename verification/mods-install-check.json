@@ -1,0 +1,46 @@
+{
+  "checked_at": "2026-09-29T11:17:09-03:00",
+  "instance": "C:\\Users\\enzot\\curseforge\\minecraft\\Instances\\SNC energies",
+  "expected_manifest": {
+    "sha256": "8F813C9E8987FD96387B5AC6D932F1F1C5DC480F6B7B419B79C3454FF8E648D9",
+    "version": "0.6.6"
+  },
+  "game_running": [
+    "java.exe"
+  ],
+  "jars": [
+    {
+      "jar": "fabric-api-0.161.0+26.3.jar",
+      "kind": "fabric-api",
+      "size_bytes": 2620967,
+      "zip_integrity": true,
+      "mod_id": "fabric-api",
+      "mod_version": "0.161.0+26.3",
+      "sha256": "86F16178A3CECC887A85A4CFE9A79D92FA7341D8F39B5951A4D6AD800AB657A6"
+    },
+    {
+      "jar": "intoxicantes-1.2.61.jar",
+      "kind": "intoxicantes",
+      "size_bytes": 79593554,
+      "zip_integrity": true,
+      "mod_id": "intoxicantes",
+      "mod_version": "1.2.61",
+      "sha256": "149BE8B178BBC454FA9AD8A561D6ED25E317D1292531A0E20BD4362E3FCFE439"
+    },
+    {
+      "jar": "snc-energies.jar",
+      "kind": "snc-energies",
+      "size_bytes": 2158155,
+      "zip_integrity": true,
+      "mod_id": "snc_energies",
+      "mod_version": "0.6.6",
+      "sha256": "8F813C9E8987FD96387B5AC6D932F1F1C5DC480F6B7B419B79C3454FF8E648D9",
+      "manifest_status": "ok"
+    }
+  ],
+  "warnings": [
+    "processo Java ativo (java.exe) — NÃO instale/substitua/remova jars com o jogo aberto; feche o Minecraft antes de qualquer operação em mods/"
+  ],
+  "errors": [],
+  "verdict": "safe-to-open"
+}

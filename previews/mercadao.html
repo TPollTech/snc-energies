@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f2ed">
+  <title>Mercadão do SNC — Estúdio do mercado</title>
+  <link rel="stylesheet" href="./vehicle-studio.css">
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js","three-controls":"./vendor/OrbitControls.js"}}</script>
+</head>
+<body>
+  <main class="app">
+    <aside class="sidebar" aria-label="Configuração do modelo">
+      <div class="brand"><div class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></div><div><strong>SNC ENERGIAS</strong><span>OFICINA DE MODELAGEM</span></div></div>
+      <div class="intro"><div class="eyebrow">Comércio · 001</div><h1>Mercadão do SNC</h1><p>Prédio 11 × 6 × 9 com os quatro balcões funcionais,<br>o posto do Mercador e as lanternas.<br>Layout idêntico ao NBT gerado no mundo.</p><span class="edition">Pinheiro / pedra / balcões de madeira</span></div>
+
+      <section class="panel" aria-labelledby="assembly-heading">
+        <div class="section-title"><h2 id="assembly-heading">Cenas</h2><span>PRÉVIA</span></div>
+        <div class="control-row"><label for="toggle-roof">Telhado</label><input id="toggle-roof" class="switch" type="checkbox" checked role="switch"></div>
+        <div class="control-row"><label for="toggle-awnings">Vitrines e produtos</label><input id="toggle-awnings" class="switch" type="checkbox" checked role="switch"></div>
+        <div class="control-row"><label for="toggle-npc">Mercador no posto</label><input id="toggle-npc" class="switch" type="checkbox" checked role="switch"></div>
+        <div class="control-row"><label for="toggle-anchor">Âncora (invisível no jogo)</label><input id="toggle-anchor" class="switch" type="checkbox" role="switch"></div>
+      </section>
+
+      <section class="panel" aria-labelledby="catalog-heading">
+        <div class="section-title"><h2 id="catalog-heading">Balcões do catálogo</h2><span>4 LINHAS</span></div>
+        <p class="control-note">Bebidas · Sementes · Frios · Balcão forte — estoque diário reposto às 07h, carteira do Adventures, compra só pelo balcão.</p>
+      </section>
+
+      <footer class="sidebar-footer"><span>PROJETO SNC · MINECRAFT</span><span class="version">ASSET / 03</span></footer>
+    </aside>
+
+    <section class="workspace" aria-label="Prévia tridimensional interativa do Mercadão">
+      <div id="stage" class="stage"></div>
+      <div class="workspace-header"><div><div class="eyebrow">Estúdio / Mercado</div><div class="subheading">Prévia 0.6 · salão fechado, vitrines abastecidas — layout do mercadao.nbt</div></div><div id="render-status" class="status">Carregando modelo</div></div>
+      <nav class="views" aria-label="Vistas do modelo"><button type="button" data-view="perspective" aria-pressed="true">Perspectiva</button><button type="button" data-view="front" aria-pressed="false">Frente</button><button type="button" data-view="side" aria-pressed="false">Lateral</button><button type="button" data-view="rear" aria-pressed="false">Topo</button></nav>
+      <div class="stage-actions"><button id="reset" class="icon-button" type="button" title="Restaurar posição e controles" aria-label="Restaurar posição e controles"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 10a8 8 0 1 1 .6 6M4 4v6h6"/></svg></button><button id="fullscreen" class="icon-button" type="button" title="Tela cheia" aria-label="Alternar tela cheia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"/></svg></button></div>
+      <div class="model-tag">ESTRUTURA COMPLETA · MERCADOR NO POSTO</div>
+      <div class="orientation" aria-hidden="true"><svg viewBox="0 0 54 54" fill="none"><ellipse cx="27" cy="34" rx="22" ry="12" stroke="#bcc5ae"/><path d="M27 34V8m0 26 18 9m-18-9L8 44" stroke="#8d9d7c"/><path d="m24 12 3-4 3 4" stroke="#8d9d7c"/><circle cx="27" cy="34" r="3" fill="#e87924"/></svg>Y ACIMA</div>
+      <div class="stage-bottom"><div class="asset-metrics"><div><span class="metric-label">Geometria</span><span class="metric-value"><span id="cube-count">—</span> <small>cubos</small></span></div><div><span class="metric-label">Dimensões L × A × C</span><span class="metric-value"><span id="dimensions">—</span> <small>bl.</small></span></div><div class="interaction-hint"><strong>Arraste</strong> para orbitar<br><strong>Scroll</strong> para aproximar</div></div></div>
+      <div id="loading" class="loading" role="status"><div class="loader" aria-hidden="true"></div><strong id="loading-title">Preparando a oficina</strong><p id="loading-text">Carregando geometria e materiais locais…</p></div><div id="toast" class="toast" role="status"></div>
+    </section>
+  </main>
+  <script type="module" src="./mercadao-viewer.js"></script>
+</body>
+</html>

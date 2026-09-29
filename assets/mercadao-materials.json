@@ -1,0 +1,110 @@
+{
+  "floor_stone": {
+    "file": "mercadao/floor_stone.png",
+    "color": "#8f8b83",
+    "roughness": 0.7,
+    "metalness": 0.05
+  },
+  "floor_accent": {
+    "file": "mercadao/floor_accent.png",
+    "color": "#7d7a72",
+    "roughness": 0.7,
+    "metalness": 0.05
+  },
+  "spruce_planks": {
+    "file": "mercadao/spruce_planks.png",
+    "color": "#6e4a2a",
+    "roughness": 0.7,
+    "metalness": 0.05
+  },
+  "spruce_log": {
+    "file": "mercadao/spruce_log.png",
+    "color": "#4a3018",
+    "roughness": 0.7,
+    "metalness": 0.05
+  },
+  "glass_pane": {
+    "file": "mercadao/glass_pane.png",
+    "color": "#bcd4dc",
+    "roughness": 0.7,
+    "metalness": 0.05
+  },
+  "lantern": {
+    "file": "mercadao/lantern.png",
+    "color": "#e8c86a",
+    "roughness": 0.7,
+    "metalness": 0.05
+  },
+  "counter_wood": {
+    "file": "mercadao/counter_wood.png",
+    "color": "#8a5a2e",
+    "roughness": 0.7,
+    "metalness": 0.05
+  },
+  "counter_top": {
+    "file": "mercadao/counter_top.png",
+    "color": "#b07c42",
+    "roughness": 0.7,
+    "metalness": 0.05
+  },
+  "counter_frame": {
+    "file": "mercadao/counter_frame.png",
+    "color": "#6e421f",
+    "roughness": 0.7,
+    "metalness": 0.05
+  },
+  "counter_glass": {
+    "file": "mercadao/counter_glass.png",
+    "color": "#d8eef2",
+    "roughness": 0.7,
+    "metalness": 0.05
+  },
+  "sign_board": {
+    "file": "mercadao/sign_board.png",
+    "color": "#f2dc9a",
+    "roughness": 0.7,
+    "metalness": 0.05
+  },
+  "sack": {
+    "file": "mercadao/sack.png",
+    "color": "#e8e2d0",
+    "roughness": 0.7,
+    "metalness": 0.05
+  },
+  "anchor_ghost": {
+    "file": "mercadao/anchor_ghost.png",
+    "color": "#9adfff",
+    "roughness": 0.7,
+    "metalness": 0.05
+  },
+  "npc_mercador": {
+    "file": "mercadao/npc_mercador.png",
+    "color": "#d8c070",
+    "roughness": 0.7,
+    "metalness": 0.05
+  },
+  "goods_bebidas": {
+    "file": "mercadao/goods_bebidas.png",
+    "color": "#2e6e4e",
+    "roughness": 0.7,
+    "metalness": 0.05
+  },
+  "goods_sementes": {
+    "file": "mercadao/goods_sementes.png",
+    "color": "#7a5a2e",
+    "roughness": 0.7,
+    "metalness": 0.05
+  },
+  "goods_frios": {
+    "file": "mercadao/goods_frios.png",
+    "color": "#c05a3a",
+    "roughness": 0.7,
+    "metalness": 0.05
+  },
+  "goods_balcao_forte": {
+    "file": "mercadao/goods_balcao_forte.png",
+    "color": "#5a2a3a",
+    "roughness": 0.7,
+    "metalness": 0.05
+  }
+}

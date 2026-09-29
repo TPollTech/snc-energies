@@ -38,6 +38,10 @@ public final class SncBlockEntities {
 			"energy_cable", new BlockEntityType<>(CableBlockEntity::new, Set.of(SncBlocks.ENERGY_CABLE)));
     public static final BlockEntityType<com.snc.energies.blockentity.ItemPipeBlockEntity> ITEM_PIPE = register(
         "item_pipe", new BlockEntityType<>(com.snc.energies.blockentity.ItemPipeBlockEntity::new, Set.of(SncBlocks.ITEM_PIPE)));
+    public static final BlockEntityType<com.snc.energies.blockentity.MercadaoShelfBlockEntity> MERCADAO_SHELF = register(
+        "mercadao_shelf", new BlockEntityType<>(com.snc.energies.blockentity.MercadaoShelfBlockEntity::new, Set.of(SncBlocks.MERCADAO_SHELF)));
+    public static final BlockEntityType<com.snc.energies.blockentity.MercadaoAnchorBlockEntity> MERCADAO_ANCHOR = register(
+        "mercadao_anchor", new BlockEntityType<>(com.snc.energies.blockentity.MercadaoAnchorBlockEntity::new, Set.of(SncBlocks.MERCADAO_ANCHOR)));
 
 	private SncBlockEntities() {
 	}

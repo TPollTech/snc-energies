@@ -1,0 +1,3412 @@
+{
+  "generated_at": "2026-09-26T19:48:21-03:00",
+  "save": "New World (4)",
+  "reference": null,
+  "window": {
+    "start": "2026-09-26T18:15:00-03:00",
+    "end": "2026-09-26T18:30:00-03:00"
+  },
+  "summary": {
+    "chunks_scanned": 2784,
+    "mod_blocks_now": 14684,
+    "mod_blocks_reference": 0,
+    "chunks_with_mod_blocks_now": 321,
+    "chunks_with_mod_block_entities_now": 0,
+    "lost_in_window": 0,
+    "lost_outside_window": 0,
+    "partial_loss": 0,
+    "rewritten_in_window": [
+      "-1,-11",
+      "-1,-12",
+      "-1,-13",
+      "-1,-14",
+      "-1,-15",
+      "-1,-16",
+      "-1,-17",
+      "-1,-18",
+      "-1,-19",
+      "-1,-20",
+      "-1,-21",
+      "-1,-22",
+      "-1,-23",
+      "-1,-24",
+      "-1,-25",
+      "-1,-26",
+      "-1,-27",
+      "-2,-11",
+      "-2,-12",
+      "-2,-13",
+      "-2,-14",
+      "-2,-15",
+      "-2,-16",
+      "-2,-17",
+      "-2,-18",
+      "-2,-19",
+      "-2,-20",
+      "-2,-21",
+      "-2,-22",
+      "-2,-23",
+      "-2,-24",
+      "-2,-25",
+      "-2,-26",
+      "-2,-27",
+      "-3,-11",
+      "-3,-12",
+      "-3,-13",
+      "-3,-14",
+      "-3,-15",
+      "-3,-16",
+      "-3,-17",
+      "-3,-18",
+      "-3,-19",
+      "-3,-20",
+      "-3,-21",
+      "-3,-22",
+      "-3,-23",
+      "-3,-24",
+      "-3,-25",
+      "-3,-26",
+      "-3,-27",
+      "-4,-11",
+      "-4,-12",
+      "-4,-13",
+      "-4,-14",
+      "-4,-15",
+      "-4,-16",
+      "-4,-17",
+      "-4,-18",
+      "-4,-19",
+      "-4,-20",
+      "-4,-21",
+      "-4,-22",
+      "-4,-23",
+      "-4,-24",
+      "-4,-25",
+      "-4,-26",
+      "-4,-27",
+      "-5,-11",
+      "-5,-12",
+      "-5,-13",
+      "-5,-14",
+      "-5,-15",
+      "-5,-16",
+      "-5,-17",
+      "-5,-18",
+      "-5,-19",
+      "-5,-20",
+      "-5,-21",
+      "-5,-22",
+      "-5,-23",
+      "-5,-24",
+      "-5,-25",
+      "-5,-26",
+      "-5,-27",
+      "-6,-11",
+      "-6,-12",
+      "-6,-13",
+      "-6,-14",
+      "-6,-15",
+      "-6,-16",
+      "-6,-17",
+      "-6,-18",
+      "-6,-19",
+      "-6,-20",
+      "-6,-21",
+      "-6,-22",
+      "-6,-23",
+      "-6,-24",
+      "-6,-25",
+      "-6,-26",
+      "-6,-27",
+      "-7,-11",
+      "-7,-12",
+      "-7,-13",
+      "-7,-14",
+      "-7,-15",
+      "-7,-16",
+      "-7,-17",
+      "-7,-18",
+      "-7,-19",
+      "-7,-20",
+      "-7,-21",
+      "-7,-22",
+      "-7,-23",
+      "-7,-24",
+      "-7,-25",
+      "-7,-26",
+      "-7,-27",
+      "-8,-10",
+      "-8,-11",
+      "-8,-12",
+      "-8,-13",
+      "-8,-14",
+      "-8,-15",
+      "-8,-16",
+      "-8,-17",
+      "-8,-18",
+      "-8,-24",
+      "-8,-25",
+      "-8,-26",
+      "-8,-27",
+      "-8,-28",
+      "0,-11",
+      "0,-12",
+      "0,-13",
+      "0,-14",
+      "0,-15",
+      "0,-16",
+      "0,-17",
+      "0,-18",
+      "0,-19",
+      "0,-20",
+      "0,-21",
+      "0,-22",
+      "0,-23",
+      "0,-24",
+      "0,-25",
+      "0,-26",
+      "0,-27",
+      "1,-11",
+      "1,-12",
+      "1,-13",
+      "1,-14",
+      "1,-15",
+      "1,-16",
+      "1,-17",
+      "1,-18",
+      "1,-19",
+      "1,-20",
+      "1,-21",
+      "1,-22",
+      "1,-23",
+      "1,-24",
+      "1,-25",
+      "1,-26",
+      "1,-27",
+      "10,-11",
+      "10,-12",
+      "10,-13",
+      "10,-14",
+      "10,-15",
+      "10,-16",
+      "10,-17",
+      "10,-18",
+      "10,-19",
+      "10,-20",
+      "10,-21",
+      "10,-22",
+      "10,-23",
+      "10,-24",
+      "10,-25",
+      "10,-26",
+      "10,-27",
+      "2,-11",
+      "2,-12",
+      "2,-13",
+      "2,-14",
+      "2,-15",
+      "2,-16",
+      "2,-17",
+      "2,-18",
+      "2,-19",
+      "2,-20",
+      "2,-21",
+      "2,-22",
+      "2,-23",
+      "2,-24",
+      "2,-25",
+      "2,-26",
+      "2,-27",
+      "3,-11",
+      "3,-12",
+      "3,-13",
+      "3,-14",
+      "3,-15",
+      "3,-16",
+      "3,-17",
+      "3,-18",
+      "3,-19",
+      "3,-20",
+      "3,-21",
+      "3,-22",
+      "3,-23",
+      "3,-24",
+      "3,-25",
+      "3,-26",
+      "3,-27",
+      "4,-11",
+      "4,-12",
+      "4,-13",
+      "4,-14",
+      "4,-15",
+      "4,-16",
+      "4,-17",
+      "4,-18",
+      "4,-19",
+      "4,-20",
+      "4,-21",
+      "4,-22",
+      "4,-23",
+      "4,-24",
+      "4,-25",
+      "4,-26",
+      "4,-27",
+      "4,-34",
+      "4,-35",
+      "4,-36",
+      "4,-37",
+      "4,-38",
+      "5,-11",
+      "5,-12",
+      "5,-13",
+      "5,-14",
+      "5,-15",
+      "5,-16",
+      "5,-17",
+      "5,-18",
+      "5,-19",
+      "5,-20",
+      "5,-21",
+      "5,-22",
+      "5,-23",
+      "5,-24",
+      "5,-25",
+      "5,-26",
+      "5,-27",
+      "5,-34",
+      "5,-35",
+      "5,-36",
+      "5,-37",
+      "5,-38",
+      "6,-11",
+      "6,-12",
+      "6,-13",
+      "6,-14",
+      "6,-15",
+      "6,-16",
+      "6,-17",
+      "6,-18",
+      "6,-19",
+      "6,-20",
+      "6,-21",
+      "6,-22",
+      "6,-23",
+      "6,-24",
+      "6,-25",
+      "6,-26",
+      "6,-27",
+      "6,-34",
+      "6,-35",
+      "6,-36",
+      "6,-37",
+      "6,-38",
+      "7,-11",
+      "7,-12",
+      "7,-13",
+      "7,-14",
+      "7,-15",
+      "7,-16",
+      "7,-17",
+      "7,-18",
+      "7,-19",
+      "7,-20",
+      "7,-21",
+      "7,-22",
+      "7,-23",
+      "7,-24",
+      "7,-25",
+      "7,-26",
+      "7,-27",
+      "7,-34",
+      "7,-35",
+      "7,-36",
+      "7,-37",
+      "7,-38",
+      "8,-11",
+      "8,-12",
+      "8,-13",
+      "8,-14",
+      "8,-15",
+      "8,-16",
+      "8,-17",
+      "8,-18",
+      "8,-19",
+      "8,-20",
+      "8,-21",
+      "8,-22",
+      "8,-23",
+      "8,-24",
+      "8,-25",
+      "8,-26",
+      "8,-27",
+      "8,-34",
+      "8,-35",
+      "8,-36",
+      "8,-37",
+      "8,-38",
+      "9,-11",
+      "9,-12",
+      "9,-13",
+      "9,-14",
+      "9,-15",
+      "9,-16",
+      "9,-17",
+      "9,-18",
+      "9,-19",
+      "9,-20",
+      "9,-21",
+      "9,-22",
+      "9,-23",
+      "9,-24",
+      "9,-25",
+      "9,-26",
+      "9,-27"
+    ],
+    "added_since_reference": 321
+  },
+  "lost_in_window": [],
+  "lost_outside_window": [],
+  "partial_loss": [],
+  "chunks_now": {
+    "-1,-10": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 8,
+        "snc_energies:voltaite_ore": 24
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:39-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-1,-28": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 20,
+        "snc_energies:voltaite_ore": 35
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:04-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-1,-29": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 19,
+        "snc_energies:voltaite_ore": 19
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:04-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-1,-30": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 3,
+        "snc_energies:voltaite_ore": 36,
+        "snc_energies:tin_ore": 30
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:58-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-1,-31": {
+      "blocks": {
+        "snc_energies:tin_ore": 5
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:50-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-1,-7": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 8,
+        "snc_energies:voltaite_ore": 21
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:24:54-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-1,-8": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 9,
+        "snc_energies:voltaite_ore": 20
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:57-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-1,-9": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 18,
+        "snc_energies:voltaite_ore": 27
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:39-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-10,-19": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 2,
+        "snc_energies:voltaite_ore": 2
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:57-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-10,-24": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 2
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-2,-10": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 10,
+        "snc_energies:voltaite_ore": 28
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:39-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-2,-28": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 9,
+        "snc_energies:voltaite_ore": 31
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:37:46-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-2,-29": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 1,
+        "snc_energies:voltaite_ore": 19
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:57-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-2,-30": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 2,
+        "snc_energies:voltaite_ore": 20,
+        "snc_energies:tin_ore": 25
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-2,-31": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 4
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:57-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-2,-7": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 13,
+        "snc_energies:voltaite_ore": 18
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:24:53-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-2,-8": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 4,
+        "snc_energies:voltaite_ore": 22
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-2,-9": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 8,
+        "snc_energies:voltaite_ore": 26
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:39-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-3,-10": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 8,
+        "snc_energies:voltaite_ore": 19
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:27-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-3,-28": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 1,
+        "snc_energies:voltaite_ore": 20
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:37:46-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-3,-29": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 11,
+        "snc_energies:voltaite_ore": 23
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:59:00-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-3,-30": {
+      "blocks": {
+        "snc_energies:tin_ore": 4
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:57-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-3,-7": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 18,
+        "snc_energies:voltaite_ore": 19
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:24:53-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-3,-8": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 6,
+        "snc_energies:voltaite_ore": 25
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:56-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-3,-9": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 47
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:29-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-4,-10": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 12,
+        "snc_energies:voltaite_ore": 16
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:39-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-4,-28": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 20,
+        "snc_energies:voltaite_ore": 8
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:37:46-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-4,-29": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 8,
+        "snc_energies:voltaite_ore": 29
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-4,-7": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 17,
+        "snc_energies:voltaite_ore": 24
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:24:53-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-4,-8": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 4,
+        "snc_energies:voltaite_ore": 34
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:56-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-4,-9": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 14,
+        "snc_energies:voltaite_ore": 30
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:29-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-5,-10": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 10,
+        "snc_energies:voltaite_ore": 15
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:27-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-5,-28": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 9,
+        "snc_energies:voltaite_ore": 36
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:37:46-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-5,-29": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 16
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-5,-7": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 39
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:24:53-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-5,-8": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 4,
+        "snc_energies:voltaite_ore": 29
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:50-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-5,-9": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 4,
+        "snc_energies:voltaite_ore": 28
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:29-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-6,-10": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 23,
+        "snc_energies:voltaite_ore": 20
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:27-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-6,-28": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 9,
+        "snc_energies:voltaite_ore": 31
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:45:37-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-6,-29": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 18,
+        "snc_energies:voltaite_ore": 22
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:56-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-6,-30": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 3,
+        "snc_energies:voltaite_ore": 2
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:57-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-6,-7": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 5,
+        "snc_energies:voltaite_ore": 39
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:24:54-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-6,-8": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 17,
+        "snc_energies:voltaite_ore": 40
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:56-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-6,-9": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 6,
+        "snc_energies:voltaite_ore": 26
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:29-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-7,-10": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 17,
+        "snc_energies:voltaite_ore": 23
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T15:59:20-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-7,-28": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 1,
+        "snc_energies:voltaite_ore": 32
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:45:37-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-7,-29": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 8,
+        "snc_energies:voltaite_ore": 26
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:56-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-7,-30": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 4,
+        "snc_energies:voltaite_ore": 3
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:58-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-7,-7": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 10,
+        "snc_energies:voltaite_ore": 14
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:24:53-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-7,-8": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 2,
+        "snc_energies:voltaite_ore": 23
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-7,-9": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 42
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T15:59:20-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-8,-19": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 9,
+        "snc_energies:voltaite_ore": 30
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T15:59:20-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-8,-20": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 6,
+        "snc_energies:voltaite_ore": 38
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T15:59:20-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-8,-21": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 6,
+        "snc_energies:voltaite_ore": 29
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T15:59:20-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-8,-22": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 18,
+        "snc_energies:voltaite_ore": 25
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T15:59:20-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-8,-23": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 4,
+        "snc_energies:voltaite_ore": 34
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T15:59:20-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-8,-29": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 9,
+        "snc_energies:deepslate_tin_ore": 4,
+        "snc_energies:tin_ore": 36,
+        "snc_energies:voltaite_ore": 22
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:53-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-8,-7": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 50
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:24:53-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-8,-8": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 16,
+        "snc_energies:voltaite_ore": 34
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:24:53-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-8,-9": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 2,
+        "snc_energies:voltaite_ore": 20
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:24:54-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-9,-10": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 3
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:24:54-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-9,-11": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 4
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:24:53-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-9,-13": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 1,
+        "snc_energies:voltaite_ore": 1
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:24:53-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-9,-16": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 4
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:24:53-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-9,-18": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 10,
+        "snc_energies:voltaite_ore": 15
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-9,-19": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 11,
+        "snc_energies:voltaite_ore": 22
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:53-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-9,-20": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 7,
+        "snc_energies:voltaite_ore": 24
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-9,-21": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 17,
+        "snc_energies:voltaite_ore": 28
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:56-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-9,-22": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 11,
+        "snc_energies:voltaite_ore": 36
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-9,-23": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 2,
+        "snc_energies:voltaite_ore": 38
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:57-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-9,-24": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 10,
+        "snc_energies:voltaite_ore": 18
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:49-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-9,-25": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 11,
+        "snc_energies:voltaite_ore": 23
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-9,-29": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 2
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "-9,-9": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 9
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:24:52-03:00",
+      "region": "r.-1.-1.mca"
+    },
+    "0,-10": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 13,
+        "snc_energies:voltaite_ore": 24
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:27-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "0,-28": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 9,
+        "snc_energies:voltaite_ore": 24
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:04-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "0,-29": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 26
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:04-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "0,-30": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 21,
+        "snc_energies:voltaite_ore": 20,
+        "snc_energies:tin_ore": 31
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "0,-31": {
+      "blocks": {
+        "snc_energies:tin_ore": 4
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:56-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "0,-7": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 7,
+        "snc_energies:voltaite_ore": 24
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:24:52-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "0,-8": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 16,
+        "snc_energies:voltaite_ore": 31
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T15:59:20-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "0,-9": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 3,
+        "snc_energies:voltaite_ore": 55
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:29-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "1,-10": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 11,
+        "snc_energies:voltaite_ore": 28
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:27-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "1,-28": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 17,
+        "snc_energies:voltaite_ore": 20
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:14-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "1,-29": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 3,
+        "snc_energies:voltaite_ore": 34
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:04-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "1,-30": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 17,
+        "snc_energies:voltaite_ore": 18,
+        "snc_energies:tin_ore": 46,
+        "snc_energies:deepslate_tin_ore": 2
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:50-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "1,-7": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 20,
+        "snc_energies:voltaite_ore": 28
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:56-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "1,-8": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 9,
+        "snc_energies:voltaite_ore": 39
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T15:59:20-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "1,-9": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 2,
+        "snc_energies:voltaite_ore": 29
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:29-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "10,-10": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 29,
+        "snc_energies:voltaite_ore": 18
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:40-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "10,-28": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 15,
+        "snc_energies:voltaite_ore": 14
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:04-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "10,-29": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 8,
+        "snc_energies:voltaite_ore": 12
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:04-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "10,-30": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 15,
+        "snc_energies:deepslate_tin_ore": 10,
+        "snc_energies:tin_ore": 32,
+        "snc_energies:voltaite_ore": 36
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:56-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "10,-7": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 8,
+        "snc_energies:voltaite_ore": 29
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:50-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "10,-8": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 13,
+        "snc_energies:voltaite_ore": 36
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:57-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "10,-9": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 15,
+        "snc_energies:voltaite_ore": 23
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:40-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "11,-10": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 14,
+        "snc_energies:voltaite_ore": 30
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:40-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "11,-11": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 13,
+        "snc_energies:voltaite_ore": 27
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:40-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "11,-12": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 12,
+        "snc_energies:voltaite_ore": 17
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:40-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "11,-13": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 15,
+        "snc_energies:deepslate_voltaite_ore": 1
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:00-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "11,-14": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 34
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:48:48-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "11,-15": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 30,
+        "snc_energies:deepslate_voltaite_ore": 1
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:50-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "11,-16": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 6,
+        "snc_energies:voltaite_ore": 26
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:50:13-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "11,-17": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 9,
+        "snc_energies:voltaite_ore": 46
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:40-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "11,-18": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 8,
+        "snc_energies:voltaite_ore": 28
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:40-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "11,-19": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 6,
+        "snc_energies:voltaite_ore": 31
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:40-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "11,-20": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 15,
+        "snc_energies:voltaite_ore": 19
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:40-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "11,-21": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 16,
+        "snc_energies:voltaite_ore": 18
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:20-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "11,-22": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 13,
+        "snc_energies:voltaite_ore": 23
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:40-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "11,-23": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 28
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:10-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "11,-24": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 8,
+        "snc_energies:voltaite_ore": 17
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:09-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "11,-25": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 6,
+        "snc_energies:voltaite_ore": 36
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:40-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "11,-26": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 10,
+        "snc_energies:voltaite_ore": 31
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:50-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "11,-27": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 2,
+        "snc_energies:voltaite_ore": 16
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:50-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "11,-28": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 16,
+        "snc_energies:voltaite_ore": 31
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:04-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "11,-29": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 2,
+        "snc_energies:voltaite_ore": 17
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:04-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "11,-30": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 13,
+        "snc_energies:voltaite_ore": 9,
+        "snc_energies:tin_ore": 46
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:56-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "11,-31": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 4
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:58-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "11,-7": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 9,
+        "snc_energies:voltaite_ore": 29
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:57-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "11,-8": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 19,
+        "snc_energies:voltaite_ore": 32
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:57-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "11,-9": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 18,
+        "snc_energies:voltaite_ore": 16
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:30-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "12,-10": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 5,
+        "snc_energies:voltaite_ore": 33
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:56-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "12,-11": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 20,
+        "snc_energies:voltaite_ore": 14
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:40-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "12,-12": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 4,
+        "snc_energies:voltaite_ore": 33
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:50-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "12,-13": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 19,
+        "snc_energies:voltaite_ore": 20
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:20-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "12,-14": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 12,
+        "snc_energies:voltaite_ore": 35
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:20-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "12,-15": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 20,
+        "snc_energies:voltaite_ore": 24
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:50-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "12,-16": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 13,
+        "snc_energies:voltaite_ore": 28
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:48:24-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "12,-17": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 15,
+        "snc_energies:voltaite_ore": 19,
+        "snc_energies:tin_ore": 5
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:49:02-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "12,-18": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 7,
+        "snc_energies:voltaite_ore": 28
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:40-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "12,-19": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 6,
+        "snc_energies:voltaite_ore": 29,
+        "snc_energies:tin_ore": 2
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:14-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "12,-20": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 9,
+        "snc_energies:voltaite_ore": 35,
+        "snc_energies:tin_ore": 2
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:40-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "12,-21": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 13,
+        "snc_energies:voltaite_ore": 41,
+        "snc_energies:tin_ore": 2
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:40-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "12,-22": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 5,
+        "snc_energies:voltaite_ore": 39
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:48:07-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "12,-23": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 9,
+        "snc_energies:voltaite_ore": 37
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:18-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "12,-24": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 8,
+        "snc_energies:voltaite_ore": 31
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:19-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "12,-25": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 18,
+        "snc_energies:voltaite_ore": 16,
+        "snc_energies:tin_ore": 2
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:40-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "12,-26": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 9,
+        "snc_energies:voltaite_ore": 14
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:40-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "12,-27": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 5,
+        "snc_energies:voltaite_ore": 33
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:50-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "12,-28": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 16,
+        "snc_energies:voltaite_ore": 18,
+        "snc_energies:tin_ore": 2
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:04-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "12,-29": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 6,
+        "snc_energies:deepslate_tin_ore": 12,
+        "snc_energies:voltaite_ore": 34,
+        "snc_energies:tin_ore": 33
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:04-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "12,-30": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 15,
+        "snc_energies:tin_ore": 23,
+        "snc_energies:voltaite_ore": 17
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "12,-31": {
+      "blocks": {
+        "snc_energies:tin_ore": 1
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "12,-7": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 10,
+        "snc_energies:voltaite_ore": 26
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:59:00-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "12,-8": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 11,
+        "snc_energies:voltaite_ore": 35
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:57-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "12,-9": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 14,
+        "snc_energies:voltaite_ore": 26
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "13,-10": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 40,
+        "snc_energies:deepslate_voltaite_ore": 1
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "13,-11": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 13,
+        "snc_energies:voltaite_ore": 22,
+        "snc_energies:tin_ore": 1
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:40-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "13,-12": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 10,
+        "snc_energies:voltaite_ore": 33,
+        "snc_energies:tin_ore": 2
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:50-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "13,-13": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 2,
+        "snc_energies:voltaite_ore": 29
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:50-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "13,-14": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 15,
+        "snc_energies:deepslate_tin_ore": 9,
+        "snc_energies:tin_ore": 25,
+        "snc_energies:voltaite_ore": 19
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:20-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "13,-15": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 18,
+        "snc_energies:voltaite_ore": 28,
+        "snc_energies:tin_ore": 41
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:00-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "13,-16": {
+      "blocks": {
+        "snc_energies:deepslate_tin_ore": 8,
+        "snc_energies:deepslate_voltaite_ore": 11,
+        "snc_energies:tin_ore": 38,
+        "snc_energies:voltaite_ore": 27
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:48:07-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "13,-17": {
+      "blocks": {
+        "snc_energies:deepslate_tin_ore": 6,
+        "snc_energies:deepslate_voltaite_ore": 4,
+        "snc_energies:voltaite_ore": 32,
+        "snc_energies:tin_ore": 28
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:48:07-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "13,-18": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 26,
+        "snc_energies:voltaite_ore": 6,
+        "snc_energies:tin_ore": 37
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:20-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "13,-19": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 20,
+        "snc_energies:voltaite_ore": 27,
+        "snc_energies:tin_ore": 42
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:20-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "13,-20": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 22,
+        "snc_energies:deepslate_tin_ore": 13,
+        "snc_energies:voltaite_ore": 20,
+        "snc_energies:tin_ore": 35
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:20-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "13,-21": {
+      "blocks": {
+        "snc_energies:deepslate_tin_ore": 11,
+        "snc_energies:deepslate_voltaite_ore": 11,
+        "snc_energies:voltaite_ore": 26,
+        "snc_energies:tin_ore": 33
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:16-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "13,-22": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 15,
+        "snc_energies:voltaite_ore": 29,
+        "snc_energies:tin_ore": 38
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:33-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "13,-23": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 10,
+        "snc_energies:voltaite_ore": 25,
+        "snc_energies:tin_ore": 46
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:50-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "13,-24": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 8,
+        "snc_energies:deepslate_tin_ore": 4,
+        "snc_energies:tin_ore": 32,
+        "snc_energies:voltaite_ore": 16
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:30-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "13,-25": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 5,
+        "snc_energies:deepslate_tin_ore": 3,
+        "snc_energies:voltaite_ore": 29,
+        "snc_energies:tin_ore": 19
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:50-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "13,-26": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 12,
+        "snc_energies:deepslate_tin_ore": 5,
+        "snc_energies:voltaite_ore": 33,
+        "snc_energies:tin_ore": 35
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:50-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "13,-27": {
+      "blocks": {
+        "snc_energies:tin_ore": 54,
+        "snc_energies:voltaite_ore": 27
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:50-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "13,-28": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 11,
+        "snc_energies:voltaite_ore": 32,
+        "snc_energies:tin_ore": 34
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:05-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "13,-29": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 9,
+        "snc_energies:tin_ore": 40,
+        "snc_energies:voltaite_ore": 31
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:04-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "13,-30": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 17,
+        "snc_energies:voltaite_ore": 22,
+        "snc_energies:tin_ore": 47,
+        "snc_energies:deepslate_tin_ore": 4
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:56-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "13,-7": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 4,
+        "snc_energies:voltaite_ore": 37
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:50-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "13,-8": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 22,
+        "snc_energies:voltaite_ore": 20
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "13,-9": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 17,
+        "snc_energies:voltaite_ore": 16
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:56-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "14,-10": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 6,
+        "snc_energies:voltaite_ore": 34,
+        "snc_energies:tin_ore": 45
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:56-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "14,-11": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 5,
+        "snc_energies:deepslate_tin_ore": 1,
+        "snc_energies:tin_ore": 33,
+        "snc_energies:voltaite_ore": 12
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:40-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "14,-12": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 15,
+        "snc_energies:deepslate_tin_ore": 5,
+        "snc_energies:voltaite_ore": 18,
+        "snc_energies:tin_ore": 19
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:50-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "14,-13": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 10,
+        "snc_energies:voltaite_ore": 28,
+        "snc_energies:tin_ore": 37
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:58-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "14,-14": {
+      "blocks": {
+        "snc_energies:deepslate_tin_ore": 2,
+        "snc_energies:tin_ore": 34,
+        "snc_energies:deepslate_voltaite_ore": 1,
+        "snc_energies:voltaite_ore": 14
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:58-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "14,-15": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 11,
+        "snc_energies:deepslate_tin_ore": 3,
+        "snc_energies:tin_ore": 23,
+        "snc_energies:voltaite_ore": 18
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:58-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "14,-16": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 21,
+        "snc_energies:deepslate_tin_ore": 6,
+        "snc_energies:voltaite_ore": 31,
+        "snc_energies:tin_ore": 32
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:50-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "14,-17": {
+      "blocks": {
+        "snc_energies:deepslate_tin_ore": 2,
+        "snc_energies:voltaite_ore": 41,
+        "snc_energies:tin_ore": 52
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:50-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "14,-18": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 18,
+        "snc_energies:deepslate_tin_ore": 2,
+        "snc_energies:tin_ore": 40,
+        "snc_energies:voltaite_ore": 24
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:20-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "14,-19": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 8,
+        "snc_energies:deepslate_tin_ore": 8,
+        "snc_energies:tin_ore": 39,
+        "snc_energies:voltaite_ore": 31
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:20-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "14,-20": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 33,
+        "snc_energies:deepslate_voltaite_ore": 2,
+        "snc_energies:tin_ore": 37
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:53-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "14,-21": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 7,
+        "snc_energies:tin_ore": 49,
+        "snc_energies:deepslate_tin_ore": 1,
+        "snc_energies:voltaite_ore": 30
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:50-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "14,-22": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 10,
+        "snc_energies:voltaite_ore": 35,
+        "snc_energies:tin_ore": 41
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:53-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "14,-23": {
+      "blocks": {
+        "snc_energies:deepslate_tin_ore": 4,
+        "snc_energies:deepslate_voltaite_ore": 15,
+        "snc_energies:voltaite_ore": 16,
+        "snc_energies:tin_ore": 17
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:38-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "14,-24": {
+      "blocks": {
+        "snc_energies:deepslate_tin_ore": 10,
+        "snc_energies:deepslate_voltaite_ore": 5,
+        "snc_energies:voltaite_ore": 41,
+        "snc_energies:tin_ore": 40
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:58-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "14,-25": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 7,
+        "snc_energies:tin_ore": 36,
+        "snc_energies:voltaite_ore": 14
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:58-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "14,-26": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 10,
+        "snc_energies:tin_ore": 42,
+        "snc_energies:voltaite_ore": 19
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:58-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "14,-27": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 11,
+        "snc_energies:voltaite_ore": 33,
+        "snc_energies:tin_ore": 38
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:53-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "14,-28": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 1,
+        "snc_energies:deepslate_tin_ore": 2,
+        "snc_energies:voltaite_ore": 34,
+        "snc_energies:tin_ore": 41
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:05-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "14,-29": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 13,
+        "snc_energies:deepslate_tin_ore": 3,
+        "snc_energies:tin_ore": 36,
+        "snc_energies:voltaite_ore": 18
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:04-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "14,-30": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 8,
+        "snc_energies:voltaite_ore": 27,
+        "snc_energies:tin_ore": 38
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:54-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "14,-31": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 6,
+        "snc_energies:tin_ore": 3
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:57-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "15,-10": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 11,
+        "snc_energies:deepslate_tin_ore": 5,
+        "snc_energies:voltaite_ore": 29,
+        "snc_energies:tin_ore": 46
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:56-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "15,-11": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 20,
+        "snc_energies:deepslate_tin_ore": 6,
+        "snc_energies:tin_ore": 48,
+        "snc_energies:voltaite_ore": 25
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "15,-12": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 16,
+        "snc_energies:deepslate_tin_ore": 7,
+        "snc_energies:voltaite_ore": 27,
+        "snc_energies:tin_ore": 24
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:58-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "15,-13": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 8,
+        "snc_energies:voltaite_ore": 25,
+        "snc_energies:tin_ore": 37
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:58-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "15,-14": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 5,
+        "snc_energies:voltaite_ore": 34,
+        "snc_energies:tin_ore": 24
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:58-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "15,-15": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 23,
+        "snc_energies:deepslate_voltaite_ore": 1,
+        "snc_energies:tin_ore": 40
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:58-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "15,-16": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 14,
+        "snc_energies:deepslate_tin_ore": 14,
+        "snc_energies:tin_ore": 26,
+        "snc_energies:voltaite_ore": 12
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:53-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "15,-17": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 19,
+        "snc_energies:deepslate_tin_ore": 3,
+        "snc_energies:tin_ore": 41,
+        "snc_energies:voltaite_ore": 14
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:53-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "15,-18": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 12,
+        "snc_energies:deepslate_tin_ore": 5,
+        "snc_energies:voltaite_ore": 20,
+        "snc_energies:tin_ore": 38
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:58-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "15,-19": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 9,
+        "snc_energies:voltaite_ore": 46,
+        "snc_energies:tin_ore": 33
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:52-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "15,-20": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 17,
+        "snc_energies:voltaite_ore": 24,
+        "snc_energies:deepslate_tin_ore": 1,
+        "snc_energies:tin_ore": 37
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:58-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "15,-21": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 14,
+        "snc_energies:deepslate_tin_ore": 6,
+        "snc_energies:tin_ore": 29,
+        "snc_energies:voltaite_ore": 20
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:58-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "15,-22": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 11,
+        "snc_energies:voltaite_ore": 21,
+        "snc_energies:tin_ore": 34
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:58-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "15,-23": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 17,
+        "snc_energies:tin_ore": 39
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:58-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "15,-24": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 11,
+        "snc_energies:tin_ore": 20,
+        "snc_energies:deepslate_tin_ore": 2,
+        "snc_energies:voltaite_ore": 13
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:58-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "15,-25": {
+      "blocks": {
+        "snc_energies:deepslate_tin_ore": 4,
+        "snc_energies:voltaite_ore": 23,
+        "snc_energies:tin_ore": 31
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:58-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "15,-26": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 8,
+        "snc_energies:voltaite_ore": 15,
+        "snc_energies:tin_ore": 36
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:58-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "15,-27": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 20,
+        "snc_energies:deepslate_tin_ore": 6,
+        "snc_energies:voltaite_ore": 17,
+        "snc_energies:tin_ore": 26
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:58-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "15,-28": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 13,
+        "snc_energies:deepslate_tin_ore": 11,
+        "snc_energies:voltaite_ore": 16,
+        "snc_energies:tin_ore": 29
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:53-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "15,-29": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 13,
+        "snc_energies:deepslate_tin_ore": 10,
+        "snc_energies:tin_ore": 38,
+        "snc_energies:voltaite_ore": 35
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:53-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "15,-30": {
+      "blocks": {
+        "snc_energies:tin_ore": 28,
+        "snc_energies:voltaite_ore": 32,
+        "snc_energies:deepslate_voltaite_ore": 1
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:56-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "15,-31": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 4
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:59:00-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "16,-11": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 6,
+        "snc_energies:voltaite_ore": 30,
+        "snc_energies:tin_ore": 23,
+        "snc_energies:deepslate_tin_ore": 1
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:59:00-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "16,-12": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 19,
+        "snc_energies:voltaite_ore": 24,
+        "snc_energies:deepslate_tin_ore": 4,
+        "snc_energies:tin_ore": 29
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:52-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "16,-13": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 15,
+        "snc_energies:voltaite_ore": 28,
+        "snc_energies:tin_ore": 24
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:52-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "16,-14": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 8,
+        "snc_energies:deepslate_tin_ore": 2,
+        "snc_energies:voltaite_ore": 33,
+        "snc_energies:tin_ore": 29
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:53-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "16,-15": {
+      "blocks": {
+        "snc_energies:deepslate_tin_ore": 6,
+        "snc_energies:deepslate_voltaite_ore": 18,
+        "snc_energies:voltaite_ore": 21,
+        "snc_energies:tin_ore": 38
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:53-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "16,-16": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 14,
+        "snc_energies:voltaite_ore": 26,
+        "snc_energies:deepslate_tin_ore": 2,
+        "snc_energies:tin_ore": 40
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:53-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "16,-17": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 11,
+        "snc_energies:voltaite_ore": 37,
+        "snc_energies:tin_ore": 23
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:53-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "16,-18": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 18,
+        "snc_energies:deepslate_tin_ore": 4,
+        "snc_energies:tin_ore": 44,
+        "snc_energies:voltaite_ore": 27
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:53-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "16,-19": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 13,
+        "snc_energies:voltaite_ore": 25,
+        "snc_energies:tin_ore": 45,
+        "snc_energies:deepslate_tin_ore": 5
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:53-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "16,-20": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 11,
+        "snc_energies:voltaite_ore": 30,
+        "snc_energies:tin_ore": 46
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:53-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "16,-21": {
+      "blocks": {
+        "snc_energies:deepslate_tin_ore": 21,
+        "snc_energies:tin_ore": 20,
+        "snc_energies:voltaite_ore": 12
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:53-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "16,-22": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 9,
+        "snc_energies:tin_ore": 22
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:53-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "16,-23": {
+      "blocks": {
+        "snc_energies:tin_ore": 38,
+        "snc_energies:voltaite_ore": 20
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:58-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "16,-24": {
+      "blocks": {
+        "snc_energies:tin_ore": 37,
+        "snc_energies:voltaite_ore": 7
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:58-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "16,-25": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 6,
+        "snc_energies:deepslate_tin_ore": 3,
+        "snc_energies:tin_ore": 33,
+        "snc_energies:voltaite_ore": 22
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:53-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "16,-26": {
+      "blocks": {
+        "snc_energies:deepslate_tin_ore": 1,
+        "snc_energies:deepslate_voltaite_ore": 12,
+        "snc_energies:tin_ore": 24,
+        "snc_energies:voltaite_ore": 8
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:58-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "16,-27": {
+      "blocks": {
+        "snc_energies:tin_ore": 38,
+        "snc_energies:voltaite_ore": 27
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:53-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "16,-28": {
+      "blocks": {
+        "snc_energies:deepslate_tin_ore": 6,
+        "snc_energies:deepslate_voltaite_ore": 9,
+        "snc_energies:voltaite_ore": 30,
+        "snc_energies:tin_ore": 27
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:53-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "16,-29": {
+      "blocks": {
+        "snc_energies:deepslate_tin_ore": 8,
+        "snc_energies:deepslate_voltaite_ore": 6,
+        "snc_energies:tin_ore": 34,
+        "snc_energies:voltaite_ore": 40
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "16,-30": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 20,
+        "snc_energies:voltaite_ore": 19,
+        "snc_energies:tin_ore": 43
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:57-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "16,-31": {
+      "blocks": {
+        "snc_energies:tin_ore": 3,
+        "snc_energies:voltaite_ore": 4
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "17,-11": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 11,
+        "snc_energies:voltaite_ore": 15,
+        "snc_energies:tin_ore": 23,
+        "snc_energies:deepslate_tin_ore": 4
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:50-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "17,-12": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 4,
+        "snc_energies:deepslate_tin_ore": 4,
+        "snc_energies:tin_ore": 25,
+        "snc_energies:voltaite_ore": 28
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "17,-13": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 12,
+        "snc_energies:deepslate_tin_ore": 14,
+        "snc_energies:tin_ore": 13,
+        "snc_energies:voltaite_ore": 32
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:57-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "17,-14": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 23,
+        "snc_energies:deepslate_tin_ore": 7,
+        "snc_energies:tin_ore": 21,
+        "snc_energies:voltaite_ore": 10
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "17,-15": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 6,
+        "snc_energies:deepslate_tin_ore": 4,
+        "snc_energies:voltaite_ore": 38,
+        "snc_energies:tin_ore": 29
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "17,-16": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 3,
+        "snc_energies:deepslate_tin_ore": 4,
+        "snc_energies:voltaite_ore": 26,
+        "snc_energies:tin_ore": 41
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:50-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "17,-17": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 17,
+        "snc_energies:voltaite_ore": 18,
+        "snc_energies:tin_ore": 42,
+        "snc_energies:deepslate_tin_ore": 2
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:56-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "17,-18": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 2,
+        "snc_energies:voltaite_ore": 36,
+        "snc_energies:tin_ore": 41
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:58-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "17,-19": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 6,
+        "snc_energies:tin_ore": 44,
+        "snc_energies:deepslate_tin_ore": 1,
+        "snc_energies:voltaite_ore": 28
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:56-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "17,-20": {
+      "blocks": {
+        "snc_energies:deepslate_tin_ore": 11,
+        "snc_energies:tin_ore": 29,
+        "snc_energies:voltaite_ore": 38
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:58-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "17,-21": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 6,
+        "snc_energies:deepslate_tin_ore": 4,
+        "snc_energies:voltaite_ore": 32,
+        "snc_energies:tin_ore": 40
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "17,-22": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 5,
+        "snc_energies:deepslate_tin_ore": 4,
+        "snc_energies:tin_ore": 40,
+        "snc_energies:voltaite_ore": 30
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:57-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "17,-23": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 11,
+        "snc_energies:deepslate_tin_ore": 17,
+        "snc_energies:tin_ore": 27,
+        "snc_energies:voltaite_ore": 17
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:59:00-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "17,-24": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 17,
+        "snc_energies:tin_ore": 20,
+        "snc_energies:voltaite_ore": 2
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:50-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "17,-25": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 8,
+        "snc_energies:tin_ore": 28,
+        "snc_energies:voltaite_ore": 21
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "17,-26": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 22,
+        "snc_energies:tin_ore": 44
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "17,-27": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 5,
+        "snc_energies:tin_ore": 33,
+        "snc_energies:voltaite_ore": 15
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:56-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "17,-28": {
+      "blocks": {
+        "snc_energies:deepslate_tin_ore": 12,
+        "snc_energies:deepslate_voltaite_ore": 6,
+        "snc_energies:voltaite_ore": 28,
+        "snc_energies:tin_ore": 29
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:59:00-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "17,-29": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 28,
+        "snc_energies:deepslate_voltaite_ore": 4,
+        "snc_energies:deepslate_tin_ore": 3,
+        "snc_energies:tin_ore": 36
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:56-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "2,-10": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 14,
+        "snc_energies:voltaite_ore": 24
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:27-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "2,-28": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 13
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:55:16-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "2,-29": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 2,
+        "snc_energies:voltaite_ore": 34
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:04-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "2,-30": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 20,
+        "snc_energies:tin_ore": 33,
+        "snc_energies:deepslate_tin_ore": 1,
+        "snc_energies:voltaite_ore": 20
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:49-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "2,-31": {
+      "blocks": {
+        "snc_energies:tin_ore": 6
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:59:00-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "2,-7": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 13,
+        "snc_energies:voltaite_ore": 32
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "2,-8": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 15,
+        "snc_energies:voltaite_ore": 24
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T15:59:20-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "2,-9": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 17,
+        "snc_energies:voltaite_ore": 33
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:29-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "3,-10": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 6,
+        "snc_energies:voltaite_ore": 43
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:27-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "3,-28": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 6,
+        "snc_energies:voltaite_ore": 20
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:53:25-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "3,-29": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 11,
+        "snc_energies:voltaite_ore": 35
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:04-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "3,-30": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 8,
+        "snc_energies:voltaite_ore": 30,
+        "snc_energies:tin_ore": 33
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:56-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "3,-31": {
+      "blocks": {
+        "snc_energies:tin_ore": 1
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:49-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "3,-34": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 4
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.0.-2.mca"
+    },
+    "3,-38": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 2
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:48-03:00",
+      "region": "r.0.-2.mca"
+    },
+    "3,-7": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 4,
+        "snc_energies:voltaite_ore": 27
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:53-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "3,-8": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 9,
+        "snc_energies:voltaite_ore": 29
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T15:59:20-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "3,-9": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 6,
+        "snc_energies:voltaite_ore": 33
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:29-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "4,-10": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 5,
+        "snc_energies:voltaite_ore": 35
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:27-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "4,-28": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 6,
+        "snc_energies:voltaite_ore": 20
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:55:16-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "4,-29": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 11,
+        "snc_energies:voltaite_ore": 22
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:04-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "4,-30": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 11,
+        "snc_energies:voltaite_ore": 21,
+        "snc_energies:tin_ore": 34
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:50-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "4,-31": {
+      "blocks": {
+        "snc_energies:tin_ore": 2
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:57-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "4,-7": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 5,
+        "snc_energies:voltaite_ore": 19
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:58-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "4,-8": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 5,
+        "snc_energies:voltaite_ore": 35
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T15:59:20-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "4,-9": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 13,
+        "snc_energies:voltaite_ore": 29
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:29-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "5,-10": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 22,
+        "snc_energies:voltaite_ore": 18
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:27-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "5,-28": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 9,
+        "snc_energies:voltaite_ore": 18
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:14-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "5,-29": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 13,
+        "snc_energies:voltaite_ore": 17
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:04-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "5,-30": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 14,
+        "snc_energies:deepslate_voltaite_ore": 1,
+        "snc_energies:deepslate_tin_ore": 1,
+        "snc_energies:tin_ore": 24
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "5,-31": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 2
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:52-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "5,-39": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 6
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:55:11-03:00",
+      "region": "r.0.-2.mca"
+    },
+    "5,-7": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 12,
+        "snc_energies:voltaite_ore": 9
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:59:00-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "5,-8": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 9,
+        "snc_energies:voltaite_ore": 9
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T15:59:20-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "5,-9": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 26,
+        "snc_energies:voltaite_ore": 6
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:29-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "6,-10": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 14,
+        "snc_energies:voltaite_ore": 35
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:27-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "6,-28": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 9,
+        "snc_energies:voltaite_ore": 14
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:14-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "6,-29": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 4,
+        "snc_energies:voltaite_ore": 22
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:04-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "6,-30": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 14,
+        "snc_energies:voltaite_ore": 33,
+        "snc_energies:tin_ore": 39
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:55-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "6,-31": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 1
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:58-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "6,-7": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 5,
+        "snc_energies:voltaite_ore": 10
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:57-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "6,-8": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 3,
+        "snc_energies:voltaite_ore": 20
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T15:59:20-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "6,-9": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 10,
+        "snc_energies:voltaite_ore": 31
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:28-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "7,-10": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 10,
+        "snc_energies:voltaite_ore": 24
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:27-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "7,-28": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 11,
+        "snc_energies:voltaite_ore": 5
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:04-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "7,-29": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 8,
+        "snc_energies:voltaite_ore": 25
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:04-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "7,-30": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 3,
+        "snc_energies:voltaite_ore": 32,
+        "snc_energies:tin_ore": 33
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:54-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "7,-31": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 2,
+        "snc_energies:voltaite_ore": 1,
+        "snc_energies:tin_ore": 2
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:57-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "7,-39": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 3
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:55:11-03:00",
+      "region": "r.0.-2.mca"
+    },
+    "7,-7": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 4,
+        "snc_energies:voltaite_ore": 6
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:59-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "7,-8": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 2,
+        "snc_energies:voltaite_ore": 21
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T15:59:20-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "7,-9": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 8,
+        "snc_energies:voltaite_ore": 20
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:28-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "8,-10": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 16,
+        "snc_energies:voltaite_ore": 16
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:27-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "8,-28": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 5,
+        "snc_energies:voltaite_ore": 13
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:14-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "8,-29": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 11,
+        "snc_energies:voltaite_ore": 21
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:04-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "8,-30": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 6,
+        "snc_energies:deepslate_tin_ore": 4,
+        "snc_energies:voltaite_ore": 45,
+        "snc_energies:tin_ore": 47
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:55-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "8,-7": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 2,
+        "snc_energies:voltaite_ore": 22
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:56-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "8,-8": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 4,
+        "snc_energies:voltaite_ore": 27
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T15:59:20-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "8,-9": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 15,
+        "snc_energies:voltaite_ore": 18
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:28-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "9,-10": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 9,
+        "snc_energies:voltaite_ore": 22
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:27-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "9,-28": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 16,
+        "snc_energies:voltaite_ore": 10
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:04-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "9,-29": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 27,
+        "snc_energies:voltaite_ore": 22
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:47:04-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "9,-30": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 14,
+        "snc_energies:deepslate_tin_ore": 4,
+        "snc_energies:voltaite_ore": 30,
+        "snc_energies:tin_ore": 32
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:56-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "9,-31": {
+      "blocks": {
+        "snc_energies:voltaite_ore": 8
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:59:00-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "9,-7": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 13,
+        "snc_energies:voltaite_ore": 27
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:58:58-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "9,-8": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 11,
+        "snc_energies:voltaite_ore": 25
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T15:59:20-03:00",
+      "region": "r.0.-1.mca"
+    },
+    "9,-9": {
+      "blocks": {
+        "snc_energies:deepslate_voltaite_ore": 15,
+        "snc_energies:voltaite_ore": 37
+      },
+      "block_entities": {},
+      "last_saved": "2026-09-25T16:46:29-03:00",
+      "region": "r.0.-1.mca"
+    }
+  },
+  "errors": []
+}

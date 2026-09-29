@@ -1,0 +1,149 @@
+{
+  "status": "passed",
+  "scope": "JSON, Blockbench and GLB modelling exports; no gameplay validation",
+  "checks": [
+    {
+      "name": "blockbench_hierarchy_pivots_material_assignments",
+      "cubes": 747,
+      "groups": 83,
+      "unique_uuids": 830
+    },
+    {
+      "name": "textures_embedded_identically",
+      "textures": 21,
+      "size": "128x128"
+    },
+    {
+      "name": "glb_mesh_winding_normals_uv_indices",
+      "meshes": 21
+    },
+    {
+      "name": "world_geometry_and_rig_match_json_glb",
+      "cube_corners": 5976,
+      "maximum_delta_model_pixels": 7.105427357601002e-15
+    },
+    {
+      "name": "glb_wheel_and_mechanism_animation",
+      "channels": 8,
+      "targets": [
+        "cleaning_fan",
+        "cooling_fan",
+        "front_left_wheel",
+        "front_right_wheel",
+        "rear_left_wheel",
+        "rear_right_wheel",
+        "reel",
+        "straw_chopper"
+      ]
+    },
+    {
+      "name": "articulated_geometry_clearance",
+      "scenarios": 17,
+      "pairs": 30723,
+      "scenarios_with_intersections": 0
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "articulation_clearance": [
+    {
+      "scenario": "hood_open_0_degrees",
+      "tested_pairs": 330,
+      "collisions": []
+    },
+    {
+      "scenario": "hood_open_15_degrees",
+      "tested_pairs": 330,
+      "collisions": []
+    },
+    {
+      "scenario": "hood_open_30_degrees",
+      "tested_pairs": 330,
+      "collisions": []
+    },
+    {
+      "scenario": "hood_open_55_degrees",
+      "tested_pairs": 330,
+      "collisions": []
+    },
+    {
+      "scenario": "header_lift_0_degrees",
+      "tested_pairs": 6432,
+      "collisions": []
+    },
+    {
+      "scenario": "header_lift_8_degrees",
+      "tested_pairs": 6432,
+      "collisions": []
+    },
+    {
+      "scenario": "header_lift_16_degrees",
+      "tested_pairs": 6432,
+      "collisions": []
+    },
+    {
+      "scenario": "header_lift_26_degrees",
+      "tested_pairs": 6432,
+      "collisions": []
+    },
+    {
+      "scenario": "auger_raise_0_degrees",
+      "tested_pairs": 1001,
+      "collisions": []
+    },
+    {
+      "scenario": "auger_raise_18_degrees",
+      "tested_pairs": 1001,
+      "collisions": []
+    },
+    {
+      "scenario": "auger_raise_38_degrees",
+      "tested_pairs": 1001,
+      "collisions": []
+    },
+    {
+      "scenario": "spout_fold_0_degrees",
+      "tested_pairs": 128,
+      "collisions": []
+    },
+    {
+      "scenario": "spout_fold_70_degrees",
+      "tested_pairs": 128,
+      "collisions": []
+    },
+    {
+      "scenario": "spout_fold_140_degrees",
+      "tested_pairs": 128,
+      "collisions": []
+    },
+    {
+      "scenario": "rotor_spin_0_degrees",
+      "tested_pairs": 96,
+      "collisions": []
+    },
+    {
+      "scenario": "rotor_spin_22.5_degrees",
+      "tested_pairs": 96,
+      "collisions": []
+    },
+    {
+      "scenario": "rotor_spin_45_degrees",
+      "tested_pairs": 96,
+      "collisions": []
+    }
+  ],
+  "files": {
+    "harvester-model.json": {
+      "bytes": 348786,
+      "sha256": "95affd199121cec33a3a1c71cbe82adddf2e8a4d1aa37213489eda22ea9a1388"
+    },
+    "snc-90-colheitadeira.bbmodel": {
+      "bytes": 1415626,
+      "sha256": "497e94a145d12d4a6d808c0d72e129768fb5f2c52005e6d69f4ab69b33802edc"
+    },
+    "snc-90-colheitadeira.glb": {
+      "bytes": 300360,
+      "sha256": "2c36ec313bad0ed237149ff98ccf1e7fc968005359623876b808e3e6c3bc5a53"
+    }
+  }
+}

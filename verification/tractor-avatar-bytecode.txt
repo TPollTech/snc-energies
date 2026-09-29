@@ -1,0 +1,179 @@
+Compiled from "Avatar.java"
+public abstract class net.minecraft.world.entity.Avatar extends net.minecraft.world.entity.LivingEntity {
+  public static final net.minecraft.world.entity.HumanoidArm DEFAULT_MAIN_HAND;
+
+  public static final int DEFAULT_MODEL_CUSTOMIZATION;
+
+  public static final float DEFAULT_EYE_HEIGHT;
+
+  public static final net.minecraft.world.phys.Vec3 DEFAULT_VEHICLE_ATTACHMENT;
+
+  private static final float CROUCH_BB_HEIGHT;
+
+  private static final float SWIMMING_BB_WIDTH;
+
+  public static final float SWIMMING_BB_HEIGHT;
+
+  protected static final net.minecraft.world.entity.EntityDimensions STANDING_DIMENSIONS;
+
+  protected static final java.util.Map<net.minecraft.world.entity.Pose, net.minecraft.world.entity.EntityDimensions> POSES;
+
+  protected static final net.minecraft.network.syncher.EntityDataAccessor<net.minecraft.world.entity.HumanoidArm> DATA_PLAYER_MAIN_HAND;
+
+  protected static final net.minecraft.network.syncher.EntityDataAccessor<java.lang.Byte> DATA_PLAYER_MODE_CUSTOMISATION;
+
+  protected net.minecraft.world.entity.Avatar(net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.LivingEntity>, net.minecraft.world.level.Level);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: aload_2
+         3: invokespecial #1                  // Method net/minecraft/world/entity/LivingEntity."<init>":(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)V
+         6: return
+
+  protected void defineSynchedData(net.minecraft.network.syncher.SynchedEntityData$Builder);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokespecial #7                  // Method net/minecraft/world/entity/LivingEntity.defineSynchedData:(Lnet/minecraft/network/syncher/SynchedEntityData$Builder;)V
+         5: aload_1
+         6: getstatic     #11                 // Field DATA_PLAYER_MAIN_HAND:Lnet/minecraft/network/syncher/EntityDataAccessor;
+         9: getstatic     #17                 // Field DEFAULT_MAIN_HAND:Lnet/minecraft/world/entity/HumanoidArm;
+        12: invokevirtual #21                 // Method net/minecraft/network/syncher/SynchedEntityData$Builder.define:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)Lnet/minecraft/network/syncher/SynchedEntityData$Builder;
+        15: pop
+        16: aload_1
+        17: getstatic     #27                 // Field DATA_PLAYER_MODE_CUSTOMISATION:Lnet/minecraft/network/syncher/EntityDataAccessor;
+        20: iconst_0
+        21: invokestatic  #30                 // Method java/lang/Byte.valueOf:(B)Ljava/lang/Byte;
+        24: invokevirtual #21                 // Method net/minecraft/network/syncher/SynchedEntityData$Builder.define:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)Lnet/minecraft/network/syncher/SynchedEntityData$Builder;
+        27: pop
+        28: return
+
+  public net.minecraft.world.entity.HumanoidArm getMainArm();
+    Code:
+         0: aload_0
+         1: getfield      #36                 // Field entityData:Lnet/minecraft/network/syncher/SynchedEntityData;
+         4: getstatic     #11                 // Field DATA_PLAYER_MAIN_HAND:Lnet/minecraft/network/syncher/EntityDataAccessor;
+         7: invokevirtual #40                 // Method net/minecraft/network/syncher/SynchedEntityData.get:(Lnet/minecraft/network/syncher/EntityDataAccessor;)Ljava/lang/Object;
+        10: checkcast     #46                 // class net/minecraft/world/entity/HumanoidArm
+        13: areturn
+
+  public void setMainArm(net.minecraft.world.entity.HumanoidArm);
+    Code:
+         0: aload_0
+         1: getfield      #36                 // Field entityData:Lnet/minecraft/network/syncher/SynchedEntityData;
+         4: getstatic     #11                 // Field DATA_PLAYER_MAIN_HAND:Lnet/minecraft/network/syncher/EntityDataAccessor;
+         7: aload_1
+         8: invokevirtual #48                 // Method net/minecraft/network/syncher/SynchedEntityData.set:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+        11: return
+
+  public boolean isModelPartShown(net.minecraft.world.entity.player.PlayerModelPart);
+    Code:
+         0: aload_0
+         1: invokevirtual #52                 // Method getEntityData:()Lnet/minecraft/network/syncher/SynchedEntityData;
+         4: getstatic     #27                 // Field DATA_PLAYER_MODE_CUSTOMISATION:Lnet/minecraft/network/syncher/EntityDataAccessor;
+         7: invokevirtual #40                 // Method net/minecraft/network/syncher/SynchedEntityData.get:(Lnet/minecraft/network/syncher/EntityDataAccessor;)Ljava/lang/Object;
+        10: checkcast     #31                 // class java/lang/Byte
+        13: invokevirtual #56                 // Method java/lang/Byte.byteValue:()B
+        16: aload_1
+        17: invokevirtual #60                 // Method net/minecraft/world/entity/player/PlayerModelPart.getMask:()I
+        20: iand
+        21: aload_1
+        22: invokevirtual #60                 // Method net/minecraft/world/entity/player/PlayerModelPart.getMask:()I
+        25: if_icmpne     32
+        28: iconst_1
+        29: goto          33
+        32: iconst_0
+        33: ireturn
+
+  public net.minecraft.world.entity.EntityDimensions getDefaultDimensions(net.minecraft.world.entity.Pose);
+    Code:
+         0: getstatic     #66                 // Field POSES:Ljava/util/Map;
+         3: aload_1
+         4: getstatic     #70                 // Field STANDING_DIMENSIONS:Lnet/minecraft/world/entity/EntityDimensions;
+         7: invokeinterface #74,  3           // InterfaceMethod java/util/Map.getOrDefault:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        12: checkcast     #80                 // class net/minecraft/world/entity/EntityDimensions
+        15: areturn
+
+  public abstract net.minecraft.world.item.component.ResolvableProfile getProfile();
+
+  static {};
+    Code:
+         0: getstatic     #82                 // Field net/minecraft/world/entity/HumanoidArm.RIGHT:Lnet/minecraft/world/entity/HumanoidArm;
+         3: putstatic     #17                 // Field DEFAULT_MAIN_HAND:Lnet/minecraft/world/entity/HumanoidArm;
+         6: new           #85                 // class net/minecraft/world/phys/Vec3
+         9: dup
+        10: dconst_0
+        11: ldc2_w        #87                 // double 0.6d
+        14: dconst_0
+        15: invokespecial #89                 // Method net/minecraft/world/phys/Vec3."<init>":(DDD)V
+        18: putstatic     #92                 // Field DEFAULT_VEHICLE_ATTACHMENT:Lnet/minecraft/world/phys/Vec3;
+        21: ldc           #98                 // float 0.6f
+        23: ldc           #99                 // float 1.8f
+        25: invokestatic  #100                // Method net/minecraft/world/entity/EntityDimensions.scalable:(FF)Lnet/minecraft/world/entity/EntityDimensions;
+        28: ldc           #104                // float 1.62f
+        30: invokevirtual #105                // Method net/minecraft/world/entity/EntityDimensions.withEyeHeight:(F)Lnet/minecraft/world/entity/EntityDimensions;
+        33: invokestatic  #109                // Method net/minecraft/world/entity/EntityAttachments.builder:()Lnet/minecraft/world/entity/EntityAttachments$Builder;
+        36: getstatic     #115                // Field net/minecraft/world/entity/EntityAttachment.VEHICLE:Lnet/minecraft/world/entity/EntityAttachment;
+        39: getstatic     #92                 // Field DEFAULT_VEHICLE_ATTACHMENT:Lnet/minecraft/world/phys/Vec3;
+        42: invokevirtual #121                // Method net/minecraft/world/entity/EntityAttachments$Builder.attach:(Lnet/minecraft/world/entity/EntityAttachment;Lnet/minecraft/world/phys/Vec3;)Lnet/minecraft/world/entity/EntityAttachments$Builder;
+        45: invokevirtual #127                // Method net/minecraft/world/entity/EntityDimensions.withAttachments:(Lnet/minecraft/world/entity/EntityAttachments$Builder;)Lnet/minecraft/world/entity/EntityDimensions;
+        48: putstatic     #70                 // Field STANDING_DIMENSIONS:Lnet/minecraft/world/entity/EntityDimensions;
+        51: invokestatic  #131                // Method com/google/common/collect/ImmutableMap.builder:()Lcom/google/common/collect/ImmutableMap$Builder;
+        54: getstatic     #136                // Field net/minecraft/world/entity/Pose.STANDING:Lnet/minecraft/world/entity/Pose;
+        57: getstatic     #70                 // Field STANDING_DIMENSIONS:Lnet/minecraft/world/entity/EntityDimensions;
+        60: invokevirtual #142                // Method com/google/common/collect/ImmutableMap$Builder.put:(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap$Builder;
+        63: getstatic     #148                // Field net/minecraft/world/entity/Pose.SLEEPING:Lnet/minecraft/world/entity/Pose;
+        66: getstatic     #151                // Field SLEEPING_DIMENSIONS:Lnet/minecraft/world/entity/EntityDimensions;
+        69: invokevirtual #142                // Method com/google/common/collect/ImmutableMap$Builder.put:(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap$Builder;
+        72: getstatic     #154                // Field net/minecraft/world/entity/Pose.FALL_FLYING:Lnet/minecraft/world/entity/Pose;
+        75: ldc           #98                 // float 0.6f
+        77: ldc           #98                 // float 0.6f
+        79: invokestatic  #100                // Method net/minecraft/world/entity/EntityDimensions.scalable:(FF)Lnet/minecraft/world/entity/EntityDimensions;
+        82: ldc           #157                // float 0.4f
+        84: invokevirtual #105                // Method net/minecraft/world/entity/EntityDimensions.withEyeHeight:(F)Lnet/minecraft/world/entity/EntityDimensions;
+        87: invokevirtual #142                // Method com/google/common/collect/ImmutableMap$Builder.put:(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap$Builder;
+        90: getstatic     #158                // Field net/minecraft/world/entity/Pose.SWIMMING:Lnet/minecraft/world/entity/Pose;
+        93: ldc           #98                 // float 0.6f
+        95: ldc           #98                 // float 0.6f
+        97: invokestatic  #100                // Method net/minecraft/world/entity/EntityDimensions.scalable:(FF)Lnet/minecraft/world/entity/EntityDimensions;
+       100: ldc           #157                // float 0.4f
+       102: invokevirtual #105                // Method net/minecraft/world/entity/EntityDimensions.withEyeHeight:(F)Lnet/minecraft/world/entity/EntityDimensions;
+       105: invokevirtual #142                // Method com/google/common/collect/ImmutableMap$Builder.put:(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap$Builder;
+       108: getstatic     #161                // Field net/minecraft/world/entity/Pose.SPIN_ATTACK:Lnet/minecraft/world/entity/Pose;
+       111: ldc           #98                 // float 0.6f
+       113: ldc           #98                 // float 0.6f
+       115: invokestatic  #100                // Method net/minecraft/world/entity/EntityDimensions.scalable:(FF)Lnet/minecraft/world/entity/EntityDimensions;
+       118: ldc           #157                // float 0.4f
+       120: invokevirtual #105                // Method net/minecraft/world/entity/EntityDimensions.withEyeHeight:(F)Lnet/minecraft/world/entity/EntityDimensions;
+       123: invokevirtual #142                // Method com/google/common/collect/ImmutableMap$Builder.put:(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap$Builder;
+       126: getstatic     #164                // Field net/minecraft/world/entity/Pose.CROUCHING:Lnet/minecraft/world/entity/Pose;
+       129: ldc           #98                 // float 0.6f
+       131: ldc           #167                // float 1.5f
+       133: invokestatic  #100                // Method net/minecraft/world/entity/EntityDimensions.scalable:(FF)Lnet/minecraft/world/entity/EntityDimensions;
+       136: ldc           #168                // float 1.27f
+       138: invokevirtual #105                // Method net/minecraft/world/entity/EntityDimensions.withEyeHeight:(F)Lnet/minecraft/world/entity/EntityDimensions;
+       141: invokestatic  #109                // Method net/minecraft/world/entity/EntityAttachments.builder:()Lnet/minecraft/world/entity/EntityAttachments$Builder;
+       144: getstatic     #115                // Field net/minecraft/world/entity/EntityAttachment.VEHICLE:Lnet/minecraft/world/entity/EntityAttachment;
+       147: getstatic     #92                 // Field DEFAULT_VEHICLE_ATTACHMENT:Lnet/minecraft/world/phys/Vec3;
+       150: invokevirtual #121                // Method net/minecraft/world/entity/EntityAttachments$Builder.attach:(Lnet/minecraft/world/entity/EntityAttachment;Lnet/minecraft/world/phys/Vec3;)Lnet/minecraft/world/entity/EntityAttachments$Builder;
+       153: invokevirtual #127                // Method net/minecraft/world/entity/EntityDimensions.withAttachments:(Lnet/minecraft/world/entity/EntityAttachments$Builder;)Lnet/minecraft/world/entity/EntityDimensions;
+       156: invokevirtual #142                // Method com/google/common/collect/ImmutableMap$Builder.put:(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap$Builder;
+       159: getstatic     #169                // Field net/minecraft/world/entity/Pose.DYING:Lnet/minecraft/world/entity/Pose;
+       162: ldc           #172                // float 0.2f
+       164: ldc           #172                // float 0.2f
+       166: invokestatic  #173                // Method net/minecraft/world/entity/EntityDimensions.fixed:(FF)Lnet/minecraft/world/entity/EntityDimensions;
+       169: ldc           #104                // float 1.62f
+       171: invokevirtual #105                // Method net/minecraft/world/entity/EntityDimensions.withEyeHeight:(F)Lnet/minecraft/world/entity/EntityDimensions;
+       174: invokevirtual #142                // Method com/google/common/collect/ImmutableMap$Builder.put:(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap$Builder;
+       177: invokevirtual #176                // Method com/google/common/collect/ImmutableMap$Builder.build:()Lcom/google/common/collect/ImmutableMap;
+       180: putstatic     #66                 // Field POSES:Ljava/util/Map;
+       183: ldc           #12                 // class net/minecraft/world/entity/Avatar
+       185: getstatic     #180                // Field net/minecraft/network/syncher/EntityDataSerializers.HUMANOID_ARM:Lnet/minecraft/network/syncher/EntityDataSerializer;
+       188: invokestatic  #186                // Method net/minecraft/network/syncher/SynchedEntityData.defineId:(Ljava/lang/Class;Lnet/minecraft/network/syncher/EntityDataSerializer;)Lnet/minecraft/network/syncher/EntityDataAccessor;
+       191: putstatic     #11                 // Field DATA_PLAYER_MAIN_HAND:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       194: ldc           #12                 // class net/minecraft/world/entity/Avatar
+       196: getstatic     #190                // Field net/minecraft/network/syncher/EntityDataSerializers.BYTE:Lnet/minecraft/network/syncher/EntityDataSerializer;
+       199: invokestatic  #186                // Method net/minecraft/network/syncher/SynchedEntityData.defineId:(Ljava/lang/Class;Lnet/minecraft/network/syncher/EntityDataSerializer;)Lnet/minecraft/network/syncher/EntityDataAccessor;
+       202: putstatic     #27                 // Field DATA_PLAYER_MODE_CUSTOMISATION:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       205: return
+}
