@@ -68,6 +68,9 @@ public final class SncBlocks {
     /** Structure-only painted Mercadão sign; no item, no drop, not in the creative tab. */
     public static final Block MERCADAO_SIGN = register("mercadao_sign", com.snc.energies.block.MercadaoSignBlock::new,
         Block.Properties.ofFullCopy(Blocks.SPRUCE_PLANKS).strength(1.5f, 4.0f).noLootTable().noOcclusion());
+    /** Agroindustrial bulk storage: 2x2x3 grain bin with a single shared inventory. */
+    public static final Block SILO = register("silo", com.snc.energies.block.SiloBlock::new,
+        blkProps(3.0f, 6.0f).noOcclusion().pushReaction(net.minecraft.world.level.material.PushReaction.IMMOVEABLE));
 
 	private static Block register(String name, Function<Block.Properties, Block> factory, Block.Properties properties) {
 		ResourceKey<Block> key = ResourceKey.create(Registries.BLOCK, SncEnergies.id(name));

@@ -42,6 +42,8 @@ public final class SncBlockEntities {
         "mercadao_shelf", new BlockEntityType<>(com.snc.energies.blockentity.MercadaoShelfBlockEntity::new, Set.of(SncBlocks.MERCADAO_SHELF)));
     public static final BlockEntityType<com.snc.energies.blockentity.MercadaoAnchorBlockEntity> MERCADAO_ANCHOR = register(
         "mercadao_anchor", new BlockEntityType<>(com.snc.energies.blockentity.MercadaoAnchorBlockEntity::new, Set.of(SncBlocks.MERCADAO_ANCHOR)));
+    public static final BlockEntityType<com.snc.energies.blockentity.SiloBlockEntity> SILO = register(
+        "silo", new BlockEntityType<>(com.snc.energies.blockentity.SiloBlockEntity::new, Set.of(SncBlocks.SILO)));
 
 	private SncBlockEntities() {
 	}

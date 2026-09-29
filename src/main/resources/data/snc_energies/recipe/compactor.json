@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PBP",
+    "GCG",
+    "PBP"
+  ],
+  "key": {
+    "P": "snc_energies:steel_plate",
+    "B": "snc_energies:bronze_ingot",
+    "G": "snc_energies:steel_gear",
+    "C": "snc_energies:basic_circuit"
+  },
+  "result": {
+    "id": "snc_energies:compactor",
+    "count": 1
+  }
+}

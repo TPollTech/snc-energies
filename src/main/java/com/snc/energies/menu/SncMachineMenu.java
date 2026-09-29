@@ -98,4 +98,9 @@ public abstract class SncMachineMenu extends AbstractContainerMenu {
 	public static ContainerData dummyData() {
 		return new net.minecraft.world.inventory.SimpleContainerData(7);
 	}
+
+	/** Pure storage menus (silo) have no burn budget; bars show fill instead. */
+	public boolean isProductionMenu() {
+		return true;
+	}
 }

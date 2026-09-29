@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PP",
+    "GG",
+    "PP"
+  ],
+  "key": {
+    "P": "snc_energies:steel_plate",
+    "G": "snc_energies:steel_gear"
+  },
+  "result": {
+    "id": "snc_energies:silo",
+    "count": 1
+  }
+}

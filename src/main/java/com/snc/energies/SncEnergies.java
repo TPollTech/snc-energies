@@ -39,6 +39,7 @@ public class SncEnergies implements ModInitializer {
 		SncMenus.bootstrap();
 		SncRecipes.bootstrap();
 		SncBiomeModifications.bootstrap();
+		com.snc.energies.world.MercadaoRetrogen.bootstrap();
 		com.snc.energies.compat.AdventuresCompatibility.bootstrap();
 		LOGGER.info("SNC Energies initialized: the grid is live!");
 	}

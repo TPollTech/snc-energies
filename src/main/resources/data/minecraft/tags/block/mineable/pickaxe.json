@@ -24,6 +24,8 @@
     "snc_energies:steam_pipe",
     "snc_energies:tin_ore",
     "snc_energies:deepslate_tin_ore",
-    "snc_energies:item_pipe"
+    "snc_energies:item_pipe",
+    "snc_energies:compactor",
+    "snc_energies:silo"
   ]
 }

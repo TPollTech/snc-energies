@@ -16,7 +16,8 @@ KINDS={
  'grain_dryer':(3,3,4,'Secador Industrial','Industrial Dryer'),
  'oil_extractor':(3,2,2,'Extratora de Óleo','Oil Extractor'),
  'voltaic_refinery':(3,3,3,'Refinaria Voltaica','Voltaic Refinery'),
- 'mineral_synthesizer':(3,3,3,'Sintetizador Mineral','Mineral Synthesizer')}
+ 'mineral_synthesizer':(3,3,3,'Sintetizador Mineral','Mineral Synthesizer'),
+ 'compactor':(2,1,2,'Compactadora','Compactor')}
 STEEL,BRONZE,BRICK,CORE='industry_steel','industry_bronze','wood_stove_brick','industry_core'
 GEOMETRY={}
 for name,(w,d,h,pt,en) in KINDS.items():
@@ -50,6 +51,13 @@ for name,(w,d,h,pt,en) in KINDS.items():
         boxes += [(2,3,3,17,25,29,STEEL),(27,3,3,44,24,29,BRONZE),
             (17,9,12,30,17,20,STEEL),(4,25,5,15,31,27,BRONZE),
             (30,24,6,41,28,26,STEEL),(6,10,1,13,18,4,'industry_gauge')]
+    elif name=='compactor':
+        # Agroindustrial baling press: steel frame, amber side panels and a
+        # heavy press ram under a bronze housing; intake throat on the front.
+        boxes += [(0,0,0,x,3,z,STEEL),(2,3,2,26,22,14,STEEL),
+            (26,3,2,30,25,14,BRONZE),(3,6,3,6,19,13,'industry_panel'),
+            (6,23,4,22,27,12,STEEL),(4,27,3,24,31,13,BRONZE),
+            (8,8,0,20,20,2,STEEL),(11,10,0,17,18,3,'industry_gauge')]
     elif name=='voltaic_refinery':
         for px in [1,x-7]:
             for pz in [1,z-7]: boxes.append((px,3,pz,px+6,y-4,pz+6,STEEL))
@@ -93,6 +101,32 @@ for name,(w,d,h,pt,en) in KINDS.items():
     write(DATA/f'loot_table/blocks/{name}.json',dict(type='minecraft:block',pools=[dict(rolls=1,
         condition=dict(type='minecraft:match_block',blocks=f'snc_energies:{name}',state=dict(part='0')),
         entries=[dict(type='minecraft:item',name=f'snc_energies:{name}',condition=dict(type='minecraft:survives_explosion'))])]))
+
+# Silo: 2x2x3 bulk bin with no orientation; twelve cell models + item preview.
+silo_boxes=[(0,0,0,32,2,32,STEEL)]
+for base in [2,16,30]:
+    silo_boxes+=[(1,base,1,31,base+12,31,'industry_panel'),(0,base+12,0,32,base+14,32,STEEL)]
+silo_boxes+=[(2,44,2,30,48,30,BRONZE),(10,44,10,22,48,22,STEEL),(12,18,0,20,26,2,'industry_gauge')]
+silo_textures={t:f'snc_energies:block/{t}' for t in {b[6] for b in silo_boxes}};silo_textures['particle']=f'snc_energies:block/{STEEL}'
+variants={}
+for part in range(12):
+    ox=(part%2)*16;oz=((part//2)%2)*16;oy=(part//4)*16
+    elements=[]
+    for a,b,c,aa,bb,cc,texture in silo_boxes:
+        lower=[max(a,ox),max(b,oy),max(c,oz)];upper=[min(aa,ox+16),min(bb,oy+16),min(cc,oz+16)]
+        if any(lo>=hi for lo,hi in zip(lower,upper)):continue
+        elements.append(element((*[v-o for v,o in zip(lower,[ox,oy,oz])],*[v-o for v,o in zip(upper,[ox,oy,oz])],texture)))
+    write(ASSETS/f'models/block/silo_{part}.json',dict(textures=silo_textures,elements=elements))
+    variants[f'part={part}']=dict(model=f'snc_energies:block/silo_{part}')
+write(ASSETS/'blockstates/silo.json',dict(variants=variants))
+sx,sz,sy=32,32,48
+sscale=1/max(2,2,3)
+smodel=[element((a*sscale+(16-sx*sscale)/2,b*sscale,c*sscale+(16-sz*sscale)/2,aa*sscale+(16-sx*sscale)/2,bb*sscale,cc*sscale+(16-sz*sscale)/2,t)) for a,b,c,aa,bb,cc,t in silo_boxes]
+write(ASSETS/'models/item/silo.json',dict(textures=silo_textures,elements=smodel,display=dict(gui=dict(rotation=[25,225,0],translation=[0,0,0],scale=[.9,.9,.9]))))
+write(ASSETS/'items/silo.json',dict(model=dict(type='minecraft:model',model='snc_energies:item/silo')))
+write(DATA/'loot_table/blocks/silo.json',dict(type='minecraft:block',pools=[dict(rolls=1,
+    condition=dict(type='minecraft:match_block',blocks='snc_energies:silo',state=dict(part='0')),
+    entries=[dict(type='minecraft:item',name='snc_energies:silo',condition=dict(type='minecraft:survives_explosion'))])]))
 
 # Same thin, bounded geometry as cables; distinct bronze texture and steam-only network.
 for suffix in ['', '_down','_up','_north','_south','_west','_east']:
@@ -174,10 +208,13 @@ recipe('laminator',['SSS','BRB','SSS'],dict(S=S('steel_ingot'),B=S('bronze_ingot
 recipe('steel_gear',[' P ','PBP',' P '],dict(P=S('steel_plate'),B=S('bronze_ingot')))
 recipe('basic_circuit',['WRW','PSP','WRW'],dict(W=S('copper_wire'),R='minecraft:redstone',P=S('steel_plate'),S='minecraft:quartz'))
 recipe('grain_dryer',['PPP','GCG','PFP'],dict(P=S('steel_plate'),G=S('steel_gear'),C=S('basic_circuit'),F='minecraft:furnace'))
+recipe('compactor',['PBP','GCG','PBP'],dict(P=S('steel_plate'),B=S('bronze_ingot'),G=S('steel_gear'),C=S('basic_circuit')))
 recipe('oil_extractor',['PCP','GSG','PPP'],dict(P=S('steel_plate'),G=S('steel_gear'),C=S('basic_circuit'),S=S('seed_press')))
 recipe('voltaic_refinery',['PCP','PGP','PCP'],dict(P=S('insulated_plate'),C=S('basic_circuit'),G=S('steel_gear')))
 recipe('advanced_circuit',['VSV','WCW','VSV'],dict(V=S('refined_voltaite'),S=S('steel_plate'),W=S('copper_wire'),C=S('basic_circuit')))
 recipe('mineral_synthesizer',['PAP','VRV','PAP'],dict(P=S('insulated_plate'),A=S('advanced_circuit'),V=S('refined_voltaite'),R='minecraft:diamond'))
+# Agroindustrial storage: plate bin with gear rollers, no orientation.
+recipe('silo',['PP','GG','PP'],dict(P=S('steel_plate'),G=S('steel_gear')))
 # Existing blocks keep their IDs and saved state; only new crafting requires progression.
 recipe('coal_generator',['SRS','RFR','SRS'],dict(S=S('steel_ingot'),R='minecraft:redstone',F='minecraft:furnace'))
 recipe('electric_furnace',['PPP','WFW','PPP'],dict(P=S('steel_plate'),W=S('copper_wire'),F='minecraft:furnace'))
@@ -188,7 +225,7 @@ shapeless('sawdust_briquette',[S('sawdust')]*4,S('biomass_briquette'))
 for tag in ['mineable/pickaxe','needs_stone_tool']:
     path=RES/f'data/minecraft/tags/block/{tag}.json'
     data=json.loads(path.read_text(encoding='utf-8-sig')) if path.exists() else dict(replace=False,values=[])
-    names=list(KINDS)+['steam_pipe','tin_ore','deepslate_tin_ore','item_pipe']
+    names=list(KINDS)+['steam_pipe','tin_ore','deepslate_tin_ore','item_pipe','silo']
     for name in names:
         if S(name) not in data['values']:data['values'].append(S(name))
     write(path,data)
@@ -196,7 +233,10 @@ for tag in ['mineable/pickaxe','needs_stone_tool']:
 TEXT={f'block.snc_energies.{name}':(v[3],v[4]) for name,v in KINDS.items()}
 TEXT.update({f'item.snc_energies.{name}':v for name,v in MATERIALS.items()})
 TEXT.update({'block.snc_energies.steam_pipe':('Tubo de Vapor','Steam Pipe'),'block.snc_energies.item_pipe':('Tubo de Itens','Item Duct'),'block.snc_energies.tin_ore':('Minério de Estanho','Tin Ore'),
- 'block.snc_energies.deepslate_tin_ore':('Minério de Estanho de Ardósia','Deepslate Tin Ore')})
+ 'block.snc_energies.deepslate_tin_ore':('Minério de Estanho de Ardósia','Deepslate Tin Ore'),
+ 'block.snc_energies.silo':('Silo','Silo'),
+ 'gui.snc_energies.panel.subtitle.silo':('Graneleira · 16 fileiras de 16.384','Bulk bin · 16 rows of 16,384'),
+ 'gui.snc_energies.panel.role.intake':('Recepção','Intake'),'gui.snc_energies.panel.role.row':('Fileira','Row'),'gui.snc_energies.panel.role.out':('Saída','Output')})
 for code,values in enumerate([('Falta insumo','Need ingredients'),('Falta combustível','Need fuel'),('Operando','Running'),('Saída cheia','Output full'),('Falta água','Need water'),('Falta vapor','Need steam'),('Falta energia','Need power'),('Redstone inativa','Redstone inactive'),('Redstone invertida','Inverted redstone')]):
     TEXT[f'gui.snc_energies.industry_status.{code}']=values
 TEXT.update({'item.snc_energies.screwdriver':('Chave de Fenda','Screwdriver'),

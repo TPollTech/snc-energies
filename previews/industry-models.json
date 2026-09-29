@@ -6539,5 +6539,626 @@
         }
       }
     ]
+  },
+  "compactor": {
+    "dimensions": [
+      2,
+      1,
+      2
+    ],
+    "elements": [
+      {
+        "from": [
+          0,
+          0,
+          0
+        ],
+        "to": [
+          32,
+          3,
+          16
+        ],
+        "faces": {
+          "north": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "south": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "east": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "west": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "up": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "down": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          }
+        }
+      },
+      {
+        "from": [
+          0,
+          0,
+          0
+        ],
+        "to": [
+          32,
+          3,
+          16
+        ],
+        "faces": {
+          "north": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "south": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "east": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "west": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "up": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "down": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          }
+        }
+      },
+      {
+        "from": [
+          2,
+          3,
+          2
+        ],
+        "to": [
+          26,
+          22,
+          14
+        ],
+        "faces": {
+          "north": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "south": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "east": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "west": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "up": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "down": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          }
+        }
+      },
+      {
+        "from": [
+          26,
+          3,
+          2
+        ],
+        "to": [
+          30,
+          25,
+          14
+        ],
+        "faces": {
+          "north": {
+            "texture": "#industry_bronze",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "south": {
+            "texture": "#industry_bronze",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "east": {
+            "texture": "#industry_bronze",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "west": {
+            "texture": "#industry_bronze",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "up": {
+            "texture": "#industry_bronze",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "down": {
+            "texture": "#industry_bronze",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          }
+        }
+      },
+      {
+        "from": [
+          3,
+          6,
+          3
+        ],
+        "to": [
+          6,
+          19,
+          13
+        ],
+        "faces": {
+          "north": {
+            "texture": "#industry_panel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "south": {
+            "texture": "#industry_panel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "east": {
+            "texture": "#industry_panel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "west": {
+            "texture": "#industry_panel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "up": {
+            "texture": "#industry_panel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "down": {
+            "texture": "#industry_panel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          }
+        }
+      },
+      {
+        "from": [
+          6,
+          23,
+          4
+        ],
+        "to": [
+          22,
+          27,
+          12
+        ],
+        "faces": {
+          "north": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "south": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "east": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "west": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "up": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "down": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          }
+        }
+      },
+      {
+        "from": [
+          4,
+          27,
+          3
+        ],
+        "to": [
+          24,
+          31,
+          13
+        ],
+        "faces": {
+          "north": {
+            "texture": "#industry_bronze",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "south": {
+            "texture": "#industry_bronze",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "east": {
+            "texture": "#industry_bronze",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "west": {
+            "texture": "#industry_bronze",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "up": {
+            "texture": "#industry_bronze",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "down": {
+            "texture": "#industry_bronze",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          }
+        }
+      },
+      {
+        "from": [
+          8,
+          8,
+          0
+        ],
+        "to": [
+          20,
+          20,
+          2
+        ],
+        "faces": {
+          "north": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "south": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "east": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "west": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "up": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "down": {
+            "texture": "#industry_steel",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          }
+        }
+      },
+      {
+        "from": [
+          11,
+          10,
+          0
+        ],
+        "to": [
+          17,
+          18,
+          3
+        ],
+        "faces": {
+          "north": {
+            "texture": "#industry_gauge",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "south": {
+            "texture": "#industry_gauge",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "east": {
+            "texture": "#industry_gauge",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "west": {
+            "texture": "#industry_gauge",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "up": {
+            "texture": "#industry_gauge",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          "down": {
+            "texture": "#industry_gauge",
+            "uv": [
+              0,
+              0,
+              16,
+              16
+            ]
+          }
+        }
+      }
+    ]
   }
 }

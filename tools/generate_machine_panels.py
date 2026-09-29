@@ -15,7 +15,8 @@ LABELS={
  'stored':('Reserva da rede','Grid reserve'),'reserve':('Reserva','Reserve'),
  'press':('Acionar prensa','Press lever'),'crank':('Girar manivela','Turn crank'),
  'redstone':('Alternar redstone','Toggle redstone'),
- 'sample_hint':('Amostra preservada ao produzir','Sample retained during production')}
+ 'sample_hint':('Amostra preservada ao produzir','Sample retained during production'),
+ 'intake':('Recepção','Intake'),'row':('Fileira','Row'),'out':('Saída','Output')}
 def rect(x,y,w,h,c): p['rects'].append([int(x),int(y),int(w),int(h),c])
 def line(x,y,xx,yy,c,width=1):
     steps=max(1,int(max(abs(xx-x),abs(yy-y))))
@@ -94,6 +95,24 @@ for y in range(54,82,4):rect(109,y,13,2,'#c9c39a')
 rect(91,84,47,7,'#879672');bar('progress',90,95,48,4);slot(0,107,54,'input')
 slot(1,180,86,'oil');slot(2,215,86,'residue');pipe(151,92,176,92)
 bar('work',181,117,47,4,'#b3c681');p['button']=[24,109,98,18]
+
+begin('compactor',('Pistão e prensagem · fardos em lote','Piston press · batch baling'),'#3f463c','#dfb84f','steel')
+slot(0,34,79,'input');slot(4,207,79,'product')
+pipe(54,88,83,88);pipe(176,88,205,88)
+panel(88,48,85,70,'#4b5546');rect(96,56,69,26,'#202c32')
+for y in [60,68,76]:rect(100,y,61,3,'#dfb84f')
+rect(112,86,37,18,'#111d23');ring(130,95,7,'#dfb84f',3)
+bar('progress',49,86,165,4)
+bar('energy',190,46,41,5,'#aad2e5')
+
+begin('silo',('Graneleira · 16 fileiras de 16.384','Bulk bin · 16 rows of 16,384'),'#4a4231','#c9b06a','timber')
+panel(84,40,96,88,'#63512f')
+for x in range(88,178,12):line(x,44,x,124,'#574429')
+for column in range(4):
+    for row in range(4):slot(1+column*4+row,90+column*20,54+row*19,'row')
+slot(0,34,60,'intake');slot(17,222,60,'out')
+pipe(54,88,83,88);pipe(176,88,205,88)
+bar('work',30,112,45,5,'#c9b06a')
 
 begin('biomass_boiler',('Água + biomassa · circuito de vapor','Water + biomass · steam circuit'),'#514437','#e5ad6c','steel')
 slot(2,29,101,'fuel');slot(3,29,55,'water');slot(6,210,101,'bucket')

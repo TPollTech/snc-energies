@@ -1,0 +1,40 @@
+{
+  "variants": {
+    "part=0": {
+      "model": "snc_energies:block/silo_0"
+    },
+    "part=1": {
+      "model": "snc_energies:block/silo_1"
+    },
+    "part=2": {
+      "model": "snc_energies:block/silo_2"
+    },
+    "part=3": {
+      "model": "snc_energies:block/silo_3"
+    },
+    "part=4": {
+      "model": "snc_energies:block/silo_4"
+    },
+    "part=5": {
+      "model": "snc_energies:block/silo_5"
+    },
+    "part=6": {
+      "model": "snc_energies:block/silo_6"
+    },
+    "part=7": {
+      "model": "snc_energies:block/silo_7"
+    },
+    "part=8": {
+      "model": "snc_energies:block/silo_8"
+    },
+    "part=9": {
+      "model": "snc_energies:block/silo_9"
+    },
+    "part=10": {
+      "model": "snc_energies:block/silo_10"
+    },
+    "part=11": {
+      "model": "snc_energies:block/silo_11"
+    }
+  }
+}

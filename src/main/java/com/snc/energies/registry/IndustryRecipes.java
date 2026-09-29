@@ -36,6 +36,14 @@ public final class IndustryRecipes {
         result.add(new Process("mineral_matrix",REFINERY,Items.COBBLESTONE,4,VEGETABLE_OIL,1,false,MINERAL_MATRIX,1,Items.AIR,0,200));
         for(Item sample:new Item[]{Items.RAW_IRON,Items.RAW_COPPER,Items.RAW_GOLD,RAW_TIN,RAW_VOLTAITE})
             result.add(new Process("synthesis_"+sample,SYNTHESIZER,MINERAL_MATRIX,1,sample,1,true,sample,2,Items.AIR,0,400));
+        // Compactor (agroindustrial tier): bulk batching of farm and workshop outputs.
+        result.add(new Process("hay_block",COMPACTOR,Items.WHEAT,9,Items.AIR,0,false,Items.HAY_BLOCK,1,Items.AIR,0,160));
+        result.add(new Process("hay_block_rice",COMPACTOR,RICE,9,Items.AIR,0,false,Items.HAY_BLOCK,1,Items.AIR,0,160));
+        result.add(new Process("bone_block",COMPACTOR,Items.BONE_MEAL,9,Items.AIR,0,false,Items.BONE_BLOCK,1,Items.AIR,0,160));
+        result.add(new Process("rice_husk_bale",COMPACTOR,RICE_HUSK,6,Items.AIR,0,false,BIOMASS_BRIQUETTE,3,Items.AIR,0,160));
+        result.add(new Process("sawdust_briquette_batch",COMPACTOR,SAWDUST,6,Items.AIR,0,false,BIOMASS_BRIQUETTE,3,Items.AIR,0,160));
+        result.add(new Process("soy_meal_bale",COMPACTOR,SOY_MEAL,8,Items.AIR,0,false,INSULATED_PLATE,1,Items.AIR,0,200));
+        result.add(new Process("sugar_to_cake_base",COMPACTOR,Items.SUGAR,4,Items.EGG,1,false,Items.CAKE,1,Items.AIR,0,200));
         return List.copyOf(result);
     }
     public static Process find(IndustryKind kind,ItemStack a,ItemStack b) {

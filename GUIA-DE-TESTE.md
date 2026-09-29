@@ -1,4 +1,4 @@
-# SNC Energies 0.6.6 — teste no jogo
+# SNC Energies 0.7.0 — teste no jogo
 
 Instalado em `C:/Users/enzot/curseforge/minecraft/Instances/SNC energies/mods/snc-energies.jar`, junto do SNC Adventures. Reinicie o Minecraft para carregar os JARs novos.
 

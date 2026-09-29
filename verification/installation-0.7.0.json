@@ -1,0 +1,13 @@
+{
+  "version": "0.7.0",
+  "installed": "2026-09-29T18:19:21-03:00",
+  "jar": "Instances/SNC energies/mods/snc-energies.jar",
+  "sha256": "7D5261F830B9C965CC414D8E0F13659D7AFB7E2B9E06E7F0C086DB55D013FAE0",
+  "previous_sha256": "8F813C9E8987FD96387B5AC6D932F1F1C5DC480F6B7B419B79C3454FF8E648D9 (0.6.6, instalada às 11:16 de 29/09)",
+  "backup": "Instances/SNC energies/snc-backups/20260929-181921-before-0.7.0/snc-energies-installed.jar",
+  "backup_sha256": "8F813C9E8987FD96387B5AC6D932F1F1C5DC480F6B7B419B79C3454FF8E648D9",
+  "functionalSuite": {
+    "standalone": "629 verificações, FUNCTIONAL TESTS PASSED (verification/0.7.0-standalone.log) — 68 verificações novas cobrem a Compactadora (contrato multibloco + 7 receitas conservativas), o Silo (anel 2x2x3 sem orientação, um controlador, granel 16 fileiras de 16.384 sem mistura, buffers de recepção/saída, persistência amostra+contador, teardown com drop único) e o básico do retrogen (gamerule registrada, toggle, caminho de força)"
+  },
+  "note": "v0.7.0 — Tier Agroindustrial completo: Compactadora (11º industrial, 2x1x2, elétrica tier 4, 120 E por lote) compacta trigo/arroz em fardos, farelo/serragem/casca em briquetes, farinha de osso em bloco e prato de soja em chapa isolada, além do bolo com ovo. Silo novo (2x2x3 sem orientação, 16 fileiras de 16.384 = 262.144 itens, um tipo por fileira, recepção por cima, saída por baixo). Retrogen opcional do Mercadão: /gamerule snc_mercadao_retrogen true + fila por chunk load processada 2 chunks/tick, e comando admin /retrogen mercadao [here|at <pos>] (raiz respeita gamerule/proximidade; here/at força). Regra 26.3: gamerules são entradas de registry com id lowercase. Notas: com produção de energia, colchetes: nenhum ID antigo alterado; compatibilidade de mundos preservada."
+}

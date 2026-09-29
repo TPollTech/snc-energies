@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-29T11:17:09-03:00",
+  "checked_at": "2026-09-29T18:20:21-03:00",
   "instance": "C:\\Users\\enzot\\curseforge\\minecraft\\Instances\\SNC energies",
   "expected_manifest": {
-    "sha256": "8F813C9E8987FD96387B5AC6D932F1F1C5DC480F6B7B419B79C3454FF8E648D9",
-    "version": "0.6.6"
+    "sha256": "7D5261F830B9C965CC414D8E0F13659D7AFB7E2B9E06E7F0C086DB55D013FAE0",
+    "version": "0.7.0"
   },
   "game_running": [
     "java.exe"
@@ -30,11 +30,11 @@
     {
       "jar": "snc-energies.jar",
       "kind": "snc-energies",
-      "size_bytes": 2158155,
+      "size_bytes": 2203238,
       "zip_integrity": true,
       "mod_id": "snc_energies",
-      "mod_version": "0.6.6",
-      "sha256": "8F813C9E8987FD96387B5AC6D932F1F1C5DC480F6B7B419B79C3454FF8E648D9",
+      "mod_version": "0.7.0",
+      "sha256": "7D5261F830B9C965CC414D8E0F13659D7AFB7E2B9E06E7F0C086DB55D013FAE0",
       "manifest_status": "ok"
     }
   ],

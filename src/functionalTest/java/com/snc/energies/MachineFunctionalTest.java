@@ -143,6 +143,7 @@ public final class MachineFunctionalTest implements DedicatedServerModInitialize
         MercadaoFunctionalTest.run(world, player);
         TractorFunctionalTest.run(world, player);
         HarvesterFunctionalTest.run(world, player);
+        AgroFunctionalTest.run(world, player);
         // Worldgen probe: the vanilla village is the positive control. If the
         // Mercadão entries are absent while vanilla's are present, the mod's
         // worldgen datapack never loaded (wrong folder layout).

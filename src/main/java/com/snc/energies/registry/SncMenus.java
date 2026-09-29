@@ -60,6 +60,9 @@ public final class SncMenus {
 	public static final MenuType<com.snc.energies.menu.GrainCartMenu> GRAIN_CART = Registry.register(
 			BuiltInRegistries.MENU, SncEnergies.id("grain_cart"),
 			new MenuType<>(com.snc.energies.menu.GrainCartMenu::new, FeatureFlags.VANILLA_SET));
+	public static final MenuType<com.snc.energies.menu.SiloMenu> SILO = Registry.register(
+			BuiltInRegistries.MENU, SncEnergies.id("silo"),
+			new MenuType<>(com.snc.energies.menu.SiloMenu::new, FeatureFlags.VANILLA_SET));
 
 	private SncMenus() {
 	}

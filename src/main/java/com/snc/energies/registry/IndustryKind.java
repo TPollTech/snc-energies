@@ -10,7 +10,8 @@ public enum IndustryKind {
     DRYER("grain_dryer", 3,3,4,4,80),
     EXTRACTOR("oil_extractor", 3,2,2,4,80),
     REFINERY("voltaic_refinery", 3,3,3,5,240),
-    SYNTHESIZER("mineral_synthesizer", 3,3,3,5,400);
+    SYNTHESIZER("mineral_synthesizer", 3,3,3,5,400),
+    COMPACTOR("compactor", 2,1,2,4,120);
     public final String id;
     public final int width, depth, height, tier, cost;
     IndustryKind(String id,int width,int depth,int height,int tier,int cost) {
