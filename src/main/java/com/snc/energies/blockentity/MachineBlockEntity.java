@@ -40,6 +40,7 @@ public abstract class MachineBlockEntity extends BlockEntity implements EnergyPr
 		if (this instanceof CoalGeneratorBlockEntity generator) return new com.snc.energies.menu.CoalGeneratorMenu(id, inventory, generator);
 		if (this instanceof ElectricFurnaceBlockEntity furnace) return new com.snc.energies.menu.ElectricFurnaceMenu(id, inventory, furnace);
 		if (this instanceof CrusherBlockEntity crusher) return new com.snc.energies.menu.CrusherMenu(id, inventory, crusher);
+		if (this instanceof BeverageMotorBlockEntity motor) return new com.snc.energies.menu.BeverageMotorMenu(id, inventory, motor);
 		return null;
 	}
 

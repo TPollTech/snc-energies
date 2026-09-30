@@ -215,6 +215,9 @@ recipe('advanced_circuit',['VSV','WCW','VSV'],dict(V=S('refined_voltaite'),S=S('
 recipe('mineral_synthesizer',['PAP','VRV','PAP'],dict(P=S('insulated_plate'),A=S('advanced_circuit'),V=S('refined_voltaite'),R='minecraft:diamond'))
 # Agroindustrial storage: plate bin with gear rollers, no orientation.
 recipe('silo',['PP','GG','PP'],dict(P=S('steel_plate'),G=S('steel_gear')))
+# Optional Adventures bridges: the machine engine dock and the electric UV lamp.
+recipe('beverage_motor',['PCP','GRG','PCP'],dict(P=S('steel_plate'),C=S('basic_circuit'),G=S('steel_gear'),R='minecraft:redstone'))
+recipe('electric_uv_lamp',['GWG','GQG','GGG'],dict(G='minecraft:glass',W=S('copper_wire'),Q='minecraft:quartz'))
 # Existing blocks keep their IDs and saved state; only new crafting requires progression.
 recipe('coal_generator',['SRS','RFR','SRS'],dict(S=S('steel_ingot'),R='minecraft:redstone',F='minecraft:furnace'))
 recipe('electric_furnace',['PPP','WFW','PPP'],dict(P=S('steel_plate'),W=S('copper_wire'),F='minecraft:furnace'))
@@ -225,7 +228,7 @@ shapeless('sawdust_briquette',[S('sawdust')]*4,S('biomass_briquette'))
 for tag in ['mineable/pickaxe','needs_stone_tool']:
     path=RES/f'data/minecraft/tags/block/{tag}.json'
     data=json.loads(path.read_text(encoding='utf-8-sig')) if path.exists() else dict(replace=False,values=[])
-    names=list(KINDS)+['steam_pipe','tin_ore','deepslate_tin_ore','item_pipe','silo']
+    names=list(KINDS)+['steam_pipe','tin_ore','deepslate_tin_ore','item_pipe','silo','beverage_motor','electric_uv_lamp']
     for name in names:
         if S(name) not in data['values']:data['values'].append(S(name))
     write(path,data)
@@ -235,6 +238,11 @@ TEXT.update({f'item.snc_energies.{name}':v for name,v in MATERIALS.items()})
 TEXT.update({'block.snc_energies.steam_pipe':('Tubo de Vapor','Steam Pipe'),'block.snc_energies.item_pipe':('Tubo de Itens','Item Duct'),'block.snc_energies.tin_ore':('Minério de Estanho','Tin Ore'),
  'block.snc_energies.deepslate_tin_ore':('Minério de Estanho de Ardósia','Deepslate Tin Ore'),
  'block.snc_energies.silo':('Silo','Silo'),
+ 'block.snc_energies.beverage_motor':('Motor de Bebidas','Beverage Motor'),
+ 'block.snc_energies.electric_uv_lamp':('Lâmpada UV Elétrica','Electric UV Lamp'),
+ 'gui.snc_energies.panel.subtitle.beverage_motor':('Motor de máquinas · moenda e prensa','Machine motor · mill and press'),
+ 'gui.snc_energies.uv.paid':('Operando com energia própria','Running on its own energy'),
+ 'gui.snc_energies.uv.unpaid':('Sem energia — comprando um ciclo','Out of energy — buying a cycle'),
  'gui.snc_energies.panel.subtitle.silo':('Graneleira · 16 fileiras de 16.384','Bulk bin · 16 rows of 16,384'),
  'gui.snc_energies.panel.role.intake':('Recepção','Intake'),'gui.snc_energies.panel.role.row':('Fileira','Row'),'gui.snc_energies.panel.role.out':('Saída','Output')})
 for code,values in enumerate([('Falta insumo','Need ingredients'),('Falta combustível','Need fuel'),('Operando','Running'),('Saída cheia','Output full'),('Falta água','Need water'),('Falta vapor','Need steam'),('Falta energia','Need power'),('Redstone inativa','Redstone inactive'),('Redstone invertida','Inverted redstone')]):
@@ -259,11 +267,16 @@ TEXT['guide.snc_energies.industry_base']=('Controlador: base esquerda da frente.
 TEXT['guide.snc_energies.boiler']=('Insira itens nos slots marcados Combustível e Água. O recipiente vazio sai no slot Balde. Cada balde fornece 1.000 mB de água; a caldeira consome 10 mB/t para produzir 80 mB/t de vapor. Não consome combustível sem água ou com tanque cheio. Tubos de vapor têm rede separada dos cabos de energia. Bronze: 3 cobres + 1 estanho na bancada. Estanho surge em chunks novos entre Y -16 e 80.', 'Use the labeled Fuel and Water slots. The empty container exits through the Bucket slot. Each bucket adds 1,000 mB water; the boiler uses 10 mB/t to produce 80 mB/t steam. Fuel pauses without water or when full. Steam ducts are separate from power cables. Bronze: craft 3 copper + 1 tin. Tin generates in new chunks between Y -16 and 80.')
 TEXT['guide.snc_energies.turbine']=('Recebe 80 mB/t de vapor e gera 80 E/t. Use a saída de energia no controlador para conectar cabos. Reservas internas param a produção quando cheias; redstone ainda não configura portas neste marco.', 'Consumes 80 mB/t steam and generates 80 E/t. Attach power cables to its controller. Full internal buffers pause generation. Redstone port configuration is not implemented in this milestone.')
 TEXT['guide.snc_energies.synthesis']=('A amostra no segundo slot não é consumida. Cada lote gasta 1 matriz e 160.000 E para gerar 2 minérios brutos. A matriz é produzida com pedra e óleo na refinaria. Esta tecnologia é fictícia. Não gera carvão ou combustível, evitando um ciclo gratuito de energia.', 'The sample in the second slot is retained. Each batch consumes 1 matrix and 160,000 E to produce 2 raw ores. The refinery makes matrix from cobblestone and oil. This technology is fictional. It cannot generate coal or fuel, avoiding a free energy loop.')
+TEXT['guide.snc_energies.body.5']=('Com o Adventures instalado, o bagaço da moenda alimenta o fogão (8.000 E por unidade) e o Motor de Bebidas automatiza a moenda e a prensa: encoste-o na máquina, coloque a cana (ou as uvas) no slot dele e ligue energia; o motor entrega a fornada, guarda o caldo (e o bagaço) e para sozinho sem energia. A Lâmpada UV Elétrica é a variante opt-in da lâmpada UV: gasta energia própria para amadurecer as plantas, sem precisar de redstone; a lâmpada original continua igual. Bebidas, dinheiro e receitas do Adventures mantêm suas regras. Nenhum dos mods depende do outro para iniciar.', 'With Adventures installed, bagasse from its mill fuels the stove (8,000 E per item) and the Beverage Motor automates the mill and the press: dock it against the machine, load cane (or grapes) into its slot and connect power; the motor delivers each batch, stores the juice (and the bagasse) and stops safely without power. The Electric UV Lamp is the opt-in variant of the UV lamp: it spends its own energy to ripen plants, no redstone needed; the original lamp works exactly as before. Drinks, money and Adventures recipes keep their rules. Neither mod depends on the other to start.')
 TEXT['guide.snc_energies.transport']=('Tubos de itens transportam um item por vez até uma máquina ou funil vizinho à rede; armazenam nada e só movem quando o destino aceita. Funis continuam inserindo por cima/lados e retirando por baixo do controlador. Botão no painel do sintetizador alterna operação sempre ativa ou somente com redstone ativa. A chave de fenda configura cada lado das industriais (entrada, saída ou ambos) e, agachando, inverte o modo de redstone. Clique num tubo para editar a lista permitida da célula.', 'Item ducts move one item at a time towards a machine or hopper adjacent to the network; they store nothing and only move items the destination accepts. Hoppers still insert above/beside and extract below the controller. The synthesizer panel button toggles always-on or redstone-only operation. The screwdriver configures each industrial side (input, output or both) and, while sneaking, inverts the redstone mode. Click a duct to edit the cell whitelist.')
 TEXT['guide.snc_energies.title.7']=('08 / Erva-mate opcional', '08 / Optional yerba mate')
 TEXT['guide.snc_energies.body.7']=('Semente de erva-mate: semente de trigo + muda de carvalho. Cultive em terra arada; colha as folhas maduras. Seque as folhas na fornalha ou no secador industrial e moa no moinho. Na bancada: erva-mate moída + tigela + balde de água produzem uma infusão. O balde retorna na fabricação e a tigela retorna ao beber. Este ramo não bloqueia a progressão industrial.', 'Yerba mate seeds: wheat seeds + oak sapling. Grow on farmland and harvest mature leaves. Dry leaves in a furnace or industrial dryer, then grind them in the mill. Craft ground mate + bowl + water bucket into an infusion. Crafting returns the bucket; drinking returns the bowl. This optional branch does not gate industrial progression.')
+# Compactor operating page, in the same simple words as the other machines.
+TEXT['guide.snc_energies.compactor']=('Como usar a compactadora: coloque os itens no slot marcado Insumo; o produto pronto sai no slot Produto. Ela funciona com energia elétrica ligada no controlador (base esquerda da frente). Ela aperta uma fornada de cada vez e para sozinha quando a saída enche ou falta energia. Funis podem colocar e tirar os itens; a chave de fenda escolhe o que cada lado aceita.', 'Using the compactor: put items into the slot marked Input; the finished product comes out of the Product slot. It runs on electric power connected to the controller (front bottom left). It presses one batch at a time and stops by itself when the output fills or power runs out. Hoppers can load and unload items; the screwdriver chooses what each side accepts.')
+# Silo page: bulk storage in plain words (its own caderno page).
+TEXT['guide.snc_energies.silo']=('Como usar o silo: ele guarda muita coisa de um tipo só por fileira. Jogue os grãos em cima (ou use funil) e a recepção espalha sozinha pelas fileiras. Tire por baixo: a saída prepara uma pilha para o funil. Segure uma pilha grande na mão e clique numa fileira para guardar tudo de uma vez; agachando, você tira metade. Culturas diferentes nunca se misturam: cada fileira é de um item só. Derrubar qualquer pedaço devolve o silo inteiro e todo o conteúdo.', 'Using the silo: each row holds a lot of one single item kind. Drop grain on top (or use a hopper) and the intake spreads it across the rows by itself. Take from the bottom: the output prepares one stack for the hopper. Hold a big stack and click a row to store it all at once; sneak to take half back. Different crops never mix: one row is one item kind. Breaking any piece returns the whole silo and every stored item.')
 # Crafting instructions are generated from the actual recipe, including its grid.
-for name in KINDS:
+for name in list(KINDS)+['silo','beverage_motor','electric_uv_lamp']:
     crafting=json.loads((DATA/f'recipe/{name}.json').read_text(encoding='utf-8'))
     descriptions=[]
     for index,language in enumerate(['pt_br','en_us']):
@@ -284,7 +297,37 @@ for name in KINDS:
     TEXT['guide.snc_energies.craft.'+name]=tuple(descriptions)
 for index,language in enumerate(['pt_br','en_us']):
     path=ASSETS/f'lang/{language}.json';data=json.loads(path.read_text(encoding='utf-8-sig'));data.update({k:v[index] for k,v in TEXT.items()});write(path,data)
-write(ROOT/'previews/industry-models.json',{k:dict(dimensions=list(KINDS[k][:3]),elements=[element(b) for b in v]) for k,v in GEOMETRY.items()})
+write(ROOT/'previews/industry-models.json',dict(
+    **{k:dict(dimensions=list(KINDS[k][:3]),elements=[element(b) for b in v]) for k,v in GEOMETRY.items()},
+    silo=dict(dimensions=[2,2,3],elements=[element(b) for b in silo_boxes])))
+# Color-only material manifest so the vehicle studio previews the industrial models offline.
+INDUSTRY_MATERIAL_COLORS={'industry_steel':'#8d969c','industry_bronze':'#b08d57','industry_panel':'#c98a2e',
+    'industry_gauge':'#d8e6d0','wood_stove_brick':'#8a5a3b','industry_core':'#78e5de'}
+(ROOT/'assets/industry-materials.json').write_text(json.dumps(
+    {k:dict(color=c,roughness=.75,metalness=.15) for k,c in INDUSTRY_MATERIAL_COLORS.items()},indent=2)+'\n',encoding='utf-8')
+
+# Optional Adventures bridges: single-block machine and lamp with their own assets.
+motor_variants={f'facing={facing}':dict(model='snc_energies:block/beverage_motor',y=rotation)
+    for facing,rotation in [('north',0),('east',90),('south',180),('west',270)]}
+write(ASSETS/'blockstates/beverage_motor.json',dict(variants=motor_variants))
+write(ASSETS/'models/block/beverage_motor.json',dict(parent='minecraft:block/cube_directional',textures=dict(
+    particle='snc_energies:block/machine_side',down='snc_energies:block/machine_bottom',up='snc_energies:block/machine_top',
+    north='snc_energies:block/beverage_motor_front',south='snc_energies:block/machine_side',
+    east='snc_energies:block/machine_side',west='snc_energies:block/machine_side')))
+write(ASSETS/'models/item/beverage_motor.json',dict(parent='snc_energies:block/beverage_motor',
+    display=dict(gui=dict(rotation=[25,225,0],translation=[0,0,0],scale=[.9,.9,.9]))))
+write(ASSETS/'items/beverage_motor.json',dict(model=dict(type='minecraft:model',model='snc_energies:item/beverage_motor')))
+write(DATA/'loot_table/blocks/beverage_motor.json',dict(type='minecraft:block',pools=[dict(rolls=1,
+    entries=[dict(type='minecraft:item',name='snc_energies:beverage_motor',condition=dict(type='minecraft:survives_explosion'))])]))
+write(ASSETS/'blockstates/electric_uv_lamp.json',dict(variants={'emitting=false':dict(model='snc_energies:block/electric_uv_lamp_off'),
+    'emitting=true':dict(model='snc_energies:block/electric_uv_lamp')}))
+write(ASSETS/'models/block/electric_uv_lamp.json',dict(parent='minecraft:block/cube_all',textures=dict(all='snc_energies:block/electric_uv_lamp')))
+write(ASSETS/'models/block/electric_uv_lamp_off.json',dict(parent='minecraft:block/cube_all',textures=dict(all='snc_energies:block/electric_uv_lamp_off')))
+write(ASSETS/'models/item/electric_uv_lamp.json',dict(parent='snc_energies:block/electric_uv_lamp',
+    display=dict(gui=dict(rotation=[25,225,0],translation=[0,0,0],scale=[.9,.9,.9]))))
+write(ASSETS/'items/electric_uv_lamp.json',dict(model=dict(type='minecraft:model',model='snc_energies:item/electric_uv_lamp')))
+write(DATA/'loot_table/blocks/electric_uv_lamp.json',dict(type='minecraft:block',pools=[dict(rolls=1,
+    entries=[dict(type='minecraft:item',name='snc_energies:electric_uv_lamp',condition=dict(type='minecraft:survives_explosion'))])]))
 print('Industry progression generated: nine multiblocks, tin, steam ducts and tier recipes.')
 
 import base64

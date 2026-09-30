@@ -34,7 +34,7 @@
   "guide.snc_energies.title.4": "05 / Resíduos e energia",
   "guide.snc_energies.body.4": "No fogão: uma casca de arroz gera 8.000 E; uma porção de óleo gera 32.000 E; um briquete gera 40.000 E. Compactar quatro cascas melhora o rendimento. O fogão conserva seu combustível enquanto cheio. Sua estrutura ocupa 3×2 no chão, com chaminé até 3 blocos de altura.",
   "guide.snc_energies.title.5": "06 / SNC Adventures",
-  "guide.snc_energies.body.5": "Com Adventures instalado, o bagaço de cana da moenda também alimenta o fogão: 8.000 E por unidade. Bebidas, dinheiro, receitas e lâmpadas UV mantêm suas regras originais. Motorização das máquinas Adventures, tubos e UV elétrico ainda não foram implementados. Nenhum dos mods depende do outro para iniciar.",
+  "guide.snc_energies.body.5": "Com o Adventures instalado, o bagaço da moenda alimenta o fogão (8.000 E por unidade) e o Motor de Bebidas automatiza a moenda e a prensa: encoste-o na máquina, coloque a cana (ou as uvas) no slot dele e ligue energia; o motor entrega a fornada, guarda o caldo (e o bagaço) e para sozinho sem energia. A Lâmpada UV Elétrica é a variante opt-in da lâmpada UV: gasta energia própria para amadurecer as plantas, sem precisar de redstone; a lâmpada original continua igual. Bebidas, dinheiro e receitas do Adventures mantêm suas regras. Nenhum dos mods depende do outro para iniciar.",
   "guide.snc_energies.title.6": "07 / Operação e transporte",
   "guide.snc_energies.body.6": "Funis inserem ingredientes por cima ou pelos lados do controlador (base esquerda, olhando a frente); por baixo retiram produto e resíduo. As outras partes abrem o mesmo menu, mas não possuem inventários separados. A manivela é manual neste tier. Progresso e trabalho são salvos; a máquina para em chunks descarregados. O caderno é feito com livro + semente de trigo.",
   "item.snc_energies.rice_seeds": "Sementes de Arroz",
@@ -272,5 +272,18 @@
   "gui.snc_energies.panel.intake": "Recepção",
   "gui.snc_energies.panel.row": "Fileira",
   "gui.snc_energies.panel.out": "Saída",
-  "gui.snc_energies.panel.subtitle.compactor": "Pistão e prensagem · fardos em lote"
+  "gui.snc_energies.panel.subtitle.compactor": "Pistão e prensagem · fardos em lote",
+  "block.snc_energies.beverage_motor": "Motor de Bebidas",
+  "block.snc_energies.electric_uv_lamp": "Lâmpada UV Elétrica",
+  "gui.snc_energies.panel.subtitle.beverage_motor": "Motor de máquinas · moenda e prensa",
+  "gui.snc_energies.uv.paid": "Operando com energia própria",
+  "gui.snc_energies.uv.unpaid": "Sem energia — comprando um ciclo",
+  "guide.snc_energies.compactor": "Como usar a compactadora: coloque os itens no slot marcado Insumo; o produto pronto sai no slot Produto. Ela funciona com energia elétrica ligada no controlador (base esquerda da frente). Ela aperta uma fornada de cada vez e para sozinha quando a saída enche ou falta energia. Funis podem colocar e tirar os itens; a chave de fenda escolhe o que cada lado aceita.",
+  "guide.snc_energies.silo": "Como usar o silo: ele guarda muita coisa de um tipo só por fileira. Jogue os grãos em cima (ou use funil) e a recepção espalha sozinha pelas fileiras. Tire por baixo: a saída prepara uma pilha para o funil. Segure uma pilha grande na mão e clique numa fileira para guardar tudo de uma vez; agachando, você tira metade. Culturas diferentes nunca se misturam: cada fileira é de um item só. Derrubar qualquer pedaço devolve o silo inteiro e todo o conteúdo.",
+  "guide.snc_energies.craft.silo": "Bancada (linhas de cima para baixo): PP / GG / PP. P = Chapa de Aço; G = Engrenagem de Aço. ",
+  "gui.snc_energies.panel.feed": "Carga da máquina",
+  "gui.snc_energies.panel.collect": "Coleta",
+  "gui.snc_energies.panel.cycles": "Ciclos de operação",
+  "guide.snc_energies.craft.beverage_motor": "Bancada (linhas de cima para baixo): PCP / GRG / PCP. P = Chapa de Aço; C = Circuito Eletromecânico; G = Engrenagem de Aço; R = Redstone Dust. ",
+  "guide.snc_energies.craft.electric_uv_lamp": "Bancada (linhas de cima para baixo): GWG / GQG / GGG. G = Glass; W = Fio de Cobre; Q = Nether Quartz. "
 }

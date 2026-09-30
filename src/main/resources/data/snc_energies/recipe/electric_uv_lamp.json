@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GWG",
+    "GQG",
+    "GGG"
+  ],
+  "key": {
+    "G": "minecraft:glass",
+    "W": "snc_energies:copper_wire",
+    "Q": "minecraft:quartz"
+  },
+  "result": {
+    "id": "snc_energies:electric_uv_lamp",
+    "count": 1
+  }
+}

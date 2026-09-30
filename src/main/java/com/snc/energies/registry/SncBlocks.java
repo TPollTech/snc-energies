@@ -71,6 +71,13 @@ public final class SncBlocks {
     /** Agroindustrial bulk storage: 2x2x3 grain bin with a single shared inventory. */
     public static final Block SILO = register("silo", com.snc.energies.block.SiloBlock::new,
         blkProps(3.0f, 6.0f).noOcclusion().pushReaction(net.minecraft.world.level.material.PushReaction.IMMOVEABLE));
+    /** Optional Adventures integration: powered dock that motorizes supported machines. */
+    public static final Block BEVERAGE_MOTOR = register("beverage_motor", com.snc.energies.block.BeverageMotorBlock::new,
+        blkProps(4.0f, 8.0f));
+    /** Optional Adventures integration: electric UV lamp variant with its own energy buffer. */
+    public static final Block ELECTRIC_UV_LAMP = register("electric_uv_lamp", com.snc.energies.block.ElectricUvLampBlock::new,
+        blkProps(1.0f, 4.0f).noOcclusion()
+            .lightLevel(state -> state.getValue(com.snc.energies.block.ElectricUvLampBlock.EMITTING) ? 11 : 0));
 
 	private static Block register(String name, Function<Block.Properties, Block> factory, Block.Properties properties) {
 		ResourceKey<Block> key = ResourceKey.create(Registries.BLOCK, SncEnergies.id(name));

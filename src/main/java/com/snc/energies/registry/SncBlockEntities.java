@@ -44,6 +44,10 @@ public final class SncBlockEntities {
         "mercadao_anchor", new BlockEntityType<>(com.snc.energies.blockentity.MercadaoAnchorBlockEntity::new, Set.of(SncBlocks.MERCADAO_ANCHOR)));
     public static final BlockEntityType<com.snc.energies.blockentity.SiloBlockEntity> SILO = register(
         "silo", new BlockEntityType<>(com.snc.energies.blockentity.SiloBlockEntity::new, Set.of(SncBlocks.SILO)));
+    public static final BlockEntityType<com.snc.energies.blockentity.BeverageMotorBlockEntity> BEVERAGE_MOTOR = register(
+        "beverage_motor", new BlockEntityType<>(com.snc.energies.blockentity.BeverageMotorBlockEntity::new, Set.of(SncBlocks.BEVERAGE_MOTOR)));
+    public static final BlockEntityType<com.snc.energies.blockentity.ElectricUvLampBlockEntity> ELECTRIC_UV_LAMP = register(
+        "electric_uv_lamp", new BlockEntityType<>(com.snc.energies.blockentity.ElectricUvLampBlockEntity::new, Set.of(SncBlocks.ELECTRIC_UV_LAMP)));
 
 	private SncBlockEntities() {
 	}

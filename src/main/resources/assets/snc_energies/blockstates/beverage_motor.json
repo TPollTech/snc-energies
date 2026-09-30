@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "snc_energies:block/beverage_motor",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "snc_energies:block/beverage_motor",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "snc_energies:block/beverage_motor",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "snc_energies:block/beverage_motor",
+      "y": 270
+    }
+  }
+}

@@ -46,6 +46,9 @@ public final class SncItems {
     public static final Item SEED_PRESS = register("seed_press", SncBlocks.itemOf(SncBlocks.SEED_PRESS));
     /** Agroindustrial bulk bin (2x2x3). */
     public static final Item SILO = register("silo", SncBlocks.itemOf(SncBlocks.SILO));
+    /** Optional Adventures integration items. */
+    public static final Item BEVERAGE_MOTOR = register("beverage_motor", SncBlocks.itemOf(SncBlocks.BEVERAGE_MOTOR));
+    public static final Item ELECTRIC_UV_LAMP = register("electric_uv_lamp", SncBlocks.itemOf(SncBlocks.ELECTRIC_UV_LAMP));
     public static final Item RICE_SEEDS = registerSeed("rice_seeds", SncBlocks.RICE_CROP);
     public static final Item SOY_SEEDS = registerSeed("soy_seeds", SncBlocks.SOY_CROP);
     public static final Item MATE_SEEDS = registerSeed("mate_seeds", SncBlocks.MATE_CROP);
@@ -131,6 +134,7 @@ public final class SncItems {
                         STEEL_PLATE,COPPER_WIRE,STEEL_GEAR,BASIC_CIRCUIT,INSULATED_PLATE,REFINED_VOLTAITE,ADVANCED_CIRCUIT,MINERAL_MATRIX,
                         SAWDUST,IRON_DUST,COPPER_DUST,GOLD_DUST,TIN_DUST}) output.accept(material);
                     output.accept(GRAIN_MILL); output.accept(SEED_PRESS); output.accept(SILO);
+                    output.accept(BEVERAGE_MOTOR); output.accept(ELECTRIC_UV_LAMP);
                     output.accept(RICE_SEEDS); output.accept(SOY_SEEDS);
                     output.accept(MATE_SEEDS); output.accept(MATE_LEAF); output.accept(DRIED_MATE); output.accept(GROUND_MATE); output.accept(MATE_INFUSION);
                     output.accept(RICE_PADDY); output.accept(RICE); output.accept(SOYBEAN);

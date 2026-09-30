@@ -81,7 +81,7 @@ public final class WorkshopClientTest implements FabricClientGameTest {
                     return true;
                 });
             }
-            for(var block:new net.minecraft.world.level.block.Block[]{SncBlocks.SEED_PRESS,SncBlocks.WOOD_STOVE,SncBlocks.COAL_GENERATOR,SncBlocks.ELECTRIC_FURNACE,SncBlocks.CRUSHER,SncBlocks.ENERGY_CUBE}){
+            for(var block:new net.minecraft.world.level.block.Block[]{SncBlocks.SEED_PRESS,SncBlocks.WOOD_STOVE,SncBlocks.COAL_GENERATOR,SncBlocks.ELECTRIC_FURNACE,SncBlocks.CRUSHER,SncBlocks.ENERGY_CUBE,SncBlocks.BEVERAGE_MOTOR,SncBlocks.SILO}){
                 String id=net.minecraft.core.registries.BuiltInRegistries.BLOCK.getKey(block).getPath();
                 server.runOnServer(mc->{
                     var level=mc.overworld();var pos=new BlockPos(0,90,0);var player=mc.getPlayerList().getPlayers().getFirst();

@@ -34,7 +34,7 @@
   "guide.snc_energies.title.4": "05 / Residues and power",
   "guide.snc_energies.body.4": "In the stove: rice husk produces 8,000 E; vegetable oil 32,000 E; biomass briquette 40,000 E. Compacting four husks improves yield. A full stove pauses fuel consumption. Its footprint is 3×2 with a chimney reaching 3 blocks high.",
   "guide.snc_energies.title.5": "06 / SNC Adventures",
-  "guide.snc_energies.body.5": "With Adventures installed, bagasse from its mill fuels the stove: 8,000 E per item. Drinks, money, recipes and UV lamps keep their original rules. Adventures machine motors, pipes and powered UV are not implemented yet. Both mods can start independently.",
+  "guide.snc_energies.body.5": "With Adventures installed, bagasse from its mill fuels the stove (8,000 E per item) and the Beverage Motor automates the mill and the press: dock it against the machine, load cane (or grapes) into its slot and connect power; the motor delivers each batch, stores the juice (and the bagasse) and stops safely without power. The Electric UV Lamp is the opt-in variant of the UV lamp: it spends its own energy to ripen plants, no redstone needed; the original lamp works exactly as before. Drinks, money and Adventures recipes keep their rules. Neither mod depends on the other to start.",
   "guide.snc_energies.title.6": "07 / Operation and transport",
   "guide.snc_energies.body.6": "Hoppers insert ingredients above or beside the controller (bottom left from the front); below they extract products and residues. Other parts share the menu but have no separate inventory. Cranking is manual in this tier. Progress and work are saved; unloaded chunks pause processing. Craft this guide with a book and wheat seeds.",
   "item.snc_energies.rice_seeds": "Rice Seeds",
@@ -272,5 +272,18 @@
   "gui.snc_energies.panel.intake": "Intake",
   "gui.snc_energies.panel.row": "Row",
   "gui.snc_energies.panel.out": "Output",
-  "gui.snc_energies.panel.subtitle.compactor": "Piston press · batch baling"
+  "gui.snc_energies.panel.subtitle.compactor": "Piston press · batch baling",
+  "block.snc_energies.beverage_motor": "Beverage Motor",
+  "block.snc_energies.electric_uv_lamp": "Electric UV Lamp",
+  "gui.snc_energies.panel.subtitle.beverage_motor": "Machine motor · mill and press",
+  "gui.snc_energies.uv.paid": "Running on its own energy",
+  "gui.snc_energies.uv.unpaid": "Out of energy — buying a cycle",
+  "guide.snc_energies.compactor": "Using the compactor: put items into the slot marked Input; the finished product comes out of the Product slot. It runs on electric power connected to the controller (front bottom left). It presses one batch at a time and stops by itself when the output fills or power runs out. Hoppers can load and unload items; the screwdriver chooses what each side accepts.",
+  "guide.snc_energies.silo": "Using the silo: each row holds a lot of one single item kind. Drop grain on top (or use a hopper) and the intake spreads it across the rows by itself. Take from the bottom: the output prepares one stack for the hopper. Hold a big stack and click a row to store it all at once; sneak to take half back. Different crops never mix: one row is one item kind. Breaking any piece returns the whole silo and every stored item.",
+  "guide.snc_energies.craft.silo": "Crafting grid (top to bottom): PP / GG / PP. P = Steel Plate; G = Steel Gear. ",
+  "gui.snc_energies.panel.feed": "Machine feed",
+  "gui.snc_energies.panel.collect": "Collect",
+  "gui.snc_energies.panel.cycles": "Operation cycles",
+  "guide.snc_energies.craft.beverage_motor": "Crafting grid (top to bottom): PCP / GRG / PCP. P = Steel Plate; C = Electromechanical Circuit; G = Steel Gear; R = Redstone Dust. ",
+  "guide.snc_energies.craft.electric_uv_lamp": "Crafting grid (top to bottom): GWG / GQG / GGG. G = Glass; W = Copper Wire; Q = Nether Quartz. "
 }

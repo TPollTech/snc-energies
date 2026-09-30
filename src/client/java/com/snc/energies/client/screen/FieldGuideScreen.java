@@ -20,7 +20,7 @@ import java.util.Locale;
 
 /** Recipe quantities come from the same records as the machine engine. */
 public final class FieldGuideScreen extends Screen {
-    private static final int PAGES = 8 + IndustryKind.values().length;
+    private static final int PAGES = 9 + IndustryKind.values().length;
     /** Warm inks on parchment instead of near-black (readability fix). */
     private static final int INK_BODY = 0xff4d3a26;
     private static final int INK_HEADING = 0xff7a3a20;
@@ -101,7 +101,7 @@ public final class FieldGuideScreen extends Screen {
         if (candidatePage < 8) {
             text.append(title(candidatePage)).append(' ')
                 .append(trans("guide.snc_energies.body." + candidatePage));
-        } else {
+        } else if (candidatePage < 8 + IndustryKind.values().length) {
             IndustryKind kind = IndustryKind.values()[candidatePage - 8];
             text.append(trans("block.snc_energies." + kind.id)).append(' ');
             for (var recipe : IndustryRecipes.all()) if (recipe.kind() == kind)
@@ -110,17 +110,24 @@ public final class FieldGuideScreen extends Screen {
             text.append(trans("guide.snc_energies.craft." + kind.id)).append(' ');
             String special = kind == IndustryKind.BOILER ? "boiler"
                     : kind == IndustryKind.TURBINE ? "turbine"
-                    : kind == IndustryKind.SYNTHESIZER ? "synthesis" : null;
+                    : kind == IndustryKind.SYNTHESIZER ? "synthesis"
+                    : kind == IndustryKind.COMPACTOR ? "compactor" : null;
             if (special != null) text.append(trans("guide.snc_energies." + special)).append(' ');
             text.append(trans("guide.snc_energies.industry_base"));
+        } else {
+            text.append(trans("block.snc_energies.silo")).append(' ');
+            text.append(trans("guide.snc_energies.craft.silo")).append(' ');
+            text.append(trans("guide.snc_energies.silo"));
         }
         return normalize(text.toString());
     }
 
     /** Full page title, also used as the heading on the page itself. */
     private Component heading(int candidatePage) {
-        return candidatePage < 8 ? Component.translatable("guide.snc_energies.title." + candidatePage)
-                : Component.translatable("block.snc_energies." + IndustryKind.values()[candidatePage - 8].id);
+        if (candidatePage < 8) return Component.translatable("guide.snc_energies.title." + candidatePage);
+        if (candidatePage < 8 + IndustryKind.values().length)
+            return Component.translatable("block.snc_energies." + IndustryKind.values()[candidatePage - 8].id);
+        return Component.translatable("block.snc_energies.silo");
     }
 
     /** Short index label: numbered titles drop the number, machines use their block name. */
@@ -178,21 +185,28 @@ public final class FieldGuideScreen extends Screen {
         top += 6;
         List<FormattedCharSequence> lines = new ArrayList<>();
         if (page >= 8) {
-            IndustryKind kind = IndustryKind.values()[page - 8];
-            for (var recipe : IndustryRecipes.all()) if (recipe.kind() == kind) {
-                var text = Component.literal(recipe.count() + " × ").append(recipe.input().getName(recipe.input().getDefaultInstance()));
-                if (recipe.reagentCount() > 0) text.append(" + " + recipe.reagentCount() + " × ").append(recipe.reagent().getName(recipe.reagent().getDefaultInstance()));
-                text.append(" → " + recipe.productCount() + " × ").append(recipe.product().getName(recipe.product().getDefaultInstance()));
-                if (recipe.residueCount() > 0) text.append(" + " + recipe.residueCount() + " × ").append(recipe.residue().getName(recipe.residue().getDefaultInstance()));
-                lines.addAll(font.split(text, right - left - 30));
+            if (page < 8 + IndustryKind.values().length) {
+                IndustryKind kind = IndustryKind.values()[page - 8];
+                for (var recipe : IndustryRecipes.all()) if (recipe.kind() == kind) {
+                    var text = Component.literal(recipe.count() + " × ").append(recipe.input().getName(recipe.input().getDefaultInstance()));
+                    if (recipe.reagentCount() > 0) text.append(" + " + recipe.reagentCount() + " × ").append(recipe.reagent().getName(recipe.reagent().getDefaultInstance()));
+                    text.append(" → " + recipe.productCount() + " × ").append(recipe.product().getName(recipe.product().getDefaultInstance()));
+                    if (recipe.residueCount() > 0) text.append(" + " + recipe.residueCount() + " × ").append(recipe.residue().getName(recipe.residue().getDefaultInstance()));
+                    lines.addAll(font.split(text, right - left - 30));
+                    lines.addAll(font.split(Component.literal(" "), right - left - 30));
+                }
+                lines.addAll(font.split(Component.translatable("guide.snc_energies.craft." + kind.id), right - left - 30));
+                String special = kind == IndustryKind.BOILER ? "boiler"
+                        : kind == IndustryKind.TURBINE ? "turbine"
+                        : kind == IndustryKind.SYNTHESIZER ? "synthesis"
+                        : kind == IndustryKind.COMPACTOR ? "compactor" : null;
+                if (special != null) lines.addAll(font.split(Component.translatable("guide.snc_energies." + special), right - left - 30));
+                lines.addAll(font.split(Component.translatable("guide.snc_energies.industry_base", kind.width + " × " + kind.depth + " × " + kind.height), right - left - 30));
+            } else {
+                lines.addAll(font.split(Component.translatable("guide.snc_energies.craft.silo"), right - left - 30));
                 lines.addAll(font.split(Component.literal(" "), right - left - 30));
+                lines.addAll(font.split(Component.translatable("guide.snc_energies.silo"), right - left - 30));
             }
-            lines.addAll(font.split(Component.translatable("guide.snc_energies.craft." + kind.id), right - left - 30));
-            String special = kind == IndustryKind.BOILER ? "boiler"
-                    : kind == IndustryKind.TURBINE ? "turbine"
-                    : kind == IndustryKind.SYNTHESIZER ? "synthesis" : null;
-            if (special != null) lines.addAll(font.split(Component.translatable("guide.snc_energies." + special), right - left - 30));
-            lines.addAll(font.split(Component.translatable("guide.snc_energies.industry_base", kind.width + " × " + kind.depth + " × " + kind.height), right - left - 30));
         } else {
             if (page == 2 || page == 3) {
                 for (var recipe : WorkshopRecipes.all()) {

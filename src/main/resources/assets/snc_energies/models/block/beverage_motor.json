@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_directional",
+  "textures": {
+    "particle": "snc_energies:block/machine_side",
+    "down": "snc_energies:block/machine_bottom",
+    "up": "snc_energies:block/machine_top",
+    "north": "snc_energies:block/beverage_motor_front",
+    "south": "snc_energies:block/machine_side",
+    "east": "snc_energies:block/machine_side",
+    "west": "snc_energies:block/machine_side"
+  }
+}

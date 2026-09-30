@@ -16,7 +16,9 @@ LABELS={
  'press':('Acionar prensa','Press lever'),'crank':('Girar manivela','Turn crank'),
  'redstone':('Alternar redstone','Toggle redstone'),
  'sample_hint':('Amostra preservada ao produzir','Sample retained during production'),
- 'intake':('Recepção','Intake'),'row':('Fileira','Row'),'out':('Saída','Output')}
+ 'intake':('Recepção','Intake'),'row':('Fileira','Row'),'out':('Saída','Output'),
+ 'feed':('Carga da máquina','Machine feed'),'collect':('Coleta','Collect'),
+ 'cycles':('Ciclos de operação','Operation cycles')}
 def rect(x,y,w,h,c): p['rects'].append([int(x),int(y),int(w),int(h),c])
 def line(x,y,xx,yy,c,width=1):
     steps=max(1,int(max(abs(xx-x),abs(yy-y))))
@@ -102,6 +104,15 @@ pipe(54,88,83,88);pipe(176,88,205,88)
 panel(88,48,85,70,'#4b5546');rect(96,56,69,26,'#202c32')
 for y in [60,68,76]:rect(100,y,61,3,'#dfb84f')
 rect(112,86,37,18,'#111d23');ring(130,95,7,'#dfb84f',3)
+bar('progress',49,86,165,4)
+bar('energy',190,46,41,5,'#aad2e5')
+
+begin('beverage_motor',('Motor de máquinas · moenda e prensa','Machine motor · mill and press'),'#33424d','#8fcbad','steel')
+slot(0,34,79,'feed');slot(1,207,79,'collect')
+pipe(54,88,83,88);pipe(176,88,205,88)
+panel(88,48,85,70,'#3d4c55');rect(96,56,69,26,'#202c32')
+for y in [60,68,76]:rect(100,y,61,3,'#8fcbad')
+rect(112,86,37,18,'#111d23');ring(130,95,7,'#8fcbad',3)
 bar('progress',49,86,165,4)
 bar('energy',190,46,41,5,'#aad2e5')
 

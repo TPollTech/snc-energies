@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "snc_energies:electric_uv_lamp",
+          "condition": {
+            "type": "minecraft:survives_explosion"
+          }
+        }
+      ]
+    }
+  ]
+}

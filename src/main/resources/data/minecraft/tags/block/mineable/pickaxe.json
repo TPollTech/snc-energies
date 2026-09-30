@@ -26,6 +26,8 @@
     "snc_energies:deepslate_tin_ore",
     "snc_energies:item_pipe",
     "snc_energies:compactor",
-    "snc_energies:silo"
+    "snc_energies:silo",
+    "snc_energies:beverage_motor",
+    "snc_energies:electric_uv_lamp"
   ]
 }

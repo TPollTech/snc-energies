@@ -63,6 +63,9 @@ public final class SncMenus {
 	public static final MenuType<com.snc.energies.menu.SiloMenu> SILO = Registry.register(
 			BuiltInRegistries.MENU, SncEnergies.id("silo"),
 			new MenuType<>(com.snc.energies.menu.SiloMenu::new, FeatureFlags.VANILLA_SET));
+	public static final MenuType<com.snc.energies.menu.BeverageMotorMenu> BEVERAGE_MOTOR = Registry.register(
+			BuiltInRegistries.MENU, SncEnergies.id("beverage_motor"),
+			new MenuType<>(com.snc.energies.menu.BeverageMotorMenu::new, FeatureFlags.VANILLA_SET));
 
 	private SncMenus() {
 	}

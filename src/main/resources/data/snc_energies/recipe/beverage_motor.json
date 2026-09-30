@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PCP",
+    "GRG",
+    "PCP"
+  ],
+  "key": {
+    "P": "snc_energies:steel_plate",
+    "C": "snc_energies:basic_circuit",
+    "G": "snc_energies:steel_gear",
+    "R": "minecraft:redstone"
+  },
+  "result": {
+    "id": "snc_energies:beverage_motor",
+    "count": 1
+  }
+}

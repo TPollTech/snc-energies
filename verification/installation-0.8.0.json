@@ -1,0 +1,27 @@
+{
+  "version": "0.8.0",
+  "installed_at": "2026-09-30T17:13:35-03:00",
+  "target": "C:/Users/enzot/curseforge/minecraft/Instances/SNC energies/mods/snc-energies.jar",
+  "installed_sha256": "98c408dcfab3a672915cf01ed030f27b34287aa52c69d22c3f99392caddf06a7",
+  "built_sha256": "98c408dcfab3a672915cf01ed030f27b34287aa52c69d22c3f99392caddf06a7",
+  "jar_bytes": 2265227,
+  "backup": {
+    "path": "C:/Users/enzot/curseforge/minecraft/Instances/SNC energies/backups/20260930-171335-before-0.8.0.jar",
+    "previous_version": "0.7.0",
+    "previous_sha256": "7d5261f830b9c965cc414d8e0f13659d7afb7e2b9e06e7f0c086db55d013fae0"
+  },
+  "companion": {
+    "adventures_jar": "verification/intoxicantes-1.2.61.jar",
+    "adventures_version": "1.2.61",
+    "test_profiles": ["standalone", "adventures"]
+  },
+  "evidence": {
+    "standalone_suite": "verification/0.8.0-standalone.log",
+    "adventures_suite": "verification/0.8.0-adventures.log",
+    "standalone_checks": 640,
+    "adventures_checks": 656,
+    "gametest": "CLIENT FLOW PASSED",
+    "screenshots": ["verification/panel-beverage_motor.png", "verification/panel-silo.png", "verification/progression-guide-0.8.0.png"]
+  },
+  "notes": "Machine engine (moenda/prensa) + electric UV lamp (opt-in). Silo page and compactor text in the Field Guide. Studio previews with grain level and piston toggles."
+}

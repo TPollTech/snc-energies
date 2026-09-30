@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "emitting=false": {
+      "model": "snc_energies:block/electric_uv_lamp_off"
+    },
+    "emitting=true": {
+      "model": "snc_energies:block/electric_uv_lamp"
+    }
+  }
+}

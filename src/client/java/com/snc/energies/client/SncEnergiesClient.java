@@ -37,6 +37,8 @@ public class SncEnergiesClient implements ClientModInitializer {
         net.fabricmc.fabric.api.client.rendering.v1.BlockEntityRendererRegistry.register(
             com.snc.energies.registry.SncBlockEntities.MERCADAO_SHELF, com.snc.energies.client.mercajeiro.MercadaoShelfRenderer::new);
         MenuScreens.register(SncMenus.HARVESTER, com.snc.energies.client.screen.HarvesterScreen::new);
+        MenuScreens.register(SncMenus.SILO, com.snc.energies.client.screen.SiloScreen::new);
+        MenuScreens.register(SncMenus.BEVERAGE_MOTOR, com.snc.energies.client.screen.BeverageMotorScreen::new);
         com.snc.energies.client.vehicle.TractorClient.bootstrap();
 		SncEnergies.LOGGER.info("SNC Energies client ready");
 	}

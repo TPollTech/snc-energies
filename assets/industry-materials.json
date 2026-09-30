@@ -1,0 +1,32 @@
+{
+  "industry_steel": {
+    "color": "#8d969c",
+    "roughness": 0.75,
+    "metalness": 0.15
+  },
+  "industry_bronze": {
+    "color": "#b08d57",
+    "roughness": 0.75,
+    "metalness": 0.15
+  },
+  "industry_panel": {
+    "color": "#c98a2e",
+    "roughness": 0.75,
+    "metalness": 0.15
+  },
+  "industry_gauge": {
+    "color": "#d8e6d0",
+    "roughness": 0.75,
+    "metalness": 0.15
+  },
+  "wood_stove_brick": {
+    "color": "#8a5a3b",
+    "roughness": 0.75,
+    "metalness": 0.15
+  },
+  "industry_core": {
+    "color": "#78e5de",
+    "roughness": 0.75,
+    "metalness": 0.15
+  }
+}
